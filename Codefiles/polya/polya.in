@@ -1,0 +1,17 @@
+[Run name]
+name	unit_rnd_Periodic_32x8x8x8
+#output  unit_rnd_Periodic2
+
+[Directories]
+log_dir		./log
+cnfg_dir	/media/korzec/local-data/data/tests/cnfg
+dat_dir		./dat
+
+[Lattice]
+L               32 8 8 8
+P               2 2 2 2
+
+[Configurations]
+first		1
+last		1
+step		1
