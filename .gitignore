@@ -1,0 +1,28 @@
+# Build artifacts
+build/
+tmp/
+*.o
+*.so
+*.a
+*.out
+test_*
+# Editor/IDE
+*~
+*.swp
+.nbproject/
+# Logs and data
+log/
+dat/
+*.log
+# backup files
+*~
+# Matlab / Octave
+*.asv
+# Compiled binaries
+polya
+test_2x2
+test_3x3
+test_solver
+# OS files
+.DS_Store
+qcd/
