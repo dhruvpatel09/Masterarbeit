@@ -1,1 +1,1 @@
-mpicc -o polya polya.c -I/home/korzec/qcd/include/ -I/home/korzec/bdio/include/ -L/home/korzec/qcd/lib/ -L/home/korzec/bdio/lib/ -lqcd -lm -lbdio -lmd5
+mpicc -o polya polya.c -I/home/m2130292/Masterarbeit/qcd/include/ -I/home/m2130292/Masterarbeit/bdio/include/ -L/home/m2130292/Masterarbeit/qcd/lib/ -L/home/m2130292/Masterarbeit/bdio/lib/ -lqcd -lm -lbdio -lmd5
