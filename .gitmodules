@@ -1,3 +1,3 @@
 [submodule "bdio"]
 	path = bdio
-	url = ssh://korzec@transfer.ifh.de//afs/ifh.de/group/alpha/bup/alpha/git_repositories//tools/bdio-korzec.git
+	url = git@github.com:dhruvpatel09/bdio.git
