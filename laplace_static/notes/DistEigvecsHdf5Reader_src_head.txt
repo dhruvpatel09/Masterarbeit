@@ -1,0 +1,260 @@
+#include <mpi.h>
+#include <hdf5.h>
+#include <hdf5_hl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+
+#include "DistEigvecsHdf5Reader.h"
+
+static int DistEigvecsHdf5Reader_CheckInitialised_(
+    DistEigvecsHdf5Reader *const reader, const char func_name[]) {
+  if (reader->initialised_ == false) {
+    fprintf(stderr, "%s [DistEigvecsHdf5Reader.c]:"
+        " Error: Reader not initialised.\n", func_name);
+    return 1;
+  }
+  return 0;
+}
+
+static int DistEigvecsHdf5Reader_CheckNotInitialised_(
+    DistEigvecsHdf5Reader *const reader, const char func_name[]) {
+  if (reader->initialised_ == true) {
+    fprintf(stderr, "%s [DistEigvecsHdf5Reader.c]:"
+        " Error: Reader already initialised.\n", func_name);
+    return 1;
+  }
+  return 0;
+}
+
+static int DistEigvecsHdf5Reader_CheckFileOpen_(
+    DistEigvecsHdf5Reader *const reader, const char func_name[]) {
+  if (reader->file_open_ == false) {
+    fprintf(stderr, "%s [DistEigvecsHdf5Reader.c]:"
+        " Error: File not open.\n", func_name);
+    return 1;
+  }
+  return 0;
+}
+
+static int DistEigvecsHdf5Reader_CheckFileNotOpen_(
+    DistEigvecsHdf5Reader *const reader, const char func_name[]) {
+  if (reader->file_open_ == true) {
+    fprintf(stderr, "%s [DistEigvecsHdf5Reader.c]:"
+        " Error: File already open.\n", func_name);
+    return 1;
+  }
+  return 0;
+}
+
+static int DistEigvecsHdf5Reader_ReadScalarDatasetAllRanks_(
+    DistEigvecsHdf5Reader *reader, hid_t dataset_loc,
+    const char *const dataset_name, const hid_t dataset_datatype,
+    const hid_t memory_type, void *value) {
+
+  int mpi_rank;
+  MPI_Comm_rank(MPI_COMM_WORLD, &mpi_rank);
+
+  hid_t dataset = H5Dopen(dataset_loc, dataset_name, H5P_DEFAULT);
+  if (dataset < 0) {
+    fprintf(stderr, "Failed to open dataset %s, rank %d.\n", dataset_name,
+        mpi_rank);
+    return 1;
+  }
+
+  hid_t type = H5Dget_type(dataset);
+  htri_t check = H5Tequal(dataset_datatype, type);
+  if (check == 0) {
+    fprintf(stderr, "Wrong type.\n");
+    H5Dclose(dataset);
+    return 1;
+  }
+  if (check < 0) {
+    return 1;
+  }
+
+  hid_t dataspace = H5Dget_space(dataset);
+  hid_t filespace = H5Scopy(dataspace);
+  if (dataspace < 0) {
+    return 1;
+  }
+
+  H5S_class_t dataspace_type = H5Sget_simple_extent_type(dataspace);
+  if (dataspace_type != H5S_SCALAR) {
+    return 1;
+  }
+
+  herr_t status = H5Dread(dataset, memory_type, dataspace, filespace,
+      reader->transfer_prop_parallel_, value);
+  if (status < 0) {
+    fprintf(stderr, "Failed reading dataset %s, rank %d.\n", dataset_name,
+        mpi_rank);
+    H5Sclose(dataspace);
+    H5Sclose(filespace);
+    H5Dclose(dataset);
+    return 1;
+  }
+
+  H5Sclose(dataspace);
+  H5Sclose(filespace);
+  H5Dclose(dataset);
+
+  return 0;
+}
+
+static int DistEigvecsHdf5Reader_ReadScalarDatasetAllRanks_FixedLenString_(
+    DistEigvecsHdf5Reader *reader, hid_t dataset_loc,
+    const char *const dataset_name, char **value) {
+
+  int mpi_rank;
+  MPI_Comm_rank(MPI_COMM_WORLD, &mpi_rank);
+
+  hid_t dataset = H5Dopen(dataset_loc, dataset_name, H5P_DEFAULT);
+  if (dataset < 0) {
+    fprintf(stderr, "Failed to open dataset %s, rank %d.\n", dataset_name,
+        mpi_rank);
+    return 1;
+  }
+
+  // Get datatype and verify it is a string
+  hid_t dtype = H5Dget_type(dataset);
+  if (dtype < 0) {
+    fprintf(stderr, "Failed to get datatype for dataset %s, rank %d.\n",
+        dataset_name, mpi_rank);
+    H5Dclose(dataset);
+    return 1;
+  }
+
+  if (H5Tget_class(dtype) != H5T_STRING) {
+    fprintf(stderr, "Dataset %s is not a string type (rank %d).\n",
+        dataset_name, mpi_rank);
+    H5Tclose(dtype);
+    H5Dclose(dataset);
+    return 1;
+  }
+
+  // Check if it is fixed-length or variable-length string
+  H5T_str_t str_pad = H5Tget_strpad(dtype);
+  size_t str_size = H5Tget_size(dtype);
+  htri_t is_vlen = H5Tis_variable_str(dtype);
+
+  if (is_vlen > 0) {
+    fprintf(stderr,
+        "Dataset %s is variable-length, expected fixed-length (rank %d).\n",
+        dataset_name, mpi_rank);
+    H5Tclose(dtype);
+    H5Dclose(dataset);
+    return 1;
+  }
+
+  // Check that it’s a scalar dataset
+  hid_t dataspace = H5Dget_space(dataset);
+  if (H5Sget_simple_extent_type(dataspace) != H5S_SCALAR) {
+    fprintf(stderr, "Dataset %s is not a scalar string (rank %d).\n",
+        dataset_name, mpi_rank);
+    H5Sclose(dataspace);
+    H5Tclose(dtype);
+    H5Dclose(dataset);
+    return 1;
+  }
+
+  // Create a memory type for reading (fixed-length string, null-terminated)
+  hid_t memtype = H5Tcopy(H5T_C_S1);
+  H5Tset_size(memtype, str_size);
+  H5Tset_strpad(memtype, str_pad);
+  H5Tset_cset(memtype, H5Tget_cset(dtype));
+
+  // Allocate buffer (add 1 for safety null terminator)
+  char *buf = (char*) calloc(str_size + 1, sizeof(char));
+  if (!buf) {
+    fprintf(stderr, "Memory allocation failed for dataset %s, rank %d.\n",
+        dataset_name, mpi_rank);
+    H5Sclose(dataspace);
+    H5Tclose(memtype);
+    H5Tclose(dtype);
+    H5Dclose(dataset);
+    return 1;
+  }
+
+  // Read
+  herr_t status = H5Dread(dataset, memtype, H5S_ALL, H5S_ALL,
+      reader->transfer_prop_parallel_, buf);
+  if (status < 0) {
+    fprintf(stderr, "Failed to read dataset %s, rank %d.\n", dataset_name,
+        mpi_rank);
+    free(buf);
+    H5Sclose(dataspace);
+    H5Tclose(memtype);
+    H5Tclose(dtype);
+    H5Dclose(dataset);
+    return 1;
+  }
+
+  // Ensure null-termination (especially for space-padded fixed-length strings)
+  buf[str_size] = '\0';
+
+  // Clean up
+  H5Sclose(dataspace);
+  H5Tclose(memtype);
+  H5Tclose(dtype);
+  H5Dclose(dataset);
+
+  *value = buf;
+  return 0;
+}
+
+static int DistEigvecsHdf5Reader_ReadArrayDatasetAllRanks_(
+    DistEigvecsHdf5Reader *reader, hid_t dataset_loc,
+    const char *const dataset_name, const unsigned int dataspace_dims_num,
+    hsize_t *dataspace_dims, const hid_t dataset_datatype,
+    const hid_t memory_type, void *const value) {
+
+  int mpi_rank;
+  MPI_Comm_rank(MPI_COMM_WORLD, &mpi_rank);
+
+  hid_t dataset = H5Dopen2(dataset_loc, dataset_name, H5P_DEFAULT);
+  if (dataset < 0) {
+    return 1;
+  }
+
+  htri_t check = H5Tequal(dataset_datatype, H5Dget_type(dataset));
+  if (check < 0) {
+    return 1;
+  }
+  if (check == 0) {
+    return 1;
+  }
+
+  hid_t dataspace = H5Dget_space(dataset);
+  if (dataspace < 0) {
+    return 1;
+  }
+
+  int file_dims_num = H5Sget_simple_extent_ndims(dataspace);
+  if (dataspace_dims_num != file_dims_num) {
+    return 1;
+  }
+  hsize_t *file_dims = malloc(file_dims_num * sizeof(hsize_t));
+  herr_t status = H5Sget_simple_extent_dims(dataspace, file_dims, NULL);
+  if (status < 0) {
+    return 1;
+  }
+  for (unsigned int dim_idx = 0; dim_idx < dataspace_dims_num; dim_idx++) {
+    if (dataspace_dims[dim_idx] != file_dims[dim_idx]) {
+      free(file_dims);
+      return 1;
+    }
+  }
+  free(file_dims);
+
+  hid_t filespace = H5Scopy(dataspace);
+
+  status = H5Dread(dataset, memory_type, dataspace, filespace,
+      reader->transfer_prop_parallel_, value);
+
+  if (status < 0) {
+    fprintf(stderr, "Failed reading dataset %s, rank %d.\n", dataset_name,
+        mpi_rank);
+    H5Sclose(dataspace);
+    H5Sclose(filespace);

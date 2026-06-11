@@ -1,0 +1,25 @@
+Known from mental.c:
+
+Gauge field:
+- qcd_getGaugeField(fname, qcd_GF_OPENQCD, u_ptr)
+
+Eigenvector reading:
+- DistEigvecsHdf5Reader_OpenFile(...)
+- DistEigvecsHdf5Reader_ReadDistEigvecsRange(...)
+- DistEigvecsHdf5Reader_CloseFile(...)
+
+Eigenvector layout:
+- HDF5: /disteigvecs {Nv, 24, 24, 24, 3}
+- Current Nv = 10
+- One HDF5 file per time slice: Em1p4nN_evec_tT.h5
+
+Target Eq. 7:
+tau_ij(y,t0,t1) = v_i^\dagger(y,t0) U_t(y,t0,t1) v_j(y,t1)
+
+Target first test:
+- config n1
+- t0 = 0
+- t1 = 1
+- one spatial point y = (0,0,0)
+- all i,j = 0..Nv-1
+- print tau_ij

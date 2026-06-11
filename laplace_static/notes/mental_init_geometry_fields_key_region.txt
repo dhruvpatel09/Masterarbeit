@@ -1,0 +1,106 @@
+   140	   
+   141	   /////////////////////////////////////////////////////////////////////////////
+   142	   // set up output file (log-file)                                           //
+   143	   /////////////////////////////////////////////////////////////////////////////   
+   144	   if( has_o )
+   145	   {
+   146	      // re-direct all output of process 0 to out-file
+   147	      if( myid==0 )
+   148	      {
+   149	         setup_out();
+   150	      }
+   151	   }
+   152	
+   153	   /////////////////////////////////////////////////////////////////////////////
+   154	   // read input file                                                         //
+   155	   /////////////////////////////////////////////////////////////////////////////   
+   156	   read_infile();
+   157	   
+   158	   /////////////////////////////////////////////////////////////////////////////
+   159	   // set up qcdlib                                                           //
+   160	   /////////////////////////////////////////////////////////////////////////////
+   161	   if(qcd_initGeometry(&geo,params.L,params.P, theta, myid, numprocs)) MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+   162	   if(qcd_initEO(&geo)) MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+   163	   
+   164	   /////////////////////////////////////////////////////////////////////////////
+   165	   // prepare momenta list, lookup-tables, out-file-tables                    //
+   166	   /////////////////////////////////////////////////////////////////////////////
+   167	   make_tables(&geo);
+   168	   
+   169	   /////////////////////////////////////////////////////////////////////////////
+   170	   // set up files, write headers                                             //
+   171	   /////////////////////////////////////////////////////////////////////////////
+   172	   setup_files();
+   173	   
+   174	   /////////////////////////////////////////////////////////////////////////////
+   175	   // print log-file header                                                   //
+   176	   /////////////////////////////////////////////////////////////////////////////
+   177	   print_params(&geo);
+   178	   
+   179	   /////////////////////////////////////////////////////////////////////////////
+   180	   // allocate memory                                                         //
+   181	   /////////////////////////////////////////////////////////////////////////////
+   182	   j = qcd_initGaugeField(&u1,&geo);
+   183	   u_ptr = &u1;
+   184	   if( params.compute_ev )
+   185	   {
+   186	      if( params.laplace_nAPE != 0 )
+   187	      {
+   188	         j += qcd_initGaugeField(&u2,&geo);
+   189	         uAPEl_ptr = &u2;
+   190	      }
+   191	      else
+   192	         uAPEl_ptr = u_ptr;
+   193	   }
+   194	   if( params.hasDer )
+   195	   {
+   196	      if( params.differentAPE )
+   197	      {
+   198	         if( params.der_nAPE !=0 )
+   199	         {
+   200	            j += qcd_initGaugeField(&u3,&geo);
+   201	            uAPEd_ptr = &u3;
+   202	         }
+   203	         else
+   204	            uAPEd_ptr = u_ptr;
+   205	      } else
+   206	      {
+   207	         uAPEd_ptr = uAPEl_ptr;  
+   208	      }
+   209	   }
+   210	   j += qcd_initGaugeField3d(&u3d,&geo);
+   211	   qcd_errorLoc(j,1,"main [mental.c]","Error in gauge field initialization");
+   212	   lambda = (double*) malloc(params.Nv * sizeof(double));
+   213	   qcd_errorLoc(lambda==NULL,1,"main [mental.c]","Out of memory for eigenvalues");
+   214	   
+   215	   /////////////////////////////////////////////////////////////////////////////
+   216	   // initialize 3d laplace eigenvectors                                      //
+   217	   /////////////////////////////////////////////////////////////////////////////
+   218	   v = (qcd_spinorComponent3d*) malloc(params.Nv*sizeof(qcd_spinorComponent3d));
+   219	   qcd_errorLoc(v==NULL,1,"main [mental.c]","Error in eigenvector initialization");
+   220	   j = 0;
+   221	   for(i=0; i<params.Nv; i++)
+   222	      j += qcd_initSpinorComponent3d(&(v[i]), &geo);
+   223	   j += qcd_initSpinorComponent3d(&vp, &geo);
+   224	   j += qcd_initSpinorComponent3d(&Dv, &geo);
+   225	   j += qcd_initSpinorComponent3d(&vtmp, &geo);
+   226	   qcd_errorLoc(j>0,1,"main [mental.c]","Error in eigenvector initialization");
+   227	   
+   228	   if(myid==0){printf("eigenvectors initialized...\n"); fflush(stdout);}
+   229	   
+   230	   /////////////////////////////////////////////////////////////////////////////
+   231	   // initialize memory for reduced elementals                                //
+   232	   /////////////////////////////////////////////////////////////////////////////
+   233	   
+   234	   redelem = malloc(params.Nv*params.Nv*params.nset*sizeof(qcd_complex_16));
+   235	   qcd_errorLoc(redelem==NULL,1,"main [mental.c]","Out of memory for elementals",myid);
+   236	   
+   237	   //if(myid==0){printf("redelem initialized...\n"); fflush(stdout);}
+   238	   
+   239	   if( params.write_ev || !params.compute_ev )
+   240	   {
+   241	      disteigvecs = (DistEigvecsHdf5_ComplexDouble*) malloc(geo.lV3*3*params.Nv*sizeof(DistEigvecsHdf5_ComplexDouble));
+   242	      qcd_errorLoc(disteigvecs==NULL,1,"main [mental.c]","Out of memory for disteigs");
+   243	      //if(myid==0){printf("disteigvecs initialized...\n"); fflush(stdout);}
+   244	   }
+   245	   if(myid==0){printf("\nmemory allocated\n"); fflush(stdout);}

@@ -31,3 +31,19 @@ dat/
 *.out
 *.toc
 *.synctex.gz
+# Local source snapshots / backup archives
+ZIP/
+*.zip
+*.tar.gz
+
+# Local archives / legacy source snapshots / build artifacts
+archives/
+
+# Laplace-static local data/build links and run outputs
+laplace_static/evec_data
+laplace_static/gauge_configs
+laplace_static/hdf5
+laplace_static/qcd_active
+laplace_static/build/
+laplace_static/logs/
+laplace_static/backups/

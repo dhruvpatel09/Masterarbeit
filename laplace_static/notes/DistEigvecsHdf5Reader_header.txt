@@ -1,0 +1,43 @@
+#ifndef DISTEIGVECSHDF5READER_H_
+#define DISTEIGVECSHDF5READER_H_
+
+#include <mpi.h>
+#include <hdf5.h>
+#include <hdf5_hl.h>
+#include <stdbool.h>
+#include <DistEigvecsHdf5.h>
+
+typedef struct {
+  bool initialised_;
+  bool file_open_;
+  MPI_Comm comm_;
+  int spatial_lat_size_[3];
+  int spatial_loclat_size_[3];
+  int spatial_proclat_size_[3];
+  hid_t file_;
+  unsigned int disteigpairs_num_;
+  hid_t transfer_prop_parallel_;
+  hid_t memory_complexdoubletype_;
+  hid_t disteigvecs_dataset_;
+  hid_t disteigvecs_dataspace_;
+} DistEigvecsHdf5Reader;
+
+int DistEigvecsHdf5Reader_Init(DistEigvecsHdf5Reader *const reader);
+int DistEigvecsHdf5Reader_Free(DistEigvecsHdf5Reader *const reader);
+int DistEigvecsHdf5Reader_OpenFile(DistEigvecsHdf5Reader *const reader,
+    const MPI_Comm comm, const char *file_name, char **run_name,
+    int *const cnfg_id, const int spatial_lat_size[3],
+    const int spatial_proclat_size[3], int *const time,
+    unsigned int *const disteigpairs_num,
+    DistEigvecsHdf5_Metadata *const metadata,
+    DistEigvecsHdf5_Programdata *const programdata);
+int DistEigvecsHdf5Reader_ReadDistEigvecsRange(
+    DistEigvecsHdf5Reader *const reader, const int spatial_proclat_pos[3],
+    unsigned int disteigpairs_idxs_min, unsigned int disteigpairs_idxs_num,
+    DistEigvecsHdf5_ComplexDouble *const disteigvecs);
+int DistEigvecsHdf5Reader_ReadDistEigvecs(DistEigvecsHdf5Reader *const reader,
+    const int spatial_proclat_pos[3],
+    DistEigvecsHdf5_ComplexDouble *const disteigvecs);
+int DistEigvecsHdf5Reader_CloseFile(DistEigvecsHdf5Reader *const reader);
+
+#endif /* DISTEIGVECSHDF5READER_H_ */
