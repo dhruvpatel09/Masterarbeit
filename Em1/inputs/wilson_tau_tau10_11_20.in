@@ -1,0 +1,21 @@
+[Run name]
+name    Em1p4
+output  Em1p4_wilson_mu0_tau10
+
+[Directories]
+log_dir     ./log
+cnfg_dir    ./cnfg
+dat_dir     ./dat
+
+[Lattice]
+L           48 24 24 24
+P           2 2 2 2
+
+[Configurations]
+first       11
+last        20
+step        1
+
+[Wilson loop]
+mu          0
+tau         10

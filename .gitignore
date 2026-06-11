@@ -47,3 +47,30 @@ laplace_static/qcd_active
 laplace_static/build/
 laplace_static/logs/
 laplace_static/backups/
+
+# Local dependencies / generated data
+extern/
+mental/
+temp/
+dist/
+.vscode/
+
+# Generated logs / runtime outputs
+slurm_logs/
+**/slurm_logs/
+**/log/
+*.err
+
+# Compiled executables produced in this project
+Codefiles/polya/polya
+Codefiles/polya/wilson_tau
+Em1/polya
+Em1/wilson_tau
+
+# Old/intermediate Wilson-tau analysis snapshots
+Em1/analysis_archive/
+Em1/analysis_wilson_tau/
+
+# Generated/old Wilson-tau batch submit helpers
+Em1/scripts/archive/
+Em1/slurm/
