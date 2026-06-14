@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
+#include <limits.h>
 #include <mpi.h>
 
 #include <qcd.h>
 #include <DistEigvecsHdf5Reader.h>
 
 #define NV 10
-#define RMAX 3
-#define TMAX 4
+#define DEFAULT_RMAX 3
+#define DEFAULT_TMAX 4
 
 static int site3_index(const int x, const int y, const int z, const int L[4]) {
     return (x * L[2] + y) * L[3] + z;
@@ -16,6 +18,41 @@ static int site3_index(const int x, const int y, const int z, const int L[4]) {
 
 static int site4_index(const int t, const int x, const int y, const int z, const int L[4]) {
     return ((t * L[1] + x) * L[2] + y) * L[3] + z;
+}
+
+static int read_env_int(
+    const char *name,
+    const int default_value,
+    const int min_value,
+    const int max_value
+) {
+    const char *text = getenv(name);
+
+    if (text == NULL || *text == '\0') {
+        return default_value;
+    }
+
+    errno = 0;
+    char *end = NULL;
+    const long value = strtol(text, &end, 10);
+
+    if (errno == ERANGE ||
+        end == text ||
+        *end != '\0' ||
+        value < min_value ||
+        value > max_value) {
+        fprintf(
+            stderr,
+            "ERROR: %s must be an integer in [%d,%d], got '%s'\n",
+            name,
+            min_value,
+            max_value,
+            text
+        );
+        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+    }
+
+    return (int)value;
 }
 
 static void read_evec_time(
@@ -182,11 +219,24 @@ int main(int argc, char **argv) {
         MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
     }
 
-    int nc = getenv("NCFG") ? atoi(getenv("NCFG")) : 1;
     const char *nbase = "Em1p4";
 
     int L[4] = {48, 24, 24, 24};
     int P[4] = {1, 1, 1, 1};
+
+    const int nc = read_env_int("NCFG", 1, 1, INT_MAX);
+    const int rmax = read_env_int(
+        "RMAX",
+        DEFAULT_RMAX,
+        0,
+        L[1] / 2
+    );
+    const int tmax = read_env_int(
+        "TMAX",
+        DEFAULT_TMAX,
+        1,
+        L[0] - 1
+    );
     double theta[3] = {0.0, 0.0, 0.0};
 
     qcd_geometry geo;
@@ -247,12 +297,19 @@ int main(int argc, char **argv) {
 
     if (myid == 0) {
         printf("\nRT spatial average scan: cfg=%d Nv=%d R/a=0..%d T/a=1..%d rho_i=1\n",
-               nc, NV, RMAX, TMAX);
+               nc, NV, rmax, tmax);
+        printf(
+            "META cfg=%d Nv=%d Rmin=0 Rmax=%d Tmin=1 Tmax=%d t0=0 rho=constant\n",
+            nc,
+            NV,
+            rmax,
+            tmax
+        );
         printf("# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]\n");
         fflush(stdout);
     }
 
-    for (int T = 1; T <= TMAX; T++) {
+    for (int T = 1; T <= tmax; T++) {
         snprintf(evec_t_file, sizeof(evec_t_file),
                  "/home/m2130292/Masterarbeit/mental/runs_Em1p4_Nv10_qcdnew_full/n%d/eigenvectors/Em1p4n%d_evec_t%d.h5",
                  nc, nc, T);
@@ -264,7 +321,7 @@ int main(int argc, char **argv) {
 
         read_evec_time(evec_t_file, nc, T, nbase, &geo, vT);
 
-        for (int R = 0; R <= RMAX; R++) {
+        for (int R = 0; R <= rmax; R++) {
             qcd_complex_16 Lsum = {0.0, 0.0};
             long nsrc = 0;
 

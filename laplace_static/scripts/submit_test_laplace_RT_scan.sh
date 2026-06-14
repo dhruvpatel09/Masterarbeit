@@ -21,11 +21,20 @@ export OPENBLAS_NUM_THREADS=1
 export MKL_THREADING_LAYER=sequential
 
 export NCFG="${NCFG:-${SLURM_ARRAY_TASK_ID:-1}}"
+export RMAX="${RMAX:-3}"
+export TMAX="${TMAX:-4}"
 
 echo "HOST=$(hostname)"
 echo "DATE=$(date)"
 echo "JOB_ID=${SLURM_JOB_ID:-none}"
 echo "ARRAY_TASK_ID=${SLURM_ARRAY_TASK_ID:-none}"
 echo "NCFG=${NCFG}"
+echo "RMAX=${RMAX}"
+echo "TMAX=${TMAX}"
 
-mpirun -x NCFG -np 1 ./build/test_laplace_RT_scan
+mpirun \
+  -x NCFG \
+  -x RMAX \
+  -x TMAX \
+  -np 1 \
+  ./build/test_laplace_RT_scan
