@@ -23,6 +23,10 @@ export MKL_THREADING_LAYER=sequential
 export NCFG="${NCFG:-${SLURM_ARRAY_TASK_ID:-1}}"
 export RMAX="${RMAX:-3}"
 export TMAX="${TMAX:-4}"
+export T0_MODE="${T0_MODE:-fixed}"
+export T0_FIXED="${T0_FIXED:-0}"
+export T0_START="${T0_START:-0}"
+export T0_STRIDE="${T0_STRIDE:-1}"
 
 echo "HOST=$(hostname)"
 echo "DATE=$(date)"
@@ -31,10 +35,18 @@ echo "ARRAY_TASK_ID=${SLURM_ARRAY_TASK_ID:-none}"
 echo "NCFG=${NCFG}"
 echo "RMAX=${RMAX}"
 echo "TMAX=${TMAX}"
+echo "T0_MODE=${T0_MODE}"
+echo "T0_FIXED=${T0_FIXED}"
+echo "T0_START=${T0_START}"
+echo "T0_STRIDE=${T0_STRIDE}"
 
 mpirun \
   -x NCFG \
   -x RMAX \
   -x TMAX \
+  -x T0_MODE \
+  -x T0_FIXED \
+  -x T0_START \
+  -x T0_STRIDE \
   -np 1 \
   ./build/test_laplace_RT_scan

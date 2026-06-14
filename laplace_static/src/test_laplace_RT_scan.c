@@ -55,6 +55,43 @@ static int read_env_int(
     return (int)value;
 }
 
+
+typedef enum {
+    T0_MODE_FIXED = 0,
+    T0_MODE_AVERAGE = 1
+} t0_mode_t;
+
+static t0_mode_t read_t0_mode(void) {
+    const char *text = getenv("T0_MODE");
+
+    if (text == NULL || *text == '\0' ||
+        strcmp(text, "fixed") == 0) {
+        return T0_MODE_FIXED;
+    }
+
+    if (strcmp(text, "average") == 0) {
+        return T0_MODE_AVERAGE;
+    }
+
+    fprintf(
+        stderr,
+        "ERROR: T0_MODE must be 'fixed' or 'average', got '%s'\n",
+        text
+    );
+    MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+
+    return T0_MODE_FIXED;
+}
+
+static const char *t0_mode_name(const t0_mode_t mode) {
+    return (
+        mode == T0_MODE_AVERAGE
+        ? "average"
+        : "fixed"
+    );
+}
+
+
 static void read_evec_time(
     const char *fname,
     const int nc,
@@ -151,11 +188,12 @@ static void read_evec_time(
 }
 
 static qcd_complex_16 tau_time_path(
-    const qcd_spinorComponent3d *v0,
-    const qcd_spinorComponent3d *vT,
+    const qcd_spinorComponent3d *v_src,
+    const qcd_spinorComponent3d *v_sink,
     const qcd_gaugeField *u,
     const int i,
     const int j,
+    const int t0,
     const int T,
     const int site3,
     const int x,
@@ -167,27 +205,41 @@ static qcd_complex_16 tau_time_path(
     qcd_complex_16 tmp[3];
 
     for (int a = 0; a < 3; a++) {
-        vec[a] = vT[j].D[site3][a];
+        vec[a] = v_sink[j].D[site3][a];
     }
 
     /*
-      Compute:
-        U_0(x,t=0) U_0(x,t=1) ... U_0(x,t=T-1) v_j(x,T)
+      Compute the forward temporal transporter
 
-      We apply links backwards to the vector:
-        vec <- U(T-1) vec
-        ...
-        vec <- U(0) vec
+        U_0(x,t0) U_0(x,t0+1) ... U_0(x,t0+T-1)
+        v_j(x,t0+T),
+
+      with periodic temporal wrapping.
+
+      The matrices are applied backwards to the sink vector.
     */
-    for (int tt = T - 1; tt >= 0; tt--) {
-        const int site4 = site4_index(tt, x, y, z, L);
+    for (int step = T - 1; step >= 0; step--) {
+        const int tt = (t0 + step) % L[0];
+        const int site4 = site4_index(
+            tt,
+            x,
+            y,
+            z,
+            L
+        );
 
         for (int a = 0; a < 3; a++) {
             tmp[a].re = 0.0;
             tmp[a].im = 0.0;
 
             for (int b = 0; b < 3; b++) {
-                tmp[a] = qcd_CADD(tmp[a], qcd_CMUL(u->D[site4][0][a][b], vec[b]));
+                tmp[a] = qcd_CADD(
+                    tmp[a],
+                    qcd_CMUL(
+                        u->D[site4][0][a][b],
+                        vec[b]
+                    )
+                );
             }
         }
 
@@ -197,26 +249,43 @@ static qcd_complex_16 tau_time_path(
     }
 
     qcd_complex_16 tau = {0.0, 0.0};
+
     for (int a = 0; a < 3; a++) {
-        tau = qcd_CADD(tau, qcd_CMUL(qcd_CONJ(v0[i].D[site3][a]), vec[a]));
+        tau = qcd_CADD(
+            tau,
+            qcd_CMUL(
+                qcd_CONJ(v_src[i].D[site3][a]),
+                vec[a]
+            )
+        );
     }
 
     return tau;
 }
+
 
 int main(int argc, char **argv) {
     MPI_Init(&argc, &argv);
 
     int myid = 0;
     int numprocs = 1;
+
     MPI_Comm_rank(MPI_COMM_WORLD, &myid);
     MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
 
     if (numprocs != 1) {
         if (myid == 0) {
-            fprintf(stderr, "ERROR: this test is intended for exactly 1 MPI rank.\n");
+            fprintf(
+                stderr,
+                "ERROR: this test is intended for exactly "
+                "1 MPI rank.\n"
+            );
         }
-        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
     }
 
     const char *nbase = "Em1p4";
@@ -224,154 +293,462 @@ int main(int argc, char **argv) {
     int L[4] = {48, 24, 24, 24};
     int P[4] = {1, 1, 1, 1};
 
-    const int nc = read_env_int("NCFG", 1, 1, INT_MAX);
+    const int nc = read_env_int(
+        "NCFG",
+        1,
+        1,
+        INT_MAX
+    );
+
     const int rmax = read_env_int(
         "RMAX",
         DEFAULT_RMAX,
         0,
         L[1] / 2
     );
+
     const int tmax = read_env_int(
         "TMAX",
         DEFAULT_TMAX,
         1,
         L[0] - 1
     );
+
+    const t0_mode_t t0_mode = read_t0_mode();
+
+    const int t0_fixed = read_env_int(
+        "T0_FIXED",
+        0,
+        0,
+        L[0] - 1
+    );
+
+    const int t0_start = read_env_int(
+        "T0_START",
+        0,
+        0,
+        L[0] - 1
+    );
+
+    const int t0_stride = read_env_int(
+        "T0_STRIDE",
+        1,
+        1,
+        L[0]
+    );
+
+    int t0_values[L[0]];
+    int nt0 = 0;
+
+    if (t0_mode == T0_MODE_FIXED) {
+        t0_values[nt0++] = t0_fixed;
+    } else {
+        for (
+            int t0 = t0_start;
+            t0 < L[0];
+            t0 += t0_stride
+        ) {
+            t0_values[nt0++] = t0;
+        }
+    }
+
+    if (nt0 < 1) {
+        fprintf(
+            stderr,
+            "ERROR: no temporal source times selected\n"
+        );
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
+    }
+
+    unsigned char needed_time[L[0]];
+    unsigned char initialized_time[L[0]];
+
+    memset(
+        needed_time,
+        0,
+        sizeof(needed_time)
+    );
+
+    memset(
+        initialized_time,
+        0,
+        sizeof(initialized_time)
+    );
+
+    for (int source = 0; source < nt0; source++) {
+        const int t0 = t0_values[source];
+
+        needed_time[t0] = 1;
+
+        for (int T = 1; T <= tmax; T++) {
+            const int t1 = (t0 + T) % L[0];
+            needed_time[t1] = 1;
+        }
+    }
+
+    int n_needed_times = 0;
+
+    for (int t = 0; t < L[0]; t++) {
+        if (needed_time[t]) {
+            n_needed_times++;
+        }
+    }
+
     double theta[3] = {0.0, 0.0, 0.0};
 
     qcd_geometry geo;
     qcd_gaugeField u;
-    qcd_spinorComponent3d v0[NV];
-    qcd_spinorComponent3d vT[NV];
 
-    if (qcd_initGeometry(&geo, L, P, theta, myid, numprocs)) {
-        fprintf(stderr, "ERROR: qcd_initGeometry failed\n");
-        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+    if (
+        qcd_initGeometry(
+            &geo,
+            L,
+            P,
+            theta,
+            myid,
+            numprocs
+        )
+    ) {
+        fprintf(
+            stderr,
+            "ERROR: qcd_initGeometry failed\n"
+        );
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
     }
 
     if (qcd_initEO(&geo)) {
-        fprintf(stderr, "ERROR: qcd_initEO failed\n");
-        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+        fprintf(
+            stderr,
+            "ERROR: qcd_initEO failed\n"
+        );
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
     }
 
     if (qcd_initGaugeField(&u, &geo)) {
-        fprintf(stderr, "ERROR: qcd_initGaugeField failed\n");
-        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+        fprintf(
+            stderr,
+            "ERROR: qcd_initGaugeField failed\n"
+        );
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
     }
 
-    for (int i = 0; i < NV; i++) {
-        if (qcd_initSpinorComponent3d(&v0[i], &geo) ||
-            qcd_initSpinorComponent3d(&vT[i], &geo)) {
-            fprintf(stderr, "ERROR: qcd_initSpinorComponent3d failed\n");
-            MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
-        }
+    qcd_spinorComponent3d *v_by_time = calloc(
+        (size_t)L[0] * NV,
+        sizeof(*v_by_time)
+    );
+
+    if (v_by_time == NULL) {
+        fprintf(
+            stderr,
+            "ERROR: allocation of temporal eigenvectors failed\n"
+        );
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
     }
 
     char gauge_file[1024];
-    char evec_t0_file[1024];
-    char evec_t_file[1024];
+    char evec_file[1024];
 
-    snprintf(gauge_file, sizeof(gauge_file),
-             "/home/m2130292/Masterarbeit/Em1/cnfg/Em1p4n%d", nc);
-
-    snprintf(evec_t0_file, sizeof(evec_t0_file),
-             "/home/m2130292/Masterarbeit/mental/runs_Em1p4_Nv10_qcdnew_full/n%d/eigenvectors/Em1p4n%d_evec_t0.h5",
-             nc, nc);
-
-    if (myid == 0) {
-        printf("Reading gauge field: %s\n", gauge_file);
-        fflush(stdout);
-    }
-
-    if (qcd_getGaugeField(gauge_file, qcd_GF_OPENQCD, &u)) {
-        fprintf(stderr, "ERROR: qcd_getGaugeField failed\n");
-        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
-    }
+    snprintf(
+        gauge_file,
+        sizeof(gauge_file),
+        "/home/m2130292/Masterarbeit/Em1/cnfg/Em1p4n%d",
+        nc
+    );
 
     if (myid == 0) {
-        printf("Reading source-time eigenvectors: %s\n", evec_t0_file);
-        fflush(stdout);
-    }
-
-    read_evec_time(evec_t0_file, nc, 0, nbase, &geo, v0);
-
-    if (myid == 0) {
-        printf("\nRT spatial average scan: cfg=%d Nv=%d R/a=0..%d T/a=1..%d rho_i=1\n",
-               nc, NV, rmax, tmax);
         printf(
-            "META cfg=%d Nv=%d Rmin=0 Rmax=%d Tmin=1 Tmax=%d t0=0 rho=constant\n",
+            "Reading gauge field: %s\n",
+            gauge_file
+        );
+        fflush(stdout);
+    }
+
+    if (
+        qcd_getGaugeField(
+            gauge_file,
+            qcd_GF_OPENQCD,
+            &u
+        )
+    ) {
+        fprintf(
+            stderr,
+            "ERROR: qcd_getGaugeField failed\n"
+        );
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
+    }
+
+    for (int t = 0; t < L[0]; t++) {
+        if (!needed_time[t]) {
+            continue;
+        }
+
+        qcd_spinorComponent3d *v_time = (
+            &v_by_time[(size_t)t * NV]
+        );
+
+        for (int i = 0; i < NV; i++) {
+            if (
+                qcd_initSpinorComponent3d(
+                    &v_time[i],
+                    &geo
+                )
+            ) {
+                fprintf(
+                    stderr,
+                    "ERROR: qcd_initSpinorComponent3d "
+                    "failed at t=%d i=%d\n",
+                    t,
+                    i
+                );
+                MPI_Abort(
+                    MPI_COMM_WORLD,
+                    EXIT_FAILURE
+                );
+            }
+        }
+
+        initialized_time[t] = 1;
+
+        snprintf(
+            evec_file,
+            sizeof(evec_file),
+            "/home/m2130292/Masterarbeit/mental/"
+            "runs_Em1p4_Nv10_qcdnew_full/n%d/"
+            "eigenvectors/Em1p4n%d_evec_t%d.h5",
+            nc,
+            nc,
+            t
+        );
+
+        if (myid == 0) {
+            printf(
+                "Reading temporal eigenvectors t=%d: %s\n",
+                t,
+                evec_file
+            );
+            fflush(stdout);
+        }
+
+        read_evec_time(
+            evec_file,
+            nc,
+            t,
+            nbase,
+            &geo,
+            v_time
+        );
+    }
+
+    if (myid == 0) {
+        printf(
+            "\nRT source-average scan: "
+            "cfg=%d Nv=%d R/a=0..%d T/a=1..%d "
+            "T0Mode=%s Nt0=%d rho_i=1\n",
             nc,
             NV,
             rmax,
-            tmax
+            tmax,
+            t0_mode_name(t0_mode),
+            nt0
         );
-        printf("# DATA cfg T R Nsrc Re[avg L(R,T)] Im[avg L(R,T)]\n");
+
+        printf(
+            "META cfg=%d Nv=%d Rmin=0 Rmax=%d "
+            "Tmin=1 Tmax=%d T0Mode=%s Nt0=%d "
+            "T0Fixed=%d T0Start=%d T0Stride=%d "
+            "NeededTimes=%d temporal_bc=periodic "
+            "rho=constant\n",
+            nc,
+            NV,
+            rmax,
+            tmax,
+            t0_mode_name(t0_mode),
+            nt0,
+            t0_fixed,
+            t0_start,
+            t0_stride,
+            n_needed_times
+        );
+
+        printf("T0_LIST");
+
+        for (int source = 0; source < nt0; source++) {
+            printf(" %d", t0_values[source]);
+        }
+
+        printf("\n");
+
+        printf(
+            "# DATA cfg T R Nsrc "
+            "Re[avg L(R,T)] Im[avg L(R,T)]\n"
+        );
+
         fflush(stdout);
     }
 
     for (int T = 1; T <= tmax; T++) {
-        snprintf(evec_t_file, sizeof(evec_t_file),
-                 "/home/m2130292/Masterarbeit/mental/runs_Em1p4_Nv10_qcdnew_full/n%d/eigenvectors/Em1p4n%d_evec_t%d.h5",
-                 nc, nc, T);
-
-        if (myid == 0) {
-            printf("Reading sink-time eigenvectors T=%d: %s\n", T, evec_t_file);
-            fflush(stdout);
-        }
-
-        read_evec_time(evec_t_file, nc, T, nbase, &geo, vT);
-
         for (int R = 0; R <= rmax; R++) {
             qcd_complex_16 Lsum = {0.0, 0.0};
             long nsrc = 0;
 
-            for (int xx = 0; xx < L[1]; xx++) {
-                for (int yy = 0; yy < L[2]; yy++) {
-                    for (int zz = 0; zz < L[3]; zz++) {
-                        const int yx = (xx + R) % L[1];
+            for (
+                int source = 0;
+                source < nt0;
+                source++
+            ) {
+                const int t0 = t0_values[source];
+                const int t1 = (t0 + T) % L[0];
 
-                        const int x_site3 = site3_index(xx, yy, zz, L);
-                        const int y_site3 = site3_index(yx, yy, zz, L);
+                const qcd_spinorComponent3d *v_src = (
+                    &v_by_time[(size_t)t0 * NV]
+                );
 
-                        qcd_complex_16 Lxy = {0.0, 0.0};
+                const qcd_spinorComponent3d *v_sink = (
+                    &v_by_time[(size_t)t1 * NV]
+                );
 
-                        for (int i = 0; i < NV; i++) {
-                            for (int j = 0; j < NV; j++) {
-                                qcd_complex_16 tau_y =
-                                    tau_time_path(v0, vT, &u, i, j, T, y_site3, yx, yy, zz, L);
+                for (int xx = 0; xx < L[1]; xx++) {
+                    for (int yy = 0; yy < L[2]; yy++) {
+                        for (int zz = 0; zz < L[3]; zz++) {
+                            const int yx = (
+                                xx + R
+                            ) % L[1];
 
-                                qcd_complex_16 tau_x =
-                                    tau_time_path(v0, vT, &u, i, j, T, x_site3, xx, yy, zz, L);
+                            const int x_site3 = site3_index(
+                                xx,
+                                yy,
+                                zz,
+                                L
+                            );
 
-                                Lxy = qcd_CADD(Lxy, qcd_CMUL(tau_y, qcd_CONJ(tau_x)));
+                            const int y_site3 = site3_index(
+                                yx,
+                                yy,
+                                zz,
+                                L
+                            );
+
+                            qcd_complex_16 Lxy = {
+                                0.0,
+                                0.0
+                            };
+
+                            for (int i = 0; i < NV; i++) {
+                                for (int j = 0; j < NV; j++) {
+                                    const qcd_complex_16 tau_y =
+                                        tau_time_path(
+                                            v_src,
+                                            v_sink,
+                                            &u,
+                                            i,
+                                            j,
+                                            t0,
+                                            T,
+                                            y_site3,
+                                            yx,
+                                            yy,
+                                            zz,
+                                            L
+                                        );
+
+                                    const qcd_complex_16 tau_x =
+                                        tau_time_path(
+                                            v_src,
+                                            v_sink,
+                                            &u,
+                                            i,
+                                            j,
+                                            t0,
+                                            T,
+                                            x_site3,
+                                            xx,
+                                            yy,
+                                            zz,
+                                            L
+                                        );
+
+                                    Lxy = qcd_CADD(
+                                        Lxy,
+                                        qcd_CMUL(
+                                            tau_y,
+                                            qcd_CONJ(tau_x)
+                                        )
+                                    );
+                                }
                             }
-                        }
 
-                        Lsum = qcd_CADD(Lsum, Lxy);
-                        nsrc++;
+                            Lsum = qcd_CADD(
+                                Lsum,
+                                Lxy
+                            );
+
+                            nsrc++;
+                        }
                     }
                 }
             }
 
-            qcd_complex_16 Lavg = {Lsum.re / (double)nsrc, Lsum.im / (double)nsrc};
+            const qcd_complex_16 Lavg = {
+                Lsum.re / (double)nsrc,
+                Lsum.im / (double)nsrc
+            };
 
             if (myid == 0) {
-                printf("DATA %d %d %d %ld %+.16e %+.16e\n",
-                       nc, T, R, nsrc, Lavg.re, Lavg.im);
+                printf(
+                    "DATA %d %d %d %ld %+.16e %+.16e\n",
+                    nc,
+                    T,
+                    R,
+                    nsrc,
+                    Lavg.re,
+                    Lavg.im
+                );
                 fflush(stdout);
             }
         }
     }
 
-    for (int i = 0; i < NV; i++) {
-        qcd_destroySpinorComponent3d(&v0[i]);
-        qcd_destroySpinorComponent3d(&vT[i]);
+    for (int t = 0; t < L[0]; t++) {
+        if (!initialized_time[t]) {
+            continue;
+        }
+
+        qcd_spinorComponent3d *v_time = (
+            &v_by_time[(size_t)t * NV]
+        );
+
+        for (int i = 0; i < NV; i++) {
+            qcd_destroySpinorComponent3d(
+                &v_time[i]
+            );
+        }
     }
+
+    free(v_by_time);
 
     qcd_destroyGaugeField(&u);
     qcd_destroyEO(&geo);
     qcd_destroyGeometry(&geo);
 
     MPI_Finalize();
+
     return 0;
 }
