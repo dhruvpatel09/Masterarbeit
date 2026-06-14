@@ -1,0 +1,46 @@
+Loaded 1600 rows
+Configurations: 100
+Configuration range: 1..100
+
+Re L(R,T) Gamma-method summary:
+ T  R  Ncfg      mean_Re    err_naive    err_gamma  dd_err_gamma   tauint  dtauint  Wopt       Neff window_note
+ 1  0   100 1.770838e-07 1.216337e-10 1.285280e-10  3.014250e-11 0.563926 0.250578     5  88.664040 auto_window
+ 1  1   100 1.026849e-07 9.164620e-11 1.032825e-10  2.422190e-11 0.641445 0.282776     5  77.948989 auto_window
+ 1  2   100 7.524935e-08 1.115111e-10 1.503023e-10  3.524901e-11 0.917550 0.392833     5  54.492966 auto_window
+ 1  3   100 5.886079e-08 1.407129e-10 1.906787e-10  4.471812e-11 0.927409 0.396627     5  53.913642 auto_window
+ 2  0   100 1.755036e-07 1.344298e-10 1.377075e-10  3.229528e-11 0.529980 0.236302     5  94.343269 auto_window
+ 2  1   100 6.251071e-08 7.619757e-11 1.013841e-10  2.377668e-11 0.894113 0.383777     5  55.921354 auto_window
+ 2  2   100 3.645866e-08 7.422004e-11 1.109752e-10  2.602600e-11 1.129131 0.472126     5  44.281832 auto_window
+ 2  3   100 2.471903e-08 8.711143e-11 1.088700e-10  2.553228e-11 0.788862 0.342448     5  63.382425 auto_window
+ 3  0   100 1.746978e-07 1.292429e-10 9.156949e-11  2.147495e-11 0.253526 0.116141     5 197.218212 auto_window
+ 3  1   100 3.839852e-08 5.219466e-11 3.670989e-11  8.609233e-12 0.249833 0.114489     5 200.134089 auto_window
+ 3  2   100 1.788650e-08 5.551285e-11 3.333077e-11  7.816760e-12 0.182070 0.083973     5 274.619487 auto_window
+ 3  3   100 1.057134e-08 5.886978e-11 4.347228e-11  1.019515e-11 0.275407 0.125902     5 181.549559 auto_window
+ 4  0   100 1.745059e-07 1.072298e-10 7.873334e-11  1.846461e-11 0.272284 0.124511     5 183.632027 auto_window
+ 4  1   100 2.376055e-08 4.554525e-11 4.129735e-11  9.685087e-12 0.415234 0.187266     5 120.414018 auto_window
+ 4  2   100 8.910498e-09 4.872109e-11 2.489159e-11  5.837594e-12 0.131827 0.061087     5 379.283616 auto_window
+ 4  3   100 4.622258e-09 4.513928e-11 3.889370e-11  9.121381e-12 0.374959 0.169771     5 133.347834 auto_window
+
+Veff(R,T) Gamma-method summary:
+ T  R  Ncfg     Veff  err_jackknife  err_gamma  dd_err_gamma   tauint  dtauint  Wopt       Neff window_note  ratio_gamma_over_jackknife
+ 1  0   100 0.008964       0.000912   0.001023      0.000240 0.635294 0.280242     5  78.703659 auto_window                    1.121563
+ 1  1   100 0.496327       0.001176   0.001354      0.000318 0.669852 0.294435     5  74.643352 auto_window                    1.151649
+ 1  2   100 0.724628       0.001937   0.002079      0.000487 0.581665 0.257995     5  85.960137 auto_window                    1.073152
+ 1  3   100 0.867602       0.003404   0.003395      0.000796 0.502526 0.224680     5  99.497321 auto_window                    0.997450
+ 2  0   100 0.004602       0.000784   0.000746      0.000175 0.457529 0.205480     5 109.282741 auto_window                    0.951788
+ 2  1   100 0.487319       0.001317   0.001243      0.000292 0.449638 0.202094     5 111.200593 auto_window                    0.943556
+ 2  2   100 0.712133       0.002850   0.001405      0.000329 0.122683 0.056898     5 407.554889 auto_window                    0.492843
+ 2  3   100 0.849426       0.004896   0.004170      0.000978 0.366516 0.166084     5 136.419685 auto_window                    0.851784
+ 3  0   100 0.001099       0.000974   0.000475      0.000112 0.120350 0.055828     5 415.453373 auto_window                    0.488154
+ 3  1   100 0.479992       0.001983   0.002056      0.000482 0.542952 0.241771     5  92.089089 auto_window                    1.036841
+ 3  2   100 0.696816       0.005147   0.002751      0.000645 0.144333 0.066804     5 346.420655 auto_window                    0.534572
+ 3  3   100 0.827264       0.009190   0.005001      0.001173 0.149606 0.069211     5 334.210828 auto_window                    0.544162
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/spatial_avg_RT_R0-3_T1-4_n1-100_gamma.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_Veff_R0-3_T1-3_n1-100_gamma.csv
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_vs_T_gamma.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_gamma_over_jackknife.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_ReL_tauint_gamma.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_tauint_gamma.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_rho_gamma.png
