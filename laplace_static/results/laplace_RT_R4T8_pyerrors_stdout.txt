@@ -1,0 +1,51 @@
+pyerrors Veff status counts:
+status
+ok    35
+
+Physical Veff results:
+ T  R     Veff  err_pyerrors  relative_err_percent  err_Veff_jackknife  ratio_pyerrors_over_jackknife status status_jackknife
+ 1  1 0.496327      0.001453              0.292827            0.001176                       1.236149     ok               ok
+ 1  2 0.724628      0.002192              0.302490            0.001937                       1.131677     ok               ok
+ 1  3 0.867602      0.003470              0.399956            0.003404                       1.019510     ok               ok
+ 1  4 0.974410      0.004849              0.497585            0.004756                       1.019511     ok               ok
+ 2  1 0.487319      0.001330              0.272997            0.001317                       1.009810     ok               ok
+ 2  2 0.712133      0.002878              0.404141            0.002850                       1.009765     ok               ok
+ 2  3 0.849426      0.004991              0.587560            0.004896                       1.019442     ok               ok
+ 2  4 0.953943      0.008088              0.847815            0.007598                       1.064426     ok               ok
+ 3  1 0.479992      0.002002              0.417115            0.001983                       1.009799     ok               ok
+ 3  2 0.696816      0.005197              0.745853            0.005147                       1.009780     ok               ok
+ 3  3 0.827264      0.009279              1.121630            0.009190                       1.009618     ok               ok
+ 3  4 0.920558      0.013459              1.462100            0.013201                       1.019588     ok               ok
+ 4  1 0.483635      0.002926              0.605082            0.002766                       1.058171     ok               ok
+ 4  2 0.696374      0.008676              1.245842            0.008593                       1.009645     ok               ok
+ 4  3 0.853139      0.015842              1.856962            0.015688                       1.009862     ok               ok
+ 4  4 0.943377      0.033396              3.540027            0.029551                       1.130104     ok               ok
+ 5  1 0.482897      0.003548              0.734807            0.003514                       1.009790     ok               ok
+ 5  2 0.700531      0.016923              2.415732            0.016604                       1.019216     ok               ok
+ 5  3 0.832847      0.041671              5.003442            0.039732                       1.048794     ok               ok
+ 5  4 0.899512      0.071105              7.904791            0.070445                       1.009361     ok               ok
+ 6  1 0.475240      0.008689              1.828385            0.006785                       1.280693     ok               ok
+ 6  2 0.757242      0.037320              4.928475            0.028535                       1.307862     ok               ok
+ 6  3 0.719346      0.093406             12.984896            0.076979                       1.213398     ok               ok
+ 6  4 0.776672      0.149540             19.253952            0.148052                       1.010051     ok               ok
+ 7  1 0.468898      0.010490              2.237229            0.010194                       1.029075     ok               ok
+ 7  2 0.628438      0.062270              9.908682            0.061684                       1.009503     ok               ok
+ 7  3 1.508067      0.358314             23.759845            0.348003                       1.029632     ok               ok
+ 7  4 1.153450      0.537134             46.567623            0.533213                       1.007354     ok               ok
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/spatial_avg_RT_R0-4_T1-8_n1-100_pyerrors.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_Veff_R0-4_T1-7_n1-100_pyerrors.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_Veff_R0-4_T1-7_n1-100_error_comparison.csv
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_ReL_vs_T_pyerrors_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_methods_R1_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_methods_R2_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_methods_R3_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_methods_R4_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_pyerrors_zoom_R1_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_pyerrors_zoom_R2_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_pyerrors_zoom_R3_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_pyerrors_zoom_R4_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_relative_error_pyerrors_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_vs_R_pyerrors_R4T8.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_vs_T_pyerrors_R4T8.png
