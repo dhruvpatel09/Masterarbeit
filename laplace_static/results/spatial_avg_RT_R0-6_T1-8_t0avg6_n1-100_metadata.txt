@@ -1,0 +1,13 @@
+Observable: Laplace static correlator
+Configurations: 1..100
+R/a: 0..6
+T/a: 1..8
+Temporal-source mode: average
+Temporal source times: 0 8 16 24 32 40
+Number of temporal sources: 6
+Temporal boundary condition: periodic
+Spatial sources per temporal source: 13824
+Total Nsrc per DATA row: 82944
+Nv: 10
+rho_i: constant 1
+Slurm array job: 153451
