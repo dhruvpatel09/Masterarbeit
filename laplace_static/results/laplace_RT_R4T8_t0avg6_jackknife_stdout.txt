@@ -1,0 +1,12 @@
+Input rows: 4000
+Configurations: 100
+L(R,T) rows: 40
+Veff rows: 35
+
+Veff status counts:
+status
+ok    35
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/spatial_avg_RT_R0-4_T1-8_t0avg6_n1-100_jackknife.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_Veff_R0-4_T1-7_t0avg6_n1-100_jackknife.csv

@@ -1,0 +1,13 @@
+Paired T/a = 3-5 plateau comparison:
+ R fit_window    V_fixed    err_fixed    p_fixed   V_t0avg6    err_t0avg6   p_t0avg6       delta_V  err_delta_paired     z_delta  error_reduction_factor  corr_fixed_t0avg6
+ 1        3-5 0.48155171 0.0012655474 0.59323577 0.48049378 0.00050620013 0.85026559 -0.0010579359      0.0011557743 -0.91534814               2.5000929         0.40744448
+ 2        3-5 0.69689449 0.0039978105 0.97475492 0.70226072  0.0013934996 0.18362563  0.0053662279      0.0037260623   1.4401874               2.8688996         0.36266627
+ 3        3-5 0.83422349 0.0073392716 0.37835059 0.83650611  0.0029189147 0.22445994  0.0022826264       0.006571712  0.34734121               2.5143837         0.44806595
+ 4        3-5 0.92433243  0.011325811 0.77678464  0.9381154  0.0048879118 0.74737154   0.013782966       0.010293191   1.3390373               2.3171063         0.41741573
+
+Global correlated consistency test: chi2=5.45304642, dof=4, p=0.24388767
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_fixed_vs_t0avg6_T3-5_paired.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_fixed_vs_t0avg6_T3-5_paired_summary.txt
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_fixed_vs_t0avg6_T3-5_paired.png
