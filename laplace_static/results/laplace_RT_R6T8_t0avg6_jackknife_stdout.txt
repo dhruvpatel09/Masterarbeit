@@ -1,0 +1,17 @@
+Input rows: 5600
+Configurations: 100
+L(R,T) rows: 56
+Veff rows: 49
+
+Veff status counts:
+status
+ok                          48
+nonpositive_central_mean     1
+
+Non-standard Veff rows:
+ T  R    mean_Re_T   mean_Re_Tp1  n_valid_jackknife                   status
+ 7  6 4.042254e-11 -9.669723e-12                  0 nonpositive_central_mean
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/spatial_avg_RT_R0-6_T1-8_t0avg6_n1-100_jackknife.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_Veff_R0-6_T1-7_t0avg6_n1-100_jackknife.csv
