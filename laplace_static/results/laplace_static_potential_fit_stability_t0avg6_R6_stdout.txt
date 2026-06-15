@@ -1,0 +1,42 @@
+Correlated potential-fit summary:
+  model fit_label  Rmin  Rmax  n_points  n_parameters  covariance_rank  covariance_condition  normal_condition      chi2  dof  chi2_per_dof     p_value         V0       err_V0       sigma    err_sigma       alpha    err_alpha  a_sqrt_sigma  err_a_sqrt_sigma status
+cornell      R1-6     1     6         6             3                6             524.35363         1412.4444 3.3274507    3     1.1091502  0.34384025 0.66457957 0.0082243104 0.086459229 0.0023721373  0.27052203 0.0060438469     0.2940395      0.0040348486     ok
+cornell      R1-5     1     5         5             3                5             249.87653         1561.4879 3.1115394    2     1.5557697   0.2110269 0.66330922 0.0086668061  0.08685856 0.0025230146  0.26966745   0.00631748    0.29471776      0.0042827223     ok
+cornell      R1-4     1     4         4             3                4             101.67655          2323.446 2.5446204    1     2.5446204   0.1106705 0.66789567  0.010593323 0.085506932 0.0030964666  0.27289232 0.0076324916    0.29241568      0.0052962294     ok
+cornell      R2-6     2     6         5             3                5             77.681743          7835.895 2.7261919    2     1.3630959   0.2558674 0.68593093    0.0287376  0.08310723 0.0049309553  0.30032408  0.038906282    0.28828325      0.0085535218     ok
+cornell      R2-5     2     5         4             3                4             36.963582         13483.152 2.7257548    1     2.7257548 0.098741432 0.68645919  0.038265984 0.083012829 0.0066859657  0.30100873  0.050853587    0.28811947       0.011598071     ok
+cornell      R3-6     3     6         4             3                4             17.976749         69127.645 1.3387432    1     1.3387432  0.24725574 0.57604656   0.09761438 0.096281152  0.012222995 0.085188195   0.18674146    0.31029204       0.019693809     ok
+ linear      R3-6     3     6         4             2                4             17.976749         144.20254 1.5468457    2    0.77342284  0.46143096 0.53171854 0.0092862403  0.10170873 0.0028005992         NaN          NaN    0.31891807      0.0043905345     ok
+ linear      R3-5     3     5         3             2                3             8.4441093         208.68222 0.3743623    1     0.3743623  0.54063599 0.52496056  0.011188659  0.10374813 0.0033750029         NaN          NaN    0.32209956      0.0052391721     ok
+ linear      R4-6     4     6         3             2                3             6.8391764         415.65055 1.5112687    1     1.5112687  0.21894559  0.5352266  0.020788098  0.10098071 0.0047687428         NaN          NaN    0.31777463      0.0075025773     ok
+
+Main Cornell R/a = 1..6 fit:
+model                      cornell
+fit_label                     R1-6
+Rmin                             1
+Rmax                             6
+n_points                         6
+n_parameters                     3
+covariance_rank                  6
+covariance_condition    524.353628
+normal_condition        1412.44441
+chi2                      3.327451
+dof                              3
+chi2_per_dof               1.10915
+p_value                    0.34384
+V0                         0.66458
+err_V0                    0.008224
+sigma                     0.086459
+err_sigma                 0.002372
+alpha                     0.270522
+err_alpha                 0.006044
+a_sqrt_sigma               0.29404
+err_a_sqrt_sigma          0.004035
+status                          ok
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_fit_stability_t0avg6_R6.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_fit_parameters_t0avg6_R6_jackknife.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_cornell_R1-6_t0avg6_curve.csv
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_cornell_R1-6_t0avg6.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_fit_stability_t0avg6_R6.png
