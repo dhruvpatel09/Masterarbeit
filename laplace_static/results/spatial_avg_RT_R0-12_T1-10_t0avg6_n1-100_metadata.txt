@@ -1,0 +1,15 @@
+Dataset: Laplace static correlator production, extended half-lattice scan
+JobID: 153670
+Source logs: logs/laplace_t0avg6_R12T10_prod_153670_<cfg>.out
+Configurations: 1..100
+Nv: 10
+R range: 0..12
+T range: 1..10
+Temporal source mode: average
+Temporal sources: 0 8 16 24 32 40
+Number of temporal sources: 6
+Nsrc per row: 82944
+Temporal boundary condition: periodic
+rho profile: constant
+Expected rows: 13000
+Columns: cfg,T,R,Nsrc,Re,Im
