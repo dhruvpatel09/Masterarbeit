@@ -1,0 +1,74 @@
+Extended R12T10 diagnostic summary
+Primary errors: pyerrors/Gamma method
+Gamma-method S parameter: 2.0
+
+Veff status counts:
+status
+ok                          95
+nonpositive_central_mean    22
+
+Reliability counts:
+reliability
+good               58
+diagnostic_only    27
+invalid            22
+marginal           10
+
+Jackknife cross-check status counts:
+jackknife_status
+ok                           92
+nonpositive_central_mean     22
+invalid_jackknife_samples     3
+
+Large-R Veff table:
+ R  T      Veff  err_pyerrors  relative_err_percent  err_jackknife                   status          jackknife_status     reliability
+ 7  2   1.22078    0.00836638              0.685332      0.0082847                       ok                        ok            good
+ 7  3   1.21865     0.0181594               1.49012      0.0178108                       ok                        ok            good
+ 7  4   1.27712     0.0782019               6.12328      0.0623901                       ok                        ok            good
+ 7  5   1.08295      0.238087                21.985       0.182905                       ok                        ok        marginal
+ 7  6    1.3322      0.728224               54.6632       0.742477                       ok                        ok diagnostic_only
+ 7  7  0.985704       1.72797               175.304        1.76222                       ok                        ok diagnostic_only
+ 7  8 -0.655153       1.64835               251.598        1.60398                       ok                        ok diagnostic_only
+ 8  2   1.30411     0.0119675              0.917673      0.0118493                       ok                        ok            good
+ 8  3   1.28452     0.0308371               2.40067      0.0291835                       ok                        ok            good
+ 8  4   1.55337      0.146829                9.4523       0.129168                       ok                        ok            good
+ 8  5   1.10351      0.350577               31.7692       0.348436                       ok                        ok diagnostic_only
+ 8  6       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+ 8  7       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+ 8  8  0.325736       2.23438               685.948        2.34292                       ok                        ok diagnostic_only
+ 9  2   1.39007     0.0175808               1.26475      0.0174142                       ok                        ok            good
+ 9  3   1.40713     0.0558275               3.96747      0.0466263                       ok                        ok            good
+ 9  4    1.5651      0.211034               13.4837       0.179601                       ok                        ok        marginal
+ 9  5   1.73535       1.07494               61.9436        1.11395                       ok                        ok diagnostic_only
+ 9  6       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+ 9  7       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+ 9  8   2.30663       3.96141                171.74            NaN                       ok invalid_jackknife_samples diagnostic_only
+10  2   1.47711     0.0254811               1.72506      0.0252445                       ok                        ok            good
+10  3    1.5392     0.0741936               4.82026      0.0654361                       ok                        ok            good
+10  4   1.80826      0.360413               19.9315       0.356981                       ok                        ok        marginal
+10  5   1.97354       2.44543               123.911        2.99217                       ok                        ok diagnostic_only
+10  6       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+10  7       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+10  8       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+11  2   1.52011     0.0374633                2.4645      0.0370907                       ok                        ok            good
+11  3   1.65426      0.132387               8.00279       0.114018                       ok                        ok            good
+11  4   2.17727      0.851377                39.103       0.841297                       ok                        ok diagnostic_only
+11  5  0.159814       1.27332               796.754         1.2599                       ok                        ok diagnostic_only
+11  6       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+11  7       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+11  8       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+12  2   1.54305     0.0465271               3.01527      0.0460696                       ok                        ok            good
+12  3   2.01937      0.215174               10.6555       0.208983                       ok                        ok        marginal
+12  4       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+12  5       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+12  6       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+12  7       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+12  8       NaN           NaN                   NaN            NaN nonpositive_central_mean  nonpositive_central_mean         invalid
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_extended_R0-12_T1-10_t0avg6_n1-100_status.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_Veff_R0-12_T1-9_t0avg6_n1-100_pyerrors.csv
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_vs_T_pyerrors_t0avg6_R12T10.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_vs_R_selected_T_pyerrors_t0avg6_R12T10.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_relative_error_pyerrors_t0avg6_R12T10.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_nonpositive_counts_t0avg6_R12T10.png
