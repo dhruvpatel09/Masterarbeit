@@ -1,0 +1,7 @@
+R,chosen_T,Veff,err_pyerrors,relative_err_percent,reliability,selection_rule
+7,5,1.0829530835995778,0.2380868306022102,21.984962618218365,marginal,"latest T with reliability in {good,marginal}"
+8,4,1.5533736825779445,0.1468294790922487,9.452296040484846,good,"latest T with reliability in {good,marginal}"
+9,4,1.5651008636594692,0.21103361924008,13.483707289423377,marginal,"latest T with reliability in {good,marginal}"
+10,4,1.8082603070657344,0.3604128716135513,19.931470607702146,marginal,"latest T with reliability in {good,marginal}"
+11,3,1.6542587277012082,0.1323869289666472,8.002794650545072,good,"latest T with reliability in {good,marginal}"
+12,3,2.0193682984388346,0.2151743291710894,10.655526747519993,marginal,"latest T with reliability in {good,marginal}"

@@ -1,0 +1,7 @@
+R,T,Veff,err_pyerrors,relative_err_percent,reliability,selection_rule
+7,3,1.2186490359660065,0.018159388355437,1.4901245411516146,good,"common T=3 with reliability in {good,marginal}"
+8,3,1.2845218183907403,0.0308371009752454,2.4006677452842684,good,"common T=3 with reliability in {good,marginal}"
+9,3,1.4071318758073232,0.0558275476648715,3.967470897696866,good,"common T=3 with reliability in {good,marginal}"
+10,3,1.539201691493551,0.0741935600333515,4.820262376489364,good,"common T=3 with reliability in {good,marginal}"
+11,3,1.6542587277012082,0.1323869289666472,8.002794650545072,good,"common T=3 with reliability in {good,marginal}"
+12,3,2.0193682984388346,0.2151743291710894,10.655526747519993,marginal,"common T=3 with reliability in {good,marginal}"

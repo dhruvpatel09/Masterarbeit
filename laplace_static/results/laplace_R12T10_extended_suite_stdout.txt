@@ -1,0 +1,25 @@
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/laplace_extended_summary_t0avg6_R12T10.csv
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_diagnostic_points_R7-12_t0avg6.csv
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_reliability_map_t0avg6_R12T10.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_relative_error_heatmap_t0avg6_R12T10.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_nonpositive_fraction_heatmap_t0avg6_R12T10.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/laplace_R6_vs_R12T10_overlap_check_t0avg6.csv
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_R6_vs_R12T10_overlap_check_t0avg6.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_Veff_plateau_candidates_t0avg6_R1-12.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_early_time_T2_T3_R1-12_t0avg6.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_plateau_window_comparison_R7_R8_t0avg6.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_R1-6_fit_plus_R7-12_diagnostic_t0avg6.png
+
+Extended diagnostic suite complete
+
+Diagnostic candidate points R/a=7..12:
+ R  chosen_T    Veff  err_pyerrors  relative_err_percent reliability                               selection_rule
+ 7         5 1.08295      0.238087                21.985    marginal latest T with reliability in {good,marginal}
+ 8         4 1.55337      0.146829                9.4523        good latest T with reliability in {good,marginal}
+ 9         4  1.5651      0.211034               13.4837    marginal latest T with reliability in {good,marginal}
+10         4 1.80826      0.360413               19.9315    marginal latest T with reliability in {good,marginal}
+11         3 1.65426      0.132387               8.00279        good latest T with reliability in {good,marginal}
+12         3 2.01937      0.215174               10.6555    marginal latest T with reliability in {good,marginal}
+
+Generated summary rows: 117
+Generated diagnostic rows: 6

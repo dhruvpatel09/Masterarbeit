@@ -1,0 +1,5 @@
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_diagnostic_points_R7-12_commonT3_t0avg6.csv
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_R1-6_fit_plus_R7-12_commonT3_diagnostic_t0avg6.png
+Wrote: /home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_plateau_window_comparison_R7_R8_good_marginal_zoom_t0avg6.png
+
+Extended refinement plots complete
