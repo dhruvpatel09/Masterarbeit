@@ -74,3 +74,11 @@ Em1/analysis_wilson_tau/
 # Generated/old Wilson-tau batch submit helpers
 Em1/scripts/archive/
 Em1/slurm/
+
+# Additional Beamer / LaTeX build artefacts
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.xdv
