@@ -23,6 +23,7 @@ export MKL_THREADING_LAYER=sequential
 export NCFG="${NCFG:-${SLURM_ARRAY_TASK_ID:-1}}"
 export RSEP="${RSEP:-4}"
 export TAU="${TAU:-4}"
+export AXIS="${AXIS:-0}"
 export T0_MODE="${T0_MODE:-average}"
 export T0_START="${T0_START:-0}"
 export T0_STRIDE="${T0_STRIDE:-1}"
@@ -39,6 +40,7 @@ echo "ARRAY_TASK_ID=${SLURM_ARRAY_TASK_ID:-none}"
 echo "NCFG=${NCFG}"
 echo "RSEP=${RSEP}"
 echo "TAU=${TAU}"
+echo "AXIS=${AXIS}"
 echo "T0_MODE=${T0_MODE}"
 echo "T0_START=${T0_START}"
 echo "T0_STRIDE=${T0_STRIDE}"
@@ -52,6 +54,7 @@ mpirun \
   -x NCFG \
   -x RSEP \
   -x TAU \
+  -x AXIS \
   -x T0_MODE \
   -x T0_START \
   -x T0_STRIDE \

@@ -297,14 +297,21 @@ int main(int argc, char **argv) {
     double theta[3] = {0.0, 0.0, 0.0};
 
     const int nc = read_env_int("NCFG", 1, 1, INT_MAX);
-    const int R = read_env_int("RSEP", 4, 0, L[1] / 2);
+    const int axis = read_env_int("AXIS", 0, 0, 2);
+    const char axis_name[3] = {'x', 'y', 'z'};
+    const int spatial_L[3] = {L[1], L[2], L[3]};
+
+    const int R = read_env_int("RSEP", 4, 0, spatial_L[axis] / 2);
     const int Tau = read_env_int("TAU", 4, 1, L[0] - 1);
 
-    const int dx_min = read_env_int("DX_MIN", -2, -L[1], L[1]);
-    const int dx_max = read_env_int("DX_MAX", 6, -L[1], L[1]);
-    const int dy_min = read_env_int("DY_MIN", -6, -L[2], L[2]);
-    const int dy_max = read_env_int("DY_MAX", 6, -L[2], L[2]);
-    const int dz_fixed = read_env_int("DZ_FIXED", 0, -L[3], L[3]);
+    const int tr1_axis = (axis + 1) % 3;
+    const int tr2_axis = (axis + 2) % 3;
+
+    const int dx_min = read_env_int("DX_MIN", -2, -spatial_L[axis], spatial_L[axis]);
+    const int dx_max = read_env_int("DX_MAX", 6, -spatial_L[axis], spatial_L[axis]);
+    const int dy_min = read_env_int("DY_MIN", -6, -spatial_L[tr1_axis], spatial_L[tr1_axis]);
+    const int dy_max = read_env_int("DY_MAX", 6, -spatial_L[tr1_axis], spatial_L[tr1_axis]);
+    const int dz_fixed = read_env_int("DZ_FIXED", 0, -spatial_L[tr2_axis], spatial_L[tr2_axis]);
 
     if (dx_max < dx_min || dy_max < dy_min) {
         fprintf(stderr, "ERROR: invalid probe plane bounds\n");
@@ -412,10 +419,11 @@ int main(int argc, char **argv) {
 
     if (myid == 0) {
         printf("Laplace-clover probe plane prototype\n");
-        printf("NCFG=%d R=%d Tau=%d t_ins_offset=%d axis=x\n", nc, R, Tau, t_ins_offset);
+        printf("NCFG=%d R=%d Tau=%d t_ins_offset=%d axis=%c(%d)\n",
+               nc, R, Tau, t_ins_offset, axis_name[axis], axis);
         printf("T0Mode=%s T0Fixed=%d T0Start=%d T0Stride=%d Nt0=%d NeededTimes=%d\n",
                t0_mode_name(t0_mode), t0_fixed, t0_start, t0_stride, nt0, n_needed_times);
-        printf("Probe plane: dx=%d..%d dy=%d..%d dz=%d nprobe=%d\n",
+        printf("Probe local plane: dx(longitudinal)=%d..%d dy(transverse1)=%d..%d dz(transverse2)=%d nprobe=%d\n",
                dx_min, dx_max, dy_min, dy_max, dz_fixed, nprobe);
         printf("Reading gauge field: %s\n", gauge_file);
         fflush(stdout);
@@ -486,10 +494,12 @@ int main(int argc, char **argv) {
         for (int xx = 0; xx < L[1]; xx++) {
             for (int yy = 0; yy < L[2]; yy++) {
                 for (int zz = 0; zz < L[3]; zz++) {
-                    const int yx = (xx + R) % L[1];
+                    const int src_coord[3] = {xx, yy, zz};
+                    int sink_coord[3] = {xx, yy, zz};
+                    sink_coord[axis] = wrap_mod(src_coord[axis] + R, spatial_L[axis]);
 
-                    const int x_site3 = site3_index(xx, yy, zz, L);
-                    const int y_site3 = site3_index(yx, yy, zz, L);
+                    const int x_site3 = site3_index(src_coord[0], src_coord[1], src_coord[2], L);
+                    const int y_site3 = site3_index(sink_coord[0], sink_coord[1], sink_coord[2], L);
 
                     qcd_complex_16 Lxy = {0.0, 0.0};
 
@@ -497,11 +507,13 @@ int main(int argc, char **argv) {
                         for (int j = 0; j < NV; j++) {
                             const qcd_complex_16 tau_y =
                                 tau_time_path(v_src, v_sink, &u, i, j,
-                                              t0, Tau, y_site3, yx, yy, zz, L);
+                                              t0, Tau, y_site3,
+                                              sink_coord[0], sink_coord[1], sink_coord[2], L);
 
                             const qcd_complex_16 tau_x =
                                 tau_time_path(v_src, v_sink, &u, i, j,
-                                              t0, Tau, x_site3, xx, yy, zz, L);
+                                              t0, Tau, x_site3,
+                                              src_coord[0], src_coord[1], src_coord[2], L);
 
                             Lxy = qcd_CADD(Lxy, qcd_CMUL(tau_y, qcd_CONJ(tau_x)));
                         }
@@ -511,15 +523,21 @@ int main(int argc, char **argv) {
 
                     for (int idx = 0; idx < ndx; idx++) {
                         const int dx = dx_min + idx;
-                        const int xp = wrap_mod(xx + dx, L[1]);
 
                         for (int idy = 0; idy < ndy; idy++) {
                             const int dy = dy_min + idy;
-                            const int yp = wrap_mod(yy + dy, L[2]);
-                            const int zp = wrap_mod(zz + dz_fixed, L[3]);
+                            int probe_coord[3] = {xx, yy, zz};
+
+                            probe_coord[axis] =
+                                wrap_mod(src_coord[axis] + dx, spatial_L[axis]);
+                            probe_coord[tr1_axis] =
+                                wrap_mod(src_coord[tr1_axis] + dy, spatial_L[tr1_axis]);
+                            probe_coord[tr2_axis] =
+                                wrap_mod(src_coord[tr2_axis] + dz_fixed, spatial_L[tr2_axis]);
 
                             const int pidx = idx * ndy + idy;
-                            const int site4p = site4_index(t_ins, xp, yp, zp, L);
+                            const int site4p = site4_index(t_ins,
+                                                           probe_coord[0], probe_coord[1], probe_coord[2], L);
 
                             double E2 = 0.0;
                             double B2 = 0.0;
@@ -594,12 +612,12 @@ int main(int argc, char **argv) {
                 const double rho_S  = LSavg.re  / Lavg.re - Savg;
 
                 printf(
-                    "PROBE %d %d %d 0 %d %d %d %ld "
+                    "PROBE %d %d %d %d %d %d %d %ld "
                     "%+.16e %+.16e "
                     "%.16e %.16e %.16e "
                     "%+.16e %+.16e %+.16e %+.16e %+.16e %+.16e "
                     "%+.16e %+.16e %+.16e\n",
-                    nc, R, Tau, dx, dy, dz_fixed, nsrc,
+                    nc, R, Tau, axis, dx, dy, dz_fixed, nsrc,
                     Lavg.re, Lavg.im,
                     E2avg, B2avg, Savg,
                     LE2avg.re, LE2avg.im,
