@@ -1,0 +1,12 @@
+JobID: 153879
+Observable: Laplace-static correlator L(R,tau)
+Scan: R/a = 0..6, tau/a = 1..8
+Configurations: n = 1..100
+Nv: 10
+rho_i: 1
+Temporal-source mode: average
+Temporal sources: t0/a = 0..47
+Nt0: 48
+Spatial sources per t0: 24^3 = 13824
+Nsrc per (cfg,T,R): 48 * 24^3 = 663552
+Input logs: laplace_static/logs/lap_allt0_R6T8_153879_*.out

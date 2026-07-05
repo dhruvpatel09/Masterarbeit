@@ -1,0 +1,42 @@
+Correlated potential-fit summary:
+  model fit_label  Rmin  Rmax  n_points  n_parameters  covariance_rank  covariance_condition  normal_condition      chi2  dof  chi2_per_dof       p_value         V0       err_V0       sigma     err_sigma      alpha    err_alpha  a_sqrt_sigma  err_a_sqrt_sigma status
+cornell      R1-6     1     6         6             3                6             507.89114         1485.4879 107.67773    3     35.892576 3.4678484e-23 0.67400209 0.0032653763 0.085313525 0.00084315385 0.27879734 0.0024406015    0.29208479      0.0014433727     ok
+cornell      R1-5     1     5         5             3                5             153.75114         1631.2967 68.209789    2     34.104895 1.5432365e-15 0.66720739 0.0034398315 0.087310195 0.00090106563 0.27404457 0.0025551651    0.29548299      0.0015248275     ok
+cornell      R1-4     1     4         4             3                4             61.182824          2049.909 40.057054    1     40.057054 2.4665239e-10    0.65662 0.0039766861 0.090452752  0.0010782895 0.26652327  0.002922031    0.30075364      0.0017928107     ok
+cornell      R2-6     2     6         5             3                5             54.157944         8283.9732 4.0652389    2     2.0326195    0.13099194  0.7772974   0.01066029 0.069783364  0.0017431801 0.42649534  0.014713863    0.26416541      0.0033005188     ok
+cornell      R2-5     2     5         4             3                4             16.238874         11209.354 1.7619384    1     1.7619384    0.18438291 0.76683153  0.012696347 0.071626578  0.0021245487  0.4129032  0.017225188    0.26763142      0.0039703475     ok
+cornell      R3-6     3     6         4             3                4             17.239257         90101.008 4.0433886    1     4.0433886   0.044344695 0.77195239  0.037697916  0.07044661  0.0048136106 0.41617919  0.071323518     0.2654178      0.0090723255     ok
+ linear      R3-6     3     6         4             2                4             17.239257          156.3959 38.091671    2     19.045835 5.3517862e-09 0.55280571 0.0032600704 0.098030228 0.00090799878        NaN          NaN    0.31309779      0.0014500958     ok
+ linear      R3-5     3     5         3             2                3             5.1405027         195.39024 9.0654534    1     9.0654534  0.0026048393 0.54362682 0.0036784073  0.10073306  0.0010373722        NaN          NaN    0.31738472      0.0016343484     ok
+ linear      R4-6     4     6         3             2                3             10.569205         673.02288 10.746317    1     10.746317  0.0010448703 0.58909638 0.0076674812 0.090093726  0.0017685843        NaN          NaN    0.30015617      0.0029468669     ok
+
+Main Cornell R/a = 1..6 fit:
+model                       cornell
+fit_label                      R1-6
+Rmin                              1
+Rmax                              6
+n_points                          6
+n_parameters                      3
+covariance_rank                   6
+covariance_condition     507.891137
+normal_condition        1485.487905
+chi2                     107.677728
+dof                               3
+chi2_per_dof              35.892576
+p_value                         0.0
+V0                         0.674002
+err_V0                     0.003265
+sigma                      0.085314
+err_sigma                  0.000843
+alpha                      0.278797
+err_alpha                  0.002441
+a_sqrt_sigma               0.292085
+err_a_sqrt_sigma           0.001443
+status                           ok
+
+Wrote:
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_fit_stability_t0avg48_R6.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_fit_parameters_t0avg48_R6_jackknife.csv
+/home/m2130292/Masterarbeit/laplace_static/results/laplace_static_potential_cornell_R1-6_t0avg48_curve.csv
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_cornell_R1-6_t0avg48.png
+/home/m2130292/Masterarbeit/laplace_static/results/figures/laplace_static_potential_fit_stability_t0avg48_R6.png
