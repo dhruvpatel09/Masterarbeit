@@ -82,3 +82,22 @@ Em1/slurm/
 *.bcf
 *.run.xml
 *.xdv
+
+# Laplace-clover generated raw per-configuration products
+laplace_static/results/laplace_clover_probe_R*tau*_axis[0-9]_t0avg48_n1-100.csv
+laplace_static/results/laplace_clover_probe_R*tau*_axes0-2_t0avg48_n1-100.csv
+laplace_static/results/laplace_clover_probe_R*tau*_plane_t0avg48_n1-100.csv
+laplace_static/results/laplace_clover_probe_R*tau*_plane_t0avg48_n1-10.csv
+laplace_static/results/*probe_row_counts.txt
+
+# Laplace static-potential generated raw/intermediate statistical products
+laplace_static/results/spatial_avg_RT_*_n1-100.csv
+laplace_static/results/spatial_avg_RT_*_n1-100_jackknife.csv
+laplace_static/results/spatial_avg_RT_*_n1-100_pyerrors.csv
+laplace_static/results/laplace_static_potential_*_covariance.csv
+laplace_static/results/laplace_static_potential_*_correlation.csv
+laplace_static/results/laplace_static_potential_*_jackknife_samples.csv
+
+# Superseded/diagnostic pyerrors files with uncorrelated labels
+laplace_static/results/laplace_clover_R4_axisavg_rho_S_axial_tau4_tau6_pyerrors.csv
+laplace_static/results/laplace_clover_R4_axisavg_rho_S_axial_jk_vs_pyerrors.csv
