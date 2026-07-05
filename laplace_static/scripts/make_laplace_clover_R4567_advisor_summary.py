@@ -82,7 +82,7 @@ out.to_csv(csv, index=False)
 
 with open(txt, "w") as f:
     f.write("# Axis-averaged Laplace-clover rho_S summary, Ncfg=100\n")
-    f.write("# Main profile uses tau/a=4. Tau/a=6 stability exists for R/a=4,5,6 only so far.\n")
+    f.write("# Main profile uses tau/a=4. Tau/a=6 stability exists for R/a=4,5,6,7.\n")
     f.write("# rho_S = <LS>/<L> - <S>\n\n")
     f.write(out.to_string(index=False))
     f.write("\n")
