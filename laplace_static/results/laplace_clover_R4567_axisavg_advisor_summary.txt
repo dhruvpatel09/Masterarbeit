@@ -1,0 +1,9 @@
+# Axis-averaged Laplace-clover rho_S summary, Ncfg=100
+# Main profile uses tau/a=4. Tau/a=6 stability exists for R/a=4,5,6 only so far.
+# rho_S = <LS>/<L> - <S>
+
+ R  tau_main  left_min_dx  left_min_xmid  left_min_rho  left_min_err  right_min_dx  right_min_xmid  right_min_rho  right_min_err  midpoint_rho  midpoint_err_diag  dip_asymmetry_right_minus_left  max_pull_tau4_vs_tau6_all  max_pull_tau4_vs_tau6_inside
+ 4         4            1           -1.0     -0.017353      0.000242             3             1.0      -0.016957       0.000220     -0.010961           0.000218                        0.000395                      2.171                         0.688
+ 5         4            1           -1.5     -0.015812      0.000354             4             1.5      -0.015995       0.000343     -0.008914           0.000233                       -0.000182                      1.530                         0.940
+ 6         4            1           -2.0     -0.014762      0.000479             5             2.0      -0.015636       0.000473     -0.006867           0.000413                       -0.000874                      1.775                         1.646
+ 7         4            1           -2.5     -0.015643      0.000687             6             2.5      -0.014242       0.000666     -0.006441           0.000454                        0.001402                        NaN                           NaN
