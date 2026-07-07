@@ -146,3 +146,9 @@ thesis/*.snm
 thesis/*.vrb
 thesis/*.bak
 thesis/*-blx.bib
+
+# Keep selected VS Code workspace files for thesis development
+!.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
