@@ -1,0 +1,17 @@
+\chapter{Statistical and systematic uncertainties}
+\label{chap:systematics}
+
+\section{Fit-window dependence}
+The benchmark static potential relies on identifying plateau regions in \(\Veff(R,\tau)\). Fit-window dependence should be reported explicitly by varying the lower and upper time slices, comparing correlated and uncorrelated fits where appropriate, and tracking \(\chi^2/\mathrm{dof}\) and \(p\)-values.
+
+\section{Temporal-source averaging}
+The present analysis averages over six temporal source positions, \(t_0/a=0,8,16,24,32,40\). This reduces statistical noise by using translational symmetry while keeping source positions well separated on the temporal lattice. The thesis should include a comparison between a fixed-source analysis and the temporal-source averaged analysis to demonstrate the effect on uncertainties and central values.
+
+\section{Autocorrelations}
+Monte Carlo measurements are generally autocorrelated. The Gamma method estimates statistical errors by explicitly summing autocorrelation functions and choosing an appropriate summation window \cite{Wolff2004}. For final results, the chosen error-analysis method should be stated consistently for all primary observables, derived observables, and fit parameters.
+
+\section{Eigenvector truncation and source overlap}
+The source construction depends on the number of Laplacian eigenvectors and on the eigenmode profile. Current tests use \(N_v=10\) with constant weights. Later production may improve ground-state overlap through larger \(N_v\), Gaussian profiles, or a GEVP basis, following the strategy of optimized Laplace trial states \cite{Hoellwieser2023}.
+
+\section{Probe definition}
+For flux-tube profiles, the plaquette or clover definition of \(F_{\mu\nu}\), the amount of smearing, and the treatment of vacuum subtraction can all affect the signal. These choices should be separated into physical results, discretization effects, and noise-reduction choices.

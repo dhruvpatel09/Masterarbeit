@@ -1,0 +1,62 @@
+% Shared preamble for the Master thesis seed.
+\usepackage[a4paper,margin=30mm,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage[backend=biber,style=numeric-comp,sorting=none,maxbibnames=99]{biblatex}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
+
+\addbibresource{bib/references.bib}
+
+\definecolor{BUWBlue}{RGB}{0,132,174}
+\definecolor{BUWGreen}{RGB}{122,162,0}
+\definecolor{DraftNote}{RGB}{245,247,250}
+
+\hypersetup{
+  pdftitle={Static Quark-Antiquark Sources from Laplacian Eigenmodes and Gluonic Flux-Tube Profiles in Lattice QCD},
+  pdfauthor={Dhruv Patel},
+  pdfsubject={Master Thesis},
+  pdfkeywords={Lattice QCD, static potential, Laplacian eigenmodes, distillation, flux tube}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt,parsep=0pt}
+\sisetup{separate-uncertainty=true}
+
+\newcommand{\QQbar}{\ensuremath{Q\bar Q}}
+\newcommand{\aV}{\ensuremath{aV}}
+\newcommand{\Veff}{\ensuremath{V_{\mathrm{eff}}}}
+\newcommand{\Ls}{\ensuremath{L(R,\tau)}}
+\newcommand{\todo}[1]{\begin{tcolorbox}[colback=DraftNote,colframe=BUWBlue,title=TODO / thesis-writing note]#1\end{tcolorbox}}
+\newcommand{\prelim}{\textit{Preliminary}}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{DraftNote}
+}

@@ -1,0 +1,59 @@
+\chapter{Theoretical background}
+\label{chap:theory}
+
+\section{Static sources and Wilson loops}
+For a static color source and antisource separated by \(R=|\bm y-\bm x|\), the conventional trial state contains a spatial Wilson line \(U_s(\bm x,\bm y)\) connecting the two positions. Under a gauge transformation \(G\), it transforms as
+\begin{equation}
+  U_s(\bm x,\bm y) \longrightarrow G(\bm x) U_s(\bm x,\bm y) G^\dagger(\bm y),
+\end{equation}
+so that the full static meson operator is gauge invariant. The corresponding rectangular Wilson loop behaves at large Euclidean time as
+\begin{equation}
+  W(R,T) \propto \exp[-V(R)T]
+\end{equation}
+up to excited-state contributions and normalization factors. The effective energy can therefore be estimated from a ratio,
+\begin{equation}
+  \Veff(R,T)=\log\frac{W(R,T)}{W(R,T+a)}.
+\end{equation}
+
+At intermediate distances, the static potential is commonly parametrized by a Cornell form,
+\begin{equation}
+  aV(R)=aV_0+\sigma a^2 R-\frac{\alpha}{R},
+  \label{eq:cornell}
+\end{equation}
+where \(\sigma\) is the string tension in lattice units and \(\alpha\) parametrizes the Coulombic contribution.
+
+\section{Flux tubes and local gluonic probes}
+The formation of a flux tube can be probed by inserting local field-strength observables into the source correlator. In terms of Euclidean electric and magnetic components one may define an action-density probe
+\begin{equation}
+  S(\bm z,t)=\frac{1}{2}\left[E^2(\bm z,t)+B^2(\bm z,t)\right],
+  \label{eq:action-density}
+\end{equation}
+and an energy-density probe
+\begin{equation}
+  \epsilon(\bm z,t)=\frac{1}{2}\left[E^2(\bm z,t)-B^2(\bm z,t)\right].
+  \label{eq:energy-density}
+\end{equation}
+The observable of interest is not the raw expectation value, but the source-induced modification after vacuum subtraction. For an optimized source correlator \(C_{\QQbar}\), the schematic ratio is
+\begin{equation}
+  \Delta S_{\QQbar}(\bm z;R,\tau)
+  =\frac{\langle C_{\QQbar}(R,\tau)\,S(\bm z,t_{\mathrm{mid}})\rangle}
+  {\langle C_{\QQbar}(R,\tau)\rangle}
+  -\langle S(\bm z,t_{\mathrm{mid}})\rangle.
+  \label{eq:source-probe-ratio}
+\end{equation}
+This construction follows the logic used in previous lattice studies of action-density profiles and string breaking \cite{Bali2005}.
+
+\section{Gauge-covariant Laplacian and distillation}
+On each time slice, the three-dimensional gauge-covariant Laplacian acts on a color vector field as
+\begin{equation}
+  \Delta \psi(\bm x)=\frac{1}{a^2}\sum_{k=1}^{3}
+  \left[U_k^\dagger(\bm x-a\hat k)\psi(\bm x-a\hat k)-2\psi(\bm x)
+  +U_k(\bm x)\psi(\bm x+a\hat k)\right].
+  \label{eq:covariant-laplacian}
+\end{equation}
+The eigenvalues are gauge invariant, while the eigenvectors transform covariantly. Therefore outer products of eigenvectors can be arranged to transform like spatial Wilson lines. Distillation uses a low-rank projector onto the subspace spanned by the lowest \(N_v\) eigenvectors,
+\begin{equation}
+  \Box(\bm z,\bm x;t)=\sum_{i=1}^{N_v} v_i(\bm z,t)v_i^\dagger(\bm x,t),
+  \label{eq:distillation-projector}
+\end{equation}
+which suppresses ultraviolet modes and gives a flexible operator basis \cite{Peardon2009}.

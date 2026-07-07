@@ -1,0 +1,32 @@
+\chapter{Local gluonic probes and flux-tube profiles}
+\label{chap:flux-tube}
+
+\section{Field-strength estimators}
+The final physics stage inserts local gluonic probes into the validated Laplace-static source correlator. A plaquette or clover estimator of the field-strength tensor \(F_{\mu\nu}\) will be used to form
+\begin{align}
+  E^2(\bm z,t) &= \sum_{i=1}^{3}\operatorname{Tr}\,F_{i4}(\bm z,t)^2, \\
+  B^2(\bm z,t) &= \sum_{1\leq i<j\leq 3}\operatorname{Tr}\,F_{ij}(\bm z,t)^2,
+\end{align}
+and hence the action and energy densities in \cref{eq:action-density,eq:energy-density}. The probe should be inserted near the midpoint \(t_{\mathrm{mid}}\) of the static correlator to maximize ground-state dominance.
+
+\section{Normalized vacuum-subtracted observable}
+For the Laplace-static source, the central observable will be
+\begin{equation}
+  \Delta S_{\QQbar}(\bm z;R,\tau)=
+  \frac{\langle L(R,\tau) S(\bm z,t_{\mathrm{mid}})\rangle}{\langle L(R,\tau)\rangle}
+  -\langle S(\bm z,t_{\mathrm{mid}})\rangle.
+  \label{eq:laplace-local-probe-ratio}
+\end{equation}
+An analogous expression will be used for \(\Delta E^2\), \(\Delta B^2\), or \(\Delta\epsilon\), depending on which field components have the best signal and the clearest physical interpretation.
+
+\section{Planned presentation of final results}
+The final flux-tube chapter should contain:
+\begin{enumerate}
+  \item a validation plot showing that the probe insertion does not destabilize the source normalization;
+  \item transverse profiles at fixed source separation \(R\);
+  \item longitudinal profiles along the \QQbar\ axis;
+  \item two-dimensional density maps in the plane containing the sources;
+  \item systematic comparisons across \(\tau\), \(R\), smearing/probe definition, and possibly \(N_v\).
+\end{enumerate}
+
+\todo{Replace this planning text by the final local-probe measurements once the clover/plaquette insertion code path is validated.}

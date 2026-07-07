@@ -125,3 +125,24 @@ laplace_static/results/laplace_clover_probe_R*tau*_plane_t0avg48_n1-100_jk_ratio
 laplace_static/results/laplace_clover_probe_R*tau*_plane_t0avg48_n1-10_LAVG.txt
 laplace_static/results/laplace_clover_probe_R*tau*_plane_t0avg48_n1-10_summary.csv
 laplace_static/results/laplace_clover_probe_R*tau*_plane_t0avg48_n1.csv
+
+# Thesis LaTeX build artefacts
+thesis/*.aux
+thesis/*.log
+thesis/*.out
+thesis/*.toc
+thesis/*.lof
+thesis/*.lot
+thesis/*.fls
+thesis/*.fdb_latexmk
+thesis/*.bcf
+thesis/*.run.xml
+thesis/*.bbl
+thesis/*.blg
+thesis/*.synctex.gz
+thesis/*.xdv
+thesis/*.nav
+thesis/*.snm
+thesis/*.vrb
+thesis/*.bak
+thesis/*-blx.bib

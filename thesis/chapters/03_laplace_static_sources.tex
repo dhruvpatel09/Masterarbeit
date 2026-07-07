@@ -1,0 +1,35 @@
+\chapter{Laplacian-eigenmode static sources}
+\label{chap:laplace-sources}
+
+\section{Laplace trial state}
+The Laplace-static construction replaces the spatial Wilson line by a sum of Laplacian eigenvector outer products. With optional eigenmode weights \(\rho_i\), the source operator between \(\bm x\) and \(\bm y\) is built from
+\begin{equation}
+  \Phi(\bm x,\bm y;t)
+  = \bar Q(\bm x,t)\left[\sum_{i=1}^{N_v}\rho_i^2 v_i(\bm x,t)v_i^\dagger(\bm y,t)\right]Q(\bm y,t).
+  \label{eq:laplace-trial-state}
+\end{equation}
+The finite truncation in \(N_v\), or a non-trivial profile \(\rho_i\), is essential: if the complete eigenbasis is used with trivial weights, the source collapses to a local identity rather than an extended \QQbar\ operator.
+
+\section{Static perambulators}
+For a static color source at spatial position \(\bm x\), the temporal Wilson line from source time \(t_0\) to sink time \(t_1\) is projected into the Laplacian subspace through the static perambulator
+\begin{equation}
+  \tau_{ij}(\bm x;t_0,t_1)
+  = v_i^\dagger(\bm x,t_0)\,U_t(\bm x;t_0,t_1)\,v_j(\bm x,t_1).
+  \label{eq:static-perambulator}
+\end{equation}
+The resulting Laplace-static correlator is
+\begin{equation}
+  L(R,\tau)=\left\langle\sum_{i,j=1}^{N_v}\rho_i^2(t_0)\rho_j^2(t_1)
+  \tau_{ij}(\bm y;t_0,t_1)\tau_{ji}(\bm x;t_1,t_0)\right\rangle,
+  \label{eq:laplace-correlator}
+\end{equation}
+with \(R=|\bm y-\bm x|\) and \(\tau=t_1-t_0\). The static potential is then extracted from
+\begin{equation}
+  \Veff(R,\tau)=\log\frac{L(R,\tau)}{L(R,\tau+a)}.
+  \label{eq:veff-laplace}
+\end{equation}
+
+\section{Profile choices and later extensions}
+The current production tests use \(N_v=10\) with constant weights \(\rho_i=1\). This is intentionally simple: it validates the data flow and correlator normalization before introducing optimized Gaussian profiles or a GEVP basis. The literature indicates that larger eigenvector bases and Gaussian profile functions can improve ground-state overlap and lead to earlier plateaus \cite{Hoellwieser2023}.
+
+\todo{Later update this chapter with the final profile strategy used in the thesis: constant profile only, larger \(N_v\), Gaussian profile basis, or GEVP-optimized profiles.}

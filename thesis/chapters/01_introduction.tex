@@ -1,0 +1,28 @@
+\chapter{Introduction}
+\label{chap:introduction}
+
+Quantum Chromodynamics (QCD) is the gauge theory of the strong interaction. Its non-perturbative low-energy regime contains phenomena such as confinement, hadron formation, and the emergence of a chromoelectric flux tube between static color sources. Lattice QCD provides a first-principles framework in which these phenomena can be investigated numerically by discretizing Euclidean space-time and evaluating path integrals with Monte Carlo methods.
+
+A central observable in this setting is the static quark--antiquark potential \(V(R)\). Traditionally it is extracted from Wilson loops, where spatial Wilson lines connect the static sources and temporal Wilson lines propagate them in Euclidean time. For detailed studies of flux tubes, string breaking, or momentum-space static potentials, many source separations are desirable, including off-axis separations. This motivates alternative source constructions that preserve gauge covariance while reducing the cost of building spatial transporters.
+
+This thesis follows the idea of replacing spatial Wilson lines by outer products of eigenvectors of the three-dimensional gauge-covariant Laplace operator. The construction is closely related to distillation, where low-lying Laplacian eigenmodes define a smooth low-rank subspace for hadronic operators \cite{Peardon2009}. For static \QQbar\ sources, Laplacian eigenmode trial states and static perambulators provide a flexible way to construct correlators for many source separations \cite{Hoellwieser2023}.
+
+\section{Project aim}
+The project aim is two-stage:
+\begin{enumerate}
+  \item construct and validate Laplacian-eigenmode static \QQbar\ sources through the static potential;
+  \item use the validated source correlator as the normalization for local gluonic probes, in order to map the flux-tube profile around the static pair.
+\end{enumerate}
+The current production stage has completed the first validation at short to moderate separations and is entering the local-probe stage.
+
+\section{Research questions}
+The thesis is organized around the following questions:
+\begin{enumerate}
+  \item Can the implemented Laplace-static correlator reproduce stable effective-energy plateaus and a physically sensible static potential?
+  \item Which separations and Euclidean time windows are reliable with the present statistics and eigenmode profile choice?
+  \item How should local action-density and energy-density insertions be normalized and vacuum-subtracted so that they measure the gluonic response of the gauge field to a static \QQbar\ pair?
+  \item What systematic effects arise from the number of eigenvectors, temporal-source averaging, fit-window selection, and autocorrelations?
+\end{enumerate}
+
+\section{Structure of the thesis}
+\Cref{chap:theory} reviews the relevant lattice-QCD background. \Cref{chap:laplace-sources} derives the Laplacian-eigenmode trial states and static correlators. \Cref{chap:numerical-setup} documents the implementation and current production setup. \Cref{chap:benchmark} presents the static-potential benchmark. \Cref{chap:flux-tube} develops the local-probe formalism for the final flux-tube measurements. \Cref{chap:systematics} discusses statistical and systematic uncertainties, and \Cref{chap:conclusion} summarizes the current conclusions and outlook.

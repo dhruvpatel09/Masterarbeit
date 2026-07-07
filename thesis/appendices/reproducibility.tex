@@ -1,0 +1,56 @@
+\chapter{Reproducibility notes}
+\label{app:reproducibility}
+
+\section{Suggested repository layout}
+Place this thesis source under the main project repository as:
+\begin{lstlisting}[language=bash]
+Masterarbeit/
+  laplace_static/
+  qcd/
+  thesis/
+    main.tex
+    tex/
+    frontmatter/
+    chapters/
+    appendices/
+    figures/
+    bib/
+\end{lstlisting}
+
+\section{Compile commands}
+A local or Stromboli LaTeX installation can be checked with:
+\begin{lstlisting}[language=bash]
+command -v latexmk pdflatex biber
+pdflatex --version | head -2
+biber --version
+\end{lstlisting}
+Compile from inside \texttt{thesis/} with:
+\begin{lstlisting}[language=bash]
+latexmk -pdf -interaction=nonstopmode main.tex
+\end{lstlisting}
+Clean auxiliary files with:
+\begin{lstlisting}[language=bash]
+latexmk -C
+\end{lstlisting}
+
+\section{Suggested Git ignore entries}
+\begin{lstlisting}
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+*.nav
+*.snm
+*.vrb
+\end{lstlisting}

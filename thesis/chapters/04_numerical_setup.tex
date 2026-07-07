@@ -1,0 +1,39 @@
+\chapter{Numerical setup and implementation}
+\label{chap:numerical-setup}
+
+\section{Code path}
+The implementation is organized around the program \texttt{src/test\_laplace\_RT\_scan.c} and the accompanying analysis scripts in \texttt{laplace\_static/scripts}. The production code path is:
+\begin{enumerate}
+  \item read gauge fields and precomputed Laplacian eigenvectors from the existing QCD-library/HDF5 setup;
+  \item build static perambulators \(\tau_{ij}(\bm x;t_0,t_1)\) for the selected time extent \(\tau\);
+  \item contract pairs of static perambulators to form \(L(R,\tau)\);
+  \item average over spatial positions, equivalent orientations, configurations, and selected temporal source positions;
+  \item analyze effective energies, plateau windows, potential fits, and reliability diagnostics.
+\end{enumerate}
+
+\section{Current production parameters}
+The current benchmark setup is summarized in \cref{tab:production-setup}. These values reflect the validated production stage at which the thesis write-up is being started.
+
+\begin{table}[htbp]
+\centering
+\caption{Current production and diagnostic parameters for the Laplace-static benchmark.}
+\label{tab:production-setup}
+\begin{tabular}{ll}
+\toprule
+Quantity & Current value \\
+\midrule
+Gauge configurations & \(N_{\mathrm{cfg}}=100\) \\
+Eigenvectors & \(N_v=10\) \\
+Eigenmode profile & constant, \(\rho_i=1\) \\
+Temporal-source average & \(t_0/a=0,8,16,24,32,40\) \\
+Validated scan & \(R/a=1,\ldots,6\), \(\tau/a=1,\ldots,8\) \\
+Diagnostic scan & \(R/a=1,\ldots,12\), \(\tau/a=1,\ldots,10\) \\
+Stable benchmark window & \(\tau/a=3,4,5\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Statistical analysis}
+The analysis uses correlated fits where possible, with jackknife and Gamma-method style cross-checks. The Gamma method estimates autocorrelation effects through explicit autocorrelation functions and an automatically chosen summation window \cite{Wolff2004}. For derived observables and fit quantities, the thesis should distinguish clearly between the central estimator, the covariance estimate, the fit-window choice, and the treatment of autocorrelations.
+
+\todo{Once the final analysis scripts are frozen, document exact commands, file names, software versions, and random/fit settings in this chapter and in \cref{app:reproducibility}.}
