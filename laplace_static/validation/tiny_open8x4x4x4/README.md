@@ -111,3 +111,26 @@ The C/HDF5 `PAIR`, `AXIS`, and `COMBINED` values must agree with the Python/DAT
 `REF_PAIR`, `REF_AXIS`, and `REF_COMBINED` values to floating-point precision.
 Agreement tests the observable independently of both the HDF5 reader and the
 qcdlib openQCD input routine.
+
+## Validated numerical result
+
+The validation completed successfully on 2026-07-13.  The entries below are
+the real parts of the 64-source spatial averages in each axial direction and
+their combined 192-term average:
+
+| `Nv` | `Re L_x` | `Re L_y` | `Re L_z` | `Re L_axisavg` |
+|---:|---:|---:|---:|---:|
+| 10 | `3.8752283161748148e-04` | `7.5128727754741735e-04` | `4.8028826296859421e-04` | `5.3969945737783107e-04` |
+| 16 | `3.5177887244109839e-04` | `9.1742676444249427e-04` | `3.1640503093513528e-04` | `5.2853688927290924e-04` |
+
+The C/HDF5 and Python/DAT calculations agree to floating-point precision.  The
+largest absolute differences over all reported `PAIR`, `AXIS`, and `COMBINED`
+values are `4.4e-19` for `Nv=10` and `1.4e-18` for `Nv=16`; the corresponding
+largest relative differences are `6.0e-16` and `8.2e-16`.  Pair-conjugacy
+residuals vanish, and the largest residual imaginary part of an axial spatial
+average is `5.8e-20`.
+
+Changing from `Nv=10` to all 16 supplied modes changes the combined real value
+by `-2.0683%`.  This is a useful implementation diagnostic, not a production
+mode-truncation systematic.  Likewise, the directional spread on one gauge
+configuration must not be interpreted as physical rotational anisotropy.
