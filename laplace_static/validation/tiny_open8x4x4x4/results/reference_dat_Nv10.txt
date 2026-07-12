@@ -1,0 +1,12 @@
+REF_META cfg=1 Nt=8 Ns=4 Nv=10 r=2 t_src=2 t_sink=6 tau=4 temporal_bc=open spatial_bc=periodic rho=constant header_plaquette=+1.9693336616734527e+00
+REF_INPUT gauge=/home/m2130292/Masterarbeit/laplace_static/validation/tiny_open8x4x4x4/data/cnfg/open8x4x4x4n1
+REF_INPUT evec_src=/home/m2130292/Masterarbeit/laplace_static/validation/tiny_open8x4x4x4/data/disteigvecs/disteigvecs_open8x4x4x4n1_t2.dat
+REF_INPUT evec_sink=/home/m2130292/Masterarbeit/laplace_static/validation/tiny_open8x4x4x4/data/disteigvecs/disteigvecs_open8x4x4x4n1_t6.dat
+REF_PAIR axis=x source=0,0,0 Re=+3.7760074750756346e-04 Im=-4.0214373435743070e-04
+REF_AXIS axis=x Nsrc=64 Re=+3.8752283161748148e-04 Im=+0.0000000000000000e+00
+REF_PAIR axis=y source=0,0,0 Re=+1.2242335191488926e-03 Im=+1.4242986069401334e-05
+REF_AXIS axis=y Nsrc=64 Re=+7.5128727754741778e-04 Im=+0.0000000000000000e+00
+REF_PAIR axis=z source=0,0,0 Re=+1.0273262427927385e-03 Im=+4.5500002936621823e-04
+REF_AXIS axis=z Nsrc=64 Re=+4.8028826296859410e-04 Im=+0.0000000000000000e+00
+REF_COMBINED Nsrc=192 Re=+5.3969945737783118e-04 Im=+0.0000000000000000e+00
+REF_CHECK max_pair_conjugacy_abs=+0.0000000000000000e+00 max_axis_avg_abs_im=+0.0000000000000000e+00 combined_rel_im=+0.0000000000000000e+00
