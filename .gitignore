@@ -152,3 +152,6 @@ thesis/*-blx.bib
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+
+# tiny open-boundary validation data
+/laplace_static/validation/tiny_open8x4x4x4/data/
