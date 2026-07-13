@@ -1,8 +1,7 @@
 # Tiny open-boundary validation
 
 This validation checks the Laplacian-eigenmode static-source correlator on the
-advisor-supplied `open8x4x4x4n1` gauge configuration before further production
-runs.
+provided `open8x4x4x4n1` gauge configuration before further production runs.
 
 ## Geometry and observable
 
@@ -53,7 +52,7 @@ validation executable therefore uses a small serial HDF5 reader local to the
 test.  HDF5 performs the safe integer conversion, while the code still checks
 the configuration ID, time, run name, spatial dimensions, available modes,
 compound-complex layout, and full eigenvector dataset shape.  Neither the
-shared production reader nor the advisor-supplied HDF5 files are modified.
+shared production reader nor the provided HDF5 files are modified.
 
 ## Build and submit
 
