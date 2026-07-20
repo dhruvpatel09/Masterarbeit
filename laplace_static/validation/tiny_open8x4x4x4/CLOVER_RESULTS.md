@@ -101,7 +101,7 @@ accordance with the production convention.
 
 ## Checks and interpretation
 
-The previously advisor-validated value of `Re <L>` was reproduced exactly:
+The previously validated value of `Re <L>` was reproduced exactly:
 
 ```text
 expected = 5.2853688927290924e-04,
