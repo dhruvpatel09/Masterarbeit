@@ -1,4 +1,4 @@
-\chapter{Reproducibility notes}
+\chapter{Computational reproducibility}
 \label{app:reproducibility}
 
 \section{Suggested repository layout}
@@ -28,7 +28,11 @@ Compile from inside \texttt{thesis/} with:
 \begin{lstlisting}[language=bash]
 latexmk -pdf -interaction=nonstopmode main.tex
 \end{lstlisting}
-Clean auxiliary files with:
+Clean auxiliary files while keeping the generated PDF with:
+\begin{lstlisting}[language=bash]
+latexmk -c
+\end{lstlisting}
+Remove all generated files, including the PDF, with:
 \begin{lstlisting}[language=bash]
 latexmk -C
 \end{lstlisting}
