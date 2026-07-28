@@ -155,3 +155,6 @@ thesis/*-blx.bib
 
 # tiny open-boundary validation data
 /laplace_static/validation/tiny_open8x4x4x4/data/
+
+# Generated weighted-profile pilot outputs
+/laplace_static/results/weighted_pilot/
