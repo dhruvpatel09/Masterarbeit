@@ -1,0 +1,39 @@
+GAUSSIAN EARLY-PLATEAU COMPARISON
+Source job: 156696
+Configurations: 100
+Scope: fixed t0=0, x-oriented separation, R/a=1..6, plateau T/a=3..5
+
+Definition
+Delta2(R) = V_eff(T/a=2,R) - Vhat_3:5(R). A smaller |Delta2| is a closer raw early-time approach.
+z2 = Delta2 / jackknife_error(Delta2). A smaller |z2| can come either from a smaller gap or from a larger uncertainty, so it is not used alone.
+Statistical precision is represented by the correlated plateau-fit error delta Vhat.
+
+Constant profile versus the most competitive Gaussian
+constant: median |z2|=1.865, median relative plateau error=1.053%
+sigma=0.0500: median |z2|=1.662, median relative plateau error=1.103%
+
+Per-radius Delta2 and plateau-fit errors
+R  Delta2(const)  Delta2(candidate)  err_fit(const)  err_fit(candidate)  both_better
+1  +0.00576717  +0.00945201  0.00126555  0.00250061  no
+2  +0.01523845  +0.01884361  0.00399781  0.00477291  no
+3  +0.01520285  +0.01812640  0.00733927  0.00771363  no
+4  +0.02961040  +0.03134422  0.01132581  0.01179982  no
+5  +0.01599458  +0.01224127  0.02065981  0.02042228  yes
+6  +0.01460387  +0.00779654  0.02794716  0.02680884  yes
+
+All Gaussian widths
+sigma=0.0500: simultaneous numerical improvement at R/a=5;6
+sigma=0.0894: simultaneous numerical improvement at R/a=5;6
+sigma=0.1289: simultaneous numerical improvement at R/a=5;6
+sigma=0.1683: simultaneous numerical improvement at R/a=5;6
+sigma=0.2078: simultaneous numerical improvement at R/a=5;6
+sigma=0.2472: simultaneous numerical improvement at R/a=5;6
+sigma=0.2867: simultaneous numerical improvement at R/a=5;6
+
+Interpretation
+No Gaussian improves both diagnostics at all six radii.
+No Gaussian gives a simultaneous numerical improvement at R/a=1..4, where the constant-profile early-time mismatch is most visible.
+At R/a=5,6 the constant profile already has |z2|<1, so small favorable numerical changes there are not evidence for an earlier plateau.
+Conclusion: no clear, systematic, statistically meaningful simultaneous improvement over rho_i=1 was found for the tested Nv=10 profiles.
+
+This is a paired comparison inside the current fixed-t0 pilot. The earlier t0-averaged, axis-averaged production is not overlaid because it has different averaging and therefore is not the correct head-to-head reference.

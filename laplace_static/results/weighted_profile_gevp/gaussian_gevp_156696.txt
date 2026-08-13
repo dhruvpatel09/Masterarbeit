@@ -1,0 +1,675 @@
+GAUSSIAN PROFILE AND GEVP ANALYSIS
+Source job: 156696
+Configurations: 100
+Profiles: sigma=0.01, sigma=0.05, sigma=infinity (rho_i=1)
+Scope: fixed Wilson-line source time 0, x-oriented separation, R/a=1..6, tau/a=1..8
+GEVP reference times: 1, 2, 3
+GEVP metric rcond: 1.000e-10
+Note: T0Fixed=0 in the raw scan and tau_ref in the GEVP are different quantities.
+
+Eigenvalue and endpoint-weight ranges
+lambda retained: 0.043434392 .. 0.082948075
+sigma=0.0100  w=rho^2 range: 1.146668e-15 .. 8.006018e-05
+sigma=0.0500  w=rho^2 range: 2.525675e-01 .. 6.857040e-01
+constant      w=rho^2 range: 1.000000e+00 .. 1.000000e+00
+
+Direct scalar profiles: correlated tau/a=3..5 fits
+profile        R       fit       err chi2/dof      p      z2  dEconst  zconst
+sigma=0.0100  1 +0.197282  0.165238    0.697  0.498   +1.12 -0.284269   -1.72
+sigma=0.0100  2 +0.530624  0.181796    0.299  0.741   +0.83 -0.166270   -0.91
+sigma=0.0100  3 +0.653291  0.185080    0.394  0.674   +0.95 -0.180933   -0.98
+sigma=0.0100  4 +1.123866  0.234467    4.256  0.014   +0.17 +0.199533   +0.85
+sigma=0.0100  5 +1.194551  0.158059    0.969  0.380   +0.23 +0.167966   +1.04
+sigma=0.0100  6      +nan       nan      nan    nan    +nan      +nan   +0.00
+sigma=0.0500  1 +0.478814  0.002501    0.110  0.896   +1.64 -0.002738   -1.40
+sigma=0.0500  2 +0.694269  0.004773    0.015  0.985   +2.52 -0.002626   -1.05
+sigma=0.0500  3 +0.832257  0.007714    0.873  0.418   +1.68 -0.001966   -0.75
+sigma=0.0500  4 +0.922736  0.011800    0.418  0.658   +2.06 -0.001596   -0.46
+sigma=0.0500  5 +1.031387  0.020422    0.072  0.930   +0.50 +0.004802   +1.08
+sigma=0.0500  6 +1.120689  0.026809    0.323  0.724   +0.25 +0.004418   +0.58
+constant      1 +0.481552  0.001266    0.522  0.593   +2.78 +0.000000   +0.00
+constant      2 +0.696894  0.003998    0.026  0.975   +2.92 +0.000000   +0.00
+constant      3 +0.834223  0.007339    0.972  0.378   +1.57 +0.000000   +0.00
+constant      4 +0.924332  0.011326    0.253  0.777   +2.16 +0.000000   +0.00
+constant      5 +1.026585  0.020660    0.040  0.961   +0.66 +0.000000   +0.00
+constant      6 +1.116271  0.027947    0.407  0.666   +0.44 +0.000000   +0.00
+
+Full 3x3 GEVP metric diagnostics
+R tref antiherm  b1(unitdiag) b2(unitdiag) b3(unitdiag) condition status JKmetric
+1 1 6.73e-04   2.2874e-04   2.6009e-01   2.7397e+00  1.198e+04 ok 99/100
+1 2 2.03e-03   4.5686e-05   1.1210e-01   2.8879e+00  6.321e+04 ok 100/100
+1 3 2.78e-03  -5.0023e-04   9.6499e-03   2.9909e+00        inf non_positive 0/100
+2 1 9.42e-04   2.9466e-04   2.8458e-01   2.7151e+00  9.214e+03 ok 99/100
+2 2 2.44e-03   4.6773e-05   1.1294e-01   2.8870e+00  6.172e+04 ok 100/100
+2 3 5.77e-03  -4.4768e-04   1.4522e-02   2.9859e+00        inf non_positive 0/100
+3 1 8.22e-04   3.6344e-04   3.0418e-01   2.6955e+00  7.417e+03 ok 99/100
+3 2 7.04e-03   4.0986e-05   1.1818e-01   2.8818e+00  7.031e+04 ok 100/100
+3 3 2.96e-03  -1.4616e-03   2.9193e-03   2.9985e+00        inf non_positive 0/100
+4 1 5.70e-04   4.5222e-04   3.2755e-01   2.6720e+00  5.909e+03 ok 99/100
+4 2 1.20e-02   9.6645e-06   1.1131e-01   2.8887e+00  2.989e+05 ok 87/100
+4 3 1.66e-03  -1.7586e-02   3.0691e-04   3.0173e+00        inf non_positive 0/100
+5 1 9.73e-04   5.6928e-04   3.5110e-01   2.6483e+00  4.652e+03 ok 99/100
+5 2 1.87e-02   2.2127e-05   1.1142e-01   2.8886e+00  1.305e+05 ok 97/100
+5 3 9.08e-03  -1.4583e-02   1.3592e-04   3.0144e+00        inf non_positive 0/100
+6 1 5.43e-04   7.1666e-04   3.7353e-01   2.6258e+00  3.664e+03 ok 99/100
+6 2 2.08e-02   1.1785e-05   1.0406e-01   2.8959e+00  2.457e+05 ok 73/100
+6 3 1.61e-02  -3.4447e-03   1.6972e-03   3.0017e+00        inf non_positive 1/100
+
+Full 3x3 GEVP principal effective energies
+R tref tau state Eeff err JKvalid tref_condition
+1 1 2 1 +5.09183944e-01 nan 99/100 0
+1 1 2 2 +1.56881642e+00 nan 99/100 0
+1 1 2 3 +nan nan 0/100 0
+1 1 3 1 +4.58403786e-01 nan 99/100 0
+1 1 3 2 +4.30518607e-01 nan 99/100 0
+1 1 3 3 +nan nan 0/100 0
+1 1 4 1 -1.15539164e-01 nan 99/100 0
+1 1 4 2 -1.28578018e+00 nan 99/100 0
+1 1 4 3 +nan nan 0/100 0
+1 1 5 1 -4.49539280e-01 nan 99/100 0
+1 1 5 2 +4.06606120e-01 nan 99/100 0
+1 1 5 3 +nan nan 0/100 0
+1 1 6 1 +1.58729308e+00 nan 99/100 0
+1 1 6 2 +1.20881117e+00 nan 97/100 0
+1 1 6 3 +nan nan 0/100 0
+1 1 7 1 +8.27000032e-01 nan 99/100 0
+1 1 7 2 +3.41469360e-01 nan 97/100 0
+1 1 7 3 +nan nan 0/100 0
+1 2 3 1 +4.78826014e-01 2.93706524e-01 100/100 1
+1 2 3 2 +5.70819012e-01 1.15806461e+00 100/100 1
+1 2 3 3 +nan nan 0/100 1
+1 2 4 1 -9.87039197e-01 1.85122295e+00 100/100 0
+1 2 4 2 -2.90424938e-01 2.06939983e+00 100/100 0
+1 2 4 3 +nan nan 0/100 0
+1 2 5 1 -6.37049308e-01 9.85936131e-01 100/100 0
+1 2 5 2 +4.60194794e-01 nan 99/100 0
+1 2 5 3 +nan nan 0/100 0
+1 2 6 1 +2.11029134e+00 3.21249200e+00 100/100 0
+1 2 6 2 +7.71514941e-01 nan 97/100 0
+1 2 6 3 +nan nan 0/100 0
+1 2 7 1 +9.04033685e-01 1.69137991e+00 100/100 0
+1 2 7 2 +1.93550936e-01 nan 98/100 0
+1 2 7 3 +nan nan 0/100 0
+1 3 4 1 +nan nan 0/100 1
+1 3 4 2 +nan nan 0/100 1
+1 3 4 3 +nan nan 0/100 1
+1 3 5 1 +nan nan 0/100 1
+1 3 5 2 +nan nan 0/100 1
+1 3 5 3 +nan nan 0/100 1
+1 3 6 1 +nan nan 0/100 0
+1 3 6 2 +nan nan 0/100 0
+1 3 6 3 +nan nan 0/100 0
+1 3 7 1 +nan nan 0/100 0
+1 3 7 2 +nan nan 0/100 0
+1 3 7 3 +nan nan 0/100 0
+2 1 2 1 +7.28618176e-01 nan 99/100 0
+2 1 2 2 +1.62925507e+00 nan 99/100 0
+2 1 2 3 +nan nan 0/100 0
+2 1 3 1 +6.82637628e-01 nan 99/100 0
+2 1 3 2 +5.53379353e-01 nan 99/100 0
+2 1 3 3 +nan nan 0/100 0
+2 1 4 1 +4.91191993e-01 nan 99/100 0
+2 1 4 2 -4.14364950e-01 nan 99/100 0
+2 1 4 3 +nan nan 0/100 0
+2 1 5 1 +1.69561738e-02 nan 99/100 0
+2 1 5 2 +2.00908322e-01 nan 99/100 0
+2 1 5 3 +nan nan 0/100 0
+2 1 6 1 +1.56242778e+00 nan 99/100 0
+2 1 6 2 +1.41368333e+00 nan 99/100 0
+2 1 6 3 +nan nan 0/100 0
+2 1 7 1 +7.29228100e-01 nan 99/100 0
+2 1 7 2 +8.56810345e-01 nan 97/100 0
+2 1 7 3 +nan nan 0/100 0
+2 2 3 1 +6.93025477e-01 3.25917513e-01 100/100 1
+2 2 3 2 +6.37089523e-01 9.57187232e-01 100/100 1
+2 2 3 3 +nan nan 0/100 1
+2 2 4 1 -4.94442973e-01 1.83865979e+00 100/100 0
+2 2 4 2 +4.78878372e-02 1.33906371e+00 100/100 0
+2 2 4 3 +nan nan 0/100 0
+2 2 5 1 -4.45652775e-01 1.17764106e+00 100/100 0
+2 2 5 2 +6.40080217e-01 nan 99/100 0
+2 2 5 3 +nan nan 0/100 0
+2 2 6 1 +2.26075604e+00 2.99275388e+00 100/100 0
+2 2 6 2 +8.13520902e-01 nan 99/100 0
+2 2 6 3 +nan nan 0/100 0
+2 2 7 1 +1.35375086e+00 1.78905821e+00 100/100 0
+2 2 7 2 +6.55460438e-01 nan 98/100 0
+2 2 7 3 +nan nan 0/100 0
+2 3 4 1 +nan nan 0/100 1
+2 3 4 2 +nan nan 0/100 1
+2 3 4 3 +nan nan 0/100 1
+2 3 5 1 +nan nan 0/100 1
+2 3 5 2 +nan nan 0/100 1
+2 3 5 3 +nan nan 0/100 1
+2 3 6 1 +nan nan 0/100 0
+2 3 6 2 +nan nan 0/100 0
+2 3 6 3 +nan nan 0/100 0
+2 3 7 1 +nan nan 0/100 0
+2 3 7 2 +nan nan 0/100 0
+2 3 7 3 +nan nan 0/100 0
+3 1 2 1 +8.64759356e-01 nan 99/100 0
+3 1 2 2 +1.81269622e+00 nan 99/100 0
+3 1 2 3 +nan nan 0/100 0
+3 1 3 1 +8.24473738e-01 nan 99/100 0
+3 1 3 2 +8.10916251e-01 nan 99/100 0
+3 1 3 3 +nan nan 0/100 0
+3 1 4 1 +5.43153264e-01 nan 99/100 0
+3 1 4 2 -9.16955310e-01 nan 99/100 0
+3 1 4 3 +nan nan 0/100 0
+3 1 5 1 +4.12955553e-02 nan 99/100 0
+3 1 5 2 +8.07021097e-01 nan 99/100 0
+3 1 5 3 +nan nan 0/100 0
+3 1 6 1 +1.52605450e+00 nan 99/100 0
+3 1 6 2 +nan nan 0/100 0
+3 1 6 3 +nan nan 0/100 0
+3 1 7 1 -5.86532031e-01 nan 99/100 0
+3 1 7 2 +nan nan 0/100 0
+3 1 7 3 +nan nan 0/100 0
+3 2 3 1 +8.29411181e-01 3.11793710e-01 100/100 1
+3 2 3 2 +9.45427100e-01 1.30252764e+00 100/100 1
+3 2 3 3 +nan nan 0/100 1
+3 2 4 1 -5.89710047e-01 1.90584652e+00 100/100 0
+3 2 4 2 +1.25439188e-01 2.66203913e+00 100/100 0
+3 2 4 3 +nan nan 0/100 0
+3 2 5 1 -6.79460310e-01 1.93637443e+00 100/100 0
+3 2 5 2 +7.96218218e-01 nan 99/100 0
+3 2 5 3 +nan nan 0/100 0
+3 2 6 1 +3.17175653e+00 3.11061700e+00 100/100 0
+3 2 6 2 +nan nan 0/100 0
+3 2 6 3 +nan nan 0/100 0
+3 2 7 1 -1.74124342e+00 1.55738465e+00 100/100 0
+3 2 7 2 +nan nan 0/100 0
+3 2 7 3 +nan nan 0/100 0
+3 3 4 1 +nan nan 0/100 1
+3 3 4 2 +nan nan 0/100 1
+3 3 4 3 +nan nan 0/100 1
+3 3 5 1 +nan nan 0/100 1
+3 3 5 2 +nan nan 0/100 1
+3 3 5 3 +nan nan 0/100 1
+3 3 6 1 +nan nan 0/100 0
+3 3 6 2 +nan nan 0/100 0
+3 3 6 3 +nan nan 0/100 0
+3 3 7 1 +nan nan 0/100 0
+3 3 7 2 +nan nan 0/100 0
+3 3 7 3 +nan nan 0/100 0
+4 1 2 1 +9.64689282e-01 nan 99/100 0
+4 1 2 2 +2.22604932e+00 nan 99/100 0
+4 1 2 3 +nan nan 0/100 0
+4 1 3 1 +9.17317620e-01 nan 99/100 0
+4 1 3 2 +5.45044411e-01 nan 99/100 0
+4 1 3 3 +nan nan 0/100 0
+4 1 4 1 +2.08238488e-01 nan 99/100 0
+4 1 4 2 -9.06846825e-01 nan 99/100 0
+4 1 4 3 +nan nan 0/100 0
+4 1 5 1 -7.51386005e-01 nan 99/100 0
+4 1 5 2 +7.23142428e-01 nan 99/100 0
+4 1 5 3 +1.15823021e+00 nan 86/100 0
+4 1 6 1 +2.26327555e+00 nan 99/100 0
+4 1 6 2 +9.84802887e-01 nan 98/100 0
+4 1 6 3 +nan nan 0/100 0
+4 1 7 1 -3.06783032e-01 nan 99/100 0
+4 1 7 2 +1.52269938e+00 nan 98/100 0
+4 1 7 3 +nan nan 0/100 0
+4 2 3 1 +9.24463728e-01 nan 87/100 1
+4 2 3 2 +8.12898214e-01 nan 87/100 1
+4 2 3 3 +nan nan 0/100 1
+4 2 4 1 -3.54092454e+00 nan 87/100 0
+4 2 4 2 +1.54802805e-01 nan 87/100 0
+4 2 4 3 +nan nan 0/100 0
+4 2 5 1 -7.76414626e-01 nan 87/100 0
+4 2 5 2 +3.53291253e-01 nan 87/100 0
+4 2 5 3 +1.55311001e+00 nan 74/100 0
+4 2 6 1 +2.26703710e+00 nan 87/100 0
+4 2 6 2 +1.43066548e+00 nan 86/100 0
+4 2 6 3 +nan nan 0/100 0
+4 2 7 1 +2.11236592e+00 nan 87/100 0
+4 2 7 2 +1.47640162e+00 nan 86/100 0
+4 2 7 3 +nan nan 0/100 0
+4 3 4 1 +nan nan 0/100 1
+4 3 4 2 +nan nan 0/100 1
+4 3 4 3 +nan nan 0/100 1
+4 3 5 1 +nan nan 0/100 1
+4 3 5 2 +nan nan 0/100 1
+4 3 5 3 +nan nan 0/100 1
+4 3 6 1 +nan nan 0/100 0
+4 3 6 2 +nan nan 0/100 0
+4 3 6 3 +nan nan 0/100 0
+4 3 7 1 +nan nan 0/100 0
+4 3 7 2 +nan nan 0/100 0
+4 3 7 3 +nan nan 0/100 0
+5 1 2 1 +1.05019499e+00 nan 99/100 0
+5 1 2 2 +3.25288527e+00 nan 99/100 0
+5 1 2 3 +nan nan 0/100 0
+5 1 3 1 +1.01927841e+00 nan 99/100 0
+5 1 3 2 -1.06845952e+00 nan 99/100 0
+5 1 3 3 +nan nan 0/100 0
+5 1 4 1 +4.91497363e-01 nan 99/100 0
+5 1 4 2 -2.51984599e-01 nan 99/100 0
+5 1 4 3 +nan nan 0/100 0
+5 1 5 1 -1.19410390e+00 nan 99/100 0
+5 1 5 2 +9.04431038e-01 nan 99/100 0
+5 1 5 3 +nan nan 0/100 0
+5 1 6 1 +8.40799956e-01 nan 99/100 0
+5 1 6 2 +7.69923069e-01 nan 99/100 0
+5 1 6 3 +nan nan 0/100 0
+5 1 7 1 +2.46071591e+00 nan 99/100 0
+5 1 7 2 +nan nan 0/100 0
+5 1 7 3 +nan nan 0/100 0
+5 2 3 1 +7.48817837e-01 nan 97/100 1
+5 2 3 2 -1.09812140e+00 nan 97/100 1
+5 2 3 3 +nan nan 0/100 1
+5 2 4 1 -2.18221555e+00 nan 97/100 0
+5 2 4 2 +9.13739580e-01 nan 97/100 0
+5 2 4 3 +nan nan 0/100 0
+5 2 5 1 -1.38187074e+00 nan 97/100 0
+5 2 5 2 +8.63106779e-01 nan 97/100 0
+5 2 5 3 +nan nan 0/100 0
+5 2 6 1 +7.42203283e-01 nan 97/100 0
+5 2 6 2 +3.89841663e-01 nan 97/100 0
+5 2 6 3 +nan nan 0/100 0
+5 2 7 1 +4.57626877e+00 nan 97/100 0
+5 2 7 2 +nan nan 0/100 0
+5 2 7 3 +nan nan 0/100 0
+5 3 4 1 +nan nan 0/100 1
+5 3 4 2 +nan nan 0/100 1
+5 3 4 3 +nan nan 0/100 1
+5 3 5 1 +nan nan 0/100 1
+5 3 5 2 +nan nan 0/100 1
+5 3 5 3 +nan nan 0/100 1
+5 3 6 1 +nan nan 0/100 0
+5 3 6 2 +nan nan 0/100 0
+5 3 6 3 +nan nan 0/100 0
+5 3 7 1 +nan nan 0/100 0
+5 3 7 2 +nan nan 0/100 0
+5 3 7 3 +nan nan 0/100 0
+6 1 2 1 +1.14013911e+00 nan 99/100 0
+6 1 2 2 +2.20812254e+00 nan 99/100 0
+6 1 2 3 +nan nan 0/100 0
+6 1 3 1 +1.08609552e+00 nan 99/100 0
+6 1 3 2 -3.61786755e-01 nan 99/100 0
+6 1 3 3 +nan nan 0/100 0
+6 1 4 1 +1.16928563e+00 nan 99/100 0
+6 1 4 2 +nan nan 1/100 0
+6 1 4 3 +nan nan 0/100 0
+6 1 5 1 +9.32753636e-01 nan 99/100 0
+6 1 5 2 +nan nan 0/100 0
+6 1 5 3 +nan nan 0/100 0
+6 1 6 1 -1.38070169e+00 nan 99/100 0
+6 1 6 2 +nan nan 0/100 0
+6 1 6 3 +nan nan 0/100 0
+6 1 7 1 +1.15518695e-02 nan 99/100 0
+6 1 7 2 +2.32004167e+00 nan 99/100 0
+6 1 7 3 +nan nan 0/100 0
+6 2 3 1 -1.64235447e-01 nan 73/100 1
+6 2 3 2 +7.43509117e-01 nan 73/100 1
+6 2 3 3 +nan nan 0/100 1
+6 2 4 1 +2.38016787e+00 nan 73/100 0
+6 2 4 2 +nan nan 1/100 0
+6 2 4 3 +nan nan 0/100 0
+6 2 5 1 +9.25547167e-01 nan 73/100 0
+6 2 5 2 +nan nan 0/100 0
+6 2 5 3 +nan nan 0/100 0
+6 2 6 1 -5.67735068e+00 nan 73/100 0
+6 2 6 2 +nan nan 0/100 0
+6 2 6 3 +nan nan 0/100 0
+6 2 7 1 +2.23761079e+00 nan 73/100 0
+6 2 7 2 +3.52823273e+00 nan 73/100 0
+6 2 7 3 +nan nan 0/100 0
+6 3 4 1 +nan nan 1/100 1
+6 3 4 2 +nan nan 0/100 1
+6 3 4 3 +nan nan 0/100 1
+6 3 5 1 +nan nan 1/100 1
+6 3 5 2 +nan nan 0/100 1
+6 3 5 3 +nan nan 0/100 1
+6 3 6 1 +nan nan 1/100 0
+6 3 6 2 +nan nan 1/100 0
+6 3 6 3 +nan nan 0/100 0
+6 3 7 1 +nan nan 1/100 0
+6 3 7 2 +nan nan 1/100 0
+6 3 7 3 +nan nan 0/100 0
+
+Fixed-vector optimized correlators
+Vectors: tau_ref/a=2, tau_d/a=3
+C_opt(tau) = V^dagger C(tau) V.  Its n=2 diagonal is the candidate first-excited fixed-vector correlator. It equals the corresponding principal correlator at tau_d by construction, but need not equal lambda_2 at every tau.
+R tau state Eeff err JKvalid
+1 1 1 +5.19262046e-01 1.03575102e+00 100/100
+1 1 2 +1.79414858e+00 1.43940921e+00 100/100
+1 1 3 +1.94214573e+00 2.32943151e+00 100/100
+1 2 1 +4.83050173e-01 3.95737735e-01 100/100
+1 2 2 +1.22596883e+00 1.27376873e+00 100/100
+1 2 3 +nan nan 0/100
+1 3 1 +4.95114861e-01 2.26825149e-01 100/100
+1 3 2 +6.54411804e-01 1.31805547e+00 100/100
+1 3 3 +nan nan 0/100
+1 4 1 +5.08605153e-01 nan 99/100
+1 4 2 -4.88003662e-01 1.75615960e+00 100/100
+1 4 3 +nan nan 0/100
+1 5 1 +5.19193107e-01 nan 99/100
+1 5 2 +1.13953674e+00 nan 98/100
+1 5 3 -8.13774517e-01 nan 99/100
+1 6 1 +5.01873525e-01 nan 99/100
+1 6 2 +nan nan 4/100
+1 6 3 +2.60347572e+00 nan 97/100
+1 7 1 +3.92341703e-01 nan 99/100
+1 7 2 +nan nan 4/100
+1 7 3 +1.02575082e+00 nan 97/100
+2 1 1 +7.52855636e-01 7.67994476e-01 100/100
+2 1 2 +1.90808284e+00 1.29125491e+00 100/100
+2 1 3 +2.56031860e+00 2.47310342e+00 100/100
+2 2 1 +7.07220220e-01 3.83360882e-01 100/100
+2 2 2 +1.52069598e+00 1.20648752e+00 100/100
+2 2 3 +nan nan 0/100
+2 3 1 +7.11838164e-01 3.48396072e-01 100/100
+2 3 2 +7.39555995e-01 1.06304036e+00 100/100
+2 3 3 +nan nan 0/100
+2 4 1 +7.31199581e-01 nan 99/100
+2 4 2 +1.51729198e-01 1.17905353e+00 100/100
+2 4 3 +nan nan 0/100
+2 5 1 +7.47101353e-01 nan 99/100
+2 5 2 +nan nan 52/100
+2 5 3 -4.27130988e-01 nan 99/100
+2 6 1 +7.75924871e-01 nan 99/100
+2 6 2 +nan nan 41/100
+2 6 3 +nan nan 0/100
+2 7 1 +5.02786250e-01 nan 99/100
+2 7 2 +nan nan 1/100
+2 7 3 +nan nan 0/100
+3 1 1 +9.61466977e-01 1.01728297e+00 100/100
+3 1 2 +2.32287226e+00 1.56992414e+00 100/100
+3 1 3 +3.02947027e+00 3.36185603e+00 100/100
+3 2 1 +8.38722650e-01 3.52304361e-01 100/100
+3 2 2 +1.48881922e+00 1.06208002e+00 100/100
+3 2 3 +nan nan 0/100
+3 3 1 +8.35082532e-01 7.70844743e-01 100/100
+3 3 2 +1.64674898e+00 nan 97/100
+3 3 3 +nan nan 0/100
+3 4 1 +9.04429607e-01 nan 99/100
+3 4 2 +nan nan 2/100
+3 4 3 +nan nan 0/100
+3 5 1 +8.89259014e-01 nan 99/100
+3 5 2 +nan nan 1/100
+3 5 3 -1.96807885e+00 nan 94/100
+3 6 1 +5.73417733e-01 nan 99/100
+3 6 2 +nan nan 1/100
+3 6 3 +nan nan 0/100
+3 7 1 +2.68595693e+00 nan 77/100
+3 7 2 +nan nan 0/100
+3 7 3 +nan nan 0/100
+4 1 1 +1.07161753e+00 nan 87/100
+4 1 2 +2.54597322e+00 nan 87/100
+4 1 3 +5.06481482e+00 nan 87/100
+4 2 1 +9.45701536e-01 nan 87/100
+4 2 2 +1.86127343e+00 nan 87/100
+4 2 3 +nan nan 0/100
+4 3 1 +9.60019388e-01 nan 86/100
+4 3 2 +nan nan 15/100
+4 3 3 +nan nan 0/100
+4 4 1 +8.56082941e-01 nan 86/100
+4 4 2 +nan nan 15/100
+4 4 3 +nan nan 0/100
+4 5 1 +7.95250443e-01 nan 86/100
+4 5 2 -7.77922248e-02 nan 87/100
+4 5 3 -7.80436136e-01 nan 86/100
+4 6 1 +6.51697698e-01 nan 86/100
+4 6 2 +1.41414187e+00 nan 76/100
+4 6 3 +2.37303337e+00 nan 85/100
+4 7 1 +2.33597522e+00 nan 75/100
+4 7 2 +nan nan 2/100
+4 7 3 +nan nan 0/100
+5 1 1 +1.11091534e+00 nan 97/100
+5 1 2 +2.25656454e+00 nan 97/100
+5 1 3 +4.60643614e+00 nan 97/100
+5 2 1 +1.03719262e+00 nan 97/100
+5 2 2 +3.22986611e+00 nan 97/100
+5 2 3 +nan nan 0/100
+5 3 1 +1.04937314e+00 nan 97/100
+5 3 2 -1.41945510e-01 nan 95/100
+5 3 3 +nan nan 0/100
+5 4 1 +1.04848002e+00 nan 97/100
+5 4 2 -3.57689246e-01 nan 95/100
+5 4 3 +nan nan 0/100
+5 5 1 +8.19296006e-01 nan 97/100
+5 5 2 -4.53723774e-01 nan 97/100
+5 5 3 -1.46245220e+00 nan 97/100
+5 6 1 +9.71820214e-01 nan 97/100
+5 6 2 +1.13768330e+00 nan 96/100
+5 6 3 +7.14874603e-01 nan 97/100
+5 7 1 +nan nan 12/100
+5 7 2 +nan nan 0/100
+5 7 3 +nan nan 0/100
+6 1 1 +1.73385310e+00 nan 73/100
+6 1 2 +3.54053233e+00 nan 73/100
+6 1 3 +5.63000086e+00 nan 73/100
+6 2 1 +1.10649353e+00 nan 73/100
+6 2 2 +1.51668808e+00 nan 73/100
+6 2 3 +nan nan 0/100
+6 3 1 +1.14473645e+00 nan 73/100
+6 3 2 -5.32374352e-01 nan 73/100
+6 3 3 +nan nan 0/100
+6 4 1 +1.85534264e+00 nan 53/100
+6 4 2 +nan nan 0/100
+6 4 3 +nan nan 0/100
+6 5 1 +nan nan 2/100
+6 5 2 +nan nan 0/100
+6 5 3 +nan nan 0/100
+6 6 1 +nan nan 2/100
+6 6 2 +nan nan 0/100
+6 6 3 +nan nan 0/100
+6 7 1 +1.05498044e+00 nan 70/100
+6 7 2 +8.10098907e-01 nan 71/100
+6 7 3 +nan nan 0/100
+
+Reduced 2x2 GEVP metric diagnostics
+basis R tref antiherm b1(unitdiag) b2(unitdiag) condition status JKmetric
+sigma001_sigma005 1 1 4.44e-04   1.8956e-01   1.8104e+00  9.551e+00 ok 100/100
+sigma001_sigma005 1 2 1.68e-03   8.1619e-02   1.9184e+00  2.350e+01 ok 100/100
+sigma001_sigma005 1 3 2.30e-03   4.8241e-03   1.9952e+00  4.136e+02 ok 96/100
+sigma001_sigma005 2 1 9.83e-04   2.0768e-01   1.7923e+00  8.630e+00 ok 100/100
+sigma001_sigma005 2 2 1.71e-03   8.1613e-02   1.9184e+00  2.351e+01 ok 100/100
+sigma001_sigma005 2 3 5.70e-03   8.1522e-03   1.9918e+00  2.443e+02 ok 96/100
+sigma001_sigma005 3 1 1.07e-03   2.2204e-01   1.7780e+00  8.007e+00 ok 100/100
+sigma001_sigma005 3 2 5.58e-03   8.5147e-02   1.9149e+00  2.249e+01 ok 100/100
+sigma001_sigma005 3 3 1.05e-04  -7.7113e-04   2.0008e+00        inf non_positive 25/100
+sigma001_sigma005 4 1 9.88e-04   2.3931e-01   1.7607e+00  7.357e+00 ok 100/100
+sigma001_sigma005 4 2 9.62e-03   7.9486e-02   1.9205e+00  2.416e+01 ok 100/100
+sigma001_sigma005 4 3 2.07e-03  -1.4677e-02   2.0147e+00        inf non_positive 1/100
+sigma001_sigma005 5 1 1.58e-04   2.5673e-01   1.7433e+00  6.790e+00 ok 100/100
+sigma001_sigma005 5 2 1.49e-02   7.9068e-02   1.9209e+00  2.429e+01 ok 100/100
+sigma001_sigma005 5 3 9.23e-03  -1.1882e-02   2.0119e+00        inf non_positive 1/100
+sigma001_sigma005 6 1 3.04e-04   2.7314e-01   1.7269e+00  6.322e+00 ok 100/100
+sigma001_sigma005 6 2 1.38e-02   7.3140e-02   1.9269e+00  2.634e+01 ok 100/100
+sigma001_sigma005 6 3 1.77e-02  -3.0177e-03   2.0030e+00        inf non_positive 16/100
+sigma001_constant 1 1 3.55e-04   2.0557e-01   1.7944e+00  8.729e+00 ok 100/100
+sigma001_constant 1 2 2.06e-03   8.7314e-02   1.9127e+00  2.191e+01 ok 100/100
+sigma001_constant 1 3 2.79e-03   8.8431e-03   1.9912e+00  2.252e+02 ok 97/100
+sigma001_constant 2 1 7.50e-04   2.2536e-01   1.7746e+00  7.875e+00 ok 100/100
+sigma001_constant 2 2 2.55e-03   8.8535e-02   1.9115e+00  2.159e+01 ok 100/100
+sigma001_constant 2 3 5.73e-03   1.2898e-02   1.9871e+00  1.541e+02 ok 98/100
+sigma001_constant 3 1 6.37e-04   2.4143e-01   1.7586e+00  7.284e+00 ok 100/100
+sigma001_constant 3 2 7.30e-03   9.2915e-02   1.9071e+00  2.053e+01 ok 100/100
+sigma001_constant 3 3 3.31e-03   2.8445e-03   1.9972e+00  7.021e+02 ok 82/100
+sigma001_constant 4 1 3.75e-04   2.6059e-01   1.7394e+00  6.675e+00 ok 100/100
+sigma001_constant 4 2 1.25e-02   8.8076e-02   1.9119e+00  2.171e+01 ok 100/100
+sigma001_constant 4 3 1.65e-03  -1.1315e-02   2.0113e+00        inf non_positive 2/100
+sigma001_constant 5 1 1.04e-03   2.8006e-01   1.7199e+00  6.141e+00 ok 100/100
+sigma001_constant 5 2 1.95e-02   8.8617e-02   1.9114e+00  2.157e+01 ok 100/100
+sigma001_constant 5 3 9.05e-03  -9.8003e-03   2.0098e+00        inf non_positive 4/100
+sigma001_constant 6 1 5.96e-04   2.9892e-01   1.7011e+00  5.691e+00 ok 100/100
+sigma001_constant 6 2 2.20e-02   8.3313e-02   1.9167e+00  2.301e+01 ok 100/100
+sigma001_constant 6 3 1.58e-02   2.8467e-04   1.9997e+00  7.025e+03 ok 36/100
+
+Reduced 2x2 principal effective energies in the reference-time regime
+basis R tref tau state Eeff err JKvalid
+sigma001_sigma005 1 2 3 1 +4.78721816e-01 2.74422788e-01 100/100
+sigma001_sigma005 1 2 3 2 -1.37372722e+00 nan 95/100
+sigma001_sigma005 1 3 4 1 -1.71850710e+00 nan 96/100
+sigma001_sigma005 1 3 4 2 +4.84878093e-01 nan 94/100
+sigma001_sigma005 1 3 5 1 -2.34131164e-01 nan 96/100
+sigma001_sigma005 1 3 5 2 +5.12245953e-01 nan 95/100
+sigma001_sigma005 2 2 3 1 +6.96053027e-01 3.45956026e-01 100/100
+sigma001_sigma005 2 2 3 2 -7.24859608e-01 nan 96/100
+sigma001_sigma005 2 3 4 1 -6.62059138e-01 nan 96/100
+sigma001_sigma005 2 3 4 2 +7.57426500e-01 nan 95/100
+sigma001_sigma005 2 3 5 1 -1.04893272e-01 nan 96/100
+sigma001_sigma005 2 3 5 2 +7.71073902e-01 nan 95/100
+sigma001_sigma005 3 2 3 1 +8.32781543e-01 1.69820950e-01 100/100
+sigma001_sigma005 3 2 3 2 +nan nan 24/100
+sigma001_sigma005 3 3 4 1 +nan nan 25/100
+sigma001_sigma005 3 3 4 2 +nan nan 23/100
+sigma001_sigma005 3 3 5 1 +nan nan 25/100
+sigma001_sigma005 3 3 5 2 +nan nan 24/100
+sigma001_sigma005 4 2 3 1 +9.23645144e-01 3.35460927e-01 100/100
+sigma001_sigma005 4 2 3 2 +nan nan 1/100
+sigma001_sigma005 4 3 4 1 +nan nan 1/100
+sigma001_sigma005 4 3 4 2 +nan nan 0/100
+sigma001_sigma005 4 3 5 1 +nan nan 1/100
+sigma001_sigma005 4 3 5 2 +nan nan 0/100
+sigma001_sigma005 5 2 3 1 +1.01983626e+00 4.97256155e-01 100/100
+sigma001_sigma005 5 2 3 2 +nan nan 1/100
+sigma001_sigma005 5 3 4 1 +nan nan 1/100
+sigma001_sigma005 5 3 4 2 +nan nan 0/100
+sigma001_sigma005 5 3 5 1 +nan nan 1/100
+sigma001_sigma005 5 3 5 2 +nan nan 0/100
+sigma001_sigma005 6 2 3 1 +1.12703191e+00 1.96847651e+00 100/100
+sigma001_sigma005 6 2 3 2 +nan nan 0/100
+sigma001_sigma005 6 3 4 1 +nan nan 16/100
+sigma001_sigma005 6 3 4 2 +nan nan 0/100
+sigma001_sigma005 6 3 5 1 +nan nan 16/100
+sigma001_sigma005 6 3 5 2 +nan nan 0/100
+sigma001_constant 1 2 3 1 +4.78682646e-01 2.83955587e-01 100/100
+sigma001_constant 1 2 3 2 -8.87377526e-01 nan 96/100
+sigma001_constant 1 3 4 1 -1.63382815e+00 nan 97/100
+sigma001_constant 1 3 4 2 +4.82298999e-01 nan 95/100
+sigma001_constant 1 3 5 1 -2.13003307e-01 nan 97/100
+sigma001_constant 1 3 5 2 +5.23383350e-01 nan 96/100
+sigma001_constant 2 2 3 1 +6.96299568e-01 3.44559838e-01 100/100
+sigma001_constant 2 2 3 2 -4.06788698e-01 nan 98/100
+sigma001_constant 2 3 4 1 -5.67803284e-01 nan 98/100
+sigma001_constant 2 3 4 2 +7.58531164e-01 nan 97/100
+sigma001_constant 2 3 5 1 -6.65890084e-02 nan 98/100
+sigma001_constant 2 3 5 2 +7.99160114e-01 nan 97/100
+sigma001_constant 3 2 3 1 +8.32921669e-01 1.88451535e-01 100/100
+sigma001_constant 3 2 3 2 -1.15100321e+00 nan 81/100
+sigma001_constant 3 3 4 1 -1.96872170e+00 nan 82/100
+sigma001_constant 3 3 4 2 +8.57041290e-01 nan 80/100
+sigma001_constant 3 3 5 1 +6.42387212e-01 nan 82/100
+sigma001_constant 3 3 5 2 +1.08168816e+00 nan 81/100
+sigma001_constant 4 2 3 1 +9.22087114e-01 3.22363141e-01 100/100
+sigma001_constant 4 2 3 2 +nan nan 2/100
+sigma001_constant 4 3 4 1 +nan nan 2/100
+sigma001_constant 4 3 4 2 +nan nan 1/100
+sigma001_constant 4 3 5 1 +nan nan 2/100
+sigma001_constant 4 3 5 2 +nan nan 1/100
+sigma001_constant 5 2 3 1 +1.01192483e+00 3.47796025e-01 100/100
+sigma001_constant 5 2 3 2 +nan nan 4/100
+sigma001_constant 5 3 4 1 +nan nan 4/100
+sigma001_constant 5 3 4 2 +nan nan 3/100
+sigma001_constant 5 3 5 1 +nan nan 4/100
+sigma001_constant 5 3 5 2 +nan nan 3/100
+sigma001_constant 6 2 3 1 +1.11820729e+00 1.66606523e+00 100/100
+sigma001_constant 6 2 3 2 +nan nan 0/100
+sigma001_constant 6 3 4 1 +1.09890346e+00 nan 36/100
+sigma001_constant 6 3 4 2 +nan nan 0/100
+sigma001_constant 6 3 5 1 +1.03274412e+00 nan 36/100
+sigma001_constant 6 3 5 2 +nan nan 0/100
+
+Reduced 2x2 candidate first-excited fixed-vector correlators (tau/a=2..5)
+basis R tau Eeff err JKvalid
+sigma001_sigma005 1 2 +3.50123727e+00 nan 96/100
+sigma001_sigma005 1 3 -1.42152750e+00 nan 95/100
+sigma001_sigma005 1 4 -1.72373944e+00 nan 99/100
+sigma001_sigma005 1 5 -2.34226713e-01 6.11285875e-01 100/100
+sigma001_sigma005 2 2 +3.20134281e+00 nan 96/100
+sigma001_sigma005 2 3 -7.70352182e-01 nan 96/100
+sigma001_sigma005 2 4 -6.66910387e-01 3.57198246e+00 100/100
+sigma001_sigma005 2 5 -1.06224282e-01 8.48822506e-01 100/100
+sigma001_sigma005 3 2 +nan nan 25/100
+sigma001_sigma005 3 3 +nan nan 24/100
+sigma001_sigma005 3 4 -2.24705064e+00 nan 99/100
+sigma001_sigma005 3 5 +5.90855582e-01 5.21419724e-01 100/100
+sigma001_sigma005 4 2 +nan nan 1/100
+sigma001_sigma005 4 3 +nan nan 1/100
+sigma001_sigma005 4 4 -2.41548056e+00 nan 99/100
+sigma001_sigma005 4 5 -7.01581677e-01 1.20589898e+00 100/100
+sigma001_sigma005 5 2 +nan nan 1/100
+sigma001_sigma005 5 3 +nan nan 1/100
+sigma001_sigma005 5 4 -1.30853253e+00 nan 99/100
+sigma001_sigma005 5 5 -1.03239685e+00 2.16977152e+00 100/100
+sigma001_sigma005 6 2 +nan nan 16/100
+sigma001_sigma005 6 3 +nan nan 1/100
+sigma001_sigma005 6 4 +nan nan 1/100
+sigma001_sigma005 6 5 +nan nan 1/100
+sigma001_constant 1 2 +2.96100972e+00 nan 97/100
+sigma001_constant 1 3 -9.34576425e-01 nan 97/100
+sigma001_constant 1 4 -1.64292005e+00 4.64284704e+00 100/100
+sigma001_constant 1 5 -2.13119572e-01 5.98570389e-01 100/100
+sigma001_constant 2 2 +2.82179451e+00 nan 98/100
+sigma001_constant 2 3 -4.51835734e-01 nan 98/100
+sigma001_constant 2 4 -5.74324509e-01 2.57801832e+00 100/100
+sigma001_constant 2 5 -6.81015605e-02 8.19231452e-01 100/100
+sigma001_constant 3 2 +4.55096501e+00 nan 82/100
+sigma001_constant 3 3 -1.17601794e+00 nan 81/100
+sigma001_constant 3 4 -1.97179308e+00 nan 99/100
+sigma001_constant 3 5 +6.43199135e-01 4.45709060e-01 100/100
+sigma001_constant 4 2 +nan nan 2/100
+sigma001_constant 4 3 +nan nan 2/100
+sigma001_constant 4 4 -2.01660176e+00 nan 99/100
+sigma001_constant 4 5 -6.93007252e-01 1.25780582e+00 100/100
+sigma001_constant 5 2 +nan nan 4/100
+sigma001_constant 5 3 +nan nan 4/100
+sigma001_constant 5 4 -1.14246460e+00 3.05540601e+00 100/100
+sigma001_constant 5 5 -1.00542942e+00 2.25590372e+00 100/100
+sigma001_constant 6 2 +6.94744044e+00 nan 36/100
+sigma001_constant 6 3 +nan nan 1/100
+sigma001_constant 6 4 +nan nan 1/100
+sigma001_constant 6 5 +nan nan 1/100
+
+Interpretation guardrails
+- A usable GEVP requires a positive, well-conditioned C(tau_ref) in the full sample and every delete-one sample.
+- A positive lambda_n and a finite all-sample jackknife error are required before quoting E_n.
+- Stability across tau_ref, basis choice, and an effective-energy plateau is required before interpreting n=2 or n=3 as an excited static potential.
+- The condition tau_ref >= (tau+1)/2 marks the regime advocated in arXiv:0902.1265 for the adjacent-time effective energy.
+- The 192x64^3 ensemble and the full 3D clover profile are not included in this calculation.
+
+Diagnostic exclusions (6629 attempted evaluations)
+- scalar sigma=0.0100, R=6: sigma=0.0100, R=6: non-positive ensemble or leave-one-out correlator needed for T/a=2..5
+- R=1, tau_ref=1, omit=29 tau=2: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-2.87713e-04  8.54774e-02  2.91481e+00], rcond=1.000e-10
+- R=1, tau_ref=1, omit=29 tau=3: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-2.87713e-04  8.54774e-02  2.91481e+00], rcond=1.000e-10
+- R=1, tau_ref=1, omit=29 tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-2.87713e-04  8.54774e-02  2.91481e+00], rcond=1.000e-10
+- R=1, tau_ref=1, omit=29 tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-2.87713e-04  8.54774e-02  2.91481e+00], rcond=1.000e-10
+- R=1, tau_ref=1, omit=29 tau=6: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-2.87713e-04  8.54774e-02  2.91481e+00], rcond=1.000e-10
+- R=1, tau_ref=1, omit=29 tau=7: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-2.87713e-04  8.54774e-02  2.91481e+00], rcond=1.000e-10
+- R=1, tau_ref=1, omit=29 tau=8: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-2.87713e-04  8.54774e-02  2.91481e+00], rcond=1.000e-10
+- R=1, tau_ref=3, central tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-5.00233e-04  9.64993e-03  2.99085e+00], rcond=1.000e-10
+- R=1, tau_ref=3, central tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-5.00233e-04  9.64993e-03  2.99085e+00], rcond=1.000e-10
+- R=1, tau_ref=3, central tau=6: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-5.00233e-04  9.64993e-03  2.99085e+00], rcond=1.000e-10
+- R=1, tau_ref=3, central tau=7: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-5.00233e-04  9.64993e-03  2.99085e+00], rcond=1.000e-10
+- R=1, tau_ref=3, central tau=8: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-5.00233e-04  9.64993e-03  2.99085e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=1 tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-7.68421e-04  6.31948e-03  2.99445e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=1 tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-7.68421e-04  6.31948e-03  2.99445e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=1 tau=6: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-7.68421e-04  6.31948e-03  2.99445e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=1 tau=7: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-7.68421e-04  6.31948e-03  2.99445e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=1 tau=8: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-7.68421e-04  6.31948e-03  2.99445e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=2 tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-8.54629e-04  5.69794e-03  2.99516e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=2 tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-8.54629e-04  5.69794e-03  2.99516e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=2 tau=6: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-8.54629e-04  5.69794e-03  2.99516e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=2 tau=7: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-8.54629e-04  5.69794e-03  2.99516e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=2 tau=8: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-8.54629e-04  5.69794e-03  2.99516e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=3 tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-6.03466e-04  8.69200e-03  2.99191e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=3 tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-6.03466e-04  8.69200e-03  2.99191e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=3 tau=6: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-6.03466e-04  8.69200e-03  2.99191e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=3 tau=7: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-6.03466e-04  8.69200e-03  2.99191e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=3 tau=8: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-6.03466e-04  8.69200e-03  2.99191e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=4 tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-3.61963e-04  1.43370e-02  2.98602e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=4 tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-3.61963e-04  1.43370e-02  2.98602e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=4 tau=6: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-3.61963e-04  1.43370e-02  2.98602e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=4 tau=7: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-3.61963e-04  1.43370e-02  2.98602e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=4 tau=8: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-3.61963e-04  1.43370e-02  2.98602e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=5 tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-4.91099e-04  9.93926e-03  2.99055e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=5 tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-4.91099e-04  9.93926e-03  2.99055e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=5 tau=6: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-4.91099e-04  9.93926e-03  2.99055e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=5 tau=7: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-4.91099e-04  9.93926e-03  2.99055e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=5 tau=8: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-4.91099e-04  9.93926e-03  2.99055e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=6 tau=4: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-6.91374e-04  5.96926e-03  2.99472e+00], rcond=1.000e-10
+- R=1, tau_ref=3, omit=6 tau=5: GEVP metric is not positive definite at the specified cutoff; normalized_eigenvalues=[-6.91374e-04  5.96926e-03  2.99472e+00], rcond=1.000e-10
+- ... 6589 additional exclusions; see CSV validity counts.
