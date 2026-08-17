@@ -462,26 +462,36 @@ static qcd_complex_16 tau_time_path_open(
     return tau;
 }
 
-static qcd_complex_16 pair_correlator(
+static qcd_complex_16 pair_correlator_origin_adjointed(
     const qcd_complex_16 *tau,
-    const int source_site,
-    const int sink_site,
+    const int origin_site,
+    const int displaced_site,
     const int nvecs
 ) {
     qcd_complex_16 value = {0.0, 0.0};
 
+    /*
+      The spatial line at local (0,0,0) is the adjointed line and the
+      line at local (R,0,0) is unadjointed:
+
+        L = sum_ij tau_ij(displaced) tau_ij(origin)^*.
+
+      This naming makes the endpoint convention explicit.  It is
+      mathematically the same ordering used by the validated L(R,tau)
+      calculation.
+    */
     for (int i = 0; i < nvecs; i++) {
         for (int j = 0; j < nvecs; j++) {
-            const qcd_complex_16 tau_sink = (
-                tau[tau_index(sink_site, i, j, nvecs)]
+            const qcd_complex_16 tau_displaced = (
+                tau[tau_index(displaced_site, i, j, nvecs)]
             );
-            const qcd_complex_16 tau_source = (
-                tau[tau_index(source_site, i, j, nvecs)]
+            const qcd_complex_16 tau_origin = (
+                tau[tau_index(origin_site, i, j, nvecs)]
             );
 
             value = qcd_CADD(
                 value,
-                qcd_CMUL(tau_sink, qcd_CONJ(tau_source))
+                qcd_CMUL(tau_displaced, qcd_CONJ(tau_origin))
             );
         }
     }
@@ -496,25 +506,21 @@ static int wrap_mod(const int value, const int extent) {
 }
 
 typedef struct {
-    double plane_norm2[6];
-    double E2;
-    double B2;
-    double EB_sum;
-    double S;
+    double plane_action[6];
+    double S_raw;
 } tiny_clover_density;
 
-static double su3_norm2_traceless_F_from_Q(qcd_complex_16 Q[3][3]) {
+static double raw_plane_action_from_Q(qcd_complex_16 Q[3][3]) {
     qcd_complex_16 F[3][3];
 
     /*
-      qcdlib clover convention used by the production probe:
+      qcdlib clover normalization used in this cross-check:
 
         F_munu = (Q_munu - Q_munu^\dagger) / 8,
 
-      followed by projection onto the traceless color algebra.  Since F is
-      anti-Hermitian, use the positive norm
+      with no color-trace subtraction.  Since F is anti-Hermitian,
 
-        Tr(F^\dagger F) = sum_ab |F_ab|^2.
+        -Tr(F F) = Tr(F^\dagger F) = sum_ab |F_ab|^2.
     */
     for (int a = 0; a < 3; a++) {
         for (int b = 0; b < 3; b++) {
@@ -523,29 +529,17 @@ static double su3_norm2_traceless_F_from_Q(qcd_complex_16 Q[3][3]) {
         }
     }
 
-    qcd_complex_16 trace = {0.0, 0.0};
-    for (int a = 0; a < 3; a++) {
-        trace = qcd_CADD(trace, F[a][a]);
-    }
-    trace.re /= 3.0;
-    trace.im /= 3.0;
-
-    for (int a = 0; a < 3; a++) {
-        F[a][a].re -= trace.re;
-        F[a][a].im -= trace.im;
-    }
-
-    double norm2 = 0.0;
+    double plane_action = 0.0;
     for (int a = 0; a < 3; a++) {
         for (int b = 0; b < 3; b++) {
-            norm2 += (
+            plane_action += (
                 F[a][b].re * F[a][b].re +
                 F[a][b].im * F[a][b].im
             );
         }
     }
 
-    return norm2;
+    return plane_action;
 }
 
 static tiny_clover_density local_clover_density(
@@ -559,45 +553,17 @@ static tiny_clover_density local_clover_density(
       qcd_cloverField plane order:
         0: 01, 1: 02, 2: 03, 3: 12, 4: 13, 5: 23.
 
-      Plane 0 is Euclidean time, so 01/02/03 are E-like and 12/13/23
-      are B-like.
+      The observable is the complete six-plane action density;
+      no electric/magnetic separation is made here.
     */
     for (int plane = 0; plane < 6; plane++) {
-        density.plane_norm2[plane] = su3_norm2_traceless_F_from_Q(
+        density.plane_action[plane] = raw_plane_action_from_Q(
             clover->D[site4][plane]
         );
+        density.S_raw += density.plane_action[plane];
     }
 
-    for (int plane = 0; plane < 3; plane++) {
-        density.E2 += density.plane_norm2[plane];
-    }
-    for (int plane = 3; plane < 6; plane++) {
-        density.B2 += density.plane_norm2[plane];
-    }
-
-    density.EB_sum = density.E2 + density.B2;
-    density.S = 0.5 * density.EB_sum;
     return density;
-}
-
-static double complex_ratio_real(
-    const qcd_complex_16 numerator,
-    const qcd_complex_16 denominator
-) {
-    const double denominator_norm2 = (
-        denominator.re * denominator.re +
-        denominator.im * denominator.im
-    );
-
-    if (!(denominator_norm2 > 0.0)) {
-        fprintf(stderr, "ERROR: zero denominator in complex ratio\n");
-        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
-    }
-
-    return (
-        numerator.re * denominator.re +
-        numerator.im * denominator.im
-    ) / denominator_norm2;
 }
 
 int main(int argc, char **argv) {
@@ -843,6 +809,40 @@ int main(int argc, char **argv) {
     const char *plane_name[6] = {
         "01", "02", "03", "12", "13", "23"
     };
+    const double expected_point_plane[6] = {
+        0.1421358974693371,
+        0.2229753324656666,
+        0.3360429657631333,
+        0.3473193984043027,
+        0.2150515455120535,
+        0.2047295356401899
+    };
+    const double expected_point_S_raw = 1.4682546752546830;
+    const int point_regression_applicable = (
+        t_mid == 4 &&
+        point_x == 0 &&
+        point_y == 1 &&
+        point_z == 2
+    );
+    double max_point_plane_absdiff = 0.0;
+    for (int plane = 0; plane < 6; plane++) {
+        const double absdiff = fabs(
+            point_density.plane_action[plane] -
+            expected_point_plane[plane]
+        );
+        if (absdiff > max_point_plane_absdiff) {
+            max_point_plane_absdiff = absdiff;
+        }
+    }
+    const double point_S_raw_absdiff = fabs(
+        point_density.S_raw - expected_point_S_raw
+    );
+    const double point_regression_tolerance = 1.0e-14;
+    const int point_regression_ok = (
+        !point_regression_applicable ||
+        (max_point_plane_absdiff <= point_regression_tolerance &&
+         point_S_raw_absdiff <= point_regression_tolerance)
+    );
 
     if (myid == 0) {
         printf(
@@ -869,36 +869,42 @@ int main(int argc, char **argv) {
         }
         printf("\n");
         printf(
-            "CLOVER_CONVENTION F=(Q-Qdagger)/8 color=traceless "
-            "plane_density=Tr(FdaggerF) "
-            "S=(E2+B2)/2 ordered_munu_positive=2*(E2+B2)\n"
+            "CLOVER_CONVENTION F=(Q-Qdagger)/8 color=unprojected "
+            "plane_action=-Tr(FF)=Tr(FdaggerF) "
+            "S_raw=sum_mu_lt_nu_plane_action\n"
         );
         printf("PLAQUETTE value=%+.16e\n", plaquette);
         for (int plane = 0; plane < 6; plane++) {
             printf(
                 "CLOVER_PLANE t=%d x=%d y=%d z=%d plane=%s "
-                "norm2=%+.16e\n",
+                "minus_Tr_FF=%+.16e\n",
                 t_mid,
                 point_x,
                 point_y,
                 point_z,
                 plane_name[plane],
-                point_density.plane_norm2[plane]
+                point_density.plane_action[plane]
             );
         }
         printf(
             "CLOVER_POINT t=%d x=%d y=%d z=%d "
-            "E2=%+.16e B2=%+.16e E2plusB2=%+.16e "
-            "S=%+.16e ordered_munu_positive=%+.16e\n",
+            "S_raw=-sum_mu_lt_nu_Tr_FF=%+.16e\n",
             t_mid,
             point_x,
             point_y,
             point_z,
-            point_density.E2,
-            point_density.B2,
-            point_density.EB_sum,
-            point_density.S,
-            2.0 * point_density.EB_sum
+            point_density.S_raw
+        );
+        printf(
+            "CLOVER_REFERENCE applicable=%d "
+            "expected_S_raw=%+.16e S_raw_absdiff=%+.16e "
+            "max_plane_absdiff=%+.16e tolerance=%+.16e ok=%d\n",
+            point_regression_applicable,
+            expected_point_S_raw,
+            point_S_raw_absdiff,
+            max_point_plane_absdiff,
+            point_regression_tolerance,
+            point_regression_ok
         );
         printf(
             "PROBE_DEF frame=source_relative "
@@ -908,35 +914,36 @@ int main(int argc, char **argv) {
             probe_tr1,
             probe_tr2
         );
+        printf(
+            "STATIC_LINE_DEF local_origin=0,0,0 origin_line=adjointed "
+            "local_displaced=%d,0,0 displaced_line=unadjointed "
+            "product=displaced_times_conjugate_origin\n",
+            r_sep
+        );
     }
 
     const char *axis_name[3] = {"x", "y", "z"};
     qcd_complex_16 combined_L_sum = {0.0, 0.0};
-    qcd_complex_16 combined_LE2_sum = {0.0, 0.0};
-    qcd_complex_16 combined_LB2_sum = {0.0, 0.0};
     qcd_complex_16 combined_LS_sum = {0.0, 0.0};
-    double combined_E2_sum = 0.0;
-    double combined_B2_sum = 0.0;
-    double combined_S_sum = 0.0;
+    double combined_S_raw_sum = 0.0;
     long combined_nsrc = 0;
 
-    double axis_S_avg[3] = {0.0, 0.0, 0.0};
+    double axis_S_raw_avg[3] = {0.0, 0.0, 0.0};
     double max_pair_conjugacy_abs = 0.0;
     double max_axis_L_abs_im = 0.0;
-    double max_delta_ratio_convention_absdiff = 0.0;
 
     for (int axis = 0; axis < 3; axis++) {
         const int transverse1 = (axis + 1) % 3;
         const int transverse2 = (axis + 2) % 3;
+        int global_probe_offset[3] = {0, 0, 0};
+        global_probe_offset[axis] = probe_long;
+        global_probe_offset[transverse1] = probe_tr1;
+        global_probe_offset[transverse2] = probe_tr2;
 
         qcd_complex_16 L_sum = {0.0, 0.0};
-        qcd_complex_16 LE2_sum = {0.0, 0.0};
-        qcd_complex_16 LB2_sum = {0.0, 0.0};
         qcd_complex_16 LS_sum = {0.0, 0.0};
         qcd_complex_16 origin_pair = {0.0, 0.0};
-        double E2_sum = 0.0;
-        double B2_sum = 0.0;
-        double S_sum = 0.0;
+        double S_raw_sum = 0.0;
         long axis_nsrc = 0;
 
         for (int x = 0; x < L[1]; x++) {
@@ -978,26 +985,21 @@ int main(int argc, char **argv) {
                         L
                     );
 
-                    const qcd_complex_16 L_value = pair_correlator(
-                        tau, source_site, sink_site, nvecs
-                    );
-                    const qcd_complex_16 reverse = pair_correlator(
-                        tau, sink_site, source_site, nvecs
-                    );
+                    const qcd_complex_16 L_value =
+                        pair_correlator_origin_adjointed(
+                            tau, source_site, sink_site, nvecs
+                        );
+                    const qcd_complex_16 reverse =
+                        pair_correlator_origin_adjointed(
+                            tau, sink_site, source_site, nvecs
+                        );
                     const tiny_clover_density density =
                         local_clover_density(&clover, probe_site4);
 
                     L_sum = qcd_CADD(L_sum, L_value);
-                    E2_sum += density.E2;
-                    B2_sum += density.B2;
-                    S_sum += density.S;
-
-                    LE2_sum.re += L_value.re * density.E2;
-                    LE2_sum.im += L_value.im * density.E2;
-                    LB2_sum.re += L_value.re * density.B2;
-                    LB2_sum.im += L_value.im * density.B2;
-                    LS_sum.re += L_value.re * density.S;
-                    LS_sum.im += L_value.im * density.S;
+                    S_raw_sum += density.S_raw;
+                    LS_sum.re += L_value.re * density.S_raw;
+                    LS_sum.im += L_value.im * density.S_raw;
                     axis_nsrc++;
 
                     const double residual_re = (
@@ -1022,7 +1024,7 @@ int main(int argc, char **argv) {
                             "SITE axis=%s source=%d,%d,%d sink=%d,%d,%d "
                             "probe_t=%d probe=%d,%d,%d "
                             "L_Re=%+.16e L_Im=%+.16e "
-                            "E2=%+.16e B2=%+.16e S=%+.16e\n",
+                            "S_raw=%+.16e\n",
                             axis_name[axis],
                             x,
                             y,
@@ -1036,9 +1038,7 @@ int main(int argc, char **argv) {
                             probe_coord[2],
                             L_value.re,
                             L_value.im,
-                            density.E2,
-                            density.B2,
-                            density.S
+                            density.S_raw
                         );
                     }
                 }
@@ -1050,94 +1050,61 @@ int main(int argc, char **argv) {
             L_sum.re * inverse_nsrc,
             L_sum.im * inverse_nsrc
         };
-        const qcd_complex_16 LE2_avg = {
-            LE2_sum.re * inverse_nsrc,
-            LE2_sum.im * inverse_nsrc
-        };
-        const qcd_complex_16 LB2_avg = {
-            LB2_sum.re * inverse_nsrc,
-            LB2_sum.im * inverse_nsrc
-        };
         const qcd_complex_16 LS_avg = {
             LS_sum.re * inverse_nsrc,
             LS_sum.im * inverse_nsrc
         };
-        const double E2_avg = E2_sum * inverse_nsrc;
-        const double B2_avg = B2_sum * inverse_nsrc;
-        const double S_avg = S_sum * inverse_nsrc;
+        const double S_raw_avg = S_raw_sum * inverse_nsrc;
 
-        if (L_avg.re == 0.0) {
-            fprintf(
-                stderr,
-                "ERROR: zero real L denominator for axis=%s\n",
-                axis_name[axis]
-            );
-            MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
-        }
-
-        const double delta_E2 = LE2_avg.re / L_avg.re - E2_avg;
-        const double delta_B2 = LB2_avg.re / L_avg.re - B2_avg;
-        const double delta_S = LS_avg.re / L_avg.re - S_avg;
-        const double delta_S_complex = (
-            complex_ratio_real(LS_avg, L_avg) - S_avg
-        );
-        const double ratio_convention_absdiff = fabs(
-            delta_S - delta_S_complex
-        );
-
-        axis_S_avg[axis] = S_avg;
+        axis_S_raw_avg[axis] = S_raw_avg;
         if (fabs(L_avg.im) > max_axis_L_abs_im) {
             max_axis_L_abs_im = fabs(L_avg.im);
         }
-        if (ratio_convention_absdiff >
-            max_delta_ratio_convention_absdiff) {
-            max_delta_ratio_convention_absdiff =
-                ratio_convention_absdiff;
-        }
 
         combined_L_sum = qcd_CADD(combined_L_sum, L_sum);
-        combined_LE2_sum = qcd_CADD(combined_LE2_sum, LE2_sum);
-        combined_LB2_sum = qcd_CADD(combined_LB2_sum, LB2_sum);
         combined_LS_sum = qcd_CADD(combined_LS_sum, LS_sum);
-        combined_E2_sum += E2_sum;
-        combined_B2_sum += B2_sum;
-        combined_S_sum += S_sum;
+        combined_S_raw_sum += S_raw_sum;
         combined_nsrc += axis_nsrc;
 
         if (myid == 0) {
             printf(
-                "PAIR axis=%s source=0,0,0 "
+                "PAIR spacetime_plane=(%d,0) axis=%s "
+                "local_origin=0,0,0 origin_line=adjointed "
+                "local_displaced=%d,0,0 displaced_line=unadjointed "
                 "Re=%+.16e Im=%+.16e\n",
+                axis + 1,
                 axis_name[axis],
+                r_sep,
                 origin_pair.re,
                 origin_pair.im
             );
             printf(
-                "AXIS_PROBE axis=%s Nsrc=%ld "
-                "L_Re=%+.16e L_Im=%+.16e "
-                "E2_vac=%+.16e B2_vac=%+.16e S_vac=%+.16e "
-                "LE2_Re=%+.16e LE2_Im=%+.16e "
-                "LB2_Re=%+.16e LB2_Im=%+.16e "
-                "LS_Re=%+.16e LS_Im=%+.16e "
-                "delta_E2=%+.16e delta_B2=%+.16e "
-                "delta_S=%+.16e delta_S_complex=%+.16e\n",
+                "AXIS_LS spacetime_plane=(%d,0) axis=%s Nsrc=%ld "
+                "local_probe=%d,%d,%d global_probe_offset=%d,%d,%d "
+                "L_SUM_Re=%+.16e L_SUM_Im=%+.16e "
+                "L_AVG_Re=%+.16e L_AVG_Im=%+.16e "
+                "S_RAW_SUM=%+.16e S_RAW_AVG=%+.16e "
+                "LS_SUM_Re=%+.16e LS_SUM_Im=%+.16e "
+                "LS_AVG_Re=%+.16e LS_AVG_Im=%+.16e\n",
+                axis + 1,
                 axis_name[axis],
                 axis_nsrc,
+                probe_long,
+                probe_tr1,
+                probe_tr2,
+                global_probe_offset[0],
+                global_probe_offset[1],
+                global_probe_offset[2],
+                L_sum.re,
+                L_sum.im,
                 L_avg.re,
                 L_avg.im,
-                E2_avg,
-                B2_avg,
-                S_avg,
-                LE2_avg.re,
-                LE2_avg.im,
-                LB2_avg.re,
-                LB2_avg.im,
+                S_raw_sum,
+                S_raw_avg,
+                LS_sum.re,
+                LS_sum.im,
                 LS_avg.re,
-                LS_avg.im,
-                delta_E2,
-                delta_B2,
-                delta_S,
-                delta_S_complex
+                LS_avg.im
             );
         }
     }
@@ -1149,66 +1116,22 @@ int main(int argc, char **argv) {
         combined_L_sum.re * inverse_combined_nsrc,
         combined_L_sum.im * inverse_combined_nsrc
     };
-    const qcd_complex_16 combined_LE2_avg = {
-        combined_LE2_sum.re * inverse_combined_nsrc,
-        combined_LE2_sum.im * inverse_combined_nsrc
-    };
-    const qcd_complex_16 combined_LB2_avg = {
-        combined_LB2_sum.re * inverse_combined_nsrc,
-        combined_LB2_sum.im * inverse_combined_nsrc
-    };
     const qcd_complex_16 combined_LS_avg = {
         combined_LS_sum.re * inverse_combined_nsrc,
         combined_LS_sum.im * inverse_combined_nsrc
     };
-    const double combined_E2_avg = (
-        combined_E2_sum * inverse_combined_nsrc
-    );
-    const double combined_B2_avg = (
-        combined_B2_sum * inverse_combined_nsrc
-    );
-    const double combined_S_avg = (
-        combined_S_sum * inverse_combined_nsrc
+    const double combined_S_raw_avg = (
+        combined_S_raw_sum * inverse_combined_nsrc
     );
 
-    if (combined_L_avg.re == 0.0) {
-        fprintf(stderr, "ERROR: zero real combined L denominator\n");
-        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
-    }
-
-    const double combined_delta_E2 = (
-        combined_LE2_avg.re / combined_L_avg.re -
-        combined_E2_avg
-    );
-    const double combined_delta_B2 = (
-        combined_LB2_avg.re / combined_L_avg.re -
-        combined_B2_avg
-    );
-    const double combined_delta_S = (
-        combined_LS_avg.re / combined_L_avg.re -
-        combined_S_avg
-    );
-    const double combined_delta_S_complex = (
-        complex_ratio_real(combined_LS_avg, combined_L_avg) -
-        combined_S_avg
-    );
-    const double combined_ratio_convention_absdiff = fabs(
-        combined_delta_S - combined_delta_S_complex
-    );
-    if (combined_ratio_convention_absdiff >
-        max_delta_ratio_convention_absdiff) {
-        max_delta_ratio_convention_absdiff =
-            combined_ratio_convention_absdiff;
-    }
-
-    double max_axis_S_spread = 0.0;
+    double max_axis_S_raw_spread = 0.0;
     for (int first = 0; first < 3; first++) {
         for (int second = first + 1; second < 3; second++) {
             const double spread = fabs(
-                axis_S_avg[first] - axis_S_avg[second]
+                axis_S_raw_avg[first] - axis_S_raw_avg[second]
             );
-            if (spread > max_axis_S_spread) {
-                max_axis_S_spread = spread;
+            if (spread > max_axis_S_raw_spread) {
+                max_axis_S_raw_spread = spread;
             }
         }
     }
@@ -1234,36 +1157,21 @@ int main(int argc, char **argv) {
 
     if (myid == 0) {
         printf(
-            "COMBINED_PROBE Nsrc=%ld "
+            "COMBINED_DIAGNOSTIC Nsrc=%ld "
             "L_Re=%+.16e L_Im=%+.16e "
-            "E2_vac=%+.16e B2_vac=%+.16e S_vac=%+.16e "
-            "LE2_Re=%+.16e LE2_Im=%+.16e "
-            "LB2_Re=%+.16e LB2_Im=%+.16e "
-            "LS_Re=%+.16e LS_Im=%+.16e "
-            "delta_E2=%+.16e delta_B2=%+.16e "
-            "delta_S=%+.16e delta_S_complex=%+.16e\n",
+            "S_RAW_AVG=%+.16e "
+            "LS_Re=%+.16e LS_Im=%+.16e\n",
             combined_nsrc,
             combined_L_avg.re,
             combined_L_avg.im,
-            combined_E2_avg,
-            combined_B2_avg,
-            combined_S_avg,
-            combined_LE2_avg.re,
-            combined_LE2_avg.im,
-            combined_LB2_avg.re,
-            combined_LB2_avg.im,
+            combined_S_raw_avg,
             combined_LS_avg.re,
-            combined_LS_avg.im,
-            combined_delta_E2,
-            combined_delta_B2,
-            combined_delta_S,
-            combined_delta_S_complex
+            combined_LS_avg.im
         );
         printf(
             "CHECK max_pair_conjugacy_abs=%+.16e "
             "max_axis_L_abs_im=%+.16e "
-            "max_axis_S_spread=%+.16e "
-            "max_delta_ratio_convention_absdiff=%+.16e "
+            "max_axis_S_raw_spread=%+.16e "
             "L_reference_applicable=%d "
             "L_reference_expected=%+.16e "
             "L_reference_absdiff=%+.16e "
@@ -1272,8 +1180,7 @@ int main(int argc, char **argv) {
             "L_regression_ok=%d\n",
             max_pair_conjugacy_abs,
             max_axis_L_abs_im,
-            max_axis_S_spread,
-            max_delta_ratio_convention_absdiff,
+            max_axis_S_raw_spread,
             regression_applicable,
             expected_L_nvec16,
             L_reference_absdiff,
@@ -1298,6 +1205,19 @@ int main(int argc, char **argv) {
     qcd_destroyGeometry(&geo);
 
     MPI_Finalize();
+
+    if (!point_regression_ok) {
+        fprintf(
+            stderr,
+            "ERROR: raw clover point regression failed: "
+            "S_absdiff=%+.16e plane_max_absdiff=%+.16e "
+            "tolerance=%+.16e\n",
+            point_S_raw_absdiff,
+            max_point_plane_absdiff,
+            point_regression_tolerance
+        );
+        return EXIT_FAILURE;
+    }
 
     if (!L_regression_ok) {
         fprintf(

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=laplace_clover_tiny
+#SBATCH --job-name=lap_clover_raw_ls
 #SBATCH --partition=compute2011
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -46,10 +46,12 @@ echo "R_SEP=${R_SEP}"
 echo "POINT=${POINT_X},${POINT_Y},${POINT_Z}"
 echo "PROBE_LOCAL=${PROBE_LONG},${PROBE_TR1},${PROBE_TR2}"
 echo "PRINT_SITE_VALUES=${PRINT_SITE_VALUES}"
+echo "OBSERVABLE=raw_unprojected_full_six_plane_action_density"
+echo "STATIC_LINE_ORIENTATION=origin_adjointed_displaced_unadjointed"
 
 for nvecs in ${NVECS_LIST}; do
   export NVECS="${nvecs}"
-  output="${results_dir}/laplace_clover_tiny_open_cfg1_t${T_SRC}-${T_SINK}_r${R_SEP}_Nv${NVECS}_probe${PROBE_LONG}_${PROBE_TR1}_${PROBE_TR2}.txt"
+  output="${results_dir}/laplace_clover_tiny_open_raw_axisLS_cfg1_t${T_SRC}-${T_SINK}_r${R_SEP}_Nv${NVECS}_probe${PROBE_LONG}_${PROBE_TR1}_${PROBE_TR2}.txt"
 
   echo "Running NVECS=${NVECS} -> ${output}"
 

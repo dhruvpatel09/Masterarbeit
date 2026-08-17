@@ -1,0 +1,25 @@
+META cfg=1 Nt=8 Ns=4 Nv=16 r=2 t_src=2 t_sink=6 tau=4 t_mid=4 temporal_bc=open spatial_bc=periodic rho=constant evec_reader=serial_hdf5 clover=qcdlib
+INPUT gauge=/home/m2130292/Masterarbeit/laplace_static/validation/tiny_open8x4x4x4/data/cnfg/open8x4x4x4n1
+INPUT evec_src=/home/m2130292/Masterarbeit/laplace_static/validation/tiny_open8x4x4x4/data/disteigvecs/disteigvecs_open8x4x4x4n1_t2.h5
+INPUT evec_sink=/home/m2130292/Masterarbeit/laplace_static/validation/tiny_open8x4x4x4/data/disteigvecs/disteigvecs_open8x4x4x4n1_t6.h5
+PATH temporal_links 2 3 4 5
+CLOVER_CONVENTION F=(Q-Qdagger)/8 color=unprojected plane_action=-Tr(FF)=Tr(FdaggerF) S_raw=sum_mu_lt_nu_plane_action
+PLAQUETTE value=+6.5644455389115142e-01
+CLOVER_PLANE t=4 x=0 y=1 z=2 plane=01 minus_Tr_FF=+1.4213589746933711e-01
+CLOVER_PLANE t=4 x=0 y=1 z=2 plane=02 minus_Tr_FF=+2.2297533246566670e-01
+CLOVER_PLANE t=4 x=0 y=1 z=2 plane=03 minus_Tr_FF=+3.3604296576313342e-01
+CLOVER_PLANE t=4 x=0 y=1 z=2 plane=12 minus_Tr_FF=+3.4731939840430276e-01
+CLOVER_PLANE t=4 x=0 y=1 z=2 plane=13 minus_Tr_FF=+2.1505154551205338e-01
+CLOVER_PLANE t=4 x=0 y=1 z=2 plane=23 minus_Tr_FF=+2.0472953564018997e-01
+CLOVER_POINT t=4 x=0 y=1 z=2 S_raw=-sum_mu_lt_nu_Tr_FF=+1.4682546752546832e+00
+CLOVER_REFERENCE applicable=1 expected_S_raw=+1.4682546752546830e+00 S_raw_absdiff=+2.2204460492503131e-16 max_plane_absdiff=+1.1102230246251565e-16 tolerance=+1.0000000000000000e-14 ok=1
+PROBE_DEF frame=source_relative longitudinal=0 transverse1=1 transverse2=2 rotation=cyclic_with_axis
+STATIC_LINE_DEF local_origin=0,0,0 origin_line=adjointed local_displaced=2,0,0 displaced_line=unadjointed product=displaced_times_conjugate_origin
+PAIR spacetime_plane=(1,0) axis=x local_origin=0,0,0 origin_line=adjointed local_displaced=2,0,0 displaced_line=unadjointed Re=+1.3622847961988062e-03 Im=+1.1536528246516013e-04
+AXIS_LS spacetime_plane=(1,0) axis=x Nsrc=64 local_probe=0,1,2 global_probe_offset=0,1,2 L_SUM_Re=+2.2513847836230297e-02 L_SUM_Im=+3.6862873864507151e-18 L_AVG_Re=+3.5177887244109839e-04 L_AVG_Im=+5.7598240413292423e-20 S_RAW_SUM=+9.2727784166210824e+01 S_RAW_AVG=+1.4488716275970441e+00 LS_SUM_Re=+3.3359316123120916e-02 LS_SUM_Im=-8.5014858181362159e-04 LS_AVG_Re=+5.2123931442376432e-04 LS_AVG_Im=-1.3283571590837837e-05
+PAIR spacetime_plane=(2,0) axis=y local_origin=0,0,0 origin_line=adjointed local_displaced=2,0,0 displaced_line=unadjointed Re=+1.3177687420121355e-03 Im=-3.4085071332480712e-04
+AXIS_LS spacetime_plane=(2,0) axis=y Nsrc=64 local_probe=0,1,2 global_probe_offset=2,0,1 L_SUM_Re=+5.8715312924319633e-02 L_SUM_Im=+6.5052130349130266e-19 L_AVG_Re=+9.1742676444249427e-04 L_AVG_Im=+1.0164395367051604e-20 S_RAW_SUM=+9.2727784166210839e+01 S_RAW_AVG=+1.4488716275970444e+00 LS_SUM_Re=+8.3400043826472106e-02 LS_SUM_Im=+3.1688877163635657e-03 LS_AVG_Re=+1.3031256847886267e-03 LS_AVG_Im=+4.9513870568180714e-05
+PAIR spacetime_plane=(3,0) axis=z local_origin=0,0,0 origin_line=adjointed local_displaced=2,0,0 displaced_line=unadjointed Re=+1.6789581536044980e-03 Im=+2.2758117043506114e-04
+AXIS_LS spacetime_plane=(3,0) axis=z Nsrc=64 local_probe=0,1,2 global_probe_offset=1,2,0 L_SUM_Re=+2.0249921979848658e-02 L_SUM_Im=+0.0000000000000000e+00 L_AVG_Re=+3.1640503093513528e-04 L_AVG_Im=+0.0000000000000000e+00 S_RAW_SUM=+9.2727784166210839e+01 S_RAW_AVG=+1.4488716275970444e+00 LS_SUM_Re=+3.1581773647762650e-02 LS_SUM_Im=+1.3661800979616883e-03 LS_AVG_Re=+4.9346521324629140e-04 LS_AVG_Im=+2.1346564030651379e-05
+COMBINED_DIAGNOSTIC Nsrc=192 L_Re=+5.2853688927290924e-04 L_Im=+2.2587545260114674e-20 S_RAW_AVG=+1.4488716275970441e+00 LS_Re=+7.7261007081956079e-04 LS_Im=+1.9192287669331419e-05
+CHECK max_pair_conjugacy_abs=+0.0000000000000000e+00 max_axis_L_abs_im=+5.7598240413292423e-20 max_axis_S_raw_spread=+2.2204460492503131e-16 L_reference_applicable=1 L_reference_expected=+5.2853688927290924e-04 L_reference_absdiff=+0.0000000000000000e+00 L_reference_reldiff=+0.0000000000000000e+00 L_regression_tolerance=+1.0000000000000001e-15 L_regression_ok=1
