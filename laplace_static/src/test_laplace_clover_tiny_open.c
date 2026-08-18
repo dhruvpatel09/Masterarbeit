@@ -566,6 +566,86 @@ static tiny_clover_density local_clover_density(
     return density;
 }
 
+static void print_unsummed_term(
+    const char *record_name,
+    const int axis,
+    const char *axis_name,
+    const int t_src,
+    const int t_sink,
+    const int t_mid,
+    const int source_coord[3],
+    const int sink_coord[3],
+    const int probe_coord[3],
+    const int source_site,
+    const int sink_site,
+    const int probe_site4,
+    const qcd_complex_16 L_value,
+    const qcd_complex_16 L_reversed,
+    const tiny_clover_density density,
+    const qcd_complex_16 LS_value
+) {
+    const double L_conjugacy_abs = hypot(
+        L_value.re - L_reversed.re,
+        L_value.im + L_reversed.im
+    );
+
+    printf(
+        "%s spacetime_plane=(%d,0) axis=%s "
+        "adjointed_start_abs=(%d,%d,%d,%d) "
+        "adjointed_end_abs=(%d,%d,%d,%d) "
+        "unadjointed_start_abs=(%d,%d,%d,%d) "
+        "unadjointed_end_abs=(%d,%d,%d,%d) "
+        "probe_abs=(%d,%d,%d,%d) "
+        "adjointed_site3=%d unadjointed_site3=%d probe_site4=%d "
+        "L_Re=%+.16e L_Im=%+.16e "
+        "L_reversed_Re=%+.16e L_reversed_Im=%+.16e "
+        "L_conjugacy_abs=%+.16e "
+        "S01=%+.16e S02=%+.16e S03=%+.16e "
+        "S12=%+.16e S13=%+.16e S23=%+.16e "
+        "S_raw=%+.16e LS_Re=%+.16e LS_Im=%+.16e\n",
+        record_name,
+        axis + 1,
+        axis_name,
+        t_src,
+        source_coord[0],
+        source_coord[1],
+        source_coord[2],
+        t_sink,
+        source_coord[0],
+        source_coord[1],
+        source_coord[2],
+        t_src,
+        sink_coord[0],
+        sink_coord[1],
+        sink_coord[2],
+        t_sink,
+        sink_coord[0],
+        sink_coord[1],
+        sink_coord[2],
+        t_mid,
+        probe_coord[0],
+        probe_coord[1],
+        probe_coord[2],
+        source_site,
+        sink_site,
+        probe_site4,
+        L_value.re,
+        L_value.im,
+        L_reversed.re,
+        L_reversed.im,
+        L_conjugacy_abs,
+        density.plane_action[0],
+        density.plane_action[1],
+        density.plane_action[2],
+        density.plane_action[3],
+        density.plane_action[4],
+        density.plane_action[5],
+        density.S_raw,
+        LS_value.re,
+        LS_value.im
+    );
+}
+
 int main(int argc, char **argv) {
     MPI_Init(&argc, &argv);
 
@@ -995,11 +1075,14 @@ int main(int argc, char **argv) {
                         );
                     const tiny_clover_density density =
                         local_clover_density(&clover, probe_site4);
+                    const qcd_complex_16 LS_value = {
+                        L_value.re * density.S_raw,
+                        L_value.im * density.S_raw
+                    };
 
                     L_sum = qcd_CADD(L_sum, L_value);
                     S_raw_sum += density.S_raw;
-                    LS_sum.re += L_value.re * density.S_raw;
-                    LS_sum.im += L_value.im * density.S_raw;
+                    LS_sum = qcd_CADD(LS_sum, LS_value);
                     axis_nsrc++;
 
                     const double residual_re = (
@@ -1017,28 +1100,47 @@ int main(int argc, char **argv) {
 
                     if (x == 0 && y == 0 && z == 0) {
                         origin_pair = L_value;
+
+                        if (axis == 0 && myid == 0) {
+                            print_unsummed_term(
+                                "UNSUMMED_ANCHOR",
+                                axis,
+                                axis_name[axis],
+                                t_src,
+                                t_sink,
+                                t_mid,
+                                source_coord,
+                                sink_coord,
+                                probe_coord,
+                                source_site,
+                                sink_site,
+                                probe_site4,
+                                L_value,
+                                reverse,
+                                density,
+                                LS_value
+                            );
+                        }
                     }
 
                     if (print_site_values && myid == 0) {
-                        printf(
-                            "SITE axis=%s source=%d,%d,%d sink=%d,%d,%d "
-                            "probe_t=%d probe=%d,%d,%d "
-                            "L_Re=%+.16e L_Im=%+.16e "
-                            "S_raw=%+.16e\n",
+                        print_unsummed_term(
+                            "UNSUMMED_SITE",
+                            axis,
                             axis_name[axis],
-                            x,
-                            y,
-                            z,
-                            sink_coord[0],
-                            sink_coord[1],
-                            sink_coord[2],
+                            t_src,
+                            t_sink,
                             t_mid,
-                            probe_coord[0],
-                            probe_coord[1],
-                            probe_coord[2],
-                            L_value.re,
-                            L_value.im,
-                            density.S_raw
+                            source_coord,
+                            sink_coord,
+                            probe_coord,
+                            source_site,
+                            sink_site,
+                            probe_site4,
+                            L_value,
+                            reverse,
+                            density,
+                            LS_value
                         );
                     }
                 }

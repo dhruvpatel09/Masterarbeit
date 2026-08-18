@@ -51,7 +51,11 @@ echo "STATIC_LINE_ORIENTATION=origin_adjointed_displaced_unadjointed"
 
 for nvecs in ${NVECS_LIST}; do
   export NVECS="${nvecs}"
-  output="${results_dir}/laplace_clover_tiny_open_raw_axisLS_cfg1_t${T_SRC}-${T_SINK}_r${R_SEP}_Nv${NVECS}_probe${PROBE_LONG}_${PROBE_TR1}_${PROBE_TR2}.txt"
+  if [[ "${PRINT_SITE_VALUES}" == "1" ]]; then
+    output="${results_dir}/laplace_clover_tiny_open_raw_unsummed_all_sites_cfg1_t${T_SRC}-${T_SINK}_r${R_SEP}_Nv${NVECS}_probe${PROBE_LONG}_${PROBE_TR1}_${PROBE_TR2}.txt"
+  else
+    output="${results_dir}/laplace_clover_tiny_open_raw_unsummed_anchor_cfg1_t${T_SRC}-${T_SINK}_r${R_SEP}_Nv${NVECS}_probe${PROBE_LONG}_${PROBE_TR1}_${PROBE_TR2}.txt"
+  fi
 
   echo "Running NVECS=${NVECS} -> ${output}"
 
