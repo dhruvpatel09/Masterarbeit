@@ -1,0 +1,80 @@
+{
+  "autocorrelation": {
+    "effective_sample_size_from_median_tau": 514.7926992791754,
+    "n_primary_streams": 1616,
+    "tau_int_median": 0.9712647454016181,
+    "tau_int_q05": 0.6985284356143395,
+    "tau_int_q95": 1.2854191542098194,
+    "tau_window": 10
+  },
+  "generated_utc": "2026-09-02T20:44:29.814544+00:00",
+  "input": {
+    "cell_element_shape": [
+      1000,
+      101
+    ],
+    "cell_shape": [
+      4,
+      4
+    ],
+    "element_dtypes": [
+      "float64"
+    ],
+    "matlab_variables": [
+      "corr"
+    ],
+    "maximum_input_imaginary_part": 0.0,
+    "maximum_input_value": 12.036951609421811,
+    "minimum_input_value": -0.009373730414842466,
+    "n_measurements": 1000,
+    "n_operators": 4,
+    "n_times": 101
+  },
+  "input_path": "/home/m2130292/Masterarbeit/laplace_static/validation/fake_gevp/data/fakedat.mat",
+  "input_sha256": "0ad8a271954fa47559e7d307a2bb40983a5d97a63fee4829bcd34f27ddbff6be",
+  "numerical_gates": {
+    "all_central_metrics_ok": true,
+    "all_central_solves_ok": true,
+    "all_selected_jackknife_metrics_ok": true,
+    "all_selected_jackknife_solves_ok": true,
+    "maximum_generalized_eigenpair_residual": 5.948693880957941e-16,
+    "maximum_metric_orthonormality_residual": 1.0470462258281396e-14,
+    "overall_numerical_validation": "PASS",
+    "production_vs_scipy_max_absolute_difference": 7.771561172376096e-15,
+    "production_vs_scipy_max_scaled_difference": 7.771561172376096e-15
+  },
+  "numpy_version": "1.24.4",
+  "parameters": {
+    "analysis_tmax": 40,
+    "block_sizes": [
+      1,
+      2,
+      5,
+      10,
+      20
+    ],
+    "fit_tmax": 30,
+    "maximum_fit_points": 20,
+    "minimum_fit_points": 4,
+    "plot_tmax": 30,
+    "primary_block_size": 10,
+    "primary_reference_time": 5,
+    "rcond": 1e-10,
+    "reference_times": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      8,
+      10
+    ]
+  },
+  "production_solver": "/home/m2130292/Masterarbeit/laplace_static/scripts/analyze_laplace_gaussian_gevp.py",
+  "python_version": "3.8.10",
+  "scipy_version": "1.10.1",
+  "symmetry": {
+    "maximum_raw_mean_residual": 0.004120661239679336,
+    "maximum_symmetrized_mean_residual": 0.0
+  }
+}

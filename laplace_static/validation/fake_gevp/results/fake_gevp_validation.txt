@@ -1,0 +1,83 @@
+FAKE-DATA GEVP VALIDATION
+=========================
+Generated (UTC): 2026-09-02T20:44:35.647671+00:00
+Input: /home/m2130292/Masterarbeit/laplace_static/validation/fake_gevp/data/fakedat.mat
+SHA-256: 0ad8a271954fa47559e7d307a2bb40983a5d97a63fee4829bcd34f27ddbff6be
+Production solver: /home/m2130292/Masterarbeit/laplace_static/scripts/analyze_laplace_gaussian_gevp.py
+Python: 3.8.10
+NumPy: 1.24.4
+SciPy: 1.10.1
+
+Input contract
+--------------
+Cell shape: (4, 4)
+Element shape: (1000, 101)
+Operators: 4
+Measurements: 1000
+Times: 0..100
+Element dtypes: float64
+Maximum input imaginary part: 0.000000e+00
+Python time index t corresponds to MATLAB column t+1.
+
+Hermitian symmetrization
+------------------------
+Maximum sample-mean anti-Hermitian residual over the analysis range: 4.120661e-03
+Maximum residual after symmetrization: 0.000000e+00
+The analysis uses (C + C^dagger)/2 for every measurement and time.
+
+Autocorrelation audit
+---------------------
+Primary streams: 1616
+Fixed tau-int window: 10
+tau_int 5/50/95%: 0.6985 / 0.9713 / 1.2854
+Effective sample size from median tau_int: 514.8
+Primary statistical analysis: contiguous delete-one-block jackknife.
+Primary block size: 10
+Primary number of blocks: 100
+
+Numerical validation gates
+--------------------------
+production_vs_scipy_max_absolute_difference: 7.771561e-15
+production_vs_scipy_max_scaled_difference: 7.771561e-15
+maximum_generalized_eigenpair_residual: 5.948694e-16
+maximum_metric_orthonormality_residual: 1.047046e-14
+all_central_metrics_ok: True
+all_selected_jackknife_metrics_ok: True
+all_central_solves_ok: True
+all_selected_jackknife_solves_ok: True
+overall_numerical_validation: PASS
+
+Primary metric
+--------------
+Reference time: 5
+Status: ok
+Condition number: 3.188266e+01
+Normalized eigenvalues: [0.11136117 0.1340064  0.20414258 3.55048985]
+Valid jackknife metrics: 100/100
+
+Diagnostic fit-window scan
+--------------------------
+The rows below are the longest p>=0.05 windows found by the mechanical scan. They are diagnostics, not final plateau choices, and no expected energy was supplied to the scan.
+state 1: t=10..29, E=0.10004281 +/- 0.00002405, chi2/dof=1.390, p=0.119
+state 2: t=14..30, E=0.19989901 +/- 0.00021289, chi2/dof=1.465, p=0.102
+state 3: t=6..19, E=0.30038316 +/- 0.00011739, chi2/dof=1.689, p=0.056
+state 4: t=6..22, E=0.40438741 +/- 0.00018499, chi2/dof=1.497, p=0.091
+
+Interpretation rule
+-------------------
+Do not hard-code or infer the generator energies from this report.
+Final energy levels require inspection of time-, reference-time-, block-size-, and fit-window stability, followed by confirmation against the hidden generator values.
+
+Written files
+-------------
+fake_gevp_validation.txt
+fake_gevp_metadata.json
+fake_gevp_effective.csv
+fake_gevp_conditioning.csv
+fake_gevp_autocorrelation.csv
+fake_gevp_fit_scan.csv
+fake_gevp_effective_tref5.png
+fake_gevp_reference_time_scan.png
+fake_gevp_autocorrelation.png
+fake_gevp_block_error_ratios.png
+fake_gevp_metric_conditioning.png
