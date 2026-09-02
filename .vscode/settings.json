@@ -22,6 +22,7 @@
   ],
   "editor.wordWrap": "on",
   "editor.rulers": [100],
+  "todo-tree.ripgrep.ripgrep": "/home/m2130292/.local/bin/rg",
   "files.exclude": {
     "**/*.aux": true,
     "**/*.bcf": true,
