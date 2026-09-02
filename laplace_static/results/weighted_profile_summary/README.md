@@ -6,10 +6,10 @@ This directory summarizes the fixed-source-time profile-selection study for
 the Laplace-static correlator.  The input is the 100-configuration,
 mode-resolved `PROFILE_BASIS=delta` scan from job `156696`, with
 
-\[
+$$
 N_v=10,\qquad t_0/a=0,\qquad R/a=1,\ldots,6,\qquad
 \tau/a=1,\ldots,8.
-\]
+$$
 
 The calculation uses one on-axis, $x$-oriented separation and averages over
 all $24^3=13\,824$ spatial source positions.  It is an offline
@@ -18,12 +18,12 @@ production calculation.
 
 For a Gaussian Laplacian-eigenmode profile,
 
-\[
+$$
 \rho_i(\sigma)=\exp\!\left[-\frac{\lambda_i^2}{4\sigma^2}\right],
 \qquad
 w_i(\sigma)=\rho_i^2
 =\exp\!\left[-\frac{\lambda_i^2}{2\sigma^2}\right].
-\]
+$$
 
 The constant profile is the $\sigma\to\infty$ limit, $w_i=1$.
 
@@ -71,9 +71,9 @@ direct production channel for the present $N_v=10$ data.
 
 The basis is
 
-\[
+$$
 \{\sigma=0.01,\ \sigma=0.05,\ \sigma=\infty\}.
-\]
+$$
 
 | $\tau_{\rm ref}/a$ | Metric result | Delete-one support | Consequence |
 |---:|---|---|---|
@@ -98,10 +98,10 @@ near duplication produces the smallest direction of the full metric.
 
 Two non-duplicate bases are therefore evaluated separately:
 
-\[
+$$
 \{\sigma=0.01,\sigma=0.05\},\qquad
 \{\sigma=0.01,\sigma=\infty\}.
-\]
+$$
 
 Their $\tau_{\rm ref}/a=2$ central-metric condition numbers are approximately
 $22.5$ to $26.3$ and $20.5$ to $23.0$, respectively.  The updated
@@ -153,9 +153,9 @@ support a first-excited static potential from these Gaussian operators.
 
 The supported source profile remains
 
-\[
+$$
 N_v=10,\qquad \rho_i=1.
-\]
+$$
 
 The scalar comparison and both full and reduced variational diagnostics lead
 to the same production choice.  No additional weighted production run is
