@@ -294,7 +294,7 @@ int main(int argc, char **argv) {
 
     int L[4] = {48, 24, 24, 24};
     int P[4] = {1, 1, 1, 1};
-    double theta[3] = {0.0, 0.0, 0.0};
+    double theta[4] = {0.0, 0.0, 0.0, 0.0};
 
     const int nc = read_env_int("NCFG", 1, 1, INT_MAX);
     const int axis = read_env_int("AXIS", 0, 0, 2);

@@ -147,7 +147,7 @@ int main(int argc, char **argv) {
 
     int L[4] = {48, 24, 24, 24};
     int P[4] = {1, 1, 1, 1};
-    double theta[3] = {0.0, 0.0, 0.0};
+    double theta[4] = {0.0, 0.0, 0.0, 0.0};
 
     qcd_geometry geo;
     qcd_gaugeField u;

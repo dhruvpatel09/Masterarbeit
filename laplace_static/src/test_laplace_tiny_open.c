@@ -506,7 +506,7 @@ int main(int argc, char **argv) {
 
     int L[4] = {TINY_NT, TINY_NS, TINY_NS, TINY_NS};
     int P[4] = {1, 1, 1, 1};
-    double theta[3] = {0.0, 0.0, 0.0};
+    double theta[4] = {0.0, 0.0, 0.0, 0.0};
 
     const int nvecs = read_env_int(
         "NVECS", DEFAULT_NV, 1, TINY_AVAILABLE_NV

@@ -838,7 +838,7 @@ int main(int argc, char **argv) {
         }
     }
 
-    double theta[3] = {0.0, 0.0, 0.0};
+    double theta[4] = {0.0, 0.0, 0.0, 0.0};
 
     qcd_geometry geo;
     qcd_gaugeField u;
