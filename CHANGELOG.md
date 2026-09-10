@@ -20,7 +20,7 @@ Stromboli to SuperMUC-NG.
 ### Environment
 
 - Stromboli computing cluster
-- GCC 10.2.1 toolchain
+- Stromboli module `compiler/gcc/10.2.1` (GCC 10.3.1 binary)
 - OpenMPI 4.1.0-no_ucx
 - Intel MKL
 - Parallel HDF5 1.14.6 built locally
