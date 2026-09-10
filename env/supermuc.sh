@@ -6,7 +6,7 @@
 #   source env/supermuc.sh
 #
 
-module purge
+module purge || true
 
 module load stack/24.6.0
 module load gcc/14.3.0
