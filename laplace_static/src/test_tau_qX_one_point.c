@@ -259,6 +259,168 @@ static qcd_complex_16 tau_one_link(
     return tau;
 }
 
+
+static void mat3_zero(
+    qcd_complex_16 a[3][3]
+) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            a[i][j].re = 0.0;
+            a[i][j].im = 0.0;
+        }
+    }
+}
+
+static void mat3_mul(
+    qcd_complex_16 out[3][3],
+    const qcd_complex_16 a[3][3],
+    const qcd_complex_16 b[3][3]
+) {
+    qcd_complex_16 tmp[3][3];
+    mat3_zero(tmp);
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            for (int k = 0; k < 3; k++) {
+                tmp[i][j] = qcd_CADD(
+                    tmp[i][j],
+                    qcd_CMUL(
+                        a[i][k],
+                        b[k][j]
+                    )
+                );
+            }
+        }
+    }
+
+    memcpy(out, tmp, sizeof(tmp));
+}
+
+static void mat3_adjoint(
+    qcd_complex_16 out[3][3],
+    const qcd_complex_16 in[3][3]
+) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            out[i][j] = qcd_CONJ(
+                in[j][i]
+            );
+        }
+    }
+}
+
+static qcd_complex_16 mat3_trace(
+    const qcd_complex_16 a[3][3]
+) {
+    qcd_complex_16 tr = {
+        0.0,
+        0.0
+    };
+
+    for (int i = 0; i < 3; i++) {
+        tr = qcd_CADD(
+            tr,
+            a[i][i]
+        );
+    }
+
+    return tr;
+}
+
+/*
+  Exact rho_i = 1 factorization for R=0, T=1:
+
+    sum_ij |tau_ij(x)|^2
+
+      = Tr_3[
+          U_0(x)
+          K_t1(x,x)
+          U_0(x)^\dagger
+          K_t0(x,x)
+        ]
+
+  where
+
+    K_t(x,x) = sum_n v_n(x,t) v_n(x,t)^\dagger.
+*/
+static qcd_complex_16 factorized_r0_one_link(
+    const qcd_spinorComponent3d *v0,
+    const qcd_spinorComponent3d *v1,
+    const qcd_gaugeField *u,
+    const long site4,
+    const long site3
+) {
+    qcd_complex_16 k0[3][3];
+    qcd_complex_16 k1[3][3];
+    qcd_complex_16 temporal[3][3];
+    qcd_complex_16 temporal_dag[3][3];
+
+    qcd_complex_16 tmp1[3][3];
+    qcd_complex_16 tmp2[3][3];
+    qcd_complex_16 tmp3[3][3];
+
+    mat3_zero(k0);
+    mat3_zero(k1);
+
+    for (int n = 0; n < NV; n++) {
+        for (int a = 0; a < 3; a++) {
+            for (int b = 0; b < 3; b++) {
+                k0[a][b] = qcd_CADD(
+                    k0[a][b],
+                    qcd_CMUL(
+                        v0[n].D[site3][a],
+                        qcd_CONJ(
+                            v0[n].D[site3][b]
+                        )
+                    )
+                );
+
+                k1[a][b] = qcd_CADD(
+                    k1[a][b],
+                    qcd_CMUL(
+                        v1[n].D[site3][a],
+                        qcd_CONJ(
+                            v1[n].D[site3][b]
+                        )
+                    )
+                );
+            }
+        }
+    }
+
+    for (int a = 0; a < 3; a++) {
+        for (int b = 0; b < 3; b++) {
+            temporal[a][b] =
+                u->D[site4][0][a][b];
+        }
+    }
+
+    mat3_adjoint(
+        temporal_dag,
+        temporal
+    );
+
+    mat3_mul(
+        tmp1,
+        temporal,
+        k1
+    );
+
+    mat3_mul(
+        tmp2,
+        tmp1,
+        temporal_dag
+    );
+
+    mat3_mul(
+        tmp3,
+        tmp2,
+        k0
+    );
+
+    return mat3_trace(tmp3);
+}
+
 int main(int argc, char **argv) {
     MPI_Init(&argc, &argv);
 
@@ -705,6 +867,54 @@ int main(int argc, char **argv) {
                 }
             }
         }
+
+        const qcd_complex_16 factorized_r0 =
+            factorized_r0_one_link(
+                v0,
+                v1,
+                &u,
+                site4,
+                site3
+            );
+
+        const double direct_r0 =
+            frobenius_sq;
+
+        const double delta_re =
+            factorized_r0.re -
+            direct_r0;
+
+        const double absdiff =
+            sqrt(
+                delta_re * delta_re +
+                factorized_r0.im *
+                factorized_r0.im
+            );
+
+        const double scale =
+            direct_r0 > 0.0
+            ? direct_r0
+            : 1.0;
+
+        const double reldiff =
+            absdiff / scale;
+
+        printf(
+            "FACTOR_R0 "
+            "direct=%+.17e "
+            "factorized=%+.17e %+.17e "
+            "absdiff=%.17e "
+            "reldiff=%.17e "
+            "status=%s\n",
+            direct_r0,
+            factorized_r0.re,
+            factorized_r0.im,
+            absdiff,
+            reldiff,
+            reldiff < 1.0e-10
+                ? "PASS"
+                : "FAIL"
+        );
 
         printf(
             "SUMMARY trace=%+.17e %+.17e "
