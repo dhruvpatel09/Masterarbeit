@@ -7,6 +7,7 @@
 #include <string.h>
 
 #include <qcd.h>
+#include <qcd_communication.h>
 #include <DistEigvecsHdf5Reader.h>
 
 #define NV 100
@@ -421,6 +422,251 @@ static qcd_complex_16 factorized_r0_one_link(
     return mat3_trace(tmp3);
 }
 
+
+static void build_laplace_kernel(
+    qcd_complex_16 kernel[3][3],
+    const qcd_spinorComponent3d *left,
+    const long left_site,
+    const qcd_spinorComponent3d *right,
+    const long right_site
+) {
+    mat3_zero(kernel);
+
+    for (int n = 0; n < NV; n++) {
+        for (int a = 0; a < 3; a++) {
+            for (int b = 0; b < 3; b++) {
+                kernel[a][b] = qcd_CADD(
+                    kernel[a][b],
+                    qcd_CMUL(
+                        left[n].D[left_site][a],
+                        qcd_CONJ(
+                            right[n].D[right_site][b]
+                        )
+                    )
+                );
+            }
+        }
+    }
+}
+
+
+/*
+  Exact rho_i = 1 factorization for a separated pair:
+
+    L(x,y)
+      = sum_ij tau_ij(y) tau_ij(x)^*
+
+      = Tr_3[
+          P_y
+          K_t1(y,x)
+          P_x^\dagger
+          K_t0(x,y)
+        ].
+*/
+static qcd_complex_16 factorized_pair_one_link(
+    const qcd_spinorComponent3d *v0,
+    const qcd_spinorComponent3d *v1,
+    const qcd_gaugeField *u,
+    const long x4,
+    const long y4,
+    const long x3,
+    const long y3
+) {
+    qcd_complex_16 k1_yx[3][3];
+    qcd_complex_16 k0_xy[3][3];
+
+    qcd_complex_16 px[3][3];
+    qcd_complex_16 py[3][3];
+    qcd_complex_16 px_dag[3][3];
+
+    qcd_complex_16 tmp1[3][3];
+    qcd_complex_16 tmp2[3][3];
+    qcd_complex_16 tmp3[3][3];
+
+    build_laplace_kernel(
+        k1_yx,
+        v1,
+        y3,
+        v1,
+        x3
+    );
+
+    build_laplace_kernel(
+        k0_xy,
+        v0,
+        x3,
+        v0,
+        y3
+    );
+
+    for (int a = 0; a < 3; a++) {
+        for (int b = 0; b < 3; b++) {
+            px[a][b] =
+                u->D[x4][0][a][b];
+
+            py[a][b] =
+                u->D[y4][0][a][b];
+        }
+    }
+
+    mat3_adjoint(
+        px_dag,
+        px
+    );
+
+    mat3_mul(
+        tmp1,
+        py,
+        k1_yx
+    );
+
+    mat3_mul(
+        tmp2,
+        tmp1,
+        px_dag
+    );
+
+    mat3_mul(
+        tmp3,
+        tmp2,
+        k0_xy
+    );
+
+    return mat3_trace(tmp3);
+}
+
+
+static void check_r1_pair(
+    const char *label,
+    const qcd_spinorComponent3d *v0,
+    const qcd_spinorComponent3d *v1,
+    const qcd_gaugeField *u,
+    const long x4,
+    const long y4,
+    const long x3,
+    const long y3,
+    const int gx,
+    const int gy,
+    const int gz,
+    const qcd_geometry *geo
+) {
+    qcd_complex_16 direct = {
+        0.0,
+        0.0
+    };
+
+    for (int i = 0; i < NV; i++) {
+        for (int j = 0; j < NV; j++) {
+            const qcd_complex_16 tau_x =
+                tau_one_link(
+                    v0,
+                    v1,
+                    u,
+                    i,
+                    j,
+                    x4,
+                    x3
+                );
+
+            const qcd_complex_16 tau_y =
+                tau_one_link(
+                    v0,
+                    v1,
+                    u,
+                    i,
+                    j,
+                    y4,
+                    y3
+                );
+
+            direct = qcd_CADD(
+                direct,
+                qcd_CMUL(
+                    tau_y,
+                    qcd_CONJ(tau_x)
+                )
+            );
+        }
+    }
+
+    const qcd_complex_16 factorized =
+        factorized_pair_one_link(
+            v0,
+            v1,
+            u,
+            x4,
+            y4,
+            x3,
+            y3
+        );
+
+    const double delta_re =
+        factorized.re -
+        direct.re;
+
+    const double delta_im =
+        factorized.im -
+        direct.im;
+
+    const double absdiff =
+        sqrt(
+            delta_re * delta_re +
+            delta_im * delta_im
+        );
+
+    const double direct_abs =
+        sqrt(
+            direct.re * direct.re +
+            direct.im * direct.im
+        );
+
+    const double scale =
+        direct_abs > 0.0
+        ? direct_abs
+        : 1.0;
+
+    const double reldiff =
+        absdiff / scale;
+
+    printf(
+        "PAIR_R1 "
+        "kind=%s "
+        "x=(%d,%d,%d) "
+        "y=(%d,%d,%d) "
+        "x3=%ld y3=%ld "
+        "x4=%ld y4=%ld "
+        "y3_halo=%d "
+        "y4_halo=%d "
+        "direct=%+.17e %+.17e "
+        "factorized=%+.17e %+.17e "
+        "absdiff=%.17e "
+        "reldiff=%.17e "
+        "status=%s\n",
+        label,
+        gx,
+        gy,
+        gz,
+        gx + 1,
+        gy,
+        gz,
+        x3,
+        y3,
+        x4,
+        y4,
+        y3 >= geo->lV3,
+        y4 >= geo->lV,
+        direct.re,
+        direct.im,
+        factorized.re,
+        factorized.im,
+        absdiff,
+        reldiff,
+        reldiff < 1.0e-10
+            ? "PASS"
+            : "FAIL"
+    );
+}
+
 int main(int argc, char **argv) {
     MPI_Init(&argc, &argv);
 
@@ -727,6 +973,67 @@ int main(int argc, char **argv) {
         v1
     );
 
+    /*
+      Populate the + spatial halo.
+
+      qcd_communicateGaugeM:
+          send local - face
+          receive + neighbour into Bplus.
+
+      Likewise for qcd_spinorComponent3d.
+    */
+    if (qcd_communicateGaugeM(&u)) {
+        fprintf(
+            stderr,
+            "process %d: ERROR: qcd_communicateGaugeM failed\n",
+            myid
+        );
+        MPI_Abort(
+            MPI_COMM_WORLD,
+            EXIT_FAILURE
+        );
+    }
+
+    qcd_waitall(&geo);
+
+    for (int n = 0; n < NV; n++) {
+        if (qcd_communicateSpinorComponent3dM(
+                &v0[n]
+            )) {
+            fprintf(
+                stderr,
+                "process %d: ERROR: "
+                "v0 halo exchange failed for mode %d\n",
+                myid,
+                n
+            );
+            MPI_Abort(
+                MPI_COMM_WORLD,
+                EXIT_FAILURE
+            );
+        }
+
+        qcd_waitall(&geo);
+
+        if (qcd_communicateSpinorComponent3dM(
+                &v1[n]
+            )) {
+            fprintf(
+                stderr,
+                "process %d: ERROR: "
+                "v1 halo exchange failed for mode %d\n",
+                myid,
+                n
+            );
+            MPI_Abort(
+                MPI_COMM_WORLD,
+                EXIT_FAILURE
+            );
+        }
+
+        qcd_waitall(&geo);
+    }
+
     MPI_Barrier(MPI_COMM_WORLD);
 
     /*
@@ -942,6 +1249,81 @@ int main(int argc, char **argv) {
                     selected[i][j].im
                 );
             }
+        }
+
+        fflush(stdout);
+    }
+
+    /*
+      Controlled R=1 tests on the spatial block at
+      process position (0,0,0).
+
+        14 -> 15 : both endpoints local
+        15 -> 16 : y endpoint lies in +x halo
+
+      For both cases use qcd's own plus/plus3d maps.
+    */
+    if (
+        geo.Pos[0] == 0 &&
+        geo.Pos[1] == 0 &&
+        geo.Pos[2] == 0 &&
+        geo.Pos[3] == 0
+    ) {
+        const int ly = 0;
+        const int lz = 0;
+        const int lt = t0;
+
+        const int pair_lx[2] = {
+            14,
+            15
+        };
+
+        const char *pair_label[2] = {
+            "local",
+            "cross_boundary"
+        };
+
+        for (int pcase = 0; pcase < 2; pcase++) {
+            const int lx =
+                pair_lx[pcase];
+
+            const long x3 =
+                qcd_LEXIC0(
+                    lx,
+                    ly,
+                    lz,
+                    geo.lL
+                );
+
+            const long y3 =
+                geo.plus3d[x3][1];
+
+            const long x4 =
+                qcd_LEXIC(
+                    lt,
+                    lx,
+                    ly,
+                    lz,
+                    geo.lL
+                );
+
+            const long y4 =
+                geo.plus[x4][1];
+
+            check_r1_pair(
+                pair_label[pcase],
+                v0,
+                v1,
+                &u,
+                x4,
+                y4,
+                x3,
+                y3,
+                lx,
+                0,
+                0,
+                &geo
+            );
         }
 
         fflush(stdout);
