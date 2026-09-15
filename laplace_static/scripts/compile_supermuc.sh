@@ -112,6 +112,11 @@ build_reader_target \
     RT_weighted
 
 build_reader_target \
+    test_tau_qX_one_point.c \
+    test_tau_qX_one_point \
+    tau_qX
+
+build_reader_target \
     test_laplace_clover_probe_R4tau4_plane.c \
     test_laplace_clover_probe_R4tau4_plane \
     clover
@@ -122,6 +127,7 @@ echo
 echo "=== Runtime-library check ==="
 
 for exe in \
+    test_tau_qX_one_point \
     test_laplace_RT_weighted_scan \
     test_laplace_clover_probe_R4tau4_plane \
     test_laplace_clover_tiny_open
