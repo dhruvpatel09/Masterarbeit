@@ -1,0 +1,8 @@
+build/
+PREPARED.json
+prepared.sha256
+profiles_*.out
+profiles_*.err
+results_*/
+collection_*/
+__pycache__/

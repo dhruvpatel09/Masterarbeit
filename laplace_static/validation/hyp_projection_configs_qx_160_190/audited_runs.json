@@ -1,0 +1,25 @@
+{
+  "audit_job": 5920205,
+  "runs": [
+    {
+      "configuration": 160,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n160_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "completion_marker_sha256": "c15950e01970836ec235e7aa1ab40d0a1d6dbfb94633c4594eb41020eb846a83"
+    },
+    {
+      "configuration": 170,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "completion_marker_sha256": "745a6e8e9bb695ca9b41798add9b2778626a96719ff56a20fbf269d40b3ced3b"
+    },
+    {
+      "configuration": 180,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n180_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "completion_marker_sha256": "38f888eb95dbe9e2d1a62b7b3d43e9ba057cc01406e5f9f9b706fb7eec2d0397"
+    },
+    {
+      "configuration": 190,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n190_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "completion_marker_sha256": "b9373ac0d1c3201ea87706210584e2904512ddafcd785cf7f686bfd541a74231"
+    }
+  ]
+}

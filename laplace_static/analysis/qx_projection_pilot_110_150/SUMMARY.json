@@ -1,0 +1,81 @@
+{
+  "source": {
+    "archive": "hyp_projection_configs_review_mixed_5918419.zip",
+    "sha256": "825765b3b5e25e7143feaa84126f408661076068757702776c2b938e273bade8"
+  },
+  "configurations": [
+    110,
+    120,
+    130,
+    140,
+    150
+  ],
+  "tau": [
+    2,
+    4,
+    6
+  ],
+  "midpoint": 98,
+  "raw_rows": 9960,
+  "paired_rows": 4980,
+  "cases": 15,
+  "mean_profile_points": 996,
+  "combined_axis_points": 249,
+  "p4_max_window_unit_frobenius": "0.000668135945416515188",
+  "p4_max_window_unit_rms": "9.22745426799778678E-7",
+  "p4_max_window_determinant_defect": "0.000335606162140689125",
+  "p4_window_unit_links_above_1e_minus2": 0,
+  "p4_window_det_links_above_1e_minus2": 0,
+  "window_count_scope": "Window counters overlap between tau values; not counts of unique ensemble links",
+  "p40_max_window_unit_or_det": "7.79182753929870807E-16",
+  "max_per_config_relative_C_combined": 0.0032169331608405574,
+  "max_per_config_relative_C_all_axes": 0.05079524815934824,
+  "mean_max_abs_delta_combined": {
+    "value": "1.67512180161862477372105927364175228952312E-8",
+    "point": {
+      "tau": 6,
+      "axis": -1,
+      "R": 4,
+      "long": 5,
+      "tr1": 2,
+      "tr2": 0
+    }
+  },
+  "mean_max_relative_delta_combined": {
+    "value": "0.000064492127594327682896966464550222662696998844858693",
+    "point": {
+      "tau": 6,
+      "axis": -1,
+      "R": 4,
+      "long": 5,
+      "tr1": 2,
+      "tr2": 0
+    }
+  },
+  "mean_max_abs_delta_all_axes": {
+    "value": "3.00196414043413355868309171059317482602865E-8",
+    "point": {
+      "tau": 6,
+      "axis": 2,
+      "R": 4,
+      "long": 5,
+      "tr1": 2,
+      "tr2": 0
+    }
+  },
+  "mean_max_relative_delta_all_axes": {
+    "value": "0.0013996831820670479680055935366682714288687103423296",
+    "point": {
+      "tau": 6,
+      "axis": 1,
+      "R": 4,
+      "long": -1,
+      "tr1": 1,
+      "tr2": 0
+    }
+  },
+  "estimator": "mean(LS_RE)/mean(L_RE)-mean(S_RAW); equal weight per configuration",
+  "uncertainty_scope": "Exploratory delete-one-configuration jackknife on five successive configurations; no autocorrelation correction or final ensemble precision claim",
+  "recommendation": "piter4 working prescription for tested central-window pilot measurements; retain piter40 controls and recheck new configurations/windows",
+  "excluded_scope": "Open-boundary regions, other windows/configurations, independent HYP/operator implementation, physical normalization, full saved-mode residual coverage"
+}

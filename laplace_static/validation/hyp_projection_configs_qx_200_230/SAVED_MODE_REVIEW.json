@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "job": 5921385,
+  "summary": {
+    "success": true,
+    "runs": [
+      {
+        "configuration": 200,
+        "mpi_exit_code": 0,
+        "success": true,
+        "maximum_relative_residual": 1.4334631729729077e-11,
+        "modes_above_requested_1e_minus9": 0
+      },
+      {
+        "configuration": 210,
+        "mpi_exit_code": 0,
+        "success": true,
+        "maximum_relative_residual": 1.5187872676946694e-11,
+        "modes_above_requested_1e_minus9": 0
+      },
+      {
+        "configuration": 220,
+        "mpi_exit_code": 0,
+        "success": true,
+        "maximum_relative_residual": 5.614976511311864e-10,
+        "modes_above_requested_1e_minus9": 0
+      },
+      {
+        "configuration": 230,
+        "mpi_exit_code": 0,
+        "success": true,
+        "maximum_relative_residual": 1.2934984421116994e-10,
+        "modes_above_requested_1e_minus9": 0
+      }
+    ],
+    "mode_records": 5200,
+    "slice_records": 52,
+    "scope": "Saved-pair residual/normalization/all-pair Gram check on 13 selected slices in each of 4 configurations, using existing qcd Laplacian. Eigenvalue metadata, coverage and spectra checked for all times. Not full eigenvector coverage or independent operator implementation.",
+    "residual_tolerance": 1.1e-09,
+    "requested_solver_res": 1e-09,
+    "normalization_and_gram_tolerance": 1e-09,
+    "rayleigh_im_tolerance": 1e-10
+  },
+  "maxima": {
+    "max_relative_residual": 5.614976511311864e-10,
+    "max_norm_defect": 1.5543122344752192e-15,
+    "gram_diag_defect": 3.552713678800501e-15,
+    "gram_offdiag": 5.114494827135196e-11,
+    "max_rayleigh_im": 3.9109951929490915e-18
+  },
+  "source_and_metrics_unchanged": true,
+  "actual_stdout_reexport_byte_identical": true,
+  "locally_verified_manifest_entries": 23,
+  "manifest_entries_not_in_review": [
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/dist/disteigvecshdf5/c/src/DistEigvecsHdf5Reader.c",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_200_230/build/test_saved_modes",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/solver/build_supermuc_qx_p6x4x4x4/libsolver.a",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/solver/include/solver.h"
+  ],
+  "scope": "Saved-pair audit on 13 selected vector times in each of four configurations with the existing qcd Laplacian. Full eigenvalue metadata and spectra checked for all 192 times; gauge/eigenvector HDF5 bytes are absent from review. Not an independent operator implementation or full 192-time vector audit."
+}

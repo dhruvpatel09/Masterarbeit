@@ -1,0 +1,7 @@
+__pycache__/
+RUNS.json
+RUNS.json.*
+controller.lock
+controller.out
+controller_resume.out
+collection_*/

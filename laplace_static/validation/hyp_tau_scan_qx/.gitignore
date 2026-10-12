@@ -1,0 +1,4 @@
+results_*/
+qx_hyptau_*.out
+qx_hyptau_*.err
+__pycache__/

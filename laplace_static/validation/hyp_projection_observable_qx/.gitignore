@@ -1,0 +1,4 @@
+__pycache__/
+results_*/
+p4obs_*.out
+p4obs_*.err

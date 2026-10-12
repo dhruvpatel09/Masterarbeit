@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "checks": [
+    "ZIP CRC; 26 archived source/checker hashes",
+    "All 15 original checkers replayed on copied stdout; raw/paired/SU3 per-case exports byte-identical",
+    "996 complete mean-profile points; paired C arithmetic from raw records",
+    "50-digit raw-mean ratio checked independently in double precision",
+    "All four new EV input transforms preserve numerical settings; changed APE setting rejected",
+    "Retained placement/completion/group/reference files byte-identical",
+    "Python AST and Bash syntax"
+  ],
+  "limitations": [
+    "No MPI job executed in local environment",
+    "Absent gauges, eigenvectors and linked libraries not independently verified",
+    "New production batch has not run on SuperMUC"
+  ]
+}

@@ -1,0 +1,5 @@
+build/
+results_*/
+projection_time_*.out
+projection_time_*.err
+__pycache__/

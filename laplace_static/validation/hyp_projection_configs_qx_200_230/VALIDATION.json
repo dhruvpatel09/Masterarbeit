@@ -1,0 +1,111 @@
+{
+  "success": true,
+  "reference_job": 5920223,
+  "current_saved_mode_audit_job": 5921385,
+  "configurations": [
+    200,
+    210,
+    220,
+    230
+  ],
+  "cases": 12,
+  "reference_cases_rechecked": [
+    {
+      "configuration": 160,
+      "tau": 2,
+      "index": 0,
+      "byte_identical_exports": 8
+    },
+    {
+      "configuration": 160,
+      "tau": 4,
+      "index": 1,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 160,
+      "tau": 6,
+      "index": 2,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "index": 3,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "index": 4,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "index": 5,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 180,
+      "tau": 2,
+      "index": 6,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 180,
+      "tau": 4,
+      "index": 7,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 180,
+      "tau": 6,
+      "index": 8,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 190,
+      "tau": 2,
+      "index": 9,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 190,
+      "tau": 4,
+      "index": 10,
+      "byte_identical_exports": 4
+    },
+    {
+      "configuration": 190,
+      "tau": 6,
+      "index": 11,
+      "byte_identical_exports": 4
+    }
+  ],
+  "scientific_source_sha256": {
+    "test_profiles_qx.c": "60a9e706e1ab6d7535bef675b702dad9298643b8599aa56cd14a4c1e4badd9de",
+    "su3_window.h": "27a4e4d3b3ed8de2ac9096d3d1022e00b2690346798840887aac81dd75a3d830",
+    "run_task.py": "9e7605f7254a9e241e331cef3633104349c7e9db16ac928b251a030311246ecc",
+    "check_task.py": "6fe50d927f455bc968a1b76711ca16a85082948d7357e5aeccc68c1a0297fba7",
+    "average_compare.py": "edd14e7b41c516aa99b5cc8b14887382d8d87c36410cb90ddebfd7079de4a825",
+    "point_compare.py": "d17ceea7f9833f29fd0a85a6c8b3f2cbee626e8ea158c64bda34080c3ae9e329",
+    "profile_compare.py": "bcc776ffa3aea829a5d05be72173f7059d9a1c898cc9d717cb24e2450cfe4144",
+    "n100_tau4_reference.csv": "ddad21f8089acc1771190448490b6b43536f3f5e7c39e67f3837c252fb53e88c",
+    "reference_provenance.json": "4c6b3101fa7f2a0148026bd1fd915c5dab5043b45f15a2ece57b0352583e8c2c"
+  },
+  "controller_logic_byte_identical": true,
+  "preparation_fixture_guards": [
+    "wrong_configuration_audit_rejected",
+    "changed_completion_marker_rejected",
+    "valid_current_audit_prepares_all_12_cases_and_31_inputs",
+    "existing_preparation_preserved"
+  ],
+  "python_ast_and_bash_syntax": true,
+  "scope": "Actual reference MPI logs rechecked; all exported records byte-identical. Preparation and controller fixtures test bookkeeping only, not new numerical data. New C compilation, link/runtime checks and n200-230 measurements remain for SuperMUC.",
+  "inherited_controller_tests": {
+    "passed": 11,
+    "scope": "Sequential admission, pending/running initial job, failure stop, timeout/acceptance recovery, provenance/identity, complete/partial coverage, and resume without duplicate submission; scientific check stubs."
+  },
+  "shared_runtime_or_evidence_pins_agree_with_current_production_and_audit": 51
+}

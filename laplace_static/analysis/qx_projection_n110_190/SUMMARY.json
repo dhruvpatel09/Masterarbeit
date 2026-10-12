@@ -1,0 +1,723 @@
+{
+  "configurations": [
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190
+  ],
+  "nconfigurations": 9,
+  "taus": [
+    2,
+    4,
+    6
+  ],
+  "midpoint": 98,
+  "separations": [
+    1,
+    2,
+    4
+  ],
+  "HYP_steps": 1,
+  "HYP_alpha": [
+    1,
+    1,
+    0.5
+  ],
+  "piters": [
+    4,
+    40
+  ],
+  "raw_rows": 17928,
+  "per_configuration_paired_rows": 8964,
+  "averaged_rows": 996,
+  "combined_axis_averaged_rows": 249,
+  "estimator": "mean(LS_RE)/mean(L_RE) - mean(S_RAW), equal configuration weights",
+  "uncertainty": "Paired configuration jackknife; block_size=1 and exploratory 3 consecutive configurations per block. Nine ordered configurations cannot establish autocorrelation or final statistical errors.",
+  "convention": "Original-field clover F=(Q-Q_dagger)/8, sum over 6 planes Tr(F_dagger F); no color-trace subtraction or extra factor 1/2. Raw lattice units.",
+  "combined_axes": {
+    "points": 249,
+    "max_absolute_delta": {
+      "value": 1.1723339584320806e-08,
+      "key": {
+        "tau": 6,
+        "axis": -1,
+        "R": 4,
+        "long": 5,
+        "tr1": 0,
+        "tr2": 0
+      },
+      "C_p4": -0.00027766640798368046,
+      "C_p40": -0.00027767813132326477,
+      "delta": 1.1723339584320806e-08
+    },
+    "max_relative_delta": {
+      "value": 4.3465030877206165e-05,
+      "key": {
+        "tau": 6,
+        "axis": -1,
+        "R": 1,
+        "long": 0,
+        "tr1": 2,
+        "tr2": 0
+      },
+      "C_p4": -0.00010920625043277595,
+      "C_p40": -0.0001092109972921454,
+      "delta": 4.746859369433579e-09
+    },
+    "max_delta_over_p40_unblocked_jk_se": {
+      "value": 0.000298123460663354,
+      "key": {
+        "tau": 6,
+        "axis": -1,
+        "R": 1,
+        "long": -1,
+        "tr1": 1,
+        "tr2": 0
+      },
+      "C_p4": -0.0002368776421484759,
+      "C_p40": -0.00023688319120334172,
+      "delta": 5.549054865835985e-09
+    }
+  },
+  "all_axes_diagnostic": {
+    "points": 996,
+    "max_absolute_delta": {
+      "value": 3.088290694954932e-08,
+      "key": {
+        "tau": 6,
+        "axis": 1,
+        "R": 4,
+        "long": 0,
+        "tr1": 1,
+        "tr2": 0
+      },
+      "C_p4": -0.00044383186098371423,
+      "C_p40": -0.0004438627438906638,
+      "delta": 3.088290694954932e-08
+    },
+    "max_relative_delta": {
+      "value": 0.00017100707508170996,
+      "key": {
+        "tau": 6,
+        "axis": 2,
+        "R": 1,
+        "long": 1,
+        "tr1": -2,
+        "tr2": 0
+      },
+      "C_p4": -6.292533838577995e-05,
+      "C_p40": -6.291457954755154e-05,
+      "delta": -1.075883822842236e-08
+    },
+    "max_delta_over_p40_unblocked_jk_se": {
+      "value": 0.0006149077180412475,
+      "key": {
+        "tau": 6,
+        "axis": 0,
+        "R": 1,
+        "long": -1,
+        "tr1": 0,
+        "tr2": 0
+      },
+      "C_p4": -0.00025083659219484914,
+      "C_p40": -0.0002508445593822027,
+      "delta": 7.967187353506255e-09
+    }
+  },
+  "by_tau": {
+    "2": {
+      "points": 83,
+      "max_absolute_delta": {
+        "value": 2.860633171949291e-09,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00036170606838345016,
+        "C_p40": -0.00036170892901662207,
+        "delta": 2.860633171949291e-09
+      },
+      "max_relative_delta": {
+        "value": 7.908660645250016e-06,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00036170606838345016,
+        "C_p40": -0.00036170892901662207,
+        "delta": 2.860633171949291e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 9.372697185712255e-05,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 2,
+          "long": 1,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0010715840072297602,
+        "C_p40": -0.001071581372959249,
+        "delta": -2.6342705111492474e-09
+      }
+    },
+    "4": {
+      "points": 83,
+      "max_absolute_delta": {
+        "value": 7.095290751820062e-09,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 4,
+          "long": 4,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0004487296781969395,
+        "C_p40": -0.0004487367734876913,
+        "delta": 7.095290751820062e-09
+      },
+      "max_relative_delta": {
+        "value": 2.228867080563376e-05,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 1,
+          "long": 0,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.0001512812728960936,
+        "C_p40": -0.00015128464482974018,
+        "delta": 3.371933646557302e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.00013584955798849268,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 1,
+          "long": 0,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.0001512812728960936,
+        "C_p40": -0.00015128464482974018,
+        "delta": 3.371933646557302e-09
+      }
+    },
+    "6": {
+      "points": 83,
+      "max_absolute_delta": {
+        "value": 1.1723339584320806e-08,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00027766640798368046,
+        "C_p40": -0.00027767813132326477,
+        "delta": 1.1723339584320806e-08
+      },
+      "max_relative_delta": {
+        "value": 4.3465030877206165e-05,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 1,
+          "long": 0,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.00010920625043277595,
+        "C_p40": -0.0001092109972921454,
+        "delta": 4.746859369433579e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.000298123460663354,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 1,
+          "long": -1,
+          "tr1": 1,
+          "tr2": 0
+        },
+        "C_p4": -0.0002368776421484759,
+        "C_p40": -0.00023688319120334172,
+        "delta": 5.549054865835985e-09
+      }
+    }
+  },
+  "by_tau_R": {
+    "2,1": {
+      "points": 21,
+      "max_absolute_delta": {
+        "value": 1.3498801025237067e-09,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 1,
+          "long": 2,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0003627613573557339,
+        "C_p40": -0.00036276270723583644,
+        "delta": 1.3498801025237067e-09
+      },
+      "max_relative_delta": {
+        "value": 4.446524613403278e-06,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 1,
+          "long": -1,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.00025964332694444867,
+        "C_p40": -0.0002596444814600262,
+        "delta": 1.1545155775463377e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 6.013189923363916e-05,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 1,
+          "long": -1,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.00025964332694444867,
+        "C_p40": -0.0002596444814600262,
+        "delta": 1.1545155775463377e-09
+      }
+    },
+    "2,2": {
+      "points": 26,
+      "max_absolute_delta": {
+        "value": 2.6342705111492474e-09,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 2,
+          "long": 1,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0010715840072297602,
+        "C_p40": -0.001071581372959249,
+        "delta": -2.6342705111492474e-09
+      },
+      "max_relative_delta": {
+        "value": 3.5045298369979254e-06,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 2,
+          "long": 3,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.00033083898507649896,
+        "C_p40": -0.0003308378256454678,
+        "delta": -1.1594310311820593e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 9.372697185712255e-05,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 2,
+          "long": 1,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0010715840072297602,
+        "C_p40": -0.001071581372959249,
+        "delta": -2.6342705111492474e-09
+      }
+    },
+    "2,4": {
+      "points": 36,
+      "max_absolute_delta": {
+        "value": 2.860633171949291e-09,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00036170606838345016,
+        "C_p40": -0.00036170892901662207,
+        "delta": 2.860633171949291e-09
+      },
+      "max_relative_delta": {
+        "value": 7.908660645250016e-06,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00036170606838345016,
+        "C_p40": -0.00036170892901662207,
+        "delta": 2.860633171949291e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 6.814336261848326e-05,
+        "key": {
+          "tau": 2,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00036170606838345016,
+        "C_p40": -0.00036170892901662207,
+        "delta": 2.860633171949291e-09
+      }
+    },
+    "4,1": {
+      "points": 21,
+      "max_absolute_delta": {
+        "value": 3.371933646557302e-09,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 1,
+          "long": 0,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.0001512812728960936,
+        "C_p40": -0.00015128464482974018,
+        "delta": 3.371933646557302e-09
+      },
+      "max_relative_delta": {
+        "value": 2.228867080563376e-05,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 1,
+          "long": 0,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.0001512812728960936,
+        "C_p40": -0.00015128464482974018,
+        "delta": 3.371933646557302e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.00013584955798849268,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 1,
+          "long": 0,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.0001512812728960936,
+        "C_p40": -0.00015128464482974018,
+        "delta": 3.371933646557302e-09
+      }
+    },
+    "4,2": {
+      "points": 26,
+      "max_absolute_delta": {
+        "value": 3.912827595592747e-09,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 2,
+          "long": 3,
+          "tr1": -2,
+          "tr2": 0
+        },
+        "C_p4": -0.00024588378394276066,
+        "C_p40": -0.0002458876967703563,
+        "delta": 3.912827595592747e-09
+      },
+      "max_relative_delta": {
+        "value": 1.5913067823182236e-05,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 2,
+          "long": 3,
+          "tr1": -2,
+          "tr2": 0
+        },
+        "C_p4": -0.00024588378394276066,
+        "C_p40": -0.0002458876967703563,
+        "delta": 3.912827595592747e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.00011452287209934081,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 2,
+          "long": 3,
+          "tr1": -2,
+          "tr2": 0
+        },
+        "C_p4": -0.00024588378394276066,
+        "C_p40": -0.0002458876967703563,
+        "delta": 3.912827595592747e-09
+      }
+    },
+    "4,4": {
+      "points": 36,
+      "max_absolute_delta": {
+        "value": 7.095290751820062e-09,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 4,
+          "long": 4,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0004487296781969395,
+        "C_p40": -0.0004487367734876913,
+        "delta": 7.095290751820062e-09
+      },
+      "max_relative_delta": {
+        "value": 1.581169890908146e-05,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 4,
+          "long": 4,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0004487296781969395,
+        "C_p40": -0.0004487367734876913,
+        "delta": 7.095290751820062e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.00011310122794770746,
+        "key": {
+          "tau": 4,
+          "axis": -1,
+          "R": 4,
+          "long": 4,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0004487296781969395,
+        "C_p40": -0.0004487367734876913,
+        "delta": 7.095290751820062e-09
+      }
+    },
+    "6,1": {
+      "points": 21,
+      "max_absolute_delta": {
+        "value": 6.00230282619951e-09,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 1,
+          "long": 1,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00036143809553302827,
+        "C_p40": -0.0003614440978358544,
+        "delta": 6.00230282619951e-09
+      },
+      "max_relative_delta": {
+        "value": 4.3465030877206165e-05,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 1,
+          "long": 0,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.00010920625043277595,
+        "C_p40": -0.0001092109972921454,
+        "delta": 4.746859369433579e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.000298123460663354,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 1,
+          "long": -1,
+          "tr1": 1,
+          "tr2": 0
+        },
+        "C_p4": -0.0002368776421484759,
+        "C_p40": -0.00023688319120334172,
+        "delta": 5.549054865835985e-09
+      }
+    },
+    "6,2": {
+      "points": 26,
+      "max_absolute_delta": {
+        "value": 7.655300186824258e-09,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 2,
+          "long": 0,
+          "tr1": 1,
+          "tr2": 2
+        },
+        "C_p4": -0.00024982131190794896,
+        "C_p40": -0.0002498289672081358,
+        "delta": 7.655300186824258e-09
+      },
+      "max_relative_delta": {
+        "value": 3.0642164006732365e-05,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 2,
+          "long": 0,
+          "tr1": 1,
+          "tr2": 2
+        },
+        "C_p4": -0.00024982131190794896,
+        "C_p40": -0.0002498289672081358,
+        "delta": 7.655300186824258e-09
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.0002928826100502048,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 2,
+          "long": 0,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.0006083938535446467,
+        "C_p40": -0.0006084013026526407,
+        "delta": 7.4491079941087195e-09
+      }
+    },
+    "6,4": {
+      "points": 36,
+      "max_absolute_delta": {
+        "value": 1.1723339584320806e-08,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00027766640798368046,
+        "C_p40": -0.00027767813132326477,
+        "delta": 1.1723339584320806e-08
+      },
+      "max_relative_delta": {
+        "value": 4.22191676688894e-05,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 4,
+          "long": 5,
+          "tr1": 0,
+          "tr2": 0
+        },
+        "C_p4": -0.00027766640798368046,
+        "C_p40": -0.00027767813132326477,
+        "delta": 1.1723339584320806e-08
+      },
+      "max_delta_over_p40_unblocked_jk_se": {
+        "value": 0.00018806491607002785,
+        "key": {
+          "tau": 6,
+          "axis": -1,
+          "R": 4,
+          "long": -1,
+          "tr1": 2,
+          "tr2": 0
+        },
+        "C_p4": -0.0003751181764059856,
+        "C_p40": -0.00037510848956022843,
+        "delta": -9.686845757200757e-09
+      }
+    }
+  },
+  "SU3": {
+    "p4_unit_max": {
+      "configuration": 170,
+      "tau": 6,
+      "value": 0.006240982451579641
+    },
+    "p4_det_max": {
+      "configuration": 170,
+      "tau": 6,
+      "value": 0.003164495036307842
+    },
+    "p4_unit_rms_max": {
+      "configuration": 170,
+      "tau": 6,
+      "value": 4.976311748370862e-06
+    },
+    "p4_det_rms_max": {
+      "configuration": 170,
+      "tau": 6,
+      "value": 2.5232427501226437e-06
+    },
+    "p40_unit_max": {
+      "configuration": 140,
+      "tau": 6,
+      "value": 7.460279101625179e-16
+    },
+    "p40_det_max": {
+      "configuration": 150,
+      "tau": 4,
+      "value": 7.791827539298708e-16
+    },
+    "p4_windows_with_unit_or_det_above_1em2": 0,
+    "scope": "Outgoing temporal links t=95..100 at midpoint 98, with nested tau windows. Counts across windows must not be added as independent links; no boundary/global acceptance claim."
+  },
+  "single_configuration_max_relative_C_combined": 0.0032169331608405574,
+  "input_sha256": {
+    "campaign_5918419/profiles_raw.csv": "a85d7f579055ee24f8c38c3e401507230a23bf86cc185eaa31853e4069822c4b",
+    "campaign_5918419/profiles_paired.csv": "be0a0054d3b913e4b5daae93b62c3ce0ddaf6a7a633cf05ad96bb9e401fe3bf4",
+    "campaign_5918419/su3_windows.csv": "cc4bfb5c6cb81830619315d5715ba4e5fea60d8b31195d5a10a162410c4ec9ad",
+    "campaign_5918419/su3_times.csv": "ce863e95b28f1628b39c53479b073c1436d00ee7dd035d144a98bed3301e1d3f",
+    "campaign_5918419/SUMMARY.json": "803a7539683c31abe088f42d5c3f276c60955465a2607c5b4de47b320976ced2",
+    "campaign_5920223/profiles_raw.csv": "0ad7d1ebf189deceda865a759f348dd7690d23728f6db0f9a91f4c68822d4adc",
+    "campaign_5920223/profiles_paired.csv": "18da6eb41b3458519efdd8616706fadd23ace5e20ceb216a8860a581e8cda0e3",
+    "campaign_5920223/su3_windows.csv": "1b383410048fe1436951f8a621f12295c314abd3608c7b7f5111660e5fc535d8",
+    "campaign_5920223/su3_times.csv": "3f5bf8c9f4b81f51ee4254f9338218f25de94ea86e2a44720822a4f57556da47",
+    "campaign_5920223/SUMMARY.json": "bc9680ff706df1796a60861ed83bcada2072ad0cbec78b98d633fa9e6a4c921d"
+  }
+}

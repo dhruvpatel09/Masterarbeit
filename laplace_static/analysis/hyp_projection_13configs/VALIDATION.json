@@ -1,0 +1,10 @@
+{
+  "archived_cases_rechecked": 39,
+  "configurations": 13,
+  "independent_math_fsum_checks": 1992,
+  "maximum_absolute_difference_decimal_vs_fsum": 5.076234571577132e-16,
+  "independent_check_tolerance": 2e-15,
+  "estimator_integrity_tests": 7,
+  "physics_acceptance_gate": false,
+  "autocorrelation_corrected": false
+}

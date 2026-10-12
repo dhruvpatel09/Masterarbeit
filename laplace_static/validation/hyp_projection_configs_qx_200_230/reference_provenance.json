@@ -1,0 +1,8 @@
+{
+  "archive": "hyp_projection_results_5915129.zip",
+  "archive_sha256": "9159028afd81dc0b169d71e6ed63e1053e087a5c6b9d9ec7400702f2b55dda98",
+  "member": "laplace_static/validation/hyp_projection_observable_qx/results_5915129/profile_raw_qX_p2n100_mid98_piter4_40.csv",
+  "member_sha256": "2cb4d47f3f3b343a23bb0efa7660b82278ca37aad91937fdbed46decb5f3669d",
+  "selection": "tau=4, both piter=4 and 40; 664 rows",
+  "job": 5915129
+}

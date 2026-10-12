@@ -1,0 +1,38 @@
+{
+  "profile_sources": [
+    {
+      "archive": "hyp_projection_configs_review_mixed_5918419.zip",
+      "archive_sha256": "825765b3b5e25e7143feaa84126f408661076068757702776c2b938e273bade8",
+      "first_job": 5918419,
+      "raw_table": "job5918419_profiles_raw.csv",
+      "window_table": "job5918419_su3_windows.csv",
+      "tables": {
+        "job5918419_profiles_raw.csv": "a85d7f579055ee24f8c38c3e401507230a23bf86cc185eaa31853e4069822c4b",
+        "job5918419_su3_windows.csv": "cc4bfb5c6cb81830619315d5715ba4e5fea60d8b31195d5a10a162410c4ec9ad"
+      }
+    },
+    {
+      "archive": "hyp_projection_configs_160_190_review_mixed_5920223.zip",
+      "archive_sha256": "f87a35dd99bee3100e25da5a0da0b171c7e6c8f0d4f26682fd78f9bb92de9536",
+      "first_job": 5920223,
+      "raw_table": "job5920223_profiles_raw.csv",
+      "window_table": "job5920223_su3_windows.csv",
+      "tables": {
+        "job5920223_profiles_raw.csv": "0ad7d1ebf189deceda865a759f348dd7690d23728f6db0f9a91f4c68822d4adc",
+        "job5920223_su3_windows.csv": "1b383410048fe1436951f8a621f12295c314abd3608c7b7f5111660e5fc535d8"
+      }
+    },
+    {
+      "archive": "hyp_projection_configs_200_230_review_mixed_5921538.zip",
+      "archive_sha256": "d53efc275d5d3a8ef6630db563cc4d2af6ec319ef53e5f5fb5b19c48c713737d",
+      "first_job": 5921538,
+      "raw_table": "job5921538_profiles_raw.csv",
+      "window_table": "job5921538_su3_windows.csv",
+      "tables": {
+        "job5921538_profiles_raw.csv": "8d72618949254486d3ef040b0ec578a8edf1ad158cb94dc49911502e60b6c9a4",
+        "job5921538_su3_windows.csv": "80b7d661dab860ae2c9e984657d1aa11dfadb219eb0ad9ff1fa6331b157c2603"
+      }
+    }
+  ],
+  "raw_tables_scope": "Original exported CSV bytes, unchanged. No n100 regression measurements enter the ensemble."
+}

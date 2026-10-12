@@ -1,0 +1,39 @@
+{
+  "saved_mode_audit_reparsed": {
+    "job": 5920205,
+    "configurations": [
+      160,
+      170,
+      180,
+      190
+    ],
+    "mode_records": 5200,
+    "slice_records": 52,
+    "csvs_match_stdout": true
+  },
+  "previous_actual_profile_cases_rechecked": 15,
+  "controller_tests_passed": 11,
+  "controller_test_scope": "Mocked Slurm/scientific callbacks test admission, provenance, failure and resume; new physics outputs still require SuperMUC execution",
+  "numerical_source_identity": {
+    "test_profiles_qx.c": true,
+    "su3_window.h": true,
+    "run_task.py": true,
+    "check_task.py": true,
+    "average_compare.py": true,
+    "point_compare.py": true,
+    "profile_compare.py": true
+  },
+  "new_campaign_cases": 12,
+  "configurations": [
+    160,
+    170,
+    180,
+    190
+  ],
+  "tau": [
+    2,
+    4,
+    6
+  ],
+  "new_measurements_run_locally": false
+}
