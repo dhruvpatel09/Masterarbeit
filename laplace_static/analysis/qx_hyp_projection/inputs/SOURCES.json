@@ -1,0 +1,98 @@
+{
+  "source_commit": "515fa1782e5965feab54794d91235d3a4a3c1886",
+  "default_profile_tables": [
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5918419_profiles_raw.csv",
+      "sha256": "a85d7f579055ee24f8c38c3e401507230a23bf86cc185eaa31853e4069822c4b",
+      "campaign_job": 5918419
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5920223_profiles_raw.csv",
+      "sha256": "0ad7d1ebf189deceda865a759f348dd7690d23728f6db0f9a91f4c68822d4adc",
+      "campaign_job": 5920223
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5921538_profiles_raw.csv",
+      "sha256": "8d72618949254486d3ef040b0ec578a8edf1ad158cb94dc49911502e60b6c9a4",
+      "campaign_job": 5921538
+    }
+  ],
+  "default_window_tables": [
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5918419_su3_windows.csv",
+      "sha256": "cc4bfb5c6cb81830619315d5715ba4e5fea60d8b31195d5a10a162410c4ec9ad",
+      "campaign_job": 5918419
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5920223_su3_windows.csv",
+      "sha256": "1b383410048fe1436951f8a621f12295c314abd3608c7b7f5111660e5fc535d8",
+      "campaign_job": 5920223
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5921538_su3_windows.csv",
+      "sha256": "80b7d661dab860ae2c9e984657d1aa11dfadb219eb0ad9ff1fa6331b157c2603",
+      "campaign_job": 5921538
+    }
+  ],
+  "preserved_inputs": {
+    "job5902645_diagnostics.txt": "42fa5577dde222fbd0541cc8b60043b3204f9c752a42062d1e3a4299603dc75c",
+    "job5903127_diagnostics.txt": "c5d0e1e4dcfcf889115c9ceab92881910d722833147f569247629ce797507afb",
+    "n100_su3_by_time.csv": "bfe86c9178304c2d80d1a7e5dfb383a5dc3c80ab28ad7300b64246daf3dcc75e",
+    "n100_su3_window_summary.json": "75cb7c444221342d4d3f3ab47ff657ae67a539a61075e21cb8b508f143b89ab1"
+  },
+  "provenance": {
+    "n100_su3_by_time.csv": {
+      "configuration": "qX_p2n100",
+      "measurement_job": 5916659,
+      "measurement_program": "laplace_static/validation/hyp_projection_timeslices_qx/test_projection_timeslices_qx.c",
+      "time_origins": [
+        0,
+        190
+      ],
+      "excluded_time_origin": 191
+    },
+    "n100_su3_window_summary.json": {
+      "configuration": "qX_p2n100",
+      "measurement_job": 5916659,
+      "window_midpoint": 98,
+      "temporal_separations": [
+        2,
+        4,
+        6
+      ]
+    },
+    "job5902645_diagnostics.txt": {
+      "measurement_job": 5902645,
+      "output_file": "laplace_static/validation/hyp_qx_open/hyp_qx_5902645.out",
+      "program": "laplace_static/validation/hyp_qx_open/test_hyp_qx.c",
+      "projection_iterations": [
+        10,
+        20
+      ],
+      "diagnostic_scope": "Final physical temporal links; maximum entry unitarity and determinant defects; prescription component differences"
+    },
+    "job5903127_diagnostics.txt": {
+      "measurement_job": 5903127,
+      "output_file": "laplace_static/validation/hyp_qx_open/hyp_qx_p20_p40_5903127.out",
+      "program": "laplace_static/validation/hyp_qx_open/test_hyp_qx_p20_p40.c",
+      "projection_iterations": [
+        20,
+        40
+      ],
+      "diagnostic_scope": "Final physical temporal links; maximum entry unitarity and determinant defects; prescription component differences"
+    }
+  },
+  "historical_80": {
+    "kind": "strict upper bound",
+    "unit_max_entry_upper_bound": 8e-16,
+    "det_max_upper_bound": 8e-16,
+    "source": "laplace_static/validation/hyp_qx_open/VALIDATION.md",
+    "source_sha256": "dd518013641f56eb3d80b8d0559a712115dfbb45752a625de441d64545449747",
+    "job": 5903146,
+    "component_difference_40_vs_80": "5.8841820305133297e-15"
+  },
+  "estimator_module": {
+    "path": "laplace_static/analysis/hyp_projection_13configs/analyze.py",
+    "sha256": "ad5db9909d4288702ede30d60c57a3b13bc43f98f159923681d0958f21afd9bf"
+  }
+}
