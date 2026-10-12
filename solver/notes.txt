@@ -1,0 +1,14 @@
+structure:
+
+compile the wrapper as a (static) library
+--> libsolver.a
+rename for different geometries
+e.g. libsolver_128x48_3072.a
+
+compile qcd library
+--> libqcd.a
+
+compile measurement program and link to qcd and solver
+mpicc ....  -lqcd -lsolver_128x48_3072
+
+At run-time: check whether lsolver geometry fits
