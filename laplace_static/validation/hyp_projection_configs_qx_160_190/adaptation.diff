@@ -1,0 +1,278 @@
+--- previous/hyp_projection_configs_qx/build.sh
++++ new/hyp_projection_configs_qx_160_190/build.sh
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env bash
+ set -euo pipefail
+ cd /hppfs/work/pn29se/di24gus/Masterarbeit
+-case_dir="$PWD/laplace_static/validation/hyp_projection_configs_qx"
++case_dir="$PWD/laplace_static/validation/hyp_projection_configs_qx_160_190"
+ sha256sum -c "$case_dir/package.sha256"
+ sha256sum -c "$case_dir/inputs.sha256"
+ # Pin the previously validated observable library and executable as well.
+--- previous/hyp_projection_configs_qx/collect.py
++++ new/hyp_projection_configs_qx_160_190/collect.py
+@@ -16,7 +16,7 @@
+     if target.exists():raise RuntimeError(f'Collection already exists: {target}')
+     target.mkdir()
+     summaries=[];errors=[];raw=[];paired=[];times=[];windows=[]
+-    for i in range(15):
++    for i in range(c.NCASES):
+         selected=c.case_for(i)
+         outdir=c.CASE/f'results_{job}_{i}'
+         try:
+@@ -42,11 +42,11 @@
+                 rows.extend(items)
+         except Exception as exc:
+             errors.append(dict(index=i,configuration=selected['configuration'],tau=selected['tau'],error=str(exc)))
+-    success=(len(summaries)==15 and not errors and
++    success=(len(summaries)==c.NCASES and not errors and
+              summaries[0].get('n100_regression',{}).get('success') is True)
+-    summary=dict(success=success,array_job_id=job,validated_cases=len(summaries),expected_cases=15,
++    summary=dict(success=success,array_job_id=job,validated_cases=len(summaries),expected_cases=c.NCASES,
+                  cases=summaries,errors=errors,
+-                 scope='Five configurations at fixed midpoint98, tau2/4/6, R1/2/4. '
++                 scope='Four configurations at fixed midpoint98, tau2/4/6, R1/2/4. '
+                        'piter4 sensitivity diagnostics; no ensemble estimator or physics acceptance verdict.',
+                  warning='Connected columns are per-configuration diagnostics. Spatial sites/axes/tau '
+                          'are not independent ensemble samples. Form ensemble averages of raw L, LS, S '
+@@ -57,7 +57,7 @@
+     check.write_csv(target/'su3_times.csv',check.SU3_COLUMNS,times)
+     check.write_csv(target/'su3_windows.csv',check.SU3_COLUMNS,windows)
+     report=['# Multi-configuration projection comparison',f'Array job: {job}',
+-            f'Validated cases: {len(summaries)}/15; complete structural/control/regression success: {success}',
++            f'Validated cases: {len(summaries)}/12; complete structural/control/regression success: {success}',
+             '', 'piter4 acceptance is not decided by this checker. Inspect central-window maxima and '
+             'paired observable differences together. Connected columns are single-configuration diagnostics.',
+             '', '| cfg | tau | p4 max unitary defect (Frobenius) | p4 max determinant defect | '
+@@ -69,7 +69,7 @@
+                       f"{s['max_relative_difference']['C_combined']:.6e} |")
+     if errors:report += ['','Incomplete/failed cases:',*[json.dumps(e) for e in errors]]
+     (target/'REPORT.md').write_text('\n'.join(report)+'\n')
+-    archive=c.ROOT/f'hyp_projection_configs_review_{job}.zip'
++    archive=c.ROOT/f'hyp_projection_configs_160_190_review_{job}.zip'
+     include=[]
+     for folder in [outdir for outdir in sorted(c.CASE.glob(f'results_{job}_*'))]+[target]:
+         include += [p for p in folder.rglob('*') if p.is_file()]
+@@ -87,6 +87,6 @@
+     if not success:
+         print('INCOMPLETE/FAILED: review retained; see SUMMARY.json and REPORT.md',file=sys.stderr)
+         raise SystemExit(1)
+-    print('PASS complete coverage: 9960 raw rows, 4980 paired rows; inspect sensitivity before accepting piter4.')
++    print('PASS complete coverage: 7968 raw rows, 3984 paired rows; inspect sensitivity before accepting piter4.')
+ 
+ if __name__=='__main__':main()
+--- previous/hyp_projection_configs_qx/common.py
++++ new/hyp_projection_configs_qx_160_190/common.py
+@@ -9,9 +9,10 @@
+ GAUGE_ROOT = Path('/hppfs/scratch/00/di98qes3/qX')
+ N100_RUN = Path('/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/'
+                 'n100_evec_Nv100_deg10_nf7_mr30_up015_p12x4x4x4')
+-CONFIGS = (110, 120, 130, 140, 150)
++CONFIGS = (160, 170, 180, 190)
+ TAUS = (2, 4, 6)
+-AUDIT = ROOT / 'mental/validation/qx_saved_modes/results_5917325/SUMMARY.json'
++NCASES = len(CONFIGS) * len(TAUS)
++AUDIT = ROOT / 'mental/validation/qx_saved_modes_160_190/results_5920205/SUMMARY.json'
+ 
+ def digest(path):
+     h = hashlib.sha256()
+@@ -43,8 +44,8 @@
+     return dict(path=str(path), bytes=status.st_size, mtime_ns=status.st_mtime_ns)
+ 
+ def case_for(index):
+-    if not 0 <= index < 15:
+-        raise RuntimeError('Array index must be 0..14')
++    if not 0 <= index < NCASES:
++        raise RuntimeError('Array index must be 0..11')
+     cfg, tau = CONFIGS[index // 3], TAUS[index % 3]
+     return dict(index=index, configuration=cfg, tau=tau,
+                 t0=98-tau//2, t1=98+tau//2, tmid=98)
+@@ -55,7 +56,7 @@
+     verify_manifest(CASE / 'build/manifest.sha256')
+     verify_manifest(CASE / 'prepared.sha256')
+     data = json.loads((CASE / 'PREPARED.json').read_text())
+-    if data['cases'] != [case_for(i) for i in range(15)]:
++    if data['cases'] != [case_for(i) for i in range(NCASES)]:
+         raise RuntimeError('Unexpected prepared cases')
+     for run in data['runs']:
+         marker = Path(run['run']) / 'COMPLETED.json'
+--- previous/hyp_projection_configs_qx/prepare.py
++++ new/hyp_projection_configs_qx_160_190/prepare.py
+@@ -11,8 +11,8 @@
+     c.verify_manifest(c.CASE / 'inputs.sha256')
+     c.verify_manifest(c.CASE / 'build/manifest.sha256')
+     audit = json.loads(c.AUDIT.read_text())
+-    if (audit.get('success') is not True or audit.get('mode_records') != 4500 or
+-            audit.get('slice_records') != 45 or
++    if (audit.get('success') is not True or audit.get('mode_records') != 5200 or
++            audit.get('slice_records') != 52 or
+             sorted(r['configuration'] for r in audit['runs']) != list(c.CONFIGS) or
+             any(r.get('success') is not True or r['mpi_exit_code'] != 0
+                 for r in audit['runs'])):
+@@ -34,18 +34,17 @@
+     inputs.append(c.check_file(c.GAUGE_ROOT / 'qX_p2n100'))
+     for t in (96, 100):
+         inputs.append(c.check_file(c.N100_RUN / 'eigenvectors' / f'qX_p2n100_evec_t{t}.h5'))
+-    data = dict(runs=selected, cases=[c.case_for(i) for i in range(15)],
++    data = dict(runs=selected, cases=[c.case_for(i) for i in range(c.NCASES)],
+                 gauge_root=str(c.GAUGE_ROOT), n100_run=str(c.N100_RUN), inputs=inputs,
+-                audit_job=5917325, audit_scope=audit['scope'],
++                audit_job=5920205, audit_scope=audit['scope'],
+                 settings=dict(Nv=100, midpoint=98, R=[1,2,4], piter=[4,40],
+                               hyp_steps=1, alpha=[1,1,0.5], grid=[1,4,4,4], ranks=64),
+-                quality_scope='Tau4 endpoints were residual-audited; tau2/6 endpoints '
+-                              'have inventory/metadata checks, not independent saved-pair residual checks.')
++                quality_scope='All tau2/4/6 endpoints and midpoint98 passed the saved-pair residual/Gram audit on 13 selected slices in job5920205. Other eigenvector times are outside that sampled numerical audit.')
+     c.write_json(c.CASE / 'PREPARED.json', data)
+     target = c.CASE / 'PREPARED.json'
+     with (c.CASE / 'prepared.sha256').open('x') as stream:
+         stream.write(c.digest(target) + '  ' + str(target.relative_to(c.ROOT)) + '\n')
+-    print('Prepared 15 paired cases for n110..n150, tau=2,4,6; task0 also checks n100 tau4.')
++    print('Prepared 12 paired cases for n160..n190, tau=2,4,6; task0 also checks n100 tau4.')
+     print('All gauge/eigenvector inputs remain in their existing locations.')
+ 
+ if __name__ == '__main__':
+--- previous/hyp_projection_configs_qx/submit.sh
++++ new/hyp_projection_configs_qx_160_190/submit.sh
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env bash
+-#SBATCH --job-name=qx_hyp_cfg
++#SBATCH --job-name=qx_hyp160190
+ #SBATCH --account=pn29se
+ #SBATCH --partition=test
+ #SBATCH --qos=test
+@@ -8,13 +8,13 @@
+ #SBATCH --ntasks=64
+ #SBATCH --ntasks-per-node=8
+ #SBATCH --cpus-per-task=1
+-#SBATCH --array=0-14%2
++#SBATCH --array=0
+ #SBATCH --export=NONE
+ #SBATCH --chdir=/hppfs/work/pn29se/di24gus/Masterarbeit
+-#SBATCH --output=laplace_static/validation/hyp_projection_configs_qx/profiles_%A_%a.out
+-#SBATCH --error=laplace_static/validation/hyp_projection_configs_qx/profiles_%A_%a.err
++#SBATCH --output=laplace_static/validation/hyp_projection_configs_qx_160_190/profiles_%A_%a.out
++#SBATCH --error=laplace_static/validation/hyp_projection_configs_qx_160_190/profiles_%A_%a.err
+ set -euo pipefail
+ source env/supermuc.sh
+ module load slurm_setup
+ export OMP_NUM_THREADS=1 OMP_DYNAMIC=FALSE MKL_NUM_THREADS=1 MKL_DYNAMIC=FALSE
+-python3 laplace_static/validation/hyp_projection_configs_qx/run_task.py
++python3 laplace_static/validation/hyp_projection_configs_qx_160_190/run_task.py
+--- previous/hyp_projection_configs_qx_queue/collect_mixed.py
++++ new/hyp_projection_configs_qx_160_190_queue/collect_mixed.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Recheck fifteen cases mapped to distinct Slurm parents and make a review ZIP."""
++"""Recheck twelve cases mapped to distinct Slurm parents and make a review ZIP."""
+ import argparse
+ import csv
+ import fcntl
+@@ -30,7 +30,7 @@
+     if partial:
+         name = 'partial_'+name+'_'+q.now().replace(':','').replace('+','_')
+     target = q.HERE / ('collection_'+name)
+-    archive = q.c.ROOT / ('hyp_projection_configs_review_'+name+'.zip')
++    archive = q.c.ROOT / ('hyp_projection_configs_160_190_review_'+name+'.zip')
+     if target.exists() or archive.exists():
+         if not partial and target.is_dir() and archive.is_file():
+             saved = json.loads((target / 'SUMMARY.json').read_text())
+@@ -59,16 +59,16 @@
+         except Exception as exc:
+             errors.append(dict(index=entry['index'],configuration=entry['configuration'],
+                                tau=entry['tau'],job=entry.get('array_job_id'),error=str(exc)))
+-    success = (len(summaries)==15 and not errors and
++    success = (len(summaries)==q.c.NCASES and not errors and
+                summaries[0].get('n100_regression',{}).get('success') is True)
+     if not success and not partial:
+         raise RuntimeError('Incomplete/failed collection; results retained. Use --partial to '
+                            'create a diagnostic archive. Errors: '+json.dumps(errors))
+-    if success and [len(tables[n]) for n in tables] != [9960,4980,120,30]:
+-        raise RuntimeError('Aggregate coverage differs from fifteen expected cases')
++    if success and [len(tables[n]) for n in tables] != [7968,3984,96,24]:
++        raise RuntimeError('Aggregate coverage differs from twelve expected cases')
+     target.mkdir()
+     summary = dict(success=success, job_mapping=mapping, validated_cases=len(summaries),
+-                   expected_cases=15, cases=summaries, errors=errors,
++                   expected_cases=q.c.NCASES, cases=summaries, errors=errors,
+                    scope='Structural/profile checks, original-field clover isolation, piter40 '
+                          'SU3 control and n100 regression. piter4 sensitivity is reported '
+                          'without a physics acceptance threshold.',
+@@ -83,7 +83,7 @@
+                           ('su3_windows.csv',q.checks.SU3_COLUMNS)]:
+         q.checks.write_csv(target / name, columns, tables[name])
+     report = ['# Multi-configuration projection comparison',
+-              f'Validated cases: {len(summaries)}/15; complete check success: {success}',
++              f'Validated cases: {len(summaries)}/12; complete check success: {success}',
+               '', 'piter4 acceptance remains a physics decision. Connected values are '
+               'per-configuration diagnostics; compare absolute differences as well as '
+               'relative changes when the connected signal is small.', '',
+--- previous/hyp_projection_configs_qx_queue/queue_common.py
++++ new/hyp_projection_configs_qx_160_190_queue/queue_common.py
+@@ -9,7 +9,7 @@
+ from pathlib import Path
+ 
+ HERE = Path(__file__).resolve().parent
+-ORIGINAL = HERE.with_name('hyp_projection_configs_qx')
++ORIGINAL = HERE.with_name('hyp_projection_configs_qx_160_190')
+ sys.path.insert(0, str(ORIGINAL))
+ import common as c
+ import check_task as checks
+@@ -64,8 +64,8 @@
+     if data.get('provenance') != provenance():
+         raise RuntimeError('Build/package/preparation changed since controller start')
+     entries = data.get('cases', [])
+-    if len(entries) != 15:
+-        raise RuntimeError('Ledger must describe exactly 15 cases')
++    if len(entries) != c.NCASES:
++        raise RuntimeError('Ledger must describe exactly 12 cases')
+     for i, entry in enumerate(entries):
+         if any(entry.get(k) != v for k, v in c.case_for(i).items()):
+             raise RuntimeError('Ledger case mapping differs at index '+str(i))
+--- previous/hyp_projection_configs_qx_queue/run_remaining.py
++++ new/hyp_projection_configs_qx_160_190_queue/run_remaining.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Submit indices 1..14 one at a time, then collect all distinct job IDs."""
++"""Watch the initial index0 job, then submit indices 1..11 one at a time, then collect all distinct job IDs."""
+ import argparse
+ import fcntl
+ import json
+@@ -19,7 +19,7 @@
+ 
+ 
+ def slurm_environment():
+-    # Command-line array selection overrides the original 0-14 array directive.
++    # Command-line array selection overrides the single-index array directive.
+     # Prevent ambient SBATCH_* or SQUEUE_* variables from changing this workflow.
+     return {k:v for k,v in os.environ.items() if not k.startswith(('SBATCH_', 'SQUEUE_'))}
+ 
+@@ -92,11 +92,9 @@
+     q.c.array_id(first_job)
+     data = dict(schema=1, first_job=first_job, created=q.now(),
+                 measurement_directory=str(q.c.CASE), provenance=q.provenance(),
+-                cases=[dict(q.c.case_for(i), state='planned', array_job_id=None) for i in range(15)])
++                cases=[dict(q.c.case_for(i), state='planned', array_job_id=None) for i in range(q.c.NCASES)])
+     first = data['cases'][0]
+-    first.update(state='completed', array_job_id=first_job)
+-    q.validate_case(first)
+-    first['validated'] = q.now()
++    first.update(state='submitted', array_job_id=first_job)
+     q.atomic_json(q.LEDGER, data)
+     return data
+ 
+@@ -141,12 +139,12 @@
+     archive = collect_mixed.collect(data)
+     data['review_archive'] = str(archive)
+     q.atomic_json(q.LEDGER, data)
+-    q.say('COMPLETE', cases=15, review_archive=str(archive))
++    q.say('COMPLETE', cases=q.c.NCASES, review_archive=str(archive))
+ 
+ 
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+-    parser.add_argument('--first-job', help='Already successful parent job for index 0, e.g. 5918419')
++    parser.add_argument('--first-job', help='Parent job already submitted for index0; it may be pending, running or finished')
+     parser.add_argument('--resume', action='store_true', help='Continue the existing RUNS.json without duplicating submissions')
+     parser.add_argument('--poll-seconds', type=int, default=30)
+     args = parser.parse_args()

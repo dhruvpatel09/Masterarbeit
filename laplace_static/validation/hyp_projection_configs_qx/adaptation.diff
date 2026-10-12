@@ -1,0 +1,63 @@
+--- validated/test_profile_scan_qx.c
++++ new/test_profiles_qx.c
+@@ -14,7 +14,9 @@
+ #define NV 100
+ #define NT 192
+ #define NS 64
+-#define CFG_ID 100
++static int cfg_id=100;
++#define CFG_ID cfg_id
++#include "su3_window.h"
+ 
+ #define DEFAULT_T0 96
+ #define DEFAULT_GX 0
+@@ -144,9 +146,15 @@
+         MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+     }
+ 
++    if (metadata.bc.type!=0 || !metadata.laplacesmear.type ||
++        strcmp(metadata.laplacesmear.type,"APE") || metadata.laplacesmear.itercnt!=20 ||
++        !isfinite(metadata.laplacesmear.alpha) || fabs(metadata.laplacesmear.alpha-0.5)>1e-14)
++        MPI_Abort(MPI_COMM_WORLD,1);
++    for(int k=0;k<3;k++)if(!isfinite(metadata.bc.theta[k]) || fabs(metadata.bc.theta[k])>1e-14)MPI_Abort(MPI_COMM_WORLD,1);
++
+     if (tmp_nc != nc ||
+         tmp_time != time ||
+-        tmp_nv < NV ||
++        tmp_nv != NV ||
+         tmp_run_name == NULL ||
+         strcmp(tmp_run_name, nbase) != 0) {
+         fprintf(
+@@ -221,6 +229,8 @@
+     }
+ 
+     DistEigvecsHdf5Reader_Free(&reader);
++    free(tmp_run_name);free(metadata.laplacesmear.type);
++    free(programdata.name);free(programdata.infile);
+ }
+ 
+ static qcd_complex_16 tau_from_transporter(
+@@ -1184,6 +1194,14 @@
+ int main(int argc, char **argv) {
+     solver_mpiInit(argc, argv);
+     setvbuf(stdout, NULL, _IONBF, 0);
++    cfg_id=read_env_int("QX_CFG",100,100,800);
++    if(cfg_id%10)MPI_Abort(MPI_COMM_WORLD,1);
++    int provided,minimum;
++    MPI_Query_thread(&provided);
++    MPI_Allreduce(&provided,&minimum,1,MPI_INT,MPI_MIN,MPI_COMM_WORLD);
++    if(minimum<MPI_THREAD_FUNNELED || solver_getNThread()!=1)MPI_Abort(MPI_COMM_WORLD,1);
++    int init_rank;MPI_Comm_rank(MPI_COMM_WORLD,&init_rank);
++    if(!init_rank)printf("MPI_SUPPORT cfg=%d funneled=%d threads=%d\n",CFG_ID,minimum,solver_getNThread());
+     const int hyp_mode=read_env_int("HYP_MODE",0,0,3);
+     const int hyp_piter=read_env_int("HYP_PITER",40,1,1000);
+ 
+@@ -1524,6 +1542,8 @@
+     if (!myid) printf("HYP_INTEGRATION mode=%d steps=%d piter=%d temporal_change=%.16e preserved_change=%.16e\n",
+                        hyp_mode,(hyp_mode==1 || hyp_mode==2),hyp_piter,global[0],global[1]);
+ 
++    if(hyp_mode==2)profile_window_su3(&transport,CFG_ID,hyp_piter,t0,t1,myid);
++
+     make_transporters(&transport,t0,tmid,t1);
+ 
+     read_evec_time(

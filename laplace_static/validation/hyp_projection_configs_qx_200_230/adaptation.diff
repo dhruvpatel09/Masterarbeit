@@ -1,0 +1,164 @@
+--- hyp_projection_configs_qx_160_190/build.sh
++++ hyp_projection_configs_qx_200_230/build.sh
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env bash
+ set -euo pipefail
+ cd /hppfs/work/pn29se/di24gus/Masterarbeit
+-case_dir="$PWD/laplace_static/validation/hyp_projection_configs_qx_160_190"
++case_dir="$PWD/laplace_static/validation/hyp_projection_configs_qx_200_230"
+ sha256sum -c "$case_dir/package.sha256"
+ sha256sum -c "$case_dir/inputs.sha256"
+ # Pin the previously validated observable library and executable as well.
+--- hyp_projection_configs_qx_160_190/collect.py
++++ hyp_projection_configs_qx_200_230/collect.py
+@@ -69,7 +69,7 @@
+                       f"{s['max_relative_difference']['C_combined']:.6e} |")
+     if errors:report += ['','Incomplete/failed cases:',*[json.dumps(e) for e in errors]]
+     (target/'REPORT.md').write_text('\n'.join(report)+'\n')
+-    archive=c.ROOT/f'hyp_projection_configs_160_190_review_{job}.zip'
++    archive=c.ROOT/f'hyp_projection_configs_200_230_review_{job}.zip'
+     include=[]
+     for folder in [outdir for outdir in sorted(c.CASE.glob(f'results_{job}_*'))]+[target]:
+         include += [p for p in folder.rglob('*') if p.is_file()]
+--- hyp_projection_configs_qx_160_190/common.py
++++ hyp_projection_configs_qx_200_230/common.py
+@@ -9,10 +9,10 @@
+ GAUGE_ROOT = Path('/hppfs/scratch/00/di98qes3/qX')
+ N100_RUN = Path('/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/'
+                 'n100_evec_Nv100_deg10_nf7_mr30_up015_p12x4x4x4')
+-CONFIGS = (160, 170, 180, 190)
++CONFIGS = (200, 210, 220, 230)
+ TAUS = (2, 4, 6)
+ NCASES = len(CONFIGS) * len(TAUS)
+-AUDIT = ROOT / 'mental/validation/qx_saved_modes_160_190/results_5920205/SUMMARY.json'
++AUDIT = ROOT / 'mental/validation/qx_saved_modes_200_230/results_5921385/SUMMARY.json'
+ 
+ def digest(path):
+     h = hashlib.sha256()
+--- hyp_projection_configs_qx_160_190/prepare.py
++++ hyp_projection_configs_qx_200_230/prepare.py
+@@ -36,15 +36,15 @@
+         inputs.append(c.check_file(c.N100_RUN / 'eigenvectors' / f'qX_p2n100_evec_t{t}.h5'))
+     data = dict(runs=selected, cases=[c.case_for(i) for i in range(c.NCASES)],
+                 gauge_root=str(c.GAUGE_ROOT), n100_run=str(c.N100_RUN), inputs=inputs,
+-                audit_job=5920205, audit_scope=audit['scope'],
++                audit_job=5921385, audit_scope=audit['scope'],
+                 settings=dict(Nv=100, midpoint=98, R=[1,2,4], piter=[4,40],
+                               hyp_steps=1, alpha=[1,1,0.5], grid=[1,4,4,4], ranks=64),
+-                quality_scope='All tau2/4/6 endpoints and midpoint98 passed the saved-pair residual/Gram audit on 13 selected slices in job5920205. Other eigenvector times are outside that sampled numerical audit.')
++                quality_scope='All tau2/4/6 endpoints and midpoint98 passed the saved-pair residual/Gram audit on 13 selected slices in job5921385. Other eigenvector times are outside that sampled numerical audit.')
+     c.write_json(c.CASE / 'PREPARED.json', data)
+     target = c.CASE / 'PREPARED.json'
+     with (c.CASE / 'prepared.sha256').open('x') as stream:
+         stream.write(c.digest(target) + '  ' + str(target.relative_to(c.ROOT)) + '\n')
+-    print('Prepared 12 paired cases for n160..n190, tau=2,4,6; task0 also checks n100 tau4.')
++    print('Prepared 12 paired cases for n200..n230, tau=2,4,6; task0 also checks n100 tau4.')
+     print('All gauge/eigenvector inputs remain in their existing locations.')
+ 
+ if __name__ == '__main__':
+--- hyp_projection_configs_qx_160_190/submit.sh
++++ hyp_projection_configs_qx_200_230/submit.sh
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env bash
+-#SBATCH --job-name=qx_hyp160190
++#SBATCH --job-name=qx_hyp200230
+ #SBATCH --account=pn29se
+ #SBATCH --partition=test
+ #SBATCH --qos=test
+@@ -11,10 +11,10 @@
+ #SBATCH --array=0
+ #SBATCH --export=NONE
+ #SBATCH --chdir=/hppfs/work/pn29se/di24gus/Masterarbeit
+-#SBATCH --output=laplace_static/validation/hyp_projection_configs_qx_160_190/profiles_%A_%a.out
+-#SBATCH --error=laplace_static/validation/hyp_projection_configs_qx_160_190/profiles_%A_%a.err
++#SBATCH --output=laplace_static/validation/hyp_projection_configs_qx_200_230/profiles_%A_%a.out
++#SBATCH --error=laplace_static/validation/hyp_projection_configs_qx_200_230/profiles_%A_%a.err
+ set -euo pipefail
+ source env/supermuc.sh
+ module load slurm_setup
+ export OMP_NUM_THREADS=1 OMP_DYNAMIC=FALSE MKL_NUM_THREADS=1 MKL_DYNAMIC=FALSE
+-python3 laplace_static/validation/hyp_projection_configs_qx_160_190/run_task.py
++python3 laplace_static/validation/hyp_projection_configs_qx_200_230/run_task.py
+--- hyp_projection_configs_qx_160_190_queue/README.md
++++ hyp_projection_configs_qx_200_230_queue/README.md
+@@ -1,8 +1,8 @@
+-# Sequential controller for n160–n190 paired profiles
++# Sequential controller for n200–n230 paired profiles
+ 
+ This controller watches an already submitted index0 job, then submits indices
+ 1–11 one at a time. The scientific campaign is in the sibling directory
+-hyp_projection_configs_qx_160_190; its README contains the complete build,
++hyp_projection_configs_qx_200_230; its README contains the complete build,
+ preparation, start and resume instructions.
+ 
+ The initial job may still be pending or running when --first-job is supplied.
+--- hyp_projection_configs_qx_160_190_queue/collect_mixed.py
++++ hyp_projection_configs_qx_200_230_queue/collect_mixed.py
+@@ -30,7 +30,7 @@
+     if partial:
+         name = 'partial_'+name+'_'+q.now().replace(':','').replace('+','_')
+     target = q.HERE / ('collection_'+name)
+-    archive = q.c.ROOT / ('hyp_projection_configs_160_190_review_'+name+'.zip')
++    archive = q.c.ROOT / ('hyp_projection_configs_200_230_review_'+name+'.zip')
+     if target.exists() or archive.exists():
+         if not partial and target.is_dir() and archive.is_file():
+             saved = json.loads((target / 'SUMMARY.json').read_text())
+--- hyp_projection_configs_qx_160_190_queue/controller_tests.py
++++ hyp_projection_configs_qx_200_230_queue/controller_tests.py
+@@ -11,7 +11,7 @@
+ from unittest.mock import patch
+ 
+ BASE=Path(__file__).resolve().parents[3]
+-HELPER=BASE/'laplace_static/validation/hyp_projection_configs_qx_160_190_queue'
++HELPER=BASE/'laplace_static/validation/hyp_projection_configs_qx_200_230_queue'
+ sys.path.insert(0,str(HELPER))
+ import queue_common as q
+ import run_remaining as r
+@@ -22,9 +22,9 @@
+     def setUp(self):
+         self.temporary=tempfile.TemporaryDirectory()
+         self.root=Path(self.temporary.name)
+-        case=self.root/'laplace_static/validation/hyp_projection_configs_qx_160_190'
+-        helper=case.with_name('hyp_projection_configs_qx_160_190_queue')
+-        shutil.copytree(BASE/'laplace_static/validation/hyp_projection_configs_qx_160_190',case)
++        case=self.root/'laplace_static/validation/hyp_projection_configs_qx_200_230'
++        helper=case.with_name('hyp_projection_configs_qx_200_230_queue')
++        shutil.copytree(BASE/'laplace_static/validation/hyp_projection_configs_qx_200_230',case)
+         shutil.copytree(HELPER,helper,ignore=shutil.ignore_patterns('__pycache__'))
+         (case/'build').mkdir()
+         (case/'build/manifest.sha256').write_text('fixture build provenance\n')
+@@ -77,7 +77,7 @@
+         # Original numerical checkers are unchanged and run on SuperMUC logs.
+         s=json.loads((folder/'SUMMARY.json').read_text())
+         self.assertEqual((s['configuration'],s['tau']),(cfg,tau))
+-        if regression:self.assertEqual(cfg,160)
++        if regression:self.assertEqual(cfg,200)
+         self.checks.append(str(folder))
+         return s
+ 
+@@ -191,12 +191,12 @@
+             return result
+         with patch.object(r.subprocess,'run',side_effect=failed_slurm):
+             with self.assertRaisesRegex(RuntimeError,'MPI launch'):r.run(data,30)
+-        self.assertEqual(self.submissions,[1,2]);self.assertFalse((self.root/'hyp_projection_configs_160_190_review_mixed_5918419.zip').exists())
++        self.assertEqual(self.submissions,[1,2]);self.assertFalse((self.root/'hyp_projection_configs_200_230_review_mixed_5918419.zip').exists())
+ 
+     def test_wrong_case_and_changed_provenance_rejected(self):
+         data=r.initialize('5918419');first=data['cases'][0]
+         path=q.output_directory(first)/'CASE.json'
+-        case=json.loads(path.read_text());case['configuration']=170;path.write_text(json.dumps(case))
++        case=json.loads(path.read_text());case['configuration']=210;path.write_text(json.dumps(case))
+         with self.assertRaisesRegex(RuntimeError,'Wrong case'):q.validate_case(first)
+         path.write_text(json.dumps(dict(q.c.case_for(0),array_job_id='5918419')))
+         (q.output_directory(first)/'package.sha256').write_text('changed provenance')
+--- hyp_projection_configs_qx_160_190_queue/queue_common.py
++++ hyp_projection_configs_qx_200_230_queue/queue_common.py
+@@ -9,7 +9,7 @@
+ from pathlib import Path
+ 
+ HERE = Path(__file__).resolve().parent
+-ORIGINAL = HERE.with_name('hyp_projection_configs_qx_160_190')
++ORIGINAL = HERE.with_name('hyp_projection_configs_qx_200_230')
+ sys.path.insert(0, str(ORIGINAL))
+ import common as c
+ import check_task as checks
