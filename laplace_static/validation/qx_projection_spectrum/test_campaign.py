@@ -3,6 +3,10 @@
 import json
 import tempfile
 import unittest
+import subprocess
+import sys
+import io
+from contextlib import redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 import campaign as c
@@ -50,6 +54,30 @@ class CampaignTests(unittest.TestCase):
         chosen=c.choose_runs()
         self.assertTrue(set(range(110,231,10)).issubset(chosen))
         self.assertTrue(set(range(650,801,10)).issubset(chosen))
+
+    def test_cli_help_and_missing_action(self):
+        script=str(Path(c.__file__))
+        for args in (['--help'],['prepare','--help'],['submit','--help']):
+            result=subprocess.run([sys.executable,script]+args,stdout=subprocess.PIPE,
+                                  stderr=subprocess.PIPE,universal_newlines=True)
+            self.assertEqual(result.returncode,0,result.stderr)
+        result=subprocess.run([sys.executable,script],stdout=subprocess.PIPE,
+                              stderr=subprocess.PIPE,universal_newlines=True)
+        self.assertEqual(result.returncode,2)
+        self.assertIn('Select prepare',result.stderr)
+
+    def test_submission_uses_python36_process_options(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            folder=Path(temporary)
+            args=type('Args',(),dict(name='pilot',start=0))()
+            def launch(command,stdout,stderr,universal_newlines,check):
+                self.assertEqual((stdout,stderr),(subprocess.PIPE,subprocess.PIPE))
+                self.assertTrue(universal_newlines)
+                return subprocess.CompletedProcess(command,0,'12345\n','')
+            with patch.object(c,'prepared',return_value=(folder,{'stage':'pilot','cases':[{}]})),patch.object(c.subprocess,'run',side_effect=launch),redirect_stdout(io.StringIO()):
+                c.submit(args)
+            saved=json.loads((folder/'submission_000.json').read_text())
+            self.assertEqual(saved['stdout'],'12345\n')
 
 
 if __name__=='__main__':unittest.main()

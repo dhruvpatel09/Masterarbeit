@@ -1,0 +1,71 @@
+mental version <mental 1.0>
+
+ Global lattice: 192 x  64 x  64 x  64
+ Local  lattice:  32 x  16 x  16 x  16
+ Process grid:     6 x   4 x   4 x   4
+Dirs:
+   nbase   = qX_p2
+   output  = qX_p2_n790_Nv100_evec_packed4
+Configurations 790:10:790
+Number of laplace eigenvectors: 100, to be computed and written
+Gauge fields in Laplace operator will be smeared with: n_APE=20, alpha_APE=0.500000
+Gauge fields in derivatives will be smeared with:      n_APE=0, alpha_APE=0.000000
+Lanczos Parameters
+   res =            1.000000e-09
+   redTol =         1.000000e-12
+   deg =            10
+   upper =          0.150000
+   tolReortho =     1.000000e-10
+   maxRestarts =    30
+   nLanczosFactor = 7
+   redFreqFactor =  10
+
+Will compute 1 sets of elementals
+Set 0:
+   p2max=0
+   nder =0
+
+Momenta table for set with largest pmax
+p1   p2   p3   p^2
+ +0  +0  +0    0
+eigenvectors initialized...
+
+memory allocated
+
+Processing gauge field /hppfs/scratch/00/di98qes3/qX/qX_p2n790
+gauge-field loaded in 3.025951sek
+plaquette (torus def) = 6.612108e-01
+initialized dat file: /hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n790_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/dat/qX_p2_n790_Nv100_evec_packed4_der0_n790.h5
+APE smearing for cov. Laplace done in 3.159853e+01 sec
+Eigenvalues/vectors on x0=0 computed in 6.831126e+01 sec (max)
+Eigenvalues/vectors on x0=1 computed in 6.407855e+01 sec (max)
+Eigenvalues/vectors on x0=2 computed in 2.121527e+01 sec (max)
+Eigenvalues/vectors on x0=3 computed in 2.192388e+01 sec (max)
+Eigenvalues/vectors on x0=4 computed in 2.155682e+01 sec (max)
+Eigenvalues/vectors on x0=5 computed in 2.196354e+01 sec (max)
+Eigenvalues/vectors on x0=6 computed in 2.154828e+01 sec (max)
+Eigenvalues/vectors on x0=7 computed in 2.176973e+01 sec (max)
+Eigenvalues/vectors on x0=8 computed in 2.153960e+01 sec (max)
+Eigenvalues/vectors on x0=9 computed in 2.177497e+01 sec (max)
+Eigenvalues/vectors on x0=10 computed in 2.161061e+01 sec (max)
+Eigenvalues/vectors on x0=11 computed in 2.143418e+01 sec (max)
+Eigenvalues/vectors on x0=12 computed in 2.187563e+01 sec (max)
+Eigenvalues/vectors on x0=13 computed in 2.159066e+01 sec (max)
+Eigenvalues/vectors on x0=14 computed in 2.203121e+01 sec (max)
+Eigenvalues/vectors on x0=15 computed in 2.156310e+01 sec (max)
+Eigenvalues/vectors on x0=16 computed in 2.200226e+01 sec (max)
+Eigenvalues/vectors on x0=17 computed in 2.168281e+01 sec (max)
+Eigenvalues/vectors on x0=18 computed in 2.145048e+01 sec (max)
+Eigenvalues/vectors on x0=19 computed in 2.165077e+01 sec (max)
+Eigenvalues/vectors on x0=20 computed in 2.146835e+01 sec (max)
+Eigenvalues/vectors on x0=21 computed in 2.208435e+01 sec (max)
+Eigenvalues/vectors on x0=22 computed in 2.172833e+01 sec (max)
+Eigenvalues/vectors on x0=23 computed in 2.210032e+01 sec (max)
+Eigenvalues/vectors on x0=24 computed in 2.163276e+01 sec (max)
+Eigenvalues/vectors on x0=25 computed in 2.209348e+01 sec (max)
+Eigenvalues/vectors on x0=26 computed in 2.176353e+01 sec (max)
+Eigenvalues/vectors on x0=27 computed in 2.225579e+01 sec (max)
+Eigenvalues/vectors on x0=28 computed in 2.162042e+01 sec (max)
+Eigenvalues/vectors on x0=29 computed in 2.159517e+01 sec (max)
+Eigenvalues/vectors on x0=30 computed in 2.215839e+01 sec (max)
+Eigenvalues/vectors on x0=31 computed in 2.168197e+01 sec (max)

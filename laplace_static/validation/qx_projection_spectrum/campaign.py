@@ -248,7 +248,8 @@ def submit(args):
     # Record intent before submitting; a timeout is not proof of rejection.
     record=folder/f'submission_{args.start:03d}.json'
     write_json(record,dict(state='submitting',command=command))
-    result=subprocess.run(command,text=True,capture_output=True,check=False)
+    result=subprocess.run(command,stdout=subprocess.PIPE,stderr=subprocess.PIPE,
+                          universal_newlines=True,check=False)
     data=dict(command=command,returncode=result.returncode,stdout=result.stdout,stderr=result.stderr)
     record.write_text(json.dumps(data,indent=2)+'\n')
     if result.returncode:raise ValueError('Slurm submission rejected: '+result.stderr.strip())
@@ -284,14 +285,16 @@ def collect(args):
 
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='action',required=True)
+    parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='action')
     p=sub.add_parser('prepare');p.add_argument('--name',required=True);p.add_argument('--stage',choices=['pilot','intermediate13','extended'],required=True)
     p.add_argument('--configs',default=','.join(map(str,range(110,231,10))))
     p=sub.add_parser('run');p.add_argument('--name',required=True)
     p=sub.add_parser('submit');p.add_argument('--name',required=True);p.add_argument('--pilot',default='pilot');p.add_argument('--start',type=int,default=0)
     p.add_argument('--count',type=int,default=39);p.add_argument('--concurrent',type=int,default=4)
     p=sub.add_parser('collect');p.add_argument('--name',required=True)
-    args=parser.parse_args();globals()[args.action](args)
+    args=parser.parse_args()
+    if args.action is None:parser.error('Select prepare, run, submit or collect')
+    globals()[args.action](args)
 
 
 if __name__=='__main__':main()
