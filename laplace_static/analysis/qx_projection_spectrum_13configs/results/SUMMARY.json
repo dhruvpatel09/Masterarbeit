@@ -1,0 +1,157 @@
+{
+  "configurations": [
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230
+  ],
+  "cases": 39,
+  "raw_records": 51792,
+  "combined_profile_positions": 249,
+  "profile_piters": [
+    4,
+    10,
+    20,
+    40
+  ],
+  "estimator": "mean(LS_RE)/mean(L_RE)-mean(S_RAW); equal configuration weights; precision50",
+  "uncertainties": "Matched delete-one-configuration jackknife for piter4/40; no autocorrelation correction; preliminary",
+  "max_combined_abs_delta_C_4_40": "1.08816270481575554347951268732241074624762E-8",
+  "max_combined_relative_delta_percent_4_40": "0.0033033273494422978682554455425075041617327770504050",
+  "relative_denominator_zero_points": 0,
+  "inputs": [
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5918419_profiles_raw.csv",
+      "sha256": "a85d7f579055ee24f8c38c3e401507230a23bf86cc185eaa31853e4069822c4b"
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5920223_profiles_raw.csv",
+      "sha256": "0ad7d1ebf189deceda865a759f348dd7690d23728f6db0f9a91f4c68822d4adc"
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5921538_profiles_raw.csv",
+      "sha256": "8d72618949254486d3ef040b0ec578a8edf1ad158cb94dc49911502e60b6c9a4"
+    },
+    {
+      "path": "laplace_static/analysis/qx_projection_spectrum_13configs/inputs/job5926668_profiles_raw.csv",
+      "sha256": "5d19420c04fe0450bd90dff6994c2b7f0bbd3df36006513940339d55f88998f7"
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5918419_su3_windows.csv",
+      "sha256": "cc4bfb5c6cb81830619315d5715ba4e5fea60d8b31195d5a10a162410c4ec9ad"
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5920223_su3_windows.csv",
+      "sha256": "1b383410048fe1436951f8a621f12295c314abd3608c7b7f5111660e5fc535d8"
+    },
+    {
+      "path": "laplace_static/analysis/hyp_projection_13configs/inputs/job5921538_su3_windows.csv",
+      "sha256": "80b7d661dab860ae2c9e984657d1aa11dfadb219eb0ad9ff1fa6331b157c2603"
+    },
+    {
+      "path": "laplace_static/analysis/qx_projection_spectrum_13configs/inputs/job5926668_su3_windows.csv",
+      "sha256": "0b0fe38eb6f7005455948b6da5d8b5c03bc8ba92b4365b20be41780eec5ade0e"
+    }
+  ],
+  "completed_scan_job": 5926668,
+  "profile_prescriptions": [
+    4,
+    10,
+    20,
+    40
+  ],
+  "piter_comparison": [
+    {
+      "piter": 4,
+      "configurations": 13,
+      "combined_profile_positions": 249,
+      "max_abs_delta_C_vs_p40": "1.08816270481575554347951268732241074624762E-8",
+      "max_relative_delta_percent_vs_p40": "0.0033033273494422978682554455425075041617327770504050",
+      "max_delta_tau": "6",
+      "max_delta_R": "4",
+      "max_delta_long": "2",
+      "max_delta_tr1": "1",
+      "max_delta_tr2": "0",
+      "largest_window_unit_max": "6.24098245157964082e-03",
+      "unit_max_configuration": "170",
+      "unit_max_tau": "6",
+      "largest_window_det_max": "3.16449503630784196e-03",
+      "det_max_configuration": "170",
+      "det_max_tau": "6"
+    },
+    {
+      "piter": 10,
+      "configurations": 13,
+      "combined_profile_positions": 249,
+      "max_abs_delta_C_vs_p40": "1.013530251861618865843498774706881E-16",
+      "max_relative_delta_percent_vs_p40": "5.6280770954153768545385763100165753995717683248967E-11",
+      "max_delta_tau": "6",
+      "max_delta_R": "4",
+      "max_delta_long": "1",
+      "max_delta_tr1": "1",
+      "max_delta_tr2": "0",
+      "largest_window_unit_max": "7.38364827850986453e-16",
+      "unit_max_configuration": "200",
+      "unit_max_tau": "4",
+      "largest_window_det_max": "6.80436300200607668e-16",
+      "det_max_configuration": "230",
+      "det_max_tau": "2"
+    },
+    {
+      "piter": 20,
+      "configurations": 13,
+      "combined_profile_positions": 249,
+      "max_abs_delta_C_vs_p40": "7.37246172632622575915788899692722E-17",
+      "max_relative_delta_percent_vs_p40": "2.0697359575220179120637141013109142391028422421438E-11",
+      "max_delta_tau": "6",
+      "max_delta_R": "4",
+      "max_delta_long": "3",
+      "max_delta_tr1": "2",
+      "max_delta_tr2": "0",
+      "largest_window_unit_max": "7.26507493644404463e-16",
+      "unit_max_configuration": "210",
+      "unit_max_tau": "6",
+      "largest_window_det_max": "7.78092613433825151e-16",
+      "det_max_configuration": "150",
+      "det_max_tau": "4"
+    },
+    {
+      "piter": 40,
+      "configurations": 13,
+      "combined_profile_positions": 249,
+      "max_abs_delta_C_vs_p40": "0E-49",
+      "max_relative_delta_percent_vs_p40": "0",
+      "max_delta_tau": "2",
+      "max_delta_R": "1",
+      "max_delta_long": "-1",
+      "max_delta_tr1": "-2",
+      "max_delta_tr2": "0",
+      "largest_window_unit_max": "7.46027910162517867e-16",
+      "unit_max_configuration": "140",
+      "unit_max_tau": "6",
+      "largest_window_det_max": "7.79182753929870807e-16",
+      "det_max_configuration": "150",
+      "det_max_tau": "4"
+    }
+  ],
+  "intermediate_launches": 78,
+  "intermediate_raw_records": 25896,
+  "intermediate_window_records": 78,
+  "total_window_records": 156,
+  "scope": "13 matched configurations and three central time windows. Raw clover convention. The p4/p40 jackknife errors remain preliminary and are not autocorrelation corrected. Intermediate-piter profile plots have no final statistical error bars.",
+  "preserved_inputs": {
+    "job5926668_profiles_raw.csv": "5d19420c04fe0450bd90dff6994c2b7f0bbd3df36006513940339d55f88998f7",
+    "job5926668_su3_windows.csv": "0b0fe38eb6f7005455948b6da5d8b5c03bc8ba92b4365b20be41780eec5ade0e",
+    "job5926668_validation.json": "d61418da12b6c542b6c7010ce29d279e191b1afac2d02cc102b61a3c5cfbc16d"
+  },
+  "review_archive_sha256": "bc89f8d25fed024ea8e214ebde225a1f656df3d6208c771002a98df76d35e77f"
+}

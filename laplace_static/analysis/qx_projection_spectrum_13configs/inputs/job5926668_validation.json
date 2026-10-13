@@ -1,0 +1,1236 @@
+{
+  "success": true,
+  "job": 5926668,
+  "stage": "intermediate13",
+  "configurations": [
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230
+  ],
+  "taus": [
+    2,
+    4,
+    6
+  ],
+  "piters": [
+    10,
+    20
+  ],
+  "cases": 39,
+  "mpi_launches": 78,
+  "raw_records": 25896,
+  "window_records": 78,
+  "raw_log_exports_reproduced": true,
+  "empty_stderr": true,
+  "package_and_source_pins_verified": true,
+  "mean_case_seconds": 329.00215960142367,
+  "scope": "Raw measurement logs rechecked using the pinned existing validator. Gauge/eigenvector HDF5 files and runtime executable are outside the review archive and were not independently reread.",
+  "original_package_sha256": "1ec6167c70ac4fe0cc12c5d7e5fbb4162fb86d8afbd1f5e29eae916f52e3706b",
+  "source_pins": {
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/average_compare.py": "edd14e7b41c516aa99b5cc8b14887382d8d87c36410cb90ddebfd7079de4a825",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/run_task.py": "9e7605f7254a9e241e331cef3633104349c7e9db16ac928b251a030311246ecc",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/common.py": "ece8b253fe45c70a318701891ef4b5087f9e3fc4059a626912614f1c227f69e3",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/check_task.py": "6fe50d927f455bc968a1b76711ca16a85082948d7357e5aeccc68c1a0297fba7",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/profile_compare.py": "bcc776ffa3aea829a5d05be72173f7059d9a1c898cc9d717cb24e2450cfe4144",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/prepare.py": "15314bbb3d1449aeed92d4930039859a56aedfb59d582bef9de7b26d3512b0d8",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/point_compare.py": "d17ceea7f9833f29fd0a85a6c8b3f2cbee626e8ea158c64bda34080c3ae9e329",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/collect.py": "86946fa1dfd09028f269538575b788591980b0b29f7efc7dd08bfec510a34c71",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/test_profiles_qx.c": "60a9e706e1ab6d7535bef675b702dad9298643b8599aa56cd14a4c1e4badd9de",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/su3_window.h": "27a4e4d3b3ed8de2ac9096d3d1022e00b2690346798840887aac81dd75a3d830",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/n100_tau4_reference.csv": "ddad21f8089acc1771190448490b6b43536f3f5e7c39e67f3837c252fb53e88c",
+    "env/supermuc.sh": "c21085274c5b207718bc547ff4500ec228e4284d618a0b9a791dc7ce141f3c10",
+    "laplace_static/validation/hyp_projection_configs_qx/audited_runs.json": "8dcae47a704a499e6233cd02d12cc1ffb291e36bfca06eb0f5dfa4a704bff2d8",
+    "laplace_static/validation/hyp_projection_configs_qx_160_190/audited_runs.json": "c7483336343a3f7df951c6643745edd07ed1a4931908de3edc38335ecec7610a",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/audited_runs.json": "fb264947e7b0b9b201adf92f574e3f64e28d4cee67f384e9673aa460ed5383dd",
+    "laplace_static/analysis/hyp_projection_13configs/inputs/job5918419_profiles_raw.csv": "a85d7f579055ee24f8c38c3e401507230a23bf86cc185eaa31853e4069822c4b",
+    "laplace_static/analysis/hyp_projection_13configs/inputs/job5920223_profiles_raw.csv": "0ad7d1ebf189deceda865a759f348dd7690d23728f6db0f9a91f4c68822d4adc",
+    "laplace_static/analysis/hyp_projection_13configs/inputs/job5921538_profiles_raw.csv": "8d72618949254486d3ef040b0ec578a8edf1ad158cb94dc49911502e60b6c9a4",
+    "laplace_static/analysis/qx_hyp_projection/make_plots.py": "125d5be2340a0ab5c925cf8849c306def15da9583c9a258cdc01ea86f943323b"
+  },
+  "raw_log_sha256": {
+    "campaigns/intermediate13/case_000/p10.out": "731d8ea1129ec40a55c7540bfa74660f4c7e9df5bce416ed92657088f9993454",
+    "campaigns/intermediate13/case_000/p20.out": "27128a42ed7626b5eb47a3be0801275b8051d9c88bbed633e5e68066f132acfb",
+    "campaigns/intermediate13/case_001/p10.out": "fe74a953400e0cdb287f2b3f4e090aa60e805cc03a7d71c5e1dcc4c07afc96ce",
+    "campaigns/intermediate13/case_001/p20.out": "abb1bb0d9b006dfaf75c403a2eb825b39b484bbdc83a55cbfdf1633a2eb55dc9",
+    "campaigns/intermediate13/case_002/p10.out": "fae8cb69f4d5a6402b97766c965221d045c99480fadb291612247f267995a74f",
+    "campaigns/intermediate13/case_002/p20.out": "5f7803d551fdd7cb7c29c014e1c10c5fc992ed7d6a19958f4a74e6233f10386a",
+    "campaigns/intermediate13/case_003/p10.out": "4925e1ca8e8785c6e87130d7b4acf24a70c35f4943ca89ff835ddff62ea625e7",
+    "campaigns/intermediate13/case_003/p20.out": "82ed28fe7c62de755267375598d8aaa9d3e33c3ece623f17f346b5d870994c56",
+    "campaigns/intermediate13/case_004/p10.out": "1db3509bbec5d137e1a597eff74e74d086242b1ccea657cca856b028593961c0",
+    "campaigns/intermediate13/case_004/p20.out": "cbe338e5be9d10e50d32df1307a85050d304413cb2ed93b5c6447dee6dae82b9",
+    "campaigns/intermediate13/case_005/p10.out": "77322162cdaf47635aa228df9272ca5d00344d808f2330d4aae6e685dac6fe10",
+    "campaigns/intermediate13/case_005/p20.out": "fac9f68462af874ce6463573750a3674e14ca2761eccba42dbf4bb6ffd660468",
+    "campaigns/intermediate13/case_006/p10.out": "39afdaa8985039d092e92f1e1d505a78839798a5471f9d1e73f7a06b25c30771",
+    "campaigns/intermediate13/case_006/p20.out": "313000793f7aae35e457d4c0dd5fc5eb05bfe0db9f102ab3c53e680e9bcb97ff",
+    "campaigns/intermediate13/case_007/p10.out": "9d1f3650533b6c8657bf1dbf6ed4bb5d4aed1965818d1047b2b44b0106517466",
+    "campaigns/intermediate13/case_007/p20.out": "d670f79ef1c6801c7406cf930877dfbacfe563bd1f1975277d2db0f56426c559",
+    "campaigns/intermediate13/case_008/p10.out": "a20531b6243a60c8a6c1d725676f905249e5d2570fa0623ee3cb3ea2b682be42",
+    "campaigns/intermediate13/case_008/p20.out": "14a9b12b15374441f6e186fb045e64b0196ffd9f1d589d1600d1db9565e47ff7",
+    "campaigns/intermediate13/case_009/p10.out": "de58035ca7e5036cf526050305052a081d8c0eaa3b38ff0fb88a18c1b308b4c2",
+    "campaigns/intermediate13/case_009/p20.out": "667774c78d9af491d99f6f29e093e92e5145ea740c58ce83555113dd0719fcba",
+    "campaigns/intermediate13/case_010/p10.out": "7483150b29f061edfa790437a079f42eb520ea2aa6cfe48d72215fd018d874a4",
+    "campaigns/intermediate13/case_010/p20.out": "5c412aab841c1d7c72f4ef6dfab534a10a66df850d8cd02b7f077c3d2055884b",
+    "campaigns/intermediate13/case_011/p10.out": "45e4627e02675a8885a8a4274ee15d3cfa192588a75b900fe62a60a8d8cc801f",
+    "campaigns/intermediate13/case_011/p20.out": "83d6559a364678a385c0b33364d867407f7c73a75bf83e317dfc95c85609fcbf",
+    "campaigns/intermediate13/case_012/p10.out": "f6a678ad3cfa99303e2512dfdf058baff764b1d34d15f37f6efd458f9f4a8c4f",
+    "campaigns/intermediate13/case_012/p20.out": "f8f537e8b6e3e8d70fe8c05b15df4dd9b8058aed364e7bcda7d49204605dbf3f",
+    "campaigns/intermediate13/case_013/p10.out": "0f83e514ff137d4a2b80e2ce7bfd7920337088f2a2dc1f1c956738a2819e2650",
+    "campaigns/intermediate13/case_013/p20.out": "1fa46e865f8d302d76903c710364845ec9a68955aaf0a53c7edeed390e2f2ee6",
+    "campaigns/intermediate13/case_014/p10.out": "d6fb376b44ad7e424849c1f14caeea971e8a06f076a71d04e58ba5e6ee065af7",
+    "campaigns/intermediate13/case_014/p20.out": "501715d4a1b7e507f5d1d42935e4bf8b32a33fb2066e7c3bdabc95699680f929",
+    "campaigns/intermediate13/case_015/p10.out": "4e84e52ca1f3d8d7c8683904db558dce31dc2bed15865f51017cdce4eda3eeab",
+    "campaigns/intermediate13/case_015/p20.out": "3a1f69057b1bd4d77439f260551c1dc1ae944f7a4b254965527cde8c367cbefb",
+    "campaigns/intermediate13/case_016/p10.out": "b7e9064260ed254d3d156868fd37248b08d24cf7eb5d56e5dcfd3658303a20b1",
+    "campaigns/intermediate13/case_016/p20.out": "ad07ca725a58aa2d297e8268eb8d82fea3bc7cd4c3c9a1830baf3323d1b6aca0",
+    "campaigns/intermediate13/case_017/p10.out": "7966e9814ce11d4e52fb6678554e4e316fc3d4529d9660162995288d812f733c",
+    "campaigns/intermediate13/case_017/p20.out": "05dc1426397d8d9d21b2ea45380f7225951a424af97c40e58b9b9ff60773382b",
+    "campaigns/intermediate13/case_018/p10.out": "6b879f18b73e67e96bd1d79d594479dbc4568f1670c8de92f7b6fb4e378f2084",
+    "campaigns/intermediate13/case_018/p20.out": "2563af46ceaba2d1a3b4ae544b7af225f3ae1d9ab9f933cdac1b871079a58902",
+    "campaigns/intermediate13/case_019/p10.out": "5daed3bcb0681f638e9a38d08adf16d22eb99ffae4124e072de1e074da187303",
+    "campaigns/intermediate13/case_019/p20.out": "9e90d9f68b936c38ca5e17f4c8566091ebd4a8ebc0a92589ee3aadf6ab719750",
+    "campaigns/intermediate13/case_020/p10.out": "86a1c7ceb857b1281304fa63efba94bfccf79879b232c2f205fdecf04c11e6a9",
+    "campaigns/intermediate13/case_020/p20.out": "80167e7475d547b7ac1d4310dda178115e57027d3bd7eeee89d4f1419368dd9e",
+    "campaigns/intermediate13/case_021/p10.out": "f926f87abc8af74bbad05f70eabbe4258d23c9a458571ca6afe34b287721e4d9",
+    "campaigns/intermediate13/case_021/p20.out": "54c3a1061e22b7b4d6880de3693201c8dbe0b51d758efed9a11d55bf9e456752",
+    "campaigns/intermediate13/case_022/p10.out": "d5708edbdc8e7b106e94c2e65579abfa0871bc6f0f379c7455402a6362b60382",
+    "campaigns/intermediate13/case_022/p20.out": "6fd9d015a718b47ae26731dc90077b0811d6feed181246155fc50aa487a4c385",
+    "campaigns/intermediate13/case_023/p10.out": "acbfdba42d1e85c4218ec71c7ed7945b93cb8569b8542308f82cf17eea9bf2a2",
+    "campaigns/intermediate13/case_023/p20.out": "881671310a4a3d354d787b5b781660b438e2d80a0b1f53e4bd10fbbef2d9af30",
+    "campaigns/intermediate13/case_024/p10.out": "f3390e751ad9616ae68be01dc83cd36fe5c38df89dfeefde567a93a696243de4",
+    "campaigns/intermediate13/case_024/p20.out": "ced9540b901772d5bb3a48bf0ba60b478d6f67d8d0a6cfc6df876922b761c247",
+    "campaigns/intermediate13/case_025/p10.out": "2539c8d8089139061a044f00866b16c3672c17cae54532ad4be579e2de9e35ed",
+    "campaigns/intermediate13/case_025/p20.out": "f3de5d292ec4b9166abe65787beacff4e600bac1f8d301fb605ba9f3229cee69",
+    "campaigns/intermediate13/case_026/p10.out": "7f470912aa11edd13aeb27a5b24dad8f5123e35ab161d4ccb50e57c5dabe9c77",
+    "campaigns/intermediate13/case_026/p20.out": "d143faa8f4a742ef72e42b883dd875156cba01257084b03e7357540d143df4e2",
+    "campaigns/intermediate13/case_027/p10.out": "c48440dce986ec1bb52b752b90deebaba1090fa1fb630c1db87ab28444d9ea2e",
+    "campaigns/intermediate13/case_027/p20.out": "ecd4e925ea0ae32b168a0a5bedeb3125d9f2cfa002584c39715de9fb42e29c83",
+    "campaigns/intermediate13/case_028/p10.out": "d3fb1c7b155de33f42986e1bb705715a85eebffaad5a459c293e1ca3d39cf35d",
+    "campaigns/intermediate13/case_028/p20.out": "5f03c185f0f23620d9543bb8c7c77bd70fa545298c5e5a42447ca05fe3aace86",
+    "campaigns/intermediate13/case_029/p10.out": "c5973b7f55d541dc03ea04f0efd365c942fed0be5ec16249db24438e56b8572c",
+    "campaigns/intermediate13/case_029/p20.out": "78a44b556126a424f41aaef50c05c323516750dc6e08b1f893951f55b8229acf",
+    "campaigns/intermediate13/case_030/p10.out": "804b8294f7ab5f834cffc0ebbe3de42aa30127ff007abd6359b8cdb46e828f9e",
+    "campaigns/intermediate13/case_030/p20.out": "f1434808d2c78242772926e2f259873009faa3b45eca4269a750a880d22d1a8f",
+    "campaigns/intermediate13/case_031/p10.out": "ab78bfffd31ddd5a50bd883e2bf0c5cdc0eca9c4c4dded9a348f19b2da2b6f46",
+    "campaigns/intermediate13/case_031/p20.out": "05f39086b1f97d673dcc77cc85195d7658aa77d7cd6b39dc3a4f0ecd33137ddd",
+    "campaigns/intermediate13/case_032/p10.out": "852ca87c39d46b93d4667767307afc31d9b83563f8043b643b30497f9776f403",
+    "campaigns/intermediate13/case_032/p20.out": "2636018a343c47ff3064a0e3fc792fd9410a9c97476e32d60b2eaf025ad028e7",
+    "campaigns/intermediate13/case_033/p10.out": "ea4042ad49e686f3ce74868d6617325a85f9970016f87184bfb75db946e5ecd8",
+    "campaigns/intermediate13/case_033/p20.out": "bd0d62febfb0e35e92ec47bafcd22ad90959dc0d46e0807a62b76b5a170835aa",
+    "campaigns/intermediate13/case_034/p10.out": "3c26bb5e67f88c05094469964c8d7b0694396cd4e6df554e1c139d238b6bd3ea",
+    "campaigns/intermediate13/case_034/p20.out": "97d68f54cc242d56434c0e7c4bd02220c92ac65476392050c709947d207b2246",
+    "campaigns/intermediate13/case_035/p10.out": "8b08e09e2ef5e2600eeaad0542d31cce904daaa93b0830feaf61cb00f909e07f",
+    "campaigns/intermediate13/case_035/p20.out": "57eb4830e0eeb39f55f6fa25753b4ab7d988373a641aa1e81b3b939a269bdea5",
+    "campaigns/intermediate13/case_036/p10.out": "48e9d81da0dc2ee107a36274a6d25ec3df1669b844f3f9a65e5a3680c025c44e",
+    "campaigns/intermediate13/case_036/p20.out": "065bedc999af06b0ae4792f100c562b177b1f5288780da0ec70bc3abec51b44c",
+    "campaigns/intermediate13/case_037/p10.out": "33bac99fdef4285bd7bda13afc78134c1defd66692dde4fe0a642b9c53e17764",
+    "campaigns/intermediate13/case_037/p20.out": "3f8b468af633b8828ac9486b36c1cbeba7684ca202d05398a761ce0f7b136aa8",
+    "campaigns/intermediate13/case_038/p10.out": "e4543b21c5834e2d6dd4619f5e99a14949eacc64f9cb5365238eeb900c47b582",
+    "campaigns/intermediate13/case_038/p20.out": "52286a62cfbe7aff64c233c05ebd4270ab26c8a4e46acbcadace159af975af67"
+  },
+  "case_summaries": [
+    {
+      "success": true,
+      "configuration": 110,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 110,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 110,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 120,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 120,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 120,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 130,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 130,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 130,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 140,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 140,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 140,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 150,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 150,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 150,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 160,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 160,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 160,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 170,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 170,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 170,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 180,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 180,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 180,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 190,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 190,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 190,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 200,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 200,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 200,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 210,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 210,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 210,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 220,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 220,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 220,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 230,
+      "tau": 2,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 230,
+      "tau": 4,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 230,
+      "tau": 6,
+      "piters": [
+        10,
+        20
+      ],
+      "raw_records": 664,
+      "window_records": 2,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    }
+  ],
+  "launches": [
+    {
+      "configuration": 110,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.0174574740231
+    },
+    {
+      "configuration": 110,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.64374634996057
+    },
+    {
+      "configuration": 110,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.00594488997012
+    },
+    {
+      "configuration": 110,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.85708085796796
+    },
+    {
+      "configuration": 110,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.42613796330988
+    },
+    {
+      "configuration": 110,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.5580557603389
+    },
+    {
+      "configuration": 120,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.791897716932
+    },
+    {
+      "configuration": 120,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.59649340435863
+    },
+    {
+      "configuration": 120,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.4377590199001
+    },
+    {
+      "configuration": 120,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.47979408688843
+    },
+    {
+      "configuration": 120,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.92116517899558
+    },
+    {
+      "configuration": 120,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.4210254913196
+    },
+    {
+      "configuration": 130,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.87622407008894
+    },
+    {
+      "configuration": 130,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.94228714704514
+    },
+    {
+      "configuration": 130,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.6858382653445
+    },
+    {
+      "configuration": 130,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.49168143607676
+    },
+    {
+      "configuration": 130,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.52336609363556
+    },
+    {
+      "configuration": 130,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.50275495788082
+    },
+    {
+      "configuration": 140,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.02467963192612
+    },
+    {
+      "configuration": 140,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.32869753288105
+    },
+    {
+      "configuration": 140,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.2431860838551
+    },
+    {
+      "configuration": 140,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.01424196106382
+    },
+    {
+      "configuration": 140,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.1380961164832
+    },
+    {
+      "configuration": 140,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.86643562465906
+    },
+    {
+      "configuration": 150,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.688474714756
+    },
+    {
+      "configuration": 150,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.14505661511794
+    },
+    {
+      "configuration": 150,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.8626538491808
+    },
+    {
+      "configuration": 150,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.70541282184422
+    },
+    {
+      "configuration": 150,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.35423311591148
+    },
+    {
+      "configuration": 150,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.3198787351139
+    },
+    {
+      "configuration": 160,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.48907706514
+    },
+    {
+      "configuration": 160,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.8561293426901
+    },
+    {
+      "configuration": 160,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.44072782620788
+    },
+    {
+      "configuration": 160,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.27684089541435
+    },
+    {
+      "configuration": 160,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.3672232190147
+    },
+    {
+      "configuration": 160,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.84003311488777
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.04394390410744
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.17080281605013
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.0634088292718
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.4854362756014
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.1200420097448
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.4063659836538
+    },
+    {
+      "configuration": 180,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.1139640188776
+    },
+    {
+      "configuration": 180,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.17031894205138
+    },
+    {
+      "configuration": 180,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.96278879325837
+    },
+    {
+      "configuration": 180,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.32842600904405
+    },
+    {
+      "configuration": 180,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.36655134195462
+    },
+    {
+      "configuration": 180,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.4110613099765
+    },
+    {
+      "configuration": 190,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.34887963719666
+    },
+    {
+      "configuration": 190,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.0217181686312
+    },
+    {
+      "configuration": 190,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.0758843421936
+    },
+    {
+      "configuration": 190,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.1150811878033
+    },
+    {
+      "configuration": 190,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.62048430228606
+    },
+    {
+      "configuration": 190,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.93908922187984
+    },
+    {
+      "configuration": 200,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.32711685309187
+    },
+    {
+      "configuration": 200,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.84733830182813
+    },
+    {
+      "configuration": 200,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.456472331658
+    },
+    {
+      "configuration": 200,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.71014213562012
+    },
+    {
+      "configuration": 200,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 133.00516279507428
+    },
+    {
+      "configuration": 200,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.05262512806803
+    },
+    {
+      "configuration": 210,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.66890029981732
+    },
+    {
+      "configuration": 210,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 199.03607362136245
+    },
+    {
+      "configuration": 210,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.91283863037825
+    },
+    {
+      "configuration": 210,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.76883534202352
+    },
+    {
+      "configuration": 210,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 132.56895366497338
+    },
+    {
+      "configuration": 210,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 196.9622361175716
+    },
+    {
+      "configuration": 220,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.76186432689428
+    },
+    {
+      "configuration": 220,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.22867224598303
+    },
+    {
+      "configuration": 220,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.275980591774
+    },
+    {
+      "configuration": 220,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.35719915106893
+    },
+    {
+      "configuration": 220,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.21118814125657
+    },
+    {
+      "configuration": 220,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.3156194705516
+    },
+    {
+      "configuration": 230,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.7151987971738
+    },
+    {
+      "configuration": 230,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.73216795315966
+    },
+    {
+      "configuration": 230,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.59329031268135
+    },
+    {
+      "configuration": 230,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.59824672993273
+    },
+    {
+      "configuration": 230,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.51449634274468
+    },
+    {
+      "configuration": 230,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.55956964707002
+    }
+  ]
+}
