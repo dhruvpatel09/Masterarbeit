@@ -1,0 +1,77 @@
+{
+  "success": true,
+  "launcher_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "groups": [
+    {
+      "hosts": [
+        "i06r04c02s03",
+        "i06r04c02s04",
+        "i06r04c02s05",
+        "i06r04c02s06",
+        "i06r04c02s07",
+        "i06r04c02s08",
+        "i06r10c03s01",
+        "i06r10c03s02"
+      ],
+      "ranks": 384,
+      "physical_cores_per_host": 48,
+      "compiled_threads_per_rank": 1,
+      "mpi_thread_support_min": 1
+    },
+    {
+      "hosts": [
+        "i06r10c03s03",
+        "i06r10c03s04",
+        "i06r10c03s05",
+        "i06r10c03s06",
+        "i06r10c03s07",
+        "i06r10c03s08",
+        "i06r10c03s09",
+        "i06r10c03s10"
+      ],
+      "ranks": 384,
+      "physical_cores_per_host": 48,
+      "compiled_threads_per_rank": 1,
+      "mpi_thread_support_min": 1
+    },
+    {
+      "hosts": [
+        "i06r10c03s11",
+        "i06r10c03s12",
+        "i06r10c04s01",
+        "i06r10c04s02",
+        "i06r10c04s03",
+        "i06r10c04s04",
+        "i06r10c04s05",
+        "i06r10c04s06"
+      ],
+      "ranks": 384,
+      "physical_cores_per_host": 48,
+      "compiled_threads_per_rank": 1,
+      "mpi_thread_support_min": 1
+    },
+    {
+      "hosts": [
+        "i06r10c04s07",
+        "i06r11c06s08",
+        "i06r11c06s09",
+        "i06r11c06s10",
+        "i06r11c06s11",
+        "i06r11c06s12",
+        "i07r10c04s04",
+        "i07r10c04s05"
+      ],
+      "ranks": 384,
+      "physical_cores_per_host": 48,
+      "compiled_threads_per_rank": 1,
+      "mpi_thread_support_min": 1
+    }
+  ],
+  "scope": "Placement-only: independent MPI worlds, host/rank inventory, FUNNELED and physical-core affinity; no eigenvector or I/O scaling measurement",
+  "errors": []
+}

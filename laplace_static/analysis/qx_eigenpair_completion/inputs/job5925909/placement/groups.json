@@ -1,0 +1,23 @@
+{
+  "nodes": 8,
+  "groups": [
+    [
+      "i01r03c05s05",
+      "i01r03c05s11",
+      "i01r03c06s08",
+      "i01r03c06s09",
+      "i01r04c02s03",
+      "i01r04c02s04",
+      "i01r04c02s10",
+      "i01r04c02s12"
+    ]
+  ],
+  "ranks_per_group": 384,
+  "ranks_per_node": 48,
+  "process_grid": [
+    6,
+    4,
+    4,
+    4
+  ]
+}

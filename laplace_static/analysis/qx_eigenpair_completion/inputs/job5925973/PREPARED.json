@@ -1,0 +1,100 @@
+{
+  "configurations": [
+    800
+  ],
+  "times": [
+    0,
+    32,
+    64,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    128,
+    160,
+    191
+  ],
+  "Nv": 100,
+  "grid": [
+    6,
+    4,
+    4,
+    4
+  ],
+  "runs": [
+    {
+      "configuration": 800,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "gauge": "/hppfs/scratch/00/di98qes3/qX/qX_p2n800",
+      "eigenvectors": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "eigenvalues": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n800_Nv100_evec_packed4_n800_eval.h5",
+      "completion_marker_sha256": "cac5653e503125a432884a6dd716993f5016a19c8b1355802a5aac7741aebaf7",
+      "selected_input_inventory": [
+        {
+          "path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n800",
+          "bytes": 28991029272
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n800_Nv100_evec_packed4_n800_eval.h5",
+          "bytes": 1734978
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t0.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t32.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t64.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t95.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t96.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t97.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t98.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t99.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t100.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t101.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t128.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t160.h5",
+          "bytes": 1258883416
+        },
+        {
+          "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n800_evec_t191.h5",
+          "bytes": 1258883416
+        }
+      ]
+    }
+  ],
+  "scope": "Read-only saved-data audit; file content and numerical quality tested by MPI program."
+}

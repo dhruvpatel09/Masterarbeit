@@ -1,0 +1,59 @@
+[
+  {
+    "configuration": 650,
+    "mpi_exit_code": 0,
+    "elapsed_seconds": 61.21117733512074,
+    "command": [
+      "mpiexec",
+      "-n",
+      "384",
+      "-ppn",
+      "48",
+      "-bootstrap",
+      "slurm",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_sweep_650_670/build/test_saved_modes",
+      "650",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n650_Nv100_evec_packed4_n650_eval.h5"
+    ]
+  },
+  {
+    "configuration": 660,
+    "mpi_exit_code": 0,
+    "elapsed_seconds": 53.17216971097514,
+    "command": [
+      "mpiexec",
+      "-n",
+      "384",
+      "-ppn",
+      "48",
+      "-bootstrap",
+      "slurm",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_sweep_650_670/build/test_saved_modes",
+      "660",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n660",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n660_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n660_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n660_Nv100_evec_packed4_n660_eval.h5"
+    ]
+  },
+  {
+    "configuration": 670,
+    "mpi_exit_code": 0,
+    "elapsed_seconds": 53.71662888606079,
+    "command": [
+      "mpiexec",
+      "-n",
+      "384",
+      "-ppn",
+      "48",
+      "-bootstrap",
+      "slurm",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_sweep_650_670/build/test_saved_modes",
+      "670",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n670",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n670_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n670_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n670_Nv100_evec_packed4_n670_eval.h5"
+    ]
+  }
+]

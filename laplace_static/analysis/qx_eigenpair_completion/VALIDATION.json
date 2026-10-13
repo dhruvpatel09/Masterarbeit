@@ -1,0 +1,11 @@
+{
+  "archive_integrity_checks": 10,
+  "nested_stage_archives_identical_to_standalone": 9,
+  "generation_workers_with_192_convergence_return_records": 13,
+  "placement_groups_reparsed": 13,
+  "saved_mode_records_reparsed": 20800,
+  "slice_records_reparsed": 208,
+  "csv_byte_comparison": "Both mode and slice CSVs match fresh exports from every original audit stdout.",
+  "earlier_inventory_scope": "54 earlier completed configurations are inherited from the controller baseline; retained n650..670 are covered by the freshly rechecked audits.",
+  "hdf5_scope": "Actual gauge and eigenvector HDF5 files remain on SuperMUC and are not contained in these archives."
+}

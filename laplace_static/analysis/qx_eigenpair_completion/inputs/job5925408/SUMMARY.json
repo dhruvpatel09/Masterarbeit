@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "runs": [
+    {
+      "configuration": 650,
+      "mpi_exit_code": 0,
+      "success": true,
+      "maximum_relative_residual": 9.51068554517278e-12,
+      "modes_above_requested_1e_minus9": 0
+    },
+    {
+      "configuration": 660,
+      "mpi_exit_code": 0,
+      "success": true,
+      "maximum_relative_residual": 6.7679526045256654e-12,
+      "modes_above_requested_1e_minus9": 0
+    },
+    {
+      "configuration": 670,
+      "mpi_exit_code": 0,
+      "success": true,
+      "maximum_relative_residual": 1.1046206702402464e-10,
+      "modes_above_requested_1e_minus9": 0
+    }
+  ],
+  "mode_records": 3900,
+  "slice_records": 39,
+  "scope": "Saved-pair residual/normalization/all-pair Gram check on 13 selected slices in each audited configuration, using existing qcd Laplacian. Eigenvalue metadata, coverage and spectra checked for all times. Not full eigenvector coverage or independent operator implementation.",
+  "residual_tolerance": 1.1e-09,
+  "requested_solver_res": 1e-09,
+  "normalization_and_gram_tolerance": 1e-09,
+  "rayleigh_im_tolerance": 1e-10
+}

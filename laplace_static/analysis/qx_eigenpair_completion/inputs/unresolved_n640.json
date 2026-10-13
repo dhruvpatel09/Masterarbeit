@@ -1,0 +1,22 @@
+{
+  "configuration": 640,
+  "status": "Lanczos nonconvergence at timeslice 1 in both attempts",
+  "attempts": [
+    {
+      "job_id": "5924010",
+      "maxRestarts": 30
+    },
+    {
+      "job_id": "5925063",
+      "maxRestarts": 60
+    }
+  ],
+  "original_batch_plus_retry_physical_core_hours": 851.3000185902913,
+  "cost_scope": "Original four-worker allocation plus isolated retry; includes successful n650..670 generation. Capacity estimates, not confirmed project charges.",
+  "retained_configurations": [
+    650,
+    660,
+    670
+  ],
+  "previous_pipeline_complete_count": 54
+}

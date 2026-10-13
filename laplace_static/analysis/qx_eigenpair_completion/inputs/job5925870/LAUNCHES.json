@@ -1,0 +1,78 @@
+[
+  {
+    "configuration": 720,
+    "mpi_exit_code": 0,
+    "elapsed_seconds": 53.639541796874255,
+    "command": [
+      "mpiexec",
+      "-n",
+      "384",
+      "-ppn",
+      "48",
+      "-bootstrap",
+      "slurm",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_sweep_720_750/build/test_saved_modes",
+      "720",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n720",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n720_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n720_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n720_Nv100_evec_packed4_n720_eval.h5"
+    ]
+  },
+  {
+    "configuration": 730,
+    "mpi_exit_code": 0,
+    "elapsed_seconds": 52.60562289808877,
+    "command": [
+      "mpiexec",
+      "-n",
+      "384",
+      "-ppn",
+      "48",
+      "-bootstrap",
+      "slurm",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_sweep_720_750/build/test_saved_modes",
+      "730",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n730",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n730_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n730_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n730_Nv100_evec_packed4_n730_eval.h5"
+    ]
+  },
+  {
+    "configuration": 740,
+    "mpi_exit_code": 0,
+    "elapsed_seconds": 53.76341155800037,
+    "command": [
+      "mpiexec",
+      "-n",
+      "384",
+      "-ppn",
+      "48",
+      "-bootstrap",
+      "slurm",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_sweep_720_750/build/test_saved_modes",
+      "740",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n740",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n740_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n740_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n740_Nv100_evec_packed4_n740_eval.h5"
+    ]
+  },
+  {
+    "configuration": 750,
+    "mpi_exit_code": 0,
+    "elapsed_seconds": 52.807082273066044,
+    "command": [
+      "mpiexec",
+      "-n",
+      "384",
+      "-ppn",
+      "48",
+      "-bootstrap",
+      "slurm",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/validation/qx_saved_modes_sweep_720_750/build/test_saved_modes",
+      "750",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n750",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n750_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n750_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n750_Nv100_evec_packed4_n750_eval.h5"
+    ]
+  }
+]

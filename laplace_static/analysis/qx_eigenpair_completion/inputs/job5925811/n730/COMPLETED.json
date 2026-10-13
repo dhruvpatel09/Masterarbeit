@@ -1,0 +1,10 @@
+{
+  "configuration": 730,
+  "timeslices": 192,
+  "eigenvector_files": 192,
+  "eigenvector_bytes": 241705615872,
+  "eigenvalue_files": [
+    "qX_p2_n730_Nv100_evec_packed4_n730_eval.h5"
+  ],
+  "scope": "MPI process success, convergence-return checks and file inventory; no independent residual/orthogonality or full HDF5-content verification"
+}

@@ -1,0 +1,226 @@
+{
+  "success": true,
+  "job_id": "5925412",
+  "configurations": [
+    680,
+    690,
+    700,
+    710
+  ],
+  "nodes": 32,
+  "ranks": 1536,
+  "workers": [
+    {
+      "configuration": 680,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n680_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "hosts": [
+        "i06r05c03s07",
+        "i06r05c03s08",
+        "i06r05c03s09",
+        "i06r05c03s10",
+        "i06r05c03s11",
+        "i06r05c03s12",
+        "i06r05c04s01",
+        "i06r05c04s02"
+      ],
+      "mpi_exit_code": 0,
+      "started_epoch": 1791847089.7793338,
+      "mpi_and_full_write_seconds": 1062.7740357331932,
+      "node_hours": 2.361720079407096,
+      "physical_core_hours": 113.36256381154061,
+      "launch_command": [
+        "mpiexec",
+        "-n",
+        "384",
+        "-ppn",
+        "48",
+        "-hosts",
+        "i06r05c03s07,i06r05c03s08,i06r05c03s09,i06r05c03s10,i06r05c03s11,i06r05c03s12,i06r05c04s01,i06r05c04s02",
+        "-bootstrap",
+        "slurm",
+        "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+        "-i",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n680_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/mental.in",
+        "-o",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n680_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/log/mental.log"
+      ],
+      "success": true,
+      "error": null,
+      "timing_scope": "MPI launch through exit, including full writing; finish observation within 0.25 seconds",
+      "completion": {
+        "configuration": 680,
+        "timeslices": 192,
+        "eigenvector_files": 192,
+        "eigenvector_bytes": 241705615872,
+        "eigenvalue_files": [
+          "qX_p2_n680_Nv100_evec_packed4_n680_eval.h5"
+        ],
+        "scope": "MPI process success, convergence-return checks and file inventory; no independent residual/orthogonality or full HDF5-content verification"
+      }
+    },
+    {
+      "configuration": 690,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n690_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "hosts": [
+        "i06r05c04s03",
+        "i06r05c04s04",
+        "i06r05c04s05",
+        "i06r05c04s06",
+        "i06r05c04s07",
+        "i06r05c04s08",
+        "i06r05c04s09",
+        "i06r05c04s10"
+      ],
+      "mpi_exit_code": 0,
+      "started_epoch": 1791847089.7852514,
+      "mpi_and_full_write_seconds": 1062.0164799503982,
+      "node_hours": 2.360036622111996,
+      "physical_core_hours": 113.28175786137581,
+      "launch_command": [
+        "mpiexec",
+        "-n",
+        "384",
+        "-ppn",
+        "48",
+        "-hosts",
+        "i06r05c04s03,i06r05c04s04,i06r05c04s05,i06r05c04s06,i06r05c04s07,i06r05c04s08,i06r05c04s09,i06r05c04s10",
+        "-bootstrap",
+        "slurm",
+        "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+        "-i",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n690_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/mental.in",
+        "-o",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n690_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/log/mental.log"
+      ],
+      "success": true,
+      "error": null,
+      "timing_scope": "MPI launch through exit, including full writing; finish observation within 0.25 seconds",
+      "completion": {
+        "configuration": 690,
+        "timeslices": 192,
+        "eigenvector_files": 192,
+        "eigenvector_bytes": 241705615872,
+        "eigenvalue_files": [
+          "qX_p2_n690_Nv100_evec_packed4_n690_eval.h5"
+        ],
+        "scope": "MPI process success, convergence-return checks and file inventory; no independent residual/orthogonality or full HDF5-content verification"
+      }
+    },
+    {
+      "configuration": 700,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n700_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "hosts": [
+        "i06r05c04s11",
+        "i06r05c04s12",
+        "i06r05c05s01",
+        "i06r05c05s02",
+        "i06r07c05s01",
+        "i06r07c05s02",
+        "i06r09c02s08",
+        "i06r10c03s08"
+      ],
+      "mpi_exit_code": 0,
+      "started_epoch": 1791847089.7929616,
+      "mpi_and_full_write_seconds": 1074.0281174909323,
+      "node_hours": 2.3867291499798498,
+      "physical_core_hours": 114.56299919903279,
+      "launch_command": [
+        "mpiexec",
+        "-n",
+        "384",
+        "-ppn",
+        "48",
+        "-hosts",
+        "i06r05c04s11,i06r05c04s12,i06r05c05s01,i06r05c05s02,i06r07c05s01,i06r07c05s02,i06r09c02s08,i06r10c03s08",
+        "-bootstrap",
+        "slurm",
+        "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+        "-i",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n700_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/mental.in",
+        "-o",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n700_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/log/mental.log"
+      ],
+      "success": true,
+      "error": null,
+      "timing_scope": "MPI launch through exit, including full writing; finish observation within 0.25 seconds",
+      "completion": {
+        "configuration": 700,
+        "timeslices": 192,
+        "eigenvector_files": 192,
+        "eigenvector_bytes": 241705615872,
+        "eigenvalue_files": [
+          "qX_p2_n700_Nv100_evec_packed4_n700_eval.h5"
+        ],
+        "scope": "MPI process success, convergence-return checks and file inventory; no independent residual/orthogonality or full HDF5-content verification"
+      }
+    },
+    {
+      "configuration": 710,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n710_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "hosts": [
+        "i06r10c03s09",
+        "i06r10c03s10",
+        "i06r10c03s11",
+        "i06r10c03s12",
+        "i06r10c04s01",
+        "i06r10c04s02",
+        "i07r10c04s04",
+        "i07r10c04s05"
+      ],
+      "mpi_exit_code": 0,
+      "started_epoch": 1791847089.8022242,
+      "mpi_and_full_write_seconds": 1069.7621524427086,
+      "node_hours": 2.3772492276504638,
+      "physical_core_hours": 114.10796292722225,
+      "launch_command": [
+        "mpiexec",
+        "-n",
+        "384",
+        "-ppn",
+        "48",
+        "-hosts",
+        "i06r10c03s09,i06r10c03s10,i06r10c03s11,i06r10c03s12,i06r10c04s01,i06r10c04s02,i07r10c04s04,i07r10c04s05",
+        "-bootstrap",
+        "slurm",
+        "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+        "-i",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n710_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/mental.in",
+        "-o",
+        "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n710_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/log/mental.log"
+      ],
+      "success": true,
+      "error": null,
+      "timing_scope": "MPI launch through exit, including full writing; finish observation within 0.25 seconds",
+      "completion": {
+        "configuration": 710,
+        "timeslices": 192,
+        "eigenvector_files": 192,
+        "eigenvector_bytes": 241705615872,
+        "eigenvalue_files": [
+          "qX_p2_n710_Nv100_evec_packed4_n710_eval.h5"
+        ],
+        "scope": "MPI process success, convergence-return checks and file inventory; no independent residual/orthogonality or full HDF5-content verification"
+      }
+    }
+  ],
+  "wave": {
+    "elapsed_seconds": 1074.0466502308846,
+    "node_hours": 9.54708133538564,
+    "allocated_physical_core_hours": 458.25990409851073,
+    "slurm_allocated_cpu_unit_hours": 916.5198081970215,
+    "slurm_billing_tres_unit_hours": 916.5198081970215,
+    "scope": "Capacity estimates; actual LRZ project charges are not independently confirmed"
+  },
+  "active_batch": {
+    "elapsed_seconds": 1081.2027697563171,
+    "node_hours": 9.610691286722819,
+    "allocated_physical_core_hours": 461.3131817626953,
+    "slurm_allocated_cpu_unit_hours": 922.6263635253906,
+    "slurm_billing_tres_unit_hours": 922.6263635253906,
+    "scope": "Capacity estimates; actual LRZ project charges are not independently confirmed"
+  },
+  "sum_worker_physical_core_hours": 455.3152837991714,
+  "timing_scope": "Wave: first MPI start through last MPI exit. Active batch: script entry through completion checks; excludes final report ZIP and Slurm teardown. Both exclude queueing.",
+  "comparison_scope": "New configurations under concurrent I/O; difference from isolated n110 also includes configuration-dependent convergence",
+  "quality_scope": "Process/convergence-return/file inventories; independent residual/orthogonality verification remains outstanding"
+}

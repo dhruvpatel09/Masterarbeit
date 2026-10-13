@@ -1,0 +1,2 @@
+inputs/**/*.csv -text whitespace=cr-at-eol
+results/*.csv -text whitespace=cr-at-eol

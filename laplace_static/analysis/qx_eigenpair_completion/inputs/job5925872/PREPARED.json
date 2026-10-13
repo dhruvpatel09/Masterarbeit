@@ -1,0 +1,74 @@
+{
+  "runs": [
+    {
+      "configuration": 760,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n760_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "nodes": 8,
+      "ranks": 384,
+      "process_grid": [
+        6,
+        4,
+        4,
+        4
+      ],
+      "input_sha256": "922ec146b96147dd7ac950b305d050d25bb09294b18ac40c783bad7289a91de7",
+      "executable": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+      "executable_sha256": "90a7bf51afe46c7697c240d97381e254765caf1372528dfee4e6cd164e4ba005",
+      "write_ev": 1
+    },
+    {
+      "configuration": 770,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n770_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "nodes": 8,
+      "ranks": 384,
+      "process_grid": [
+        6,
+        4,
+        4,
+        4
+      ],
+      "input_sha256": "43e2a2987d242a6425c7b9a306c13e91225a7e8682480d871803c862529e396f",
+      "executable": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+      "executable_sha256": "90a7bf51afe46c7697c240d97381e254765caf1372528dfee4e6cd164e4ba005",
+      "write_ev": 1
+    },
+    {
+      "configuration": 780,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n780_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "nodes": 8,
+      "ranks": 384,
+      "process_grid": [
+        6,
+        4,
+        4,
+        4
+      ],
+      "input_sha256": "373eddced0e45a0544adb2f367c0eb849e8efcd1e58bc01c7157e166cc0a69f1",
+      "executable": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+      "executable_sha256": "90a7bf51afe46c7697c240d97381e254765caf1372528dfee4e6cd164e4ba005",
+      "write_ev": 1
+    },
+    {
+      "configuration": 790,
+      "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n790_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+      "nodes": 8,
+      "ranks": 384,
+      "process_grid": [
+        6,
+        4,
+        4,
+        4
+      ],
+      "input_sha256": "34e989a8abd4907fec38b0c5e97461169868f911ca9831ff6051ac32b764ab03",
+      "executable": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/mental_funneled",
+      "executable_sha256": "90a7bf51afe46c7697c240d97381e254765caf1372528dfee4e6cd164e4ba005",
+      "write_ev": 1
+    }
+  ],
+  "reference": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n110_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_scaling",
+  "reference_input_sha256": "deb2d081375ea08ed4a038960f8efec240f6f6dfb8b30d60d4793979e1e40a3d",
+  "expected_total_eigenvector_bytes": 966822463488,
+  "filesystem_free_bytes": 3534194839912448,
+  "quota_scope": "Filesystem free space only; inspect budget_and_quota before submitting",
+  "scope": "Same eigensolver and full-write settings; new configuration/output paths"
+}

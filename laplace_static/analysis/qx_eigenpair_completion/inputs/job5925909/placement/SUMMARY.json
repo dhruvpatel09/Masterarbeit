@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "launcher_exit_codes": [
+    0
+  ],
+  "groups": [
+    {
+      "hosts": [
+        "i01r03c05s05",
+        "i01r03c05s11",
+        "i01r03c06s08",
+        "i01r03c06s09",
+        "i01r04c02s03",
+        "i01r04c02s04",
+        "i01r04c02s10",
+        "i01r04c02s12"
+      ],
+      "ranks": 384,
+      "physical_cores_per_host": 48,
+      "compiled_threads_per_rank": 1,
+      "mpi_thread_support_min": 1
+    }
+  ],
+  "scope": "Placement-only: independent MPI worlds, host/rank inventory, FUNNELED and physical-core affinity; no eigenvector or I/O scaling measurement",
+  "errors": []
+}

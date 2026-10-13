@@ -1,0 +1,66 @@
+{
+  "success": true,
+  "configurations": [
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "generated_count": 13,
+  "audited_count": 16,
+  "unresolved_configuration": 640,
+  "full_ensemble_complete": false,
+  "previous_failed_batch_and_retry": {
+    "configuration": 640,
+    "status": "Lanczos nonconvergence at timeslice 1 in both attempts",
+    "attempts": [
+      {
+        "job_id": "5924010",
+        "maxRestarts": 30
+      },
+      {
+        "job_id": "5925063",
+        "maxRestarts": 60
+      }
+    ],
+    "original_batch_plus_retry_physical_core_hours": 851.3000185902913,
+    "cost_scope": "Original four-worker allocation plus isolated retry; includes successful n650..670 generation. Capacity estimates, not confirmed project charges.",
+    "retained_configurations": [
+      650,
+      660,
+      670
+    ],
+    "previous_pipeline_complete_count": 54
+  },
+  "audited_configurations": [
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "physical_core_hours": 1575.1485859425864,
+  "new_eigenvector_bytes": 3142173006336,
+  "maximum_selected_mode_relative_residual": 5.045149204234985e-10,
+  "scope": "Fresh stage checks; all 100 modes on 13 selected times/configuration; all-time eigenvalue metadata/coverage. Existing qcd operator. Physical capacity estimates exclude queueing, final ZIP and teardown; not independently confirmed project charges."
+}

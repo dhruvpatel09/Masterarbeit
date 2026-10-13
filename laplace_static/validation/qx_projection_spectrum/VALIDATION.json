@@ -1,0 +1,7 @@
+{
+  "python_admission_tests": 5,
+  "shell_syntax": "passed",
+  "scientific_implementation": "Existing test_profiles_qx.c, su3_window.h and checker sources unchanged; checksum-pinned.",
+  "mpi_scope": "New piter10/20 measurements have not run. The SuperMUC pilot is required before admitting larger arrays.",
+  "regression": "Pilot reruns all four prescriptions on n110 tau4 and n100 piter4/40 tau4 against archived references."
+}
