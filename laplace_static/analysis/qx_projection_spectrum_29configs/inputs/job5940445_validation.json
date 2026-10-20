@@ -1,0 +1,509 @@
+{
+  "success": true,
+  "job": 5940445,
+  "campaign": "extended780_800",
+  "configurations": [
+    780,
+    790,
+    800
+  ],
+  "taus": [
+    2,
+    4,
+    6
+  ],
+  "piters": [
+    4,
+    10,
+    20,
+    40
+  ],
+  "cases": 9,
+  "mpi_launches": 36,
+  "raw_records": 11952,
+  "window_records": 36,
+  "raw_log_exports_reproduced": true,
+  "empty_stderr": true,
+  "source_pins_verified": true,
+  "package_sha256": "1ec6167c70ac4fe0cc12c5d7e5fbb4162fb86d8afbd1f5e29eae916f52e3706b",
+  "prepared_sha256": "85eb1173bc20b91c361241480ba1b466b1fed0fcd30fd0962d070646071d38f0",
+  "uploaded_archive_incomplete": false,
+  "source_pins": {
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/average_compare.py": "edd14e7b41c516aa99b5cc8b14887382d8d87c36410cb90ddebfd7079de4a825",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/run_task.py": "9e7605f7254a9e241e331cef3633104349c7e9db16ac928b251a030311246ecc",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/common.py": "ece8b253fe45c70a318701891ef4b5087f9e3fc4059a626912614f1c227f69e3",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/check_task.py": "6fe50d927f455bc968a1b76711ca16a85082948d7357e5aeccc68c1a0297fba7",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/profile_compare.py": "bcc776ffa3aea829a5d05be72173f7059d9a1c898cc9d717cb24e2450cfe4144",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/prepare.py": "15314bbb3d1449aeed92d4930039859a56aedfb59d582bef9de7b26d3512b0d8",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/point_compare.py": "d17ceea7f9833f29fd0a85a6c8b3f2cbee626e8ea158c64bda34080c3ae9e329",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/collect.py": "86946fa1dfd09028f269538575b788591980b0b29f7efc7dd08bfec510a34c71",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/test_profiles_qx.c": "60a9e706e1ab6d7535bef675b702dad9298643b8599aa56cd14a4c1e4badd9de",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/su3_window.h": "27a4e4d3b3ed8de2ac9096d3d1022e00b2690346798840887aac81dd75a3d830",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/n100_tau4_reference.csv": "ddad21f8089acc1771190448490b6b43536f3f5e7c39e67f3837c252fb53e88c",
+    "env/supermuc.sh": "c21085274c5b207718bc547ff4500ec228e4284d618a0b9a791dc7ce141f3c10",
+    "laplace_static/validation/hyp_projection_configs_qx/audited_runs.json": "8dcae47a704a499e6233cd02d12cc1ffb291e36bfca06eb0f5dfa4a704bff2d8",
+    "laplace_static/validation/hyp_projection_configs_qx_160_190/audited_runs.json": "c7483336343a3f7df951c6643745edd07ed1a4931908de3edc38335ecec7610a",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/audited_runs.json": "fb264947e7b0b9b201adf92f574e3f64e28d4cee67f384e9673aa460ed5383dd",
+    "laplace_static/analysis/hyp_projection_13configs/inputs/job5918419_profiles_raw.csv": "a85d7f579055ee24f8c38c3e401507230a23bf86cc185eaa31853e4069822c4b",
+    "laplace_static/analysis/hyp_projection_13configs/inputs/job5920223_profiles_raw.csv": "0ad7d1ebf189deceda865a759f348dd7690d23728f6db0f9a91f4c68822d4adc",
+    "laplace_static/analysis/hyp_projection_13configs/inputs/job5921538_profiles_raw.csv": "8d72618949254486d3ef040b0ec578a8edf1ad158cb94dc49911502e60b6c9a4",
+    "laplace_static/analysis/qx_hyp_projection/make_plots.py": "125d5be2340a0ab5c925cf8849c306def15da9583c9a258cdc01ea86f943323b"
+  },
+  "raw_log_sha256": {
+    "campaigns/extended780_800/case_000/p4.out": "b412ee12eb1e22760f4cf5d7843323b4634b1697bf46fc4553a8fff89cbfa8b7",
+    "campaigns/extended780_800/case_000/p10.out": "a7f8b5cb722eceea715a300aa4469a6712c57572c9b257b66548db2fd1d1b996",
+    "campaigns/extended780_800/case_000/p20.out": "bf500ddc87d089d683afb5892be3442ed78d948f634850632d93a61614c23d78",
+    "campaigns/extended780_800/case_000/p40.out": "2c197e20bef2a19ae89b11f5dc5cab134fe9821661e112a547f14efc99fb08cd",
+    "campaigns/extended780_800/case_001/p4.out": "d8910b7754547eaec368872ba1ea73e449ebee4de8ce3c8b69238afa7e464e4b",
+    "campaigns/extended780_800/case_001/p10.out": "7b4ced9983dd6a15ffcde69f1320323d7c0e50eeba3a10a6d266f07875ec89a6",
+    "campaigns/extended780_800/case_001/p20.out": "b41af0784421a9316a40167513efa99b510497778a73141070e7bd628e308765",
+    "campaigns/extended780_800/case_001/p40.out": "ef289be9868de9eb18084643dea214a55b1e9e64e6102eefd004a51a3d0f26af",
+    "campaigns/extended780_800/case_002/p4.out": "457c31102d36a6282a05da294997e34e555403c6fd26acf4fc35933b9474fc41",
+    "campaigns/extended780_800/case_002/p10.out": "7dfede02506b8958ba55586594a6cef3dce489c47937d9e6ce010c51553c4105",
+    "campaigns/extended780_800/case_002/p20.out": "29af01859e81ed187adce9c34e93b9d2c4150ef57ef3e0aa7220707646e2a95b",
+    "campaigns/extended780_800/case_002/p40.out": "466d866497043f6fcae6373150e36861e8900b10c6ea785a2eb43370f87a7f3d",
+    "campaigns/extended780_800/case_003/p4.out": "a18652020d91fc9e6b145708e139c7386dbe3dc940582d1645c9e9448148a945",
+    "campaigns/extended780_800/case_003/p10.out": "08335a3d0cebe657e2ea3128e546d2000323872c898a4746fe07cc67ab52a6ef",
+    "campaigns/extended780_800/case_003/p20.out": "aa7a2ddfac5546b7ed2964ee4fcd343c5819f4af8af3171b829fa245702d48bd",
+    "campaigns/extended780_800/case_003/p40.out": "28ebb53196a8fda18f4fa5064c2542967aa8962711ab078a657eb2d88c670cdc",
+    "campaigns/extended780_800/case_004/p4.out": "65559b40dca6bff5ce4a9f675e6a781c5d69778d003d81ec01a744f010426f06",
+    "campaigns/extended780_800/case_004/p10.out": "1c96b2c037f51f36313ab3f7d14869cf6d0dd4c82b7561db7df75d656b75e296",
+    "campaigns/extended780_800/case_004/p20.out": "8d86c02232dccf503394cf299cf53df0db8834f7f090c7d101cdd72a8f8a5c7a",
+    "campaigns/extended780_800/case_004/p40.out": "b87798a9174729c732ac16e8faf37a401602fadc6e1959ad1b367d150faae391",
+    "campaigns/extended780_800/case_005/p4.out": "8b7a27fb8764b83ecfd4430752df0f70848ab48d8f25a8e8892d68ced829fa9d",
+    "campaigns/extended780_800/case_005/p10.out": "d2b76cf3db128c26b3d8d8a9ea37550b0a32ebc92bab246ac058cda7ba572f2e",
+    "campaigns/extended780_800/case_005/p20.out": "ed832b152194d20c0b75ee2cf4f6a596fc4b0b45607f162bae361ce97cf63d03",
+    "campaigns/extended780_800/case_005/p40.out": "dca7421052aaa800bf442299459a102f79fab474e385d833bfd60a941d82e407",
+    "campaigns/extended780_800/case_006/p4.out": "68a42d46136498e4316ff9df5e50def9274c962f75e026cea00e40b2d46fd16c",
+    "campaigns/extended780_800/case_006/p10.out": "abb59fa344ccd08fd566e81f49116a220bba0f223afac4e173c64ebbc2983e03",
+    "campaigns/extended780_800/case_006/p20.out": "55f2b14e428d13afa6a45eca52ee024980c875e27341d6df1167a23a5216ec7e",
+    "campaigns/extended780_800/case_006/p40.out": "d3e815dd67c58091218a1e9fa90e37a11dd7babb3f1a7c8b52b9ffe068dd025c",
+    "campaigns/extended780_800/case_007/p4.out": "b45188fc6218c5741ee5edf2ca6ee8fea07d5250d83b2e04be0948c6ac487602",
+    "campaigns/extended780_800/case_007/p10.out": "cd05aca01214364baba2ec0acacfcb6cc8240b9477c5625393eb2e4d4fd44476",
+    "campaigns/extended780_800/case_007/p20.out": "314087693adde5619a8db2581027a473a68b3c7b305c168653fc6cdfb5e45aff",
+    "campaigns/extended780_800/case_007/p40.out": "20d1d3cbc6df6247a5702f626c9401a82578acbdf16693b245f990f018523e74",
+    "campaigns/extended780_800/case_008/p4.out": "4297aedfa5eb17854cf90a3ae9d89668333a631ebd084bb35bb5b4052793514b",
+    "campaigns/extended780_800/case_008/p10.out": "3780f8c78eab486bd4442f0ad6d5b353fac2a7a9b3b10e457fc16bd953f994ed",
+    "campaigns/extended780_800/case_008/p20.out": "f5774ba858a1bff134fbbe7d5685934ef728c8fffdb37ebf100e713bfd0efddc",
+    "campaigns/extended780_800/case_008/p40.out": "a07b2ca4bb0c696291d72673068e413746176fbdcf13348dafecbc35a5b286a4"
+  },
+  "case_summaries": [
+    {
+      "success": true,
+      "configuration": 780,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 780,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 780,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 790,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 790,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 790,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 800,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 800,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 800,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    }
+  ],
+  "launches": [
+    {
+      "configuration": 780,
+      "tau": 2,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.72653974033892
+    },
+    {
+      "configuration": 780,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 131.38302375935018
+    },
+    {
+      "configuration": 780,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.0825675521046
+    },
+    {
+      "configuration": 780,
+      "tau": 2,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 344.8259836137295
+    },
+    {
+      "configuration": 780,
+      "tau": 4,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.8105266019702
+    },
+    {
+      "configuration": 780,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 129.5941441245377
+    },
+    {
+      "configuration": 780,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.21029850840569
+    },
+    {
+      "configuration": 780,
+      "tau": 4,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 334.9135687109083
+    },
+    {
+      "configuration": 780,
+      "tau": 6,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.62119586020708
+    },
+    {
+      "configuration": 780,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 129.9839228950441
+    },
+    {
+      "configuration": 780,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.57553950883448
+    },
+    {
+      "configuration": 780,
+      "tau": 6,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 333.654342925176
+    },
+    {
+      "configuration": 790,
+      "tau": 2,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.78511974401772
+    },
+    {
+      "configuration": 790,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.689574085176
+    },
+    {
+      "configuration": 790,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.3847840037197
+    },
+    {
+      "configuration": 790,
+      "tau": 2,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 333.4890429433435
+    },
+    {
+      "configuration": 790,
+      "tau": 4,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.69978241994977
+    },
+    {
+      "configuration": 790,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.00165396369994
+    },
+    {
+      "configuration": 790,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.87825475260615
+    },
+    {
+      "configuration": 790,
+      "tau": 4,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 333.87455930933356
+    },
+    {
+      "configuration": 790,
+      "tau": 6,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.7882089279592
+    },
+    {
+      "configuration": 790,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 139.532082663849
+    },
+    {
+      "configuration": 790,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.38959281891584
+    },
+    {
+      "configuration": 790,
+      "tau": 6,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 338.844807209447
+    },
+    {
+      "configuration": 800,
+      "tau": 2,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.78044904768467
+    },
+    {
+      "configuration": 800,
+      "tau": 2,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 130.3067190721631
+    },
+    {
+      "configuration": 800,
+      "tau": 2,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 197.5666905362159
+    },
+    {
+      "configuration": 800,
+      "tau": 2,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 333.83692796342075
+    },
+    {
+      "configuration": 800,
+      "tau": 4,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.18248319253325
+    },
+    {
+      "configuration": 800,
+      "tau": 4,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 129.88912500068545
+    },
+    {
+      "configuration": 800,
+      "tau": 4,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.27074163779616
+    },
+    {
+      "configuration": 800,
+      "tau": 4,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 334.36735830642283
+    },
+    {
+      "configuration": 800,
+      "tau": 6,
+      "piter": 4,
+      "label": "p4",
+      "exit_code": 0,
+      "seconds": 89.40522174094804
+    },
+    {
+      "configuration": 800,
+      "tau": 6,
+      "piter": 10,
+      "label": "p10",
+      "exit_code": 0,
+      "seconds": 129.8282406211365
+    },
+    {
+      "configuration": 800,
+      "tau": 6,
+      "piter": 20,
+      "label": "p20",
+      "exit_code": 0,
+      "seconds": 198.3881844789721
+    },
+    {
+      "configuration": 800,
+      "tau": 6,
+      "piter": 40,
+      "label": "p40",
+      "exit_code": 0,
+      "seconds": 333.6923499801196
+    }
+  ],
+  "scope": "All raw logs and case/collection exports rechecked with the pinned existing validator. Gauge/eigenvector HDF5 inputs and runtime executable were not independently reread here."
+}

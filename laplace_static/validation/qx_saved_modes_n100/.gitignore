@@ -1,0 +1,5 @@
+build/
+results_n100/
+__pycache__/
+*.out
+*.err

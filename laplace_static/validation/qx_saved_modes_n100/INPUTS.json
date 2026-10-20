@@ -1,0 +1,19 @@
+{
+  "files": {
+    "laplace_static/validation/qx_saved_modes_n100/test_audit.py": "b028948117528fbe01648b96123ac6cab8d39e4cde261db3fd26891ad3e124af",
+    "laplace_static/validation/qx_saved_modes_n100/.gitignore": "2c80dac8c500eb9da9859944d18d21e50b09514e01e82e8cf642228e37e6515e",
+    "laplace_static/validation/qx_saved_modes_n100/submit_micro.sh": "41208e39baaecd124a20b9840467e42227a2c2463c4c746f115797e62c801c8a",
+    "laplace_static/validation/qx_saved_modes_n100/build.sh": "03f871d0f6b146accae2623fbeb1c8645ba2d58972ad04f11e2381895a26c7bd",
+    "laplace_static/validation/qx_saved_modes_n100/test_saved_modes.c": "c7a4c3b17986a049ce3663297bbdf315def87211c329160c95e5bf78e5123c82",
+    "laplace_static/validation/qx_saved_modes_n100/audit.py": "9b48dba5eb2d826a2b53bc43df34f0e24a8395a17584dd1692c4e3c2aa46e4ef",
+    "laplace_static/analysis/qx_eigenpair_completion/inputs/saved_mode_audit.c": "fe10158e8ad2a1776ff973b29e53921d017f3991db8877c7df8f431553503197",
+    "laplace_static/analysis/qx_eigenpair_completion/inputs/metrics.h": "8a18a01b26de171ef7417c544041fac7ccff9e0820acf3ecadcd26b07b4f1a48",
+    "laplace_static/analysis/qx_eigenpair_completion/inputs/job5925408/check_export.py": "ddb119a1e672b13bbf93e8bca59d40b54f2c6ce4de596af010038843e84496b5",
+    "laplace_static/analysis/qx_eigenpair_completion/inputs/job5925408/modes.csv": "f3bfa90ff0df614c3fea63791239456cead98eebe532c4d5e01ab91af3d00f64",
+    "laplace_static/validation/qx_projection_spectrum/campaign.py": "ad634fcc7235d7bfd122f92718c432f7f91ae78f2973b9e45c2c4a0ce4018b81",
+    "laplace_static/validation/qx_projection_spectrum/new_audited_runs.json": "3a7608aa4a21fcd204c3853cae7dcd2fff1fca66cbf746228e1bfa868aa49298",
+    "laplace_static/validation/hyp_projection_configs_qx/common.py": "1507f84724167a0a1b04a83963aa011433ea04baecb1eda716cb7d2511b1e434",
+    "env/supermuc.sh": "c21085274c5b207718bc547ff4500ec228e4284d618a0b9a791dc7ce141f3c10"
+  },
+  "scope": "The preserved numerical checker is unchanged except for its process layout: 1x4x4x4 and 64 ranks. n650 is checked against the preserved 384-rank audit before n100 is admitted. Runtime libraries and the HDF5 reader are checked by the existing observable build manifest and the new audit build manifest."
+}
