@@ -1,0 +1,1730 @@
+{
+  "success": true,
+  "stage": "full70",
+  "cases": [
+    {
+      "success": true,
+      "configuration": 100,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Matched n100 measurement; tau4 also reproduces the preserved n100 regression."
+    },
+    {
+      "success": true,
+      "configuration": 100,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Matched n100 measurement; tau4 also reproduces the preserved n100 regression."
+    },
+    {
+      "success": true,
+      "configuration": 100,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Matched n100 measurement; tau4 also reproduces the preserved n100 regression."
+    },
+    {
+      "success": true,
+      "configuration": 240,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 240,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 240,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 250,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 250,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 250,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 260,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 260,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 260,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 270,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 270,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 270,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 280,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 280,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 280,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 290,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 290,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 290,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 300,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 300,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 300,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 310,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 310,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 310,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 320,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 320,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 320,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 330,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 330,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 330,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 340,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 340,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 340,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 350,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 350,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 350,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 360,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 360,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 360,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 370,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 370,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 370,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 380,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 380,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 380,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 390,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 390,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 390,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 400,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 400,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 400,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 410,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 410,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 410,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 420,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 420,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 420,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 430,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 430,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 430,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 440,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 440,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 440,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 450,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 450,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 450,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 460,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 460,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 460,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 470,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 470,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 470,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 480,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 480,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 480,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 490,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 490,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 490,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 500,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 500,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 500,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 510,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 510,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 510,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 520,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 520,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 520,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 530,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 530,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 530,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 540,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 540,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 540,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 550,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 550,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 550,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 560,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 560,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 560,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 570,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 570,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 570,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 580,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 580,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 580,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 590,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 590,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 590,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 600,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 600,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 600,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 610,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 610,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 610,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 620,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 620,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 620,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 630,
+      "tau": 2,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 630,
+      "tau": 4,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    },
+    {
+      "success": true,
+      "configuration": 630,
+      "tau": 6,
+      "piters": [
+        4,
+        10,
+        20,
+        40
+      ],
+      "raw_records": 1328,
+      "window_records": 4,
+      "scope": "Validated geometry, profile reductions, unchanged original clover and measured SU(3) diagnostics; no low-piter physics acceptance gate."
+    }
+  ],
+  "raw_records": 163344,
+  "window_records": 492
+}

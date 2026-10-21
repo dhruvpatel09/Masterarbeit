@@ -1,0 +1,45 @@
+{
+  "configurations": 70,
+  "combined_profile_positions": 249,
+  "max_abs_p4_change_over_p40_preliminary_se": {
+    "value": "0.00050519116510510600523407111685986463452304769668120",
+    "position": {
+      "tau": 6,
+      "axis": -1,
+      "R": 1,
+      "long": 0,
+      "tr1": -1,
+      "tr2": 0
+    }
+  },
+  "max_abs_p4_change_over_paired_preliminary_se": {
+    "value": "5.4578695555928279826720254803567315125538551903985",
+    "position": {
+      "tau": 2,
+      "axis": -1,
+      "R": 2,
+      "long": 1,
+      "tr1": 0,
+      "tr2": 0
+    }
+  },
+  "max_abs_n100_inclusion_change_over_p40_preliminary_se": {
+    "value": "0.30637827626103779356890390126117912589915891058050",
+    "position": {
+      "tau": 6,
+      "axis": -1,
+      "R": 4,
+      "long": -1,
+      "tr1": -1,
+      "tr2": 0
+    }
+  },
+  "largest_p4_window_unit_rms": {
+    "value": "6.13338029196361029e-06",
+    "configuration": 740,
+    "tau": 2
+  },
+  "central_window_unit_above_1em2": 0,
+  "central_window_det_above_1em2": 0,
+  "interpretation": "The 70- and 69-configuration estimates are correlated. The n100 inclusion change divided by the full70 standard error is a scale comparison, not an independent-sample significance test. All standard errors are preliminary and lack autocorrelation correction. Maxima across probe positions are descriptive, without a multiple-test correction."
+}

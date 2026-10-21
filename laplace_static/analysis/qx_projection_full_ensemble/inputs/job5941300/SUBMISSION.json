@@ -1,0 +1,12 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-30%4",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_projection_full_ensemble/submit_micro.sh",
+    "full70"
+  ],
+  "returncode": 0,
+  "stdout": "5941300\n",
+  "stderr": ""
+}
