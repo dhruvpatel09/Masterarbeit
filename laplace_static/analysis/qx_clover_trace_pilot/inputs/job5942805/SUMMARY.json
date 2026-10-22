@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "configuration": 100,
+  "tau": 4,
+  "piters": [
+    4,
+    40
+  ],
+  "records": 664,
+  "raw_regression_job": 5915129,
+  "geometry_records_per_launch": 332,
+  "scope": "Single-configuration validation only; no ensemble or autocorrelation claim",
+  "convention": {
+    "field_strength": "F=(Q-Q^dagger)/8 on the original unsmeared gauge field",
+    "plane_sum": "six unordered pairs mu<nu; no additional factor 1/2",
+    "S_RAW": "sum_mu<nu Tr(F^dagger F)",
+    "T_TRACE": "sum_mu<nu |Tr F|^2/3",
+    "S_TL": "S_RAW-T_TRACE; checked against explicitly projected matrices",
+    "estimator_RAW": "mean(LS_RE)/mean(L_RE)-mean(S_RAW)",
+    "estimator_TL": "(mean(LS_RE)-mean(LT_RE))/mean(L_RE)-(mean(S_RAW)-mean(T_TRACE))",
+    "averaging": "Equal raw configuration means before forming ensemble ratios; preserve matched covariance"
+  }
+}

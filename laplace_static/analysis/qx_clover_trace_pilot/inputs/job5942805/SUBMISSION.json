@@ -1,0 +1,11 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/submit_micro.sh",
+    "pilot"
+  ],
+  "returncode": 0,
+  "stdout": "5942805\n",
+  "stderr": ""
+}

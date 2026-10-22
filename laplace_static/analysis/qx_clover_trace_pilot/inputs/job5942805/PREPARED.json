@@ -1,0 +1,60 @@
+{
+  "name": "pilot",
+  "cases": [
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 4
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 40
+    }
+  ],
+  "run": {
+    "configuration": 100,
+    "run": "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_saved_modes_n100/results_n100/input_run",
+    "completion_marker_sha256": "5475e1e09ea5eaaf076ef8e7dd7be4474c3542b4b4a9b957d06b64096368fdc7"
+  },
+  "inputs": {
+    "/hppfs/scratch/00/di98qes3/qX/qX_p2n100": {
+      "bytes": 28991029272,
+      "mtime_ns": 1788428407689204722
+    },
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_saved_modes_n100/results_n100/input_run/COMPLETED.json": {
+      "bytes": 512,
+      "mtime_ns": 1792489981599214035
+    },
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_saved_modes_n100/results_n100/input_run/eigenvectors/qX_p2n100_evec_t96.h5": {
+      "bytes": 1258883416,
+      "mtime_ns": 1789407344702212741
+    },
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_saved_modes_n100/results_n100/input_run/eigenvectors/qX_p2n100_evec_t100.h5": {
+      "bytes": 1258883416,
+      "mtime_ns": 1789407620287875685
+    }
+  },
+  "executable_sha256": "4517ab138eb26410e83a9fc44c21cf5e59dbec3d1e0f72382aa1b1ac800c1bec",
+  "build_manifest_sha256": "c04d5902143d13a1258ce7e0c6c1df369e7a5d3a02508814fb309f9d34c55304",
+  "source_manifest_sha256": "5fac9a9e048fd9a0339fd2c059364f3aca4c6fddb247acd3565412c46b589acb",
+  "settings": {
+    "Nv": 100,
+    "midpoint": 98,
+    "alpha": [
+      1,
+      1,
+      0.5
+    ],
+    "hyp_steps": 1,
+    "grid": [
+      1,
+      4,
+      4,
+      4
+    ],
+    "ranks": 64,
+    "nodes": 8
+  },
+  "scope": "Two-launch n100 tau4 validation pilot; raw and trace primaries from the same field and loops"
+}

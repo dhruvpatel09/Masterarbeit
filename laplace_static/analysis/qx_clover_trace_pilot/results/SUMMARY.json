@@ -1,0 +1,84 @@
+{
+  "success": true,
+  "job_id": 5942805,
+  "configuration": 100,
+  "tau": 4,
+  "piters": [
+    4,
+    40
+  ],
+  "raw_records": 664,
+  "combined_positions_per_piter": 83,
+  "raw_regression_maximum_difference": 0.0,
+  "scope": "Single-configuration diagnostic; no ensemble uncertainty or physical-normalization claim",
+  "convention": {
+    "field_strength": "F=(Q-Q^dagger)/8 on the original unsmeared gauge field",
+    "plane_sum": "six unordered pairs mu<nu; no additional factor 1/2",
+    "S_RAW": "sum_mu<nu Tr(F^dagger F)",
+    "T_TRACE": "sum_mu<nu |Tr F|^2/3",
+    "S_TL": "S_RAW-T_TRACE; checked against explicitly projected matrices",
+    "estimator_RAW": "mean(LS_RE)/mean(L_RE)-mean(S_RAW)",
+    "estimator_TL": "(mean(LS_RE)-mean(LT_RE))/mean(L_RE)-(mean(S_RAW)-mean(T_TRACE))",
+    "averaging": "Equal raw configuration means before forming ensemble ratios; preserve matched covariance"
+  },
+  "launches": [
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.58595739863813,
+      "job_id": "5942805"
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.8453434985131,
+      "job_id": "5942805"
+    }
+  ],
+  "comparisons": [
+    {
+      "piter": 4,
+      "combined_positions": 83,
+      "mean_S_RAW": "1.72975796986889674e+00",
+      "mean_T_TRACE": "9.62755625193050142e-03",
+      "maximum_absolute_connected_trace_component": "0.0000134013747268108733799955136078878643786960216024",
+      "maximum_relative_change_percent": "3.0004794444865970146120592144336669669134213765805",
+      "maximum_relative_change_geometry": {
+        "R": 2,
+        "long": -1,
+        "tr1": -2,
+        "tr2": 0
+      },
+      "R4_midpoint": {
+        "C_RAW": "-0.0012936880853161483086628340038598380909427058215",
+        "C_TRACE_COMPONENT": "-0.0000134013747268108733799955136078878643786960216024",
+        "C_TL": "-0.0012802867105893374352828384902519502265640097999"
+      },
+      "R4_midpoint_relative_change_percent": "1.0359046263872700369124996422569650927559097490411"
+    },
+    {
+      "piter": 40,
+      "combined_positions": 83,
+      "mean_S_RAW": "1.72975796986889674e+00",
+      "mean_T_TRACE": "9.62755625193050142e-03",
+      "maximum_absolute_connected_trace_component": "0.0000134011557238984345473588511892700060033506067403",
+      "maximum_relative_change_percent": "3.0006158973253588845711741850099382210463619916368",
+      "maximum_relative_change_geometry": {
+        "R": 2,
+        "long": -1,
+        "tr1": -2,
+        "tr2": 0
+      },
+      "R4_midpoint": {
+        "C_RAW": "-0.0012936768457716821049562244827964574261066724030",
+        "C_TRACE_COMPONENT": "-0.0000134011557238984345473588511892700060033506067403",
+        "C_TL": "-0.0012802756900477836704088656316071874201033217963"
+      },
+      "R4_midpoint_relative_change_percent": "1.0358966976721767873637856210002880797227749926854"
+    }
+  ]
+}
