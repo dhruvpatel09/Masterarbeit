@@ -1,0 +1,31 @@
+{
+  "base_commit": "f8bf1999163aa59c88f2bd911cebc8d0dd82a928",
+  "measurement_job": 5943513,
+  "reused_pilot_job": 5942805,
+  "review_archive_name": "qx_clover_trace_full70_review.zip",
+  "review_archive_sha256": "1af87b23fb2071f6920a9062272a555141e39eb0376f11c82252144f01a8bda4",
+  "raw_reference_table": "laplace_static/analysis/qx_projection_full_ensemble/results/profiles_raw_70configs.csv",
+  "repository_references": {
+    "laplace_static/analysis/qx_projection_full_ensemble/results/profiles_raw_70configs.csv": "2f7dd6a7f745b5421c291c967c13811622e1c38068814f97abfba9a24eaa4a5a"
+  },
+  "files": {
+    "inputs/VALIDATION.json": "51d15b97c166b19f111ae6e27074f3b6137fac2a7fde21fbc18333d27695b86b",
+    "inputs/job5943513/PREPARED.json": "2d39201765bc0271096a7a4c2622bdf597e6cde2bad7927366b0099578354ac0",
+    "inputs/job5943513/SUBMISSION_001.json": "a26c970f1f8a659cdf78d18c0b732a6de0f36f8516fa6a2d5481ccc13dfaba5d",
+    "inputs/job5943513/SUMMARY.json": "90b64d7ad26964552169a10ad7f763356fa85c5c42d8b5e21417b11014452422",
+    "inputs/job5943513/prepared.sha256": "a792779a02a89172857f4685107986bddcd8851be1058c985a6b9f8fdcb86d6b",
+    "inputs/profiles_raw_and_trace_70configs.csv": "806b5f3de22c8ad2b87c19910bc4d2fafb1394fb983f50a57dc4d2c360f08f5f",
+    "inputs/su3_windows_70configs.csv": "2cfae30622cc07ec62dfd42423d5b9e86e92d3fdedb04e304a6652920cf5e2b1"
+  },
+  "validation": "All 420 stdout logs replayed with the published structural, averaging, profile and trace checkers. Raw primaries and SU(3) windows exactly reproduce the existing piter4/40 ensemble. Large stdout archives are retained separately; compact numerical primaries and replay evidence are preserved here.",
+  "conventions": {
+    "field_strength": "F=(Q-Q^dagger)/8 on the original unsmeared gauge field",
+    "plane_sum": "six unordered pairs mu<nu; no additional factor 1/2",
+    "S_RAW": "sum_mu<nu Tr(F^dagger F)",
+    "T_TRACE": "sum_mu<nu |Tr F|^2/3",
+    "S_TL": "S_RAW-T_TRACE; checked against explicitly projected matrices",
+    "estimator_RAW": "mean(LS_RE)/mean(L_RE)-mean(S_RAW)",
+    "estimator_TL": "(mean(LS_RE)-mean(LT_RE))/mean(L_RE)-(mean(S_RAW)-mean(T_TRACE))",
+    "averaging": "Equal raw configuration means before forming ensemble ratios; preserve matched covariance"
+  }
+}

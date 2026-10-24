@@ -1,0 +1,3 @@
+definition,maximum_absolute_p4_minus_p40,maximum_absolute_position,maximum_relative_p4_minus_p40_percent,maximum_relative_position
+RAW,6.4492736572082074953444623647377078374650E-9,"{'tau': 6, 'axis': -1, 'R': 4, 'long': 0, 'tr1': -2, 'tr2': 0}",0.0019199777124084583625388532100490451676811107713398,"{'tau': 6, 'axis': -1, 'R': 4, 'long': -1, 'tr1': 0, 'tr2': 0}"
+TL,6.4587197572308819421404145441515289292143E-9,"{'tau': 6, 'axis': -1, 'R': 4, 'long': 0, 'tr1': -2, 'tr2': 0}",0.0019412465810533540501149298539883889242390084269895,"{'tau': 6, 'axis': -1, 'R': 4, 'long': -1, 'tr1': 0, 'tr2': 0}"

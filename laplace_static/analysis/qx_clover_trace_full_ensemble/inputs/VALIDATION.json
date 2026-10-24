@@ -1,0 +1,5562 @@
+{
+  "success": true,
+  "configurations": [
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "cases": 210,
+  "new_cases": 209,
+  "mpi_launches": 420,
+  "new_mpi_launches": 418,
+  "reused_pilot_job": 5942805,
+  "raw_records": 139440,
+  "window_records": 420,
+  "raw_regression_exact": true,
+  "raw_regression_max_absolute_difference": "0",
+  "central_windows_exactly_reproduced": true,
+  "maximum_direct_clover_identity_residual": 1.7763568394002505e-15,
+  "archive_sha256": "1af87b23fb2071f6920a9062272a555141e39eb0376f11c82252144f01a8bda4",
+  "validation_source_commit": "f8bf1999163aa59c88f2bd911cebc8d0dd82a928",
+  "parser_source_sha256": {
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/check_task.py": "6fe50d927f455bc968a1b76711ca16a85082948d7357e5aeccc68c1a0297fba7",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/common.py": "ece8b253fe45c70a318701891ef4b5087f9e3fc4059a626912614f1c227f69e3",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/average_compare.py": "edd14e7b41c516aa99b5cc8b14887382d8d87c36410cb90ddebfd7079de4a825",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/profile_compare.py": "bcc776ffa3aea829a5d05be72173f7059d9a1c898cc9d717cb24e2450cfe4144",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/point_compare.py": "d17ceea7f9833f29fd0a85a6c8b3f2cbee626e8ea158c64bda34080c3ae9e329",
+    "laplace_static/validation/hyp_projection_configs_qx_200_230/n100_tau4_reference.csv": "ddad21f8089acc1771190448490b6b43536f3f5e7c39e67f3837c252fb53e88c",
+    "laplace_static/validation/qx_clover_trace/campaign.py": "9e33b0ac95c39ce8a2613a97557d40dfa11b9f8ec5f0e08bc65c24ca538e13b3"
+  },
+  "checks": [
+    {
+      "configuration": 100,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 427.17711870744824
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "source_job": 5942805,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.43130089715123
+    },
+    {
+      "configuration": 100,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.8005398828536
+    },
+    {
+      "configuration": 110,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.9822450764477
+    },
+    {
+      "configuration": 110,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.8725628592074
+    },
+    {
+      "configuration": 110,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.71280800178647
+    },
+    {
+      "configuration": 120,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.8576698694378
+    },
+    {
+      "configuration": 120,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.5738723445684
+    },
+    {
+      "configuration": 120,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.9896822478622
+    },
+    {
+      "configuration": 130,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.971014207229
+    },
+    {
+      "configuration": 130,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.29419462010264
+    },
+    {
+      "configuration": 130,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.26030567102134
+    },
+    {
+      "configuration": 140,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.4501555375755
+    },
+    {
+      "configuration": 140,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.68399958498776
+    },
+    {
+      "configuration": 140,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.92061199247837
+    },
+    {
+      "configuration": 150,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.2111159823835
+    },
+    {
+      "configuration": 150,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.9003343731165
+    },
+    {
+      "configuration": 150,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.5859578009695
+    },
+    {
+      "configuration": 160,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.5687345061451
+    },
+    {
+      "configuration": 160,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.0199733823538
+    },
+    {
+      "configuration": 160,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.8041856996715
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.68234058469534
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.04937057197094
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.3075958136469
+    },
+    {
+      "configuration": 180,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 427.8197455070913
+    },
+    {
+      "configuration": 180,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.40199672430754
+    },
+    {
+      "configuration": 180,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.8266355097294
+    },
+    {
+      "configuration": 190,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.1218421831727
+    },
+    {
+      "configuration": 190,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.685695072636
+    },
+    {
+      "configuration": 190,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.29544349759817
+    },
+    {
+      "configuration": 200,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.3444779869169
+    },
+    {
+      "configuration": 200,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 430.86939455382526
+    },
+    {
+      "configuration": 200,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.22994709946215
+    },
+    {
+      "configuration": 210,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.192333644256
+    },
+    {
+      "configuration": 210,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.3551061213948
+    },
+    {
+      "configuration": 210,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.15689477836713
+    },
+    {
+      "configuration": 220,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.1378547139466
+    },
+    {
+      "configuration": 220,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.75443106517196
+    },
+    {
+      "configuration": 220,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.94345770962536
+    },
+    {
+      "configuration": 230,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.5813782773912
+    },
+    {
+      "configuration": 230,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.50765149109066
+    },
+    {
+      "configuration": 230,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.83156785182655
+    },
+    {
+      "configuration": 240,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.26361922733486
+    },
+    {
+      "configuration": 240,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.7091985363513
+    },
+    {
+      "configuration": 240,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.4482223261148
+    },
+    {
+      "configuration": 250,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.2966677416116
+    },
+    {
+      "configuration": 250,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 427.63019460625947
+    },
+    {
+      "configuration": 250,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.93477643840015
+    },
+    {
+      "configuration": 260,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.5571279861033
+    },
+    {
+      "configuration": 260,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.6658867970109
+    },
+    {
+      "configuration": 260,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.96823622845113
+    },
+    {
+      "configuration": 270,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 428.79906230047345
+    },
+    {
+      "configuration": 270,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 435.5351334512234
+    },
+    {
+      "configuration": 270,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.0394332949072
+    },
+    {
+      "configuration": 280,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.8790308125317
+    },
+    {
+      "configuration": 280,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.6449132077396
+    },
+    {
+      "configuration": 280,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.7729017138481
+    },
+    {
+      "configuration": 290,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.2797474786639
+    },
+    {
+      "configuration": 290,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.6222135424614
+    },
+    {
+      "configuration": 290,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.16890715807676
+    },
+    {
+      "configuration": 300,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.1270620152354
+    },
+    {
+      "configuration": 300,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.16589102707803
+    },
+    {
+      "configuration": 300,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.66125962883234
+    },
+    {
+      "configuration": 310,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.51941094361246
+    },
+    {
+      "configuration": 310,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 427.13268957845867
+    },
+    {
+      "configuration": 310,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.25225110165775
+    },
+    {
+      "configuration": 320,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.3886687681079
+    },
+    {
+      "configuration": 320,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.06523196958005
+    },
+    {
+      "configuration": 320,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.06426665373147
+    },
+    {
+      "configuration": 330,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.30518743768334
+    },
+    {
+      "configuration": 330,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 427.20888615585864
+    },
+    {
+      "configuration": 330,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.586170790717
+    },
+    {
+      "configuration": 340,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.3666919618845
+    },
+    {
+      "configuration": 340,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 440.8969524111599
+    },
+    {
+      "configuration": 340,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.43468806520104
+    },
+    {
+      "configuration": 350,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.6932908222079
+    },
+    {
+      "configuration": 350,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.0624244157225
+    },
+    {
+      "configuration": 350,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.56912059150636
+    },
+    {
+      "configuration": 360,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.7763568394002505e-15,
+      "mpi_seconds": 438.3938839137554
+    },
+    {
+      "configuration": 360,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.7763568394002505e-15,
+      "mpi_seconds": 425.1987267509103
+    },
+    {
+      "configuration": 360,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.7763568394002505e-15,
+      "mpi_seconds": 423.1665280740708
+    },
+    {
+      "configuration": 370,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.9753948189318
+    },
+    {
+      "configuration": 370,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.84783972240984
+    },
+    {
+      "configuration": 370,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.0733451060951
+    },
+    {
+      "configuration": 380,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.31859027966857
+    },
+    {
+      "configuration": 380,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.7151423515752
+    },
+    {
+      "configuration": 380,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.82594703370705
+    },
+    {
+      "configuration": 390,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.35109384777024
+    },
+    {
+      "configuration": 390,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.31569315493107
+    },
+    {
+      "configuration": 390,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.0439070407301
+    },
+    {
+      "configuration": 400,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.85115782078356
+    },
+    {
+      "configuration": 400,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.6961368974298
+    },
+    {
+      "configuration": 400,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.03154951985925
+    },
+    {
+      "configuration": 410,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.00811820011586
+    },
+    {
+      "configuration": 410,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.97446827962995
+    },
+    {
+      "configuration": 410,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.07594504673034
+    },
+    {
+      "configuration": 420,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 436.06317785196006
+    },
+    {
+      "configuration": 420,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 428.2311279489659
+    },
+    {
+      "configuration": 420,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.1446885182522
+    },
+    {
+      "configuration": 430,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.0039401492104
+    },
+    {
+      "configuration": 430,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.2498495457694
+    },
+    {
+      "configuration": 430,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.78145571192726
+    },
+    {
+      "configuration": 440,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.15239145886153
+    },
+    {
+      "configuration": 440,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 431.0891077462584
+    },
+    {
+      "configuration": 440,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.99030262604356
+    },
+    {
+      "configuration": 450,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.8332614582032
+    },
+    {
+      "configuration": 450,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 438.45421337522566
+    },
+    {
+      "configuration": 450,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.09381809458137
+    },
+    {
+      "configuration": 460,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.89569239132106
+    },
+    {
+      "configuration": 460,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.7114023268223
+    },
+    {
+      "configuration": 460,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 428.6434001736343
+    },
+    {
+      "configuration": 470,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.84206535853446
+    },
+    {
+      "configuration": 470,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.7260121162981
+    },
+    {
+      "configuration": 470,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.25830180570483
+    },
+    {
+      "configuration": 480,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 427.70810008980334
+    },
+    {
+      "configuration": 480,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.3653701506555
+    },
+    {
+      "configuration": 480,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.2890188228339
+    },
+    {
+      "configuration": 490,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.79278766550124
+    },
+    {
+      "configuration": 490,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.4872851129621
+    },
+    {
+      "configuration": 490,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.93048983998597
+    },
+    {
+      "configuration": 500,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.12987365946174
+    },
+    {
+      "configuration": 500,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.77186840120703
+    },
+    {
+      "configuration": 500,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.1139617729932
+    },
+    {
+      "configuration": 510,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.5354723497294
+    },
+    {
+      "configuration": 510,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.5050727399066
+    },
+    {
+      "configuration": 510,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.06421992881224
+    },
+    {
+      "configuration": 520,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.2833831310272
+    },
+    {
+      "configuration": 520,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.4362583812326
+    },
+    {
+      "configuration": 520,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.37746447883546
+    },
+    {
+      "configuration": 530,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.9767004195601
+    },
+    {
+      "configuration": 530,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.0465658996254
+    },
+    {
+      "configuration": 530,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.9969522487372
+    },
+    {
+      "configuration": 540,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.7851477973163
+    },
+    {
+      "configuration": 540,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.8864996340126
+    },
+    {
+      "configuration": 540,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.28829681687057
+    },
+    {
+      "configuration": 550,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.9390256740153
+    },
+    {
+      "configuration": 550,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.3535555098206
+    },
+    {
+      "configuration": 550,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.1767402589321
+    },
+    {
+      "configuration": 560,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.6611863616854
+    },
+    {
+      "configuration": 560,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.1910376548767
+    },
+    {
+      "configuration": 560,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.8918483965099
+    },
+    {
+      "configuration": 570,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.04319525137544
+    },
+    {
+      "configuration": 570,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.5988220795989
+    },
+    {
+      "configuration": 570,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.2582977656275
+    },
+    {
+      "configuration": 580,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.7763568394002505e-15,
+      "mpi_seconds": 422.58598192967474
+    },
+    {
+      "configuration": 580,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.7763568394002505e-15,
+      "mpi_seconds": 427.8009427115321
+    },
+    {
+      "configuration": 580,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.7763568394002505e-15,
+      "mpi_seconds": 425.07877254113555
+    },
+    {
+      "configuration": 590,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.648162368685
+    },
+    {
+      "configuration": 590,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.8711209911853
+    },
+    {
+      "configuration": 590,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.25350453704596
+    },
+    {
+      "configuration": 600,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.2579585760832
+    },
+    {
+      "configuration": 600,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.6596592012793
+    },
+    {
+      "configuration": 600,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.5891859792173
+    },
+    {
+      "configuration": 610,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.50193675607443
+    },
+    {
+      "configuration": 610,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.15125145949423
+    },
+    {
+      "configuration": 610,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.8731048516929
+    },
+    {
+      "configuration": 620,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.74026862345636
+    },
+    {
+      "configuration": 620,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.6849055569619
+    },
+    {
+      "configuration": 620,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.0017568618059
+    },
+    {
+      "configuration": 630,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.87779465690255
+    },
+    {
+      "configuration": 630,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.644259179011
+    },
+    {
+      "configuration": 630,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.5417994763702
+    },
+    {
+      "configuration": 650,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.69612136669457
+    },
+    {
+      "configuration": 650,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.9141181334853
+    },
+    {
+      "configuration": 650,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.10333992913365
+    },
+    {
+      "configuration": 660,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.86751151643693
+    },
+    {
+      "configuration": 660,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.9794132076204
+    },
+    {
+      "configuration": 660,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.2646836396307
+    },
+    {
+      "configuration": 670,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.36464561894536
+    },
+    {
+      "configuration": 670,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.30443149991333
+    },
+    {
+      "configuration": 670,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.0426664259285
+    },
+    {
+      "configuration": 680,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.8340466674417
+    },
+    {
+      "configuration": 680,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.75175182521343
+    },
+    {
+      "configuration": 680,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.60289841145277
+    },
+    {
+      "configuration": 690,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.2739208303392
+    },
+    {
+      "configuration": 690,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.1762574855238
+    },
+    {
+      "configuration": 690,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.2818599063903
+    },
+    {
+      "configuration": 700,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.17784248292446
+    },
+    {
+      "configuration": 700,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.8822613339871
+    },
+    {
+      "configuration": 700,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.2017378658056
+    },
+    {
+      "configuration": 710,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.7545383553952
+    },
+    {
+      "configuration": 710,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.8275546133518
+    },
+    {
+      "configuration": 710,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.96192902326584
+    },
+    {
+      "configuration": 720,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.9599426686764
+    },
+    {
+      "configuration": 720,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.23861685954034
+    },
+    {
+      "configuration": 720,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.11347914114594
+    },
+    {
+      "configuration": 730,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.05627465061843
+    },
+    {
+      "configuration": 730,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.03769274707884
+    },
+    {
+      "configuration": 730,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.3461403422989
+    },
+    {
+      "configuration": 740,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.0084680854343
+    },
+    {
+      "configuration": 740,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.7770277848467
+    },
+    {
+      "configuration": 740,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 421.91532378830016
+    },
+    {
+      "configuration": 750,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.8422514209524
+    },
+    {
+      "configuration": 750,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.57165306666866
+    },
+    {
+      "configuration": 750,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.5393673153594
+    },
+    {
+      "configuration": 760,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.92206773208454
+    },
+    {
+      "configuration": 760,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.77756051160395
+    },
+    {
+      "configuration": 760,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.08311337884516
+    },
+    {
+      "configuration": 770,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.30906685395166
+    },
+    {
+      "configuration": 770,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.6431812439114
+    },
+    {
+      "configuration": 770,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.42238221876323
+    },
+    {
+      "configuration": 780,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.20290975272655
+    },
+    {
+      "configuration": 780,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 423.0262876469642
+    },
+    {
+      "configuration": 780,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.72390492260456
+    },
+    {
+      "configuration": 790,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 422.62389445863664
+    },
+    {
+      "configuration": 790,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.3763087540865
+    },
+    {
+      "configuration": 790,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.62775058299303
+    },
+    {
+      "configuration": 800,
+      "tau": 2,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 426.4162256391719
+    },
+    {
+      "configuration": 800,
+      "tau": 4,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 425.7165346299298
+    },
+    {
+      "configuration": 800,
+      "tau": 6,
+      "source_job": 5943513,
+      "success": true,
+      "raw_records": 664,
+      "window_records": 2,
+      "direct_clover_identity_max": 1.3322676295501878e-15,
+      "mpi_seconds": 424.61834743991494
+    }
+  ],
+  "launches": [
+    {
+      "configuration": 100,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.66723998822272,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 100,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.5098787192255,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 100,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.96202005073428,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 100,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.83851983211935,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 110,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.257817376405,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 110,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.7244277000427,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 110,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.0303120687604,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 110,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.842250790447,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 110,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.66704201512039,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 110,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.0457659866661,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 120,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.71833998337388,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 120,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.13932988606393,
+      "job_id": "5943515"
+    },
+    {
+      "configuration": 120,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.53503831662238,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 120,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.038834027946,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 120,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.98464429937303,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 120,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.0050379484892,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 130,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.22616337053478,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 130,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.74485083669424,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 130,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.03101821430027,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 130,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.26317640580237,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 130,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.54745888151228,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 130,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.71284678950906,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 140,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.1397577226162,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 140,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.3103978149593,
+      "job_id": "5943516"
+    },
+    {
+      "configuration": 140,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.20773132890463,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 140,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.47626825608313,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 140,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.323938973248,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 140,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.59667301923037,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 150,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.8819549176842,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 150,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3291610646993,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 150,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.76327055878937,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 150,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.1370638143271,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 150,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.23078488186002,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 150,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.35517291910946,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 160,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.28773010894656,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 160,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.28100439719856,
+      "job_id": "5943559"
+    },
+    {
+      "configuration": 160,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.49426800943911,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 160,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.5257053729147,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 160,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.25598212145269,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 160,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.5482035782188,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.07896996289492,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.6033706218004,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.09275093488395,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.956619637087,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.36376043781638,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.94383537583053,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 180,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.24226601608098,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 180,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 338.5774794910103,
+      "job_id": "5943560"
+    },
+    {
+      "configuration": 180,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.65845419093966,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 180,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.7435425333679,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 180,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.19259915873408,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 180,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.6340363509953,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 190,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.54173175245523,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 190,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.58011043071747,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 190,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.38884154520929,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 190,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.2968535274267,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 190,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.14924104511738,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 190,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.1462024524808,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 200,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.06166226416826,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 200,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.28281572274864,
+      "job_id": "5943562"
+    },
+    {
+      "configuration": 200,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 93.63599927769974,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 200,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.2333952761255,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 200,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.47803645720705,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 200,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.7519106422551,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 210,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.75714117102325,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 210,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.43519247323275,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 210,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.60200394131243,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 210,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.75310218008235,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 210,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.83908478077501,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 210,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3178099975921,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 220,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.35394334280863,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 220,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.78391137113795,
+      "job_id": "5943563"
+    },
+    {
+      "configuration": 220,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.29732511937618,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 220,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.4571059457958,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 220,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.93396634981036,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 220,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.009491359815,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 230,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.41934112459421,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 230,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.162037152797,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 230,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.85498416051269,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 230,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.65266733057797,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 230,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.93619135953486,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 230,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.8953764922917,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 240,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.47784223593771,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 240,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.78577699139714,
+      "job_id": "5943666"
+    },
+    {
+      "configuration": 240,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.94787545129657,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 240,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.76132308505476,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 240,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.66166555695236,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 240,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.7865567691624,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 250,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.54984056949615,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 250,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.74682717211545,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 250,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 93.31392395682633,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 250,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.31627064943314,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 250,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.99572360888124,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 250,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.9390528295189,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 260,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.1371284071356,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 260,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.4199995789677,
+      "job_id": "5943682"
+    },
+    {
+      "configuration": 260,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.75539475865662,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 260,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.9104920383543,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 260,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.95638238079846,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 260,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.0118538476527,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 270,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.78802971541882,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 270,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.01103258505464,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 270,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.6105315554887,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 270,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 344.92460189573467,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 270,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.95531950332224,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 270,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.08411379158497,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 280,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.90066016837955,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 280,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.97837064415216,
+      "job_id": "5943796"
+    },
+    {
+      "configuration": 280,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.94698617234826,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 280,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.69792703539133,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 280,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.54613944888115,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 280,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.22676226496696,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 290,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.35404412262142,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 290,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.9257033560425,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 290,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.09992766194046,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 290,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.52228588052094,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 290,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.1323568020016,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 290,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.03655035607517,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 300,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.12660273164511,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 300,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.0004592835903,
+      "job_id": "5943801"
+    },
+    {
+      "configuration": 300,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.23679682984948,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 300,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.92909419722855,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 300,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.05074075609446,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 300,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.6105188727379,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 310,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.12054324522614,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 310,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.3988676983863,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 310,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.08895169943571,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 310,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 338.04373787902296,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 310,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.923100348562,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 310,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.32915075309575,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 320,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.0925430264324,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 320,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.2961257416755,
+      "job_id": "5943802"
+    },
+    {
+      "configuration": 320,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.69175985828042,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 320,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.37347211129963,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 320,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.97212762013078,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 320,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.0921390336007,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 330,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.80651107057929,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 330,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.49867636710405,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 330,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.05851856991649,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 330,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 338.15036758594215,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 330,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.20810002088547,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 330,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.37807076983154,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 340,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.77267651073635,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 340,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.59401545114815,
+      "job_id": "5943803"
+    },
+    {
+      "configuration": 340,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 106.6902549341321,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 340,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.2066974770278,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 340,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.17320912331343,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 340,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.2614789418876,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 350,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.30153859779239,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 350,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.39175222441554,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 350,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.69326791353524,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 350,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.36915650218725,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 350,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.96577855572104,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 350,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.6033420357853,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 360,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.00829853117466,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 360,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 348.38558538258076,
+      "job_id": "5943848"
+    },
+    {
+      "configuration": 360,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.97898438572884,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 360,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.21974236518145,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 360,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.78127183765173,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 360,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3852562364191,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 370,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.3043874707073,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 370,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.6710073482245,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 370,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.23202626593411,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 370,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.61581345647573,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 370,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.33261115290225,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 370,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.74073395319283,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 380,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.6400733795017,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 380,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.67851690016687,
+      "job_id": "5943868"
+    },
+    {
+      "configuration": 380,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.7685006391257,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 380,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.9466417124495,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 380,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.88424417097121,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 380,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.94170286273584,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 390,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.27559269964695,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 390,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.0755011481233,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 390,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.25672227703035,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 390,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.0589708779007,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 390,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.22684574173763,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 390,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.8170612989925,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 400,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.13654810888693,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 400,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.7146097118966,
+      "job_id": "5943875"
+    },
+    {
+      "configuration": 400,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.52169755008072,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 400,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.1744393473491,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 400,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.23243507929146,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 400,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.7991144405678,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 410,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.24701327923685,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 410,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.761104920879,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 410,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.95413943007588,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 410,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.02032884955406,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 410,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.16741100139916,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 410,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.9085340453312,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 420,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 99.45471848547459,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 420,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.6084593664855,
+      "job_id": "5943876"
+    },
+    {
+      "configuration": 420,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.93176596891135,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 420,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.2993619800545,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 420,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.14828811725602,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 420,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.9964004009962,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 430,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.1225911360234,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 430,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.881349013187,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 430,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.8857321399264,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 430,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.364117405843,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 430,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.18675391515717,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 430,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.5947017967701,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 440,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.56050531286746,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 440,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.59188614599407,
+      "job_id": "5943877"
+    },
+    {
+      "configuration": 440,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 93.98738840967417,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 440,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.1017193365842,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 440,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.0577689986676,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 440,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.93253362737596,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 450,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.47708856128156,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 450,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.35617289692163,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 450,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 102.30549411848187,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 450,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.1487192567438,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 450,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.94540804252028,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 450,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.1484100520611,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 460,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.32274746708572,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 460,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.57294492423534,
+      "job_id": "5943931"
+    },
+    {
+      "configuration": 460,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.95129641517997,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 460,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.7601059116423,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 460,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.04707228578627,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 460,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.596327887848,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 470,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 93.45417667366564,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 470,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3878886848688,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 470,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.10817572847009,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 470,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.617836387828,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 470,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.20507319830358,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 470,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.05322860740125,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 480,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.35797390155494,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 480,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.3501261882484,
+      "job_id": "5943932"
+    },
+    {
+      "configuration": 480,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.29317277111113,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 480,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.0721973795444,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 480,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.62325110472739,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 480,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.6657677181065,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 490,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.44719731993973,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 490,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3455903455615,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 490,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.12876546941698,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 490,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.35851964354515,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 490,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.02106880582869,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 490,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.9094210341573,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 500,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.33004397712648,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 500,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.79982968233526,
+      "job_id": "5943933"
+    },
+    {
+      "configuration": 500,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.46513879206032,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 500,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 337.3067296091467,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 500,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.15241923322901,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 500,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.9615425397642,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 510,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.24756726296619,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 510,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.2879050867632,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 510,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.69355747522786,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 510,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.81151526467875,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 510,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.88805258087814,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 510,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.1761673479341,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 520,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.75552160199732,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 520,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.5278615290299,
+      "job_id": "5943934"
+    },
+    {
+      "configuration": 520,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.98695724084973,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 520,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.4493011403829,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 520,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.36312503181398,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 520,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.0143394470215,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 530,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.60042838193476,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 530,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.3762720376253,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 530,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.72354365698993,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 530,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3230222426355,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 530,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.91501864418387,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 530,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.08193360455334,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 540,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.66074983589351,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 540,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.1243979614228,
+      "job_id": "5943941"
+    },
+    {
+      "configuration": 540,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.45834231935441,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 540,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.42815731465816,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 540,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.40756011754274,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 540,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.8807366993278,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 550,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.92569367960095,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 550,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.01333199441433,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 550,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.9377022255212,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 550,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.4158532842994,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 550,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.14164873212576,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 550,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.03509152680635,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 560,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.9094159938395,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 560,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.7517703678459,
+      "job_id": "5943946"
+    },
+    {
+      "configuration": 560,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.54952430538833,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 560,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.6415133494884,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 560,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.15548970550299,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 560,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.7363586910069,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 570,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.38072086684406,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 570,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.6624743845314,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 570,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.83175188116729,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 570,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.7670701984316,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 570,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.27934208512306,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 570,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.97895568050444,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 580,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.35090435110033,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 580,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.2350775785744,
+      "job_id": "5943947"
+    },
+    {
+      "configuration": 580,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.15489696711302,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 580,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 338.6460457444191,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 580,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.21281637996435,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 580,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.8659561611712,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 590,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.56672155484557,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 590,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.08144081383944,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 590,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.40974960103631,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 590,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.461371390149,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 590,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.96880197711289,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 590,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.28470255993307,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 600,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.89390747249126,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 600,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3640511035919,
+      "job_id": "5943954"
+    },
+    {
+      "configuration": 600,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.0759823974222,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 600,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.5836768038571,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 600,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.86364459246397,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 600,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.7255413867533,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 610,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.19541594386101,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 610,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3065208122134,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 610,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.02925133518875,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 610,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.1220001243055,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 610,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.20637887716293,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 610,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.66672597453,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 620,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.06511742062867,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 620,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.6751512028277,
+      "job_id": "5943955"
+    },
+    {
+      "configuration": 620,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.2036904077977,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 620,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.4812151491642,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 620,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.79875876195729,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 620,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.2029980998486,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 630,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.9660765286535,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 630,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.91171812824905,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 630,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.07693519257009,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 630,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.5673239864409,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 630,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.96672950871289,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 630,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.5750699676573,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 650,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.48966281674802,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 650,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.20645854994655,
+      "job_id": "5943965"
+    },
+    {
+      "configuration": 650,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.74656241200864,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 650,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.1675557214767,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 650,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.96187347359955,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 650,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.1414664555341,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 660,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.1917492672801,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 660,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.67576224915683,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 660,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.88436159677804,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 660,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.09505161084235,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 660,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.06344434805214,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 660,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 336.20123929157853,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 670,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.2840098273009,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 670,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.08063579164445,
+      "job_id": "5944105"
+    },
+    {
+      "configuration": 670,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.9974321089685,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 670,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.30699939094484,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 670,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.99691479094326,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 670,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.0457516349852,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 680,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.34673769958317,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 680,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.48730896785855,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 680,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.26033291220665,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 680,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.4914189130068,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 680,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.0254376810044,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 680,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.57746073044837,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 690,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.11540919914842,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 690,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.1585116311908,
+      "job_id": "5944165"
+    },
+    {
+      "configuration": 690,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.5049446374178,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 690,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.671312848106,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 690,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.95501308329403,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 690,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3268468230963,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 700,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.3980855755508,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 700,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.77975690737367,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 700,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.1051083970815,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 700,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.7771529369056,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 700,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.02182737924159,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 700,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.17991048656404,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 710,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.2371983807534,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 710,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.5173399746418,
+      "job_id": "5944239"
+    },
+    {
+      "configuration": 710,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.46199729852378,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 710,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.36555731482804,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 710,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.45720480009913,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 710,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.5047242231667,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 720,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.18234993703663,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 720,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.77759273163974,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 720,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.07318091578782,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 720,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.1654359437525,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 720,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.08794602379203,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 720,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.0255331173539,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 730,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.68912290968001,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 730,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.3671517409384,
+      "job_id": "5944240"
+    },
+    {
+      "configuration": 730,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.46810262603685,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 730,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.569590121042,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 730,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.04238615417853,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 730,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.30375418812037,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 740,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.44085721531883,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 740,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.56761087011546,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 740,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.1880801669322,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 740,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.5889476179145,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 740,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.02946871705353,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 740,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.8858550712466,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 750,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.94621099811047,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 750,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.8960404228419,
+      "job_id": "5944241"
+    },
+    {
+      "configuration": 750,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.55593065777794,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 750,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.0157224088907,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 750,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.00899921124801,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 750,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.5303681041114,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 760,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.5273301419802,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 760,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.39473759010434,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 760,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.1271765739657,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 760,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.65038393763825,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 760,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.33481913572177,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 760,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.7482942431234,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 770,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.69723894586787,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 770,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.6118279080838,
+      "job_id": "5944242"
+    },
+    {
+      "configuration": 770,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.59702394902706,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 770,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.0461572948843,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 770,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 88.95291353948414,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 770,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.4694686792791,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 780,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.31713835708797,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 780,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.8857713956386,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 780,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.09726885519922,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 780,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.929018791765,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 780,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.01727609336376,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 780,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.7066288292408,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 790,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.75041756220162,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 790,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 332.873476896435,
+      "job_id": "5944260"
+    },
+    {
+      "configuration": 790,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.47301413910463,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 790,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 334.90329461498186,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 790,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.00084239197895,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 790,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.6269081910141,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 800,
+      "tau": 2,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 92.77359822811559,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 800,
+      "tau": 2,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.6426274110563,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 800,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 90.51781048905104,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 800,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 335.19872414087877,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 800,
+      "tau": 6,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 91.08790792198852,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 800,
+      "tau": 6,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.5304395179264,
+      "job_id": "5943513"
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 4,
+      "exit_code": 0,
+      "seconds": 89.58595739863813,
+      "job_id": "5942805"
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 40,
+      "exit_code": 0,
+      "seconds": 333.8453434985131,
+      "job_id": "5942805"
+    }
+  ],
+  "scope": "Replay of all stdout structure, halo, direct samples, reductions, profile translations, trace identities, case CSVs, completion hashes and archived raw/window regression. No gauge/eigenvector files were loaded for this offline replay."
+}
