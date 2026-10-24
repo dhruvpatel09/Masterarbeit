@@ -3,7 +3,10 @@
 import gzip
 import hashlib
 import importlib.util
+import json
 import math
+import shutil
+import subprocess
 import tempfile
 import unittest
 from decimal import Decimal as D
@@ -15,6 +18,31 @@ a=importlib.util.module_from_spec(spec);spec.loader.exec_module(a)
 
 
 class AnalysisTests(unittest.TestCase):
+    def test_manifest_inputs_survive_git_add_and_checkout(self):
+        sources=json.loads((HERE/'inputs/SOURCES.json').read_text())
+        relative=HERE.relative_to(a.ROOT)
+        with tempfile.TemporaryDirectory() as temp:
+            staged=Path(temp)/'staged';staged.mkdir()
+            checked=Path(temp)/'checked';checked.mkdir()
+            (staged/'.gitignore').write_bytes((a.ROOT/'.gitignore').read_bytes())
+            target=staged/relative;target.mkdir(parents=True)
+            for name in ('.gitignore','.gitattributes'):
+                (target/name).write_bytes((HERE/name).read_bytes())
+            for name in sources['files']:
+                dest=target/name;dest.parent.mkdir(parents=True,exist_ok=True)
+                shutil.copyfile(str(HERE/name),str(dest))
+            def git(*args):
+                return subprocess.run(['git','-C',str(staged),'-c','core.excludesfile=/dev/null',*args],
+                    check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE).stdout
+            git('init','-q')
+            git('add','--','.gitignore',relative.as_posix())
+            tracked=set(git('ls-files','-z').decode().split('\0'))
+            missing=[name for name in sources['files'] if (relative/name).as_posix() not in tracked]
+            self.assertEqual(missing,[],'Manifest inputs excluded by Git ignore rules')
+            git('checkout-index','--all','--prefix='+str(checked)+'/')
+            for name,expected in sources['files'].items():
+                self.assertEqual(a.sha(checked/relative/name),expected,name)
+
     def synthetic(self):
         raw,trace={},{}
         for c,row in enumerate(((1,2,1,'.1','.3'),(2,8,1,'.2','.6'),(3,18,1,'.3','.9'),(4,32,1,'.4','1.2'))):
