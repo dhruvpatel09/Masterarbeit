@@ -1,0 +1,26 @@
+[
+  {
+    "configuration": 740,
+    "tau": 6,
+    "piter": 6,
+    "exit_code": 0,
+    "seconds": 103.45518968254328,
+    "job_id": "5944679"
+  },
+  {
+    "configuration": 740,
+    "tau": 6,
+    "piter": 8,
+    "exit_code": 0,
+    "seconds": 116.57862554304302,
+    "job_id": "5944679"
+  },
+  {
+    "configuration": 740,
+    "tau": 6,
+    "piter": 80,
+    "exit_code": 0,
+    "seconds": 605.471719969064,
+    "job_id": "5944679"
+  }
+]

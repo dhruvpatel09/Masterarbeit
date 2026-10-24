@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "stage": "spectrum",
+  "target_configurations": [
+    100,
+    170,
+    670,
+    740
+  ],
+  "missing_cases": [],
+  "raw_records": 11952,
+  "window_records": 36,
+  "reused_cases": [],
+  "scope": "Selected central-window diagnostic at piter6/8/80; no full-lattice field-stability claim"
+}

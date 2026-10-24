@@ -1,0 +1,50 @@
+{
+  "stages": {
+    "full70": {
+      "configurations": 70,
+      "piters": [
+        4,
+        40
+      ],
+      "taus": [
+        2,
+        4,
+        6
+      ],
+      "new_MPI_launches": 418,
+      "reused_MPI_launches": 2,
+      "array_tasks": 35,
+      "cases_per_task": 6
+    },
+    "spectrum": {
+      "configurations": [
+        100,
+        170,
+        670,
+        740
+      ],
+      "piters": [
+        6,
+        8,
+        80
+      ],
+      "taus": [
+        2,
+        4,
+        6
+      ],
+      "new_MPI_launches": 36,
+      "array_tasks": 12
+    }
+  },
+  "scope": "Reuse the validated dual-clover executable; original pilot code and prepared campaign remain unchanged",
+  "files": {
+    "laplace_static/validation/qx_clover_trace_ensemble/campaign.py": "8b9b74107d864a74e2b6a7c67627a300bd40148668ec4a68c1ed3c82962d0374",
+    "laplace_static/validation/qx_clover_trace_ensemble/submit_micro.sh": "a201d9cbb852c7f9400c10fd3d69c87f39052cb6c7a35a881e8adb2ebe78d193",
+    "laplace_static/validation/qx_clover_trace_ensemble/test_campaign.py": "b19110aae30e9aca713fdacc9af9e018692afe445fbf63830b7da19246be5ece",
+    "laplace_static/analysis/qx_clover_trace_pilot/reproduce.py": "83828ba45002db1b1792bc40045464234032fe3f4c42d9e2990a92b3dc93529a",
+    "laplace_static/analysis/qx_clover_trace_pilot/inputs/SOURCES.json": "68badc09b2617f13ec069f8f5979063c568e492e630357dfac09dbcf32ae1ac2",
+    "laplace_static/analysis/qx_clover_trace_pilot/results/SUMMARY.json": "f17f7d17e1561cf670c39a341d263db61bf994759c4ab98c40f95fea017a1e18",
+    "laplace_static/analysis/qx_projection_full_ensemble/results/profiles_raw_70configs.csv": "2f7dd6a7f745b5421c291c967c13811622e1c38068814f97abfba9a24eaa4a5a"
+  }
+}

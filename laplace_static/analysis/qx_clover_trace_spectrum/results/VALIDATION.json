@@ -1,0 +1,404 @@
+{
+  "success": true,
+  "job_id": 5944679,
+  "configurations": [
+    100,
+    170,
+    670,
+    740
+  ],
+  "cases": 12,
+  "mpi_launches": 36,
+  "raw_records": 11952,
+  "window_records": 36,
+  "maximum_direct_clover_identity_residual": 1.3322676295501878e-15,
+  "checks": [
+    {
+      "configuration": 100,
+      "tau": 2,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 100,
+      "tau": 6,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 670,
+      "tau": 2,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 670,
+      "tau": 4,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 670,
+      "tau": 6,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 740,
+      "tau": 2,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 740,
+      "tau": 4,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    },
+    {
+      "configuration": 740,
+      "tau": 6,
+      "success": true,
+      "raw_records": 996,
+      "window_records": 3,
+      "direct_clover_identity_max": 1.3322676295501878e-15
+    }
+  ],
+  "launches": [
+    {
+      "configuration": 100,
+      "tau": 2,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 103.40982901118696,
+      "job_id": "5944703"
+    },
+    {
+      "configuration": 100,
+      "tau": 2,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 115.91468832595274,
+      "job_id": "5944703"
+    },
+    {
+      "configuration": 100,
+      "tau": 2,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 604.3366932049394,
+      "job_id": "5944703"
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 102.56178919970989,
+      "job_id": "5944709"
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 115.94447278790176,
+      "job_id": "5944709"
+    },
+    {
+      "configuration": 100,
+      "tau": 4,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 604.3143000099808,
+      "job_id": "5944709"
+    },
+    {
+      "configuration": 100,
+      "tau": 6,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 102.8375943005085,
+      "job_id": "5944738"
+    },
+    {
+      "configuration": 100,
+      "tau": 6,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.13634096644819,
+      "job_id": "5944738"
+    },
+    {
+      "configuration": 100,
+      "tau": 6,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 605.341612264514,
+      "job_id": "5944738"
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 102.96577758714557,
+      "job_id": "5944739"
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.36532741598785,
+      "job_id": "5944739"
+    },
+    {
+      "configuration": 170,
+      "tau": 2,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 606.7202231250703,
+      "job_id": "5944739"
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 102.90540003217757,
+      "job_id": "5944741"
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 115.89087572321296,
+      "job_id": "5944741"
+    },
+    {
+      "configuration": 170,
+      "tau": 4,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 609.4801615495235,
+      "job_id": "5944741"
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 103.40535747818649,
+      "job_id": "5944760"
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.45187463192269,
+      "job_id": "5944760"
+    },
+    {
+      "configuration": 170,
+      "tau": 6,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 605.3716080840677,
+      "job_id": "5944760"
+    },
+    {
+      "configuration": 670,
+      "tau": 2,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 106.01455821469426,
+      "job_id": "5944762"
+    },
+    {
+      "configuration": 670,
+      "tau": 2,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.34560420550406,
+      "job_id": "5944762"
+    },
+    {
+      "configuration": 670,
+      "tau": 2,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 605.4668762963265,
+      "job_id": "5944762"
+    },
+    {
+      "configuration": 670,
+      "tau": 4,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 103.0216270070523,
+      "job_id": "5944763"
+    },
+    {
+      "configuration": 670,
+      "tau": 4,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.29345213994384,
+      "job_id": "5944763"
+    },
+    {
+      "configuration": 670,
+      "tau": 4,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 605.412510028109,
+      "job_id": "5944763"
+    },
+    {
+      "configuration": 670,
+      "tau": 6,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 106.1343904491514,
+      "job_id": "5944764"
+    },
+    {
+      "configuration": 670,
+      "tau": 6,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.42044879868627,
+      "job_id": "5944764"
+    },
+    {
+      "configuration": 670,
+      "tau": 6,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 603.8810201045126,
+      "job_id": "5944764"
+    },
+    {
+      "configuration": 740,
+      "tau": 2,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 103.21970768645406,
+      "job_id": "5944765"
+    },
+    {
+      "configuration": 740,
+      "tau": 2,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.22392949834466,
+      "job_id": "5944765"
+    },
+    {
+      "configuration": 740,
+      "tau": 2,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 605.262657193467,
+      "job_id": "5944765"
+    },
+    {
+      "configuration": 740,
+      "tau": 4,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 103.23166169971228,
+      "job_id": "5944769"
+    },
+    {
+      "configuration": 740,
+      "tau": 4,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 119.25525919348001,
+      "job_id": "5944769"
+    },
+    {
+      "configuration": 740,
+      "tau": 4,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 607.277533300221,
+      "job_id": "5944769"
+    },
+    {
+      "configuration": 740,
+      "tau": 6,
+      "piter": 6,
+      "exit_code": 0,
+      "seconds": 103.45518968254328,
+      "job_id": "5944679"
+    },
+    {
+      "configuration": 740,
+      "tau": 6,
+      "piter": 8,
+      "exit_code": 0,
+      "seconds": 116.57862554304302,
+      "job_id": "5944679"
+    },
+    {
+      "configuration": 740,
+      "tau": 6,
+      "piter": 80,
+      "exit_code": 0,
+      "seconds": 605.471719969064,
+      "job_id": "5944679"
+    }
+  ],
+  "scope": "Complete offline replay of all 36 preserved stdout logs, case completion hashes, launch records, profile geometry, rank reductions, halo coordinates, direct samples, trace identities and collected primary tables. No gauge or saved-eigenvector files loaded."
+}

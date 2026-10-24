@@ -1,0 +1,25 @@
+{
+  "base_commit": "c0b91427dbb22e66b0ea8f632f0b46f098b350a8",
+  "purpose": "Matched raw and colour-traceless clover measurement; n100 tau4 pilot before ensemble extension",
+  "convention": {
+    "field_strength": "F=(Q-Q^dagger)/8 on the original unsmeared gauge field",
+    "plane_sum": "six unordered pairs mu<nu; no additional factor 1/2",
+    "S_RAW": "sum_mu<nu Tr(F^dagger F)",
+    "T_TRACE": "sum_mu<nu |Tr F|^2/3",
+    "S_TL": "S_RAW-T_TRACE; checked against explicitly projected matrices",
+    "estimator_RAW": "mean(LS_RE)/mean(L_RE)-mean(S_RAW)",
+    "estimator_TL": "(mean(LS_RE)-mean(LT_RE))/mean(L_RE)-(mean(S_RAW)-mean(T_TRACE))",
+    "averaging": "Equal raw configuration means before forming ensemble ratios; preserve matched covariance"
+  },
+  "parent_measurement_source": "laplace_static/validation/hyp_projection_configs_qx_200_230/test_profiles_qx.c",
+  "parent_source_sha256": "60a9e706e1ab6d7535bef675b702dad9298643b8599aa56cd14a4c1e4badd9de",
+  "files": {
+    "laplace_static/validation/qx_clover_trace/build.sh": "e2c2cf514510b78c88b7da7fb774716ade2a44aa0d118b936c9cfe31a8a75329",
+    "laplace_static/validation/qx_clover_trace/campaign.py": "9e33b0ac95c39ce8a2613a97557d40dfa11b9f8ec5f0e08bc65c24ca538e13b3",
+    "laplace_static/validation/qx_clover_trace/clover_trace.h": "357a0e2b6fc65d7891a5ba9e23afd979e122b572621b1058a35d2db6a55b3587",
+    "laplace_static/validation/qx_clover_trace/collect_n640.py": "00d074fec89ee65d73357bfd7d22383c7728d783ebf50a7340bc2c93339ba132",
+    "laplace_static/validation/qx_clover_trace/submit_micro.sh": "ae0332207842501ffe405bd0e2409727b4f6580d5d777fad9b6f13bd9adb36c5",
+    "laplace_static/validation/qx_clover_trace/test_profiles_trace_qx.c": "2f9766d584d4a9be066472d013205c7cc751fc5b870e36c49361fb2d1a779cd3",
+    "laplace_static/validation/qx_clover_trace/test_workflow.py": "025c3739acfb428b80c4d6026d70d4a728a3f27a4277546f4de5dcfc00caccd8"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "index": 1,
+  "configuration": 100,
+  "tau": 4,
+  "piters": [
+    6,
+    8,
+    80
+  ],
+  "prepared_sha256": "afed4b588b46902e9024d0e0f138e7764bac9d76835ef41cff88e1369c73deef",
+  "job_id": "5944709"
+}

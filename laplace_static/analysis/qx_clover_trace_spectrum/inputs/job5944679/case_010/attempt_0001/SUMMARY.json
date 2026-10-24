@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "index": 10,
+  "configuration": 740,
+  "tau": 4,
+  "piters": [
+    6,
+    8,
+    80
+  ],
+  "raw_records": 996,
+  "window_records": 3
+}
