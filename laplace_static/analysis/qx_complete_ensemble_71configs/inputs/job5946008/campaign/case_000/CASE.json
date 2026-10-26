@@ -1,0 +1,12 @@
+{
+  "index": 0,
+  "configuration": 640,
+  "tau": 2,
+  "piters": [
+    4,
+    10,
+    20,
+    40
+  ],
+  "prepared_sha256": "3e968a299de3cf223e324a217d65d56c3a2442a0a52a2c2c7d9e460836d14014"
+}

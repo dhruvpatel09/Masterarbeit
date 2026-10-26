@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "configuration": 640,
+  "cases": 3,
+  "piters": [
+    4,
+    10,
+    20,
+    40
+  ],
+  "taus": [
+    2,
+    4,
+    6
+  ],
+  "raw_records": 3984,
+  "window_records": 12,
+  "ensemble_71_recomputed": false,
+  "scope": "n640 extension only. Raw four-piter profiles and matched raw/traceless p4/p40 measurements complete the existing 70-configuration cohorts. Additional n640 traceless p10/p20 rows do not imply a matched 71-configuration traceless p10/p20 study."
+}

@@ -1,0 +1,1292 @@
+Archive member included to satisfy reference by file (symbol)
+
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+                              qcd_lanczos_trace.o (qcd_zeroSpinorComponent3d)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+                              test_n640.o (qcd_initGeometry)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o) (qcd_malloc)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+                              test_n640.o (qcd_apeSmear3d)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+                              test_n640.o (qcd_applyCovariantLaplaceSpinorComponent3d)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o) (qcd_communicateVectorPMGaugeP)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                              test_n640.o (qcd_getGaugeField)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o) (qcd_applyU)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+                              test_n640.o (qcd_calculatePlaquette)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o) (qcd_initRng)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o) (qcd_initDrand48)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o) (qcd_initRanlux)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o) (qcd_sub3x3)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o) (qcd_GAMMA)
+/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+                              /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o) (qcd_CMul)
+
+Merging program properties
+
+Removed property 0xc0000002 to merge /usr/lib/../lib64/crt1.o (not found) and /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o (0x3)
+Removed property 0xc0000002 to merge /usr/lib/../lib64/crt1.o (not found) and /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o (0x3)
+
+Discarded input sections
+
+ .note.gnu.property
+                0x0000000000000000       0x20 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/../lib64/crt1.o
+LOAD /usr/lib/../lib64/crti.o
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+LOAD test_n640.o
+LOAD qcd_lanczos_trace.o
+LOAD /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/intel-oneapi-mkl/2025.3.0-gcc-btudvjy/mkl/latest//lib/intel64/libmkl_rt.so
+LOAD /usr/lib/../lib64/libpthread.a
+LOAD /usr/lib/../lib64/libdl.a
+LOAD /usr/lib/../lib64/libz.so
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/intel-oneapi-mpi/2021.17.0-gcc-waow6ji/mpi/2021.17/lib/libmpicxx.so
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/intel-oneapi-mpi/2021.17.0-gcc-waow6ji/mpi/2021.17/lib/libmpifort.so
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/intel-oneapi-mpi/2021.17.0-gcc-waow6ji/mpi/2021.17/lib/libmpi.so
+LOAD /usr/lib/../lib64/librt.a
+LOAD /usr/lib/../lib64/libpthread.a
+LOAD /usr/lib/../lib64/libdl.a
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/../../../../lib64/libstdc++.so
+LOAD /usr/lib/../lib64/libm.so
+START GROUP
+LOAD /lib64/libm.so.6
+LOAD /lib64/libmvec.so.1
+END GROUP
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/../../../../lib64/libgcc_s.so
+START GROUP
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/../../../../lib64/libgcc_s.so.1
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/libgcc.a
+END GROUP
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/libgcc.a
+LOAD /usr/lib/../lib64/libc.so
+START GROUP
+LOAD /lib64/libc.so.6
+LOAD /usr/lib64/libc_nonshared.a
+LOAD /lib64/ld-linux-x86-64.so.2
+END GROUP
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/../../../../lib64/libgcc_s.so
+START GROUP
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/../../../../lib64/libgcc_s.so.1
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/libgcc.a
+END GROUP
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/libgcc.a
+LOAD /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+LOAD /usr/lib/../lib64/crtn.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x00000000004002a8                . = (SEGMENT_START ("text-segment", 0x400000) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.interp         0x00000000004002a8       0x1c
+ *(.interp)
+ .interp        0x00000000004002a8       0x1c /usr/lib/../lib64/crt1.o
+
+.hash           0x00000000004002c8      0x278
+ *(.hash)
+ .hash          0x00000000004002c8      0x278 /usr/lib/../lib64/crt1.o
+
+.gnu.hash       0x0000000000400540       0x3c
+ *(.gnu.hash)
+ .gnu.hash      0x0000000000400540       0x3c /usr/lib/../lib64/crt1.o
+
+.dynsym         0x0000000000400580      0x858
+ *(.dynsym)
+ .dynsym        0x0000000000400580      0x858 /usr/lib/../lib64/crt1.o
+
+.dynstr         0x0000000000400dd8      0x522
+ *(.dynstr)
+ .dynstr        0x0000000000400dd8      0x522 /usr/lib/../lib64/crt1.o
+
+.gnu.version    0x00000000004012fa       0xb2
+ *(.gnu.version)
+ .gnu.version   0x00000000004012fa       0xb2 /usr/lib/../lib64/crt1.o
+
+.gnu.version_d  0x00000000004013b0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000004013b0        0x0 /usr/lib/../lib64/crt1.o
+
+.gnu.version_r  0x00000000004013b0       0x90
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000004013b0       0x90 /usr/lib/../lib64/crt1.o
+
+.rela.dyn       0x0000000000401440       0x78
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x0000000000401440        0x0 /usr/lib/../lib64/crt1.o
+ .rela.text.startup
+                0x0000000000401440        0x0 /usr/lib/../lib64/crt1.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000401440        0x0 /usr/lib/../lib64/crt1.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000401440       0x30 /usr/lib/../lib64/crt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000401470       0x48 /usr/lib/../lib64/crt1.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x00000000004014b8      0x780
+ *(.rela.plt)
+ .rela.plt      0x00000000004014b8      0x780 /usr/lib/../lib64/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000401c38        0x0 /usr/lib/../lib64/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.init           0x0000000000401c38       0x17
+ *(SORT_NONE(.init))
+ .init          0x0000000000401c38       0x12 /usr/lib/../lib64/crti.o
+                0x0000000000401c38                _init
+ .init          0x0000000000401c4a        0x5 /usr/lib/../lib64/crtn.o
+
+.plt            0x0000000000401c50      0x510
+ *(.plt)
+ .plt           0x0000000000401c50      0x510 /usr/lib/../lib64/crt1.o
+                0x0000000000401c60                rewind@@GLIBC_2.2.5
+                0x0000000000401c70                MPI_File_write_all
+                0x0000000000401c80                open64@@GLIBC_2.2.5
+                0x0000000000401c90                MPI_Comm_rank
+                0x0000000000401ca0                MPI_Abort
+                0x0000000000401cb0                feof@@GLIBC_2.2.5
+                0x0000000000401cc0                __isoc99_sscanf@@GLIBC_2.7
+                0x0000000000401cd0                MPI_Type_create_subarray
+                0x0000000000401ce0                hypot@@GLIBC_2.35
+                0x0000000000401cf0                fmax@@GLIBC_2.2.5
+                0x0000000000401d00                log@@GLIBC_2.29
+                0x0000000000401d10                __isoc99_fscanf@@GLIBC_2.7
+                0x0000000000401d20                remove@@GLIBC_2.2.5
+                0x0000000000401d30                ftell@@GLIBC_2.2.5
+                0x0000000000401d40                atan2@@GLIBC_2.2.5
+                0x0000000000401d50                memset@@GLIBC_2.2.5
+                0x0000000000401d60                sin@@GLIBC_2.2.5
+                0x0000000000401d70                creat64@@GLIBC_2.2.5
+                0x0000000000401d80                strlen@@GLIBC_2.2.5
+                0x0000000000401d90                fclose@@GLIBC_2.2.5
+                0x0000000000401da0                strstr@@GLIBC_2.2.5
+                0x0000000000401db0                sqrt@@GLIBC_2.2.5
+                0x0000000000401dc0                fflush@@GLIBC_2.2.5
+                0x0000000000401dd0                MPI_Type_free
+                0x0000000000401de0                MPI_Comm_split
+                0x0000000000401df0                MPI_Allreduce
+                0x0000000000401e00                MPI_File_close
+                0x0000000000401e10                MPI_Recv
+                0x0000000000401e20                MPI_Type_contiguous
+                0x0000000000401e30                strtol@@GLIBC_2.2.5
+                0x0000000000401e40                sincos@@GLIBC_2.2.5
+                0x0000000000401e50                cos@@GLIBC_2.2.5
+                0x0000000000401e60                LAPACKE_dstemr
+                0x0000000000401e70                sprintf@@GLIBC_2.2.5
+                0x0000000000401e80                memcmp@@GLIBC_2.2.5
+                0x0000000000401e90                fwrite@@GLIBC_2.2.5
+                0x0000000000401ea0                MPI_File_read_at_all
+                0x0000000000401eb0                MPI_Comm_size
+                0x0000000000401ec0                fseek@@GLIBC_2.2.5
+                0x0000000000401ed0                MPI_Waitall
+                0x0000000000401ee0                LAPACKE_dsyevr
+                0x0000000000401ef0                cblas_zdotc_sub
+                0x0000000000401f00                printf@@GLIBC_2.2.5
+                0x0000000000401f10                MPI_Wtime
+                0x0000000000401f20                memcpy@@GLIBC_2.14
+                0x0000000000401f30                free@@GLIBC_2.2.5
+                0x0000000000401f40                fprintf@@GLIBC_2.2.5
+                0x0000000000401f50                close@@GLIBC_2.2.5
+                0x0000000000401f60                strncmp@@GLIBC_2.2.5
+                0x0000000000401f70                MPI_File_set_view
+                0x0000000000401f80                pow@@GLIBC_2.29
+                0x0000000000401f90                MPI_File_write
+                0x0000000000401fa0                MPI_Bcast
+                0x0000000000401fb0                strchr@@GLIBC_2.2.5
+                0x0000000000401fc0                fread@@GLIBC_2.2.5
+                0x0000000000401fd0                strspn@@GLIBC_2.2.5
+                0x0000000000401fe0                MPI_File_open
+                0x0000000000401ff0                MPI_Send
+                0x0000000000402000                acos@@GLIBC_2.2.5
+                0x0000000000402010                fgets@@GLIBC_2.2.5
+                0x0000000000402020                exit@@GLIBC_2.2.5
+                0x0000000000402030                MPI_Irecv
+                0x0000000000402040                read@@GLIBC_2.2.5
+                0x0000000000402050                strcspn@@GLIBC_2.2.5
+                0x0000000000402060                strcmp@@GLIBC_2.2.5
+                0x0000000000402070                MPI_Init_thread
+                0x0000000000402080                calloc@@GLIBC_2.2.5
+                0x0000000000402090                malloc@@GLIBC_2.2.5
+                0x00000000004020a0                MPI_Isend
+                0x00000000004020b0                write@@GLIBC_2.2.5
+                0x00000000004020c0                ldexp@@GLIBC_2.2.5
+                0x00000000004020d0                MPI_File_sync
+                0x00000000004020e0                puts@@GLIBC_2.2.5
+                0x00000000004020f0                fopen64@@GLIBC_2.2.5
+                0x0000000000402100                vfprintf@@GLIBC_2.2.5
+                0x0000000000402110                MPI_Type_vector
+                0x0000000000402120                MPI_File_read_all
+                0x0000000000402130                MPI_Finalize
+                0x0000000000402140                MPI_Barrier
+                0x0000000000402150                MPI_Type_commit
+ *(.iplt)
+ .iplt          0x0000000000402160        0x0 /usr/lib/../lib64/crt1.o
+
+.plt.got        0x0000000000402160        0x0
+ *(.plt.got)
+ .plt.got       0x0000000000402160        0x0 /usr/lib/../lib64/crt1.o
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000402180    0x74be7
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup  0x0000000000402180      0xae0 test_n640.o
+                0x0000000000402180                main
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000402c60       0x41 /usr/lib/../lib64/crt1.o
+                0x0000000000402c60                _start
+                0x0000000000402c9e                _dl_relocate_static_pie
+ .text          0x0000000000402ca1        0x0 /usr/lib/../lib64/crti.o
+ *fill*         0x0000000000402ca1        0xf 
+ .text          0x0000000000402cb0       0xa6 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+ *fill*         0x0000000000402d56        0xa 
+ .text          0x0000000000402d60      0x59e test_n640.o
+ *fill*         0x00000000004032fe        0x2 
+ .text          0x0000000000403300     0x3013 qcd_lanczos_trace.o
+                0x0000000000403300                setThickness
+                0x0000000000403350                calculateAlpha
+                0x0000000000403370                calculateBeta
+                0x0000000000403390                scalar_Chebyshev_N
+                0x00000000004033f0                calculateGamma
+                0x0000000000403460                setPol
+                0x00000000004034f0                loopChebyshev
+                0x00000000004036e0                calculateRitzVecs
+                0x00000000004038d0                needOrtho
+                0x0000000000403900                useDSTEMR
+                0x0000000000403a30                useDSYEVR
+                0x0000000000403af0                qcd_fsign
+                0x0000000000403b10                qcd_printLanczosStatus
+                0x0000000000403ba0                qcd_bubblesort
+                0x0000000000403c80                qcd_givens
+                0x0000000000403fc0                qcd_implicitSymmetricQRStepWithShift
+                0x0000000000403fe0                qcd_symmetricQR
+                0x0000000000404420                qcd_defaultLanczosParams
+                0x0000000000404460                qcd_lanczosCheby
+                0x00000000004059b0                qcd_lanczosReortho
+ *fill*         0x0000000000406313       0x2d 
+ .text          0x0000000000406340     0xc256 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+                0x0000000000406340                qcd_zeroVector
+                0x0000000000406377                qcd_unitVector
+                0x000000000040645f                qcd_zeroVector3d
+                0x0000000000406496                qcd_zeroSpinorComponent3d
+                0x00000000004064cd                qcd_zeroPropagator
+                0x0000000000406504                qcd_zeroGaugeField
+                0x000000000040653b                qcd_unitGaugeField
+                0x00000000004065ca                qcd_setVector
+                0x0000000000406644                qcd_setVector3d
+                0x00000000004066be                qcd_setSpinorComponent3d
+                0x0000000000406723                qcd_copyVector
+                0x000000000040678d                qcd_copyVector3d
+                0x00000000004067f7                qcd_copySpinorComponent3d
+                0x0000000000406861                qcd_copyGaugeField
+                0x00000000004068cb                qcd_copyVectorPropagator
+                0x00000000004069fd                qcd_copyPropagatorVector
+                0x0000000000406b49                qcd_copyVectorPropagator2
+                0x0000000000406c93                qcd_copyPropagatorVector2
+                0x0000000000406def                qcd_copyVector3dVector
+                0x00000000004075e3                qcd_copyVectorVector3d
+                0x000000000040774f                qcd_copySpinorComponent3dVector
+                0x0000000000407c59                qcd_copyVectorSpinorComponent3d
+                0x0000000000407d45                qcd_copyGaugeField3dGaugeField
+                0x00000000004082ac                qcd_copyGaugeFieldGaugeField3d
+                0x000000000040839b                qcd_copyGaugeFieldGaugeFieldO
+                0x0000000000408634                qcd_copyGaugeFieldOGaugeField
+                0x000000000040897b                qcd_copyCloverField
+                0x00000000004089ed                qcd_mulVectorC
+                0x0000000000408a80                qcd_mulVector3dC
+                0x0000000000408b40                qcd_mulSpinorComponent3dC
+                0x0000000000408c00                qcd_mulPropagatorC
+                0x0000000000408cc0                qcd_mulSliceOfPropagatorC
+                0x00000000004093eb                qcd_scaleVector
+                0x0000000000409456                qcd_scaleVector3d
+                0x00000000004094b6                qcd_scaleSpinorComponent3d
+                0x0000000000409516                qcd_scaleSliceOfVector
+                0x0000000000409af3                qcd_mulSliceOfVectorC
+                0x000000000040a25b                qcd_scaleGaugeField
+                0x000000000040a2d6                qcd_subVector
+                0x000000000040a359                qcd_subPropagator
+                0x000000000040a3d9                qcd_subVector3d
+                0x000000000040a459                qcd_subSpinorComponent3d
+                0x000000000040a4d9                qcd_subGaugeField
+                0x000000000040a559                qcd_subCloverField
+                0x000000000040a5d9                qcd_addVector
+                0x000000000040a659                qcd_addVector3d
+                0x000000000040a6d9                qcd_addSpinorComponent3d
+                0x000000000040a759                qcd_addSliceOfVector
+                0x000000000040b03f                qcd_addGaugeField
+                0x000000000040b0b9                qcd_axpyVector
+                0x000000000040b175                qcd_axpyVector3d
+                0x000000000040b231                qcd_axpySpinorComponent3d
+                0x000000000040b2ec                qcd_raxpyVector3d
+                0x000000000040b37d                qcd_raxpySpinorComponent3d
+                0x000000000040b3fd                qcd_mulAdjointVectorVector
+                0x000000000040b483                qcd_mulAdjointVector3dVector3d
+                0x000000000040b554                qcd_mulAdjointSpinorComponent3dSpinorComponent3d
+                0x000000000040b621                qcd_mulAdjointSpinorComponent3dSpinorComponent3dR
+                0x000000000040b6e2                qcd_normVector
+                0x000000000040b77f                qcd_normPropagator
+                0x000000000040b81f                qcd_normVector3d
+                0x000000000040b8c0                qcd_normSpinorComponent3d
+                0x000000000040b960                qcd_normGaugeField
+                0x000000000040ba08                qcd_normGaugeFieldO
+                0x000000000040bab6                qcd_normCloverField
+                0x000000000040bb62                qcd_conjPropagator
+                0x000000000040bbda                qcd_projectSU3
+                0x000000000040f081                qcd_projectSU33d
+                0x0000000000412515                qcd_projectSU3GaugeTransformation
+ *fill*         0x0000000000412596       0x2a 
+ .text          0x00000000004125c0     0x4670 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+                0x00000000004125c0                qcd_antilexic
+                0x0000000000412629                qcd_initGeometry
+                0x0000000000414c42                qcd_keepBndUp2Date
+                0x0000000000414c84                qcd_destroyGeometry
+                0x0000000000414de0                qcd_initEO
+                0x00000000004155c6                qcd_destroyEO
+                0x0000000000415671                qcd_initVector
+                0x000000000041583c                qcd_destroyVector
+                0x0000000000415874                qcd_initVector3d
+                0x0000000000415a13                qcd_destroyVector3d
+                0x0000000000415a4b                qcd_initSpinorComponent3d
+                0x0000000000415bea                qcd_destroySpinorComponent3d
+                0x0000000000415c22                qcd_initPropagator
+                0x0000000000415e2c                qcd_destroyPropagator
+                0x0000000000415e64                qcd_initGaugeField
+                0x000000000041606e                qcd_destroyGaugeField
+                0x00000000004160a6                qcd_initGaugeFieldO
+                0x00000000004162d9                qcd_destroyGaugeFieldO
+                0x0000000000416311                qcd_initGaugeField3d
+                0x00000000004164b0                qcd_destroyGaugeField3d
+                0x00000000004164e8                qcd_initLoops3d
+                0x0000000000416687                qcd_destroyLoops3d
+                0x00000000004166bf                qcd_initCloverField
+                0x00000000004168f2                qcd_destroyCloverField
+                0x000000000041692a                qcd_initGaugeTransformation
+                0x0000000000416b34                qcd_destroyGaugeTransformation
+                0x0000000000416b6c                qcd_initCloverDiagonal
+                0x0000000000416bf8                qcd_destroyCloverDiagonal
+ *fill*         0x0000000000416c30       0x10 
+ .text          0x0000000000416c40     0x1ae6 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+                0x0000000000416eef                qcd_isBigEndian
+                0x0000000000416ef5                qcd_malloc
+                0x0000000000416f8f                qcd_free
+                0x0000000000417003                qcd_swap8
+                0x0000000000417080                qcd_swap4
+                0x00000000004170e4                qcd_swapInt4
+                0x0000000000417124                qcd_getParam
+                0x0000000000417196                qcd_findOpt
+                0x0000000000417205                qcd_isDirWritable
+                0x00000000004172e6                qcd_nameSize
+                0x0000000000417550                qcd_findOpenQCDSection
+                0x000000000041773b                qcd_readOpenQCDLine
+                0x0000000000417a80                qcd_readOpenQCDLineOpt
+                0x0000000000417fdb                qcd_countOpenQCDtokens
+                0x00000000004180b4                qcd_readOpenQCDIprms
+                0x000000000041821c                qcd_readOpenQCDDprms
+                0x0000000000418385                qcd_copyFile
+                0x00000000004184d4                qcd_printMemInfo
+                0x00000000004184d5                qcd_errorRoot
+                0x00000000004185e5                qcd_error
+ *fill*         0x0000000000418726       0x1a 
+ .text          0x0000000000418740     0xa235 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+                0x0000000000418740                qcd_gaussIteration3d
+                0x000000000041c68d                qcd_gaussIteration3dAll
+                0x0000000000420514                qcd_apeSmear3d
+ *fill*         0x0000000000422975        0xb 
+ .text          0x0000000000422980     0x7ba8 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+                0x0000000000422980                qcd_DVector3d
+                0x0000000000422d0c                qcd_DBackVector3d
+                0x00000000004230d0                qcd_DSpinorComponent3d
+                0x00000000004238ee                qcd_DBackSpinorComponent3d
+                0x0000000000424158                qcd_DSymSpinorComponent3d
+                0x0000000000425285                qcd_applyCovariantLaplaceVector3d
+                0x0000000000429089                qcd_applyCovariantLaplaceSpinorComponent3d
+ *fill*         0x000000000042a528       0x18 
+ .text          0x000000000042a540     0x3199 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+                0x000000000042a540                qcd_communicateVectorPMGaugeP
+                0x000000000042a7b6                qcd_communicateVectorPGaugeP
+                0x000000000042a997                qcd_communicateVectorPM
+                0x000000000042ab73                qcd_communicateVectorM
+                0x000000000042ac8f                qcd_communicateVectorP
+                0x000000000042adae                qcd_communicateGaugeM
+                0x000000000042aecf                qcd_communicateGaugeP
+                0x000000000042afee                qcd_communicateGaugePInverse
+                0x000000000042b0f9                qcd_communicateGaugePM
+                0x000000000042b2d3                qcd_communicateCloverPM
+                0x000000000042b4bb                qcd_communicateCloverP
+                0x000000000042b5f2                qcd_communicateCloverM
+                0x000000000042b713                qcd_communicateTransformationM
+                0x000000000042b82f                qcd_communicatePropagatorP
+                0x000000000042b94e                qcd_communicatePropagatorPM
+                0x000000000042bb13                qcd_communicateVector3dPM
+                0x000000000042bcd0                qcd_communicateVector3dM
+                0x000000000042bddc                qcd_communicateVector3dP
+                0x000000000042beed                qcd_communicateSpinorComponent3dPM
+                0x000000000042c0aa                qcd_communicateSpinorComponent3dM
+                0x000000000042c1b6                qcd_communicateSpinorComponent3dP
+                0x000000000042c2c7                qcd_communicateLoops3dPM
+                0x000000000042c484                qcd_communicateLoops3dM
+                0x000000000042c590                qcd_communicateLoops3dP
+                0x000000000042c6a1                qcd_communicateLoops3dPMGauge3dP
+                0x000000000042c917                qcd_communicateGauge3dM
+                0x000000000042ca23                qcd_communicateGauge3dP
+                0x000000000042cb2f                qcd_communicateVector3dPMGauge3dP
+                0x000000000042cda5                qcd_communicateVector3dPGauge3dP
+                0x000000000042cf68                qcd_communicateSpinorComponent3dPGauge3dP
+                0x000000000042d12b                qcd_communicateSpinorComponent3dPMGauge3dP
+                0x000000000042d3a1                qcd_communicateGaugeOM
+                0x000000000042d6ac                qcd_waitall
+ *fill*         0x000000000042d6d9       0x27 
+ .text          0x000000000042d700     0x6624 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                0x000000000042d700                qcd_readFile
+                0x000000000042d7f4                qcd_GFformatID
+                0x000000000042d85b                qcd_getLimeMessage
+                0x000000000042d861                qcd_getGaugeLime
+                0x000000000042d8b9                qcd_getGaugeOpenQCD
+                0x000000000042df2a                qcd_getGaugeOpenQCDSeq
+                0x000000000042efe2                qcd_getGaugeSFMPHMC
+                0x000000000042f224                qcd_getGaugeField
+                0x000000000042f2ce                qcd_writeGaugeLime
+                0x000000000042f326                qcd_writeGaugeOpenQCD
+                0x000000000042f945                qcd_writeGaugeSFMPHMC
+                0x000000000042fbb3                qcd_writeGaugeField
+                0x000000000042fc82                qcd_getPropagatorCMI
+                0x0000000000430246                qcd_getPropagatorHMC
+                0x00000000004307d7                qcd_getPropagatorLime
+                0x000000000043082f                qcd_getPropagator
+                0x00000000004308ad                qcd_getVectorCMI
+                0x0000000000430ccd                qcd_getVectorHMC
+                0x00000000004311cd                qcd_getVectorHMCV
+                0x00000000004316b8                qcd_getVectorLime
+                0x0000000000431710                qcd_getVectorOpenQCD
+                0x0000000000431b75                qcd_getVectorSFMPHMC
+                0x0000000000431dc4                qcd_getVector
+                0x0000000000431e8a                qcd_writePropagatorCMI
+                0x0000000000432446                qcd_writePropagatorHMCV
+                0x0000000000432ab3                qcd_writePropagator
+                0x0000000000432b20                qcd_writeVectorCMI
+                0x0000000000432f31                qcd_writeVectorLime
+                0x0000000000432f89                qcd_writeVectorOpenQCD
+                0x00000000004332fd                qcd_writeVectorSFMPHMC
+                0x000000000043356e                qcd_writeVector
+                0x0000000000433629                qcd_getSpinorComponents3d
+                0x00000000004339bf                qcd_writeSpinorComponents3d
+ *fill*         0x0000000000433d24       0x1c 
+ .text          0x0000000000433d40    0x2a65f /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+                0x0000000000433d40                qcd_onePlusGamma
+                0x0000000000433dfb                qcd_oneMinusGamma
+                0x0000000000433eb6                qcd_applyU
+                0x0000000000433f5c                qcd_applyAdjointU
+                0x0000000000434013                qcd_massTerms
+                0x0000000000434112                qcd_phaseMul
+                0x0000000000434166                qcd_phaseMul3
+                0x00000000004341a9                qcd_DVector
+                0x00000000004346c0                qcd_DBackVector
+                0x0000000000434baf                qcd_applyWilsonTMOp
+                0x0000000000440452                qcd_applyWilsonTMOpNoScripts
+                0x00000000004413f4                qcd_applyWilsonTMOpNoOptim
+                0x00000000004519b6                qcd_makeCloverDiagonal
+                0x0000000000452038                qcd_applyWilsonTMCloverOp
+                0x000000000045deb1                qcd_isSFVector
+                0x000000000045e181                qcd_forceSFVector
+ *fill*         0x000000000045e39f        0x1 
+ .text          0x000000000045e3a0     0xe572 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+                0x000000000045e3a0                qcd_calculatePlaquette
+                0x000000000045f864                qcd_calculateCloverField
+                0x000000000046923c                qcd_calculateWeightedPlaquette
+                0x000000000046baa6                qcd_isSFGaugeField
+                0x000000000046bf11                qcd_getSFBoundaries
+                0x000000000046c3dc                qcd_hasSFAngles
+                0x000000000046c85e                qcd_isOpenGaugeField
+ *fill*         0x000000000046c912       0x2e 
+ .text          0x000000000046c940      0xaf8 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                0x000000000046c940                qcd_getNoiseName
+                0x000000000046c956                qcd_initRng
+                0x000000000046c9f2                qcd_randGauss
+                0x000000000046cb42                qcd_randZ2
+                0x000000000046cbb1                qcd_randZ4
+                0x000000000046ccc5                qcd_randU1
+                0x000000000046cd83                qcd_getRngState
+                0x000000000046ced0                qcd_setRngState
+                0x000000000046cf79                qcd_freeRngState
+                0x000000000046cf94                qcd_randomVector
+                0x000000000046d19b                qcd_randomVector3d
+                0x000000000046d39b                qcd_randomGaugeField
+                0x000000000046d3ea                qcd_randomGaugeTransformation
+ *fill*         0x000000000046d438        0x8 
+ .text          0x000000000046d440      0x287 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+                0x000000000046d440                qcd_initDrand48
+                0x000000000046d4cd                qcd_randDrand48
+                0x000000000046d595                qcd_getRngTypeDrand48
+                0x000000000046d5a2                qcd_getRngStateArrayDrand48
+                0x000000000046d626                qcd_setRngStateArrayDrand48
+ *fill*         0x000000000046d6c7       0x19 
+ .text          0x000000000046d6e0      0xa04 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+                0x000000000046da68                qcd_initRanlux
+                0x000000000046db3d                qcd_randRanlux
+                0x000000000046dcdb                qcd_getRngTypeRanlux
+                0x000000000046dce8                qcd_getRngStateArrayRanlux
+                0x000000000046de6a                qcd_setRngStateArrayRanlux
+ .text          0x000000000046e0e4     0x428f /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+                0x000000000046e0e4                qcd_zero3x3
+                0x000000000046e118                qcd_unit3x3
+                0x000000000046e167                qcd_minusUnit3x3
+                0x000000000046e1b6                qcd_sub3x3
+                0x000000000046e20a                qcd_add3x3
+                0x000000000046e25e                qcd_addAdjoint3x3
+                0x000000000046e2b3                qcd_mul3x3
+                0x000000000046e384                qcd_mulAdjoint3x3
+                0x000000000046e457                qcd_adjointMul3x3
+                0x000000000046e530                qcd_adjointMulAdjoint3x3
+                0x000000000046e600                qcd_scale3x3
+                0x000000000046e63c                qcd_cScale3x3
+                0x000000000046e690                qcd_trace3x3
+                0x000000000046e6ca                qcd_copy3x3
+                0x000000000046e720                qcd_adjoint3x3
+                0x000000000046e7da                qcd_norm3x3
+                0x000000000046e8f1                qcd_det3x3
+                0x000000000046ead7                qcd_inv3x3
+                0x000000000046f01f                qcd_projectSU33x3
+ .text          0x0000000000472373     0x467a /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+                0x0000000000472373                qcd_gamma0Vector
+                0x0000000000472793                qcd_gamma1Vector
+                0x0000000000472b20                qcd_gamma2Vector
+                0x0000000000472ead                qcd_gamma3Vector
+                0x000000000047323d                qcd_gamma5Vector
+                0x0000000000473490                qcd_gamma0gamma1Vector
+                0x0000000000473820                qcd_gamma0gamma2Vector
+                0x0000000000473bb0                qcd_gamma0gamma3Vector
+                0x0000000000473f40                qcd_gamma0gamma5Vector
+                0x00000000004742d0                qcd_gamma1gamma2Vector
+                0x0000000000474660                qcd_gamma1gamma3Vector
+                0x00000000004749f0                qcd_gamma1gamma5Vector
+                0x0000000000474d85                qcd_gamma2gamma3Vector
+                0x0000000000475115                qcd_gamma2gamma5Vector
+                0x00000000004754a2                qcd_gamma3gamma5Vector
+                0x0000000000475832                qcd_gamma5Propagator
+                0x0000000000475be9                qcd_propagatorGamma5
+                0x0000000000475fc0                qcd_gamma5PropagatorGamma5
+ .text          0x00000000004769ed      0x37a /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+                0x00000000004769ed                qcd_CConj
+                0x00000000004769f6                qcd_CMul
+                0x0000000000476a2d                qcd_CMulR
+                0x0000000000476a3a                qcd_CMulI
+                0x0000000000476a47                qcd_CConjMul
+                0x0000000000476a7e                qcd_CAdd
+                0x0000000000476a9d                qcd_CAddR
+                0x0000000000476aa2                qcd_CAddI
+                0x0000000000476aab                qcd_CSub
+                0x0000000000476aca                qcd_CSubR
+                0x0000000000476acf                qcd_CSubI
+                0x0000000000476ad8                qcd_CScale
+                0x0000000000476af7                qcd_CScaleR
+                0x0000000000476afc                qcd_CScaleI
+                0x0000000000476b05                qcd_CDiv
+                0x0000000000476b58                qcd_CDivR
+                0x0000000000476b75                qcd_CDivI
+                0x0000000000476b96                qcd_CNorm
+                0x0000000000476ba7                qcd_CNormSquared
+                0x0000000000476bb4                qcd_CArg
+                0x0000000000476bce                qcd_CPow
+                0x0000000000476c9b                qcd_CPowR
+                0x0000000000476d01                qcd_CPowI
+ .text          0x0000000000476d67        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+ .text          0x0000000000476d67        0x0 /usr/lib/../lib64/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000000000476d68        0x9
+ *(SORT_NONE(.fini))
+ .fini          0x0000000000476d68        0x4 /usr/lib/../lib64/crti.o
+                0x0000000000476d68                _fini
+ .fini          0x0000000000476d6c        0x5 /usr/lib/../lib64/crtn.o
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000476d80     0x8d70
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x0000000000476d80       0x10 /usr/lib/../lib64/crt1.o
+                                          0x4 (size before relaxing)
+                0x0000000000476d80                _IO_stdin_used
+ .rodata.str1.1
+                0x0000000000476d90      0x274 test_n640.o
+                                         0xb5 (size before relaxing)
+ *fill*         0x0000000000477004        0x4 
+ .rodata.str1.8
+                0x0000000000477008     0x539c test_n640.o
+                                        0x46d (size before relaxing)
+ *fill*         0x000000000047c3a4        0xc 
+ .rodata.cst16  0x000000000047c3b0       0xe0 test_n640.o
+                                         0xa0 (size before relaxing)
+ .rodata.cst8   0x000000000047c490      0x128 test_n640.o
+                                         0x30 (size before relaxing)
+ .rodata.str1.1
+                0x000000000047c5b8        0x0 qcd_lanczos_trace.o
+                                         0x70 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c5b8        0x0 qcd_lanczos_trace.o
+                                        0x3aa (size before relaxing)
+ .rodata.cst8   0x000000000047c5b8        0x0 qcd_lanczos_trace.o
+                                         0x50 (size before relaxing)
+ .rodata.cst16  0x000000000047c5b8        0x0 qcd_lanczos_trace.o
+                                         0x60 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c5b8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+                                        0x12b (size before relaxing)
+ *fill*         0x000000000047c5b8        0x8 
+ .rodata        0x000000000047c5c0       0x1e /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+ .rodata.cst8   0x000000000047c5de        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+                                         0x70 (size before relaxing)
+ .rodata.cst16  0x000000000047c5de        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+                                         0x10 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c5de        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+                                        0xa4d (size before relaxing)
+ *fill*         0x000000000047c5de        0x2 
+ .rodata        0x000000000047c5e0       0x91 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+ .rodata.str1.1
+                0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+                                         0x68 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+                                        0x6cd (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+                                        0x122 (size before relaxing)
+ .rodata.cst8   0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+                                         0x10 (size before relaxing)
+ .rodata.cst16  0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+                                         0x10 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+                                        0x832 (size before relaxing)
+ .rodata.cst16  0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+                                         0x10 (size before relaxing)
+ .rodata.cst8   0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+                                         0x18 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c671        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+                                        0xa72 (size before relaxing)
+ *fill*         0x000000000047c671        0xf 
+ .rodata        0x000000000047c680       0x58 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+ .rodata.str1.1
+                0x000000000047c6d8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                                         0x73 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c6d8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                                       0x1aee (size before relaxing)
+ *fill*         0x000000000047c6d8        0x8 
+ .rodata        0x000000000047c6e0      0x146 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+ .rodata.cst8   0x000000000047c826        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                                         0x10 (size before relaxing)
+ .rodata.cst16  0x000000000047c826        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                                         0x10 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c826        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+                                        0x49a (size before relaxing)
+ *fill*         0x000000000047c826        0xa 
+ .rodata        0x000000000047c830       0x57 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+ .rodata.cst16  0x000000000047c887        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+                                         0x10 (size before relaxing)
+ .rodata.cst8   0x000000000047c887        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+                                         0x20 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c887        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+                                        0x22b (size before relaxing)
+ *fill*         0x000000000047c887        0x9 
+ .rodata        0x000000000047c890       0x19 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+ .rodata.cst16  0x000000000047c8a9        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+                                         0x20 (size before relaxing)
+ .rodata.cst8   0x000000000047c8a9        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+                                         0x20 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c8a9        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                                        0x247 (size before relaxing)
+ *fill*         0x000000000047c8a9       0x17 
+ .rodata        0x000000000047c8c0       0x88 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+ .rodata.str1.1
+                0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                                         0x19 (size before relaxing)
+ .rodata.cst8   0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                                         0x38 (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+                                         0x45 (size before relaxing)
+ .rodata.cst8   0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+                                          0x8 (size before relaxing)
+ .rodata.str1.1
+                0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+                                         0x6a (size before relaxing)
+ .rodata.str1.8
+                0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+                                         0xfc (size before relaxing)
+ .rodata.cst4   0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+                                          0xc (size before relaxing)
+ .rodata.cst8   0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+                                         0x78 (size before relaxing)
+ .rodata.cst16  0x000000000047c948        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+                                         0x10 (size before relaxing)
+ *fill*         0x000000000047c948       0x18 
+ .rodata        0x000000000047c960     0x3190 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+                0x000000000047c960                qcd_EPS
+                0x000000000047c9b0                qcd_SGN_EPS
+                0x000000000047c9e0                qcd_ONE
+                0x000000000047cae0                qcd_GAMMA
+                0x000000000047d2e0                qcd_CGAMMA
+                0x000000000047d8e0                qcd_BAR_CGAMMA
+                0x000000000047dee0                qcd_G5GAMMA
+                0x000000000047e6e0                qcd_BAR_G5GAMMA
+                0x000000000047eee0                qcd_ONE_PLUS_GAMMA
+                0x000000000047f4e0                qcd_ONE_MINUS_GAMMA
+ .rodata.cst16  0x000000000047faf0        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+                                         0x10 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000047faf0      0xa74
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000047faf0      0xa74 /usr/lib/../lib64/crt1.o
+                0x000000000047faf0                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000480568     0x3e90
+ *(.eh_frame)
+ .eh_frame      0x0000000000480568       0x58 /usr/lib/../lib64/crt1.o
+                                         0x5c (size before relaxing)
+ *fill*         0x00000000004805c0        0x0 
+ .eh_frame      0x00000000004805c0       0x28 /usr/lib/../lib64/crt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000004805e8        0x0 /usr/lib/../lib64/crt1.o
+ .eh_frame      0x00000000004805e8      0x120 test_n640.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x0000000000480708      0x470 qcd_lanczos_trace.o
+                                        0x488 (size before relaxing)
+ .eh_frame      0x0000000000480b78      0x8e0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+                                        0x8f8 (size before relaxing)
+ .eh_frame      0x0000000000481458      0x580 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+                                        0x598 (size before relaxing)
+ .eh_frame      0x00000000004819d8      0x4a8 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+                                        0x4c0 (size before relaxing)
+ .eh_frame      0x0000000000481e80       0xe8 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+                                        0x100 (size before relaxing)
+ .eh_frame      0x0000000000481f68      0x218 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+                                        0x230 (size before relaxing)
+ .eh_frame      0x0000000000482180      0x9d0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+                                        0x9e8 (size before relaxing)
+ .eh_frame      0x0000000000482b50      0x910 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                                        0x928 (size before relaxing)
+ .eh_frame      0x0000000000483460      0x358 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+                                        0x370 (size before relaxing)
+ .eh_frame      0x00000000004837b8      0x200 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+                                        0x218 (size before relaxing)
+ .eh_frame      0x00000000004839b8      0x238 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                                        0x250 (size before relaxing)
+ .eh_frame      0x0000000000483bf0       0x90 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x0000000000483c80      0x140 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+                                        0x158 (size before relaxing)
+ .eh_frame      0x0000000000483dc0      0x210 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+                                        0x228 (size before relaxing)
+ .eh_frame      0x0000000000483fd0      0x240 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+                                        0x258 (size before relaxing)
+ .eh_frame      0x0000000000484210      0x1e4 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+                                        0x200 (size before relaxing)
+ .eh_frame      0x00000000004843f4        0x4 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+ *(.eh_frame.*)
+
+.sframe         0x00000000004843f8        0x0
+ *(.sframe)
+ .sframe        0x00000000004843f8        0x0 /usr/lib/../lib64/crt1.o
+ .sframe        0x00000000004843f8        0x0 /usr/lib/../lib64/crt1.o
+ *(.sframe.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.note.build-id
+ *(.note.build-id)
+
+.note.GNU-stack
+                0x00000000004843f8        0x0
+ *(.note.GNU-stack)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /usr/lib/../lib64/crt1.o
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /usr/lib/../lib64/crti.o
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+ .note.GNU-stack
+                0x00000000004843f8        0x0 test_n640.o
+ .note.GNU-stack
+                0x00000000004843f8        0x0 qcd_lanczos_trace.o
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+ .note.GNU-stack
+                0x00000000004843f8        0x0 /usr/lib/../lib64/crtn.o
+
+.note.gnu-property
+ *(.note.gnu-property)
+
+.note.gnu.property
+                0x00000000004843f8       0x20
+ .note.gnu.property
+                0x00000000004843f8       0x20 /usr/lib/../lib64/crt1.o
+
+.note.ABI-tag   0x0000000000484418       0x20
+ *(.note.ABI-tag)
+ .note.ABI-tag  0x0000000000484418       0x20 /usr/lib/../lib64/crt1.o
+
+.note.package
+ *(.note.package)
+
+.note.dlopen
+ *(.note.dlopen)
+
+.note.netbsd.ident
+ *(.note.netbsd.ident)
+
+.note.openbsd.ident
+ *(.note.openbsd.ident)
+                0x0000000000485ab8                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.sframe
+ *(.sframe)
+ *(.sframe.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000485ab8        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000485ab8        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000485ab8        0x8
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000485ab8        0x8 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000485ac0        0x8
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000485ac0        0x8 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000485ac8        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000485ac8        0x0 /usr/lib/../lib64/crt1.o
+
+.dynamic        0x0000000000485ac8      0x290
+ *(.dynamic)
+ .dynamic       0x0000000000485ac8      0x290 /usr/lib/../lib64/crt1.o
+                0x0000000000485ac8                _DYNAMIC
+
+.got            0x0000000000485d58      0x2a8
+ *(.got.plt)
+ .got.plt       0x0000000000485d58      0x298 /usr/lib/../lib64/crt1.o
+                0x0000000000485d58                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000485ff0        0x0 /usr/lib/../lib64/crt1.o
+ *(.got)
+ .got           0x0000000000485ff0       0x10 /usr/lib/../lib64/crt1.o
+ *(.igot)
+                0x0000000000486000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000000486000       0x10
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000486000        0x4 /usr/lib/../lib64/crt1.o
+                0x0000000000486000                data_start
+                0x0000000000486000                __data_start
+ .data          0x0000000000486004        0x0 /usr/lib/../lib64/crti.o
+ *fill*         0x0000000000486004        0x4 
+ .data          0x0000000000486008        0x8 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+                0x0000000000486008                __dso_handle
+ .data          0x0000000000486010        0x0 test_n640.o
+ .data          0x0000000000486010        0x0 qcd_lanczos_trace.o
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+ .data          0x0000000000486010        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+ .data          0x0000000000486010        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+ .data          0x0000000000486010        0x0 /usr/lib/../lib64/crtn.o
+
+__patchable_function_entries
+                0x0000000000486010        0x8
+ __patchable_function_entries
+                0x0000000000486010        0x8 /usr/lib/../lib64/crt1.o
+
+.tm_clone_table
+                0x0000000000486018        0x0
+ .tm_clone_table
+                0x0000000000486018        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+ .tm_clone_table
+                0x0000000000486018        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+
+.data1
+ *(.data1)
+                0x0000000000486018                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000486018                . = ALIGN (ALIGNOF (NEXT_SECTION))
+                0x0000000000486020                __bss_start = .
+
+.bss            0x0000000000486020      0x500
+ *(.dynbss)
+ .dynbss        0x0000000000486020       0x38 /usr/lib/../lib64/crt1.o
+                0x0000000000486020                stdout@@GLIBC_2.2.5
+                0x0000000000486040                stderr@@GLIBC_2.2.5
+                0x0000000000486050                stdin@@GLIBC_2.2.5
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000486058        0x0 /usr/lib/../lib64/crt1.o
+ .bss           0x0000000000486058        0x0 /usr/lib/../lib64/crti.o
+ .bss           0x0000000000486058        0x1 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+ *fill*         0x0000000000486059        0x3 
+ .bss           0x000000000048605c        0x4 test_n640.o
+ .bss           0x0000000000486060        0x0 qcd_lanczos_trace.o
+ .bss           0x0000000000486060        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+ .bss           0x0000000000486060        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+ *fill*         0x0000000000486060        0x0 
+ .bss           0x0000000000486060      0x121 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+ .bss           0x0000000000486181        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+ .bss           0x0000000000486181        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+ *fill*         0x0000000000486181        0x7 
+ .bss           0x0000000000486188        0x8 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+ .bss           0x0000000000486190        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+ .bss           0x0000000000486190        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+ .bss           0x0000000000486190        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+ .bss           0x0000000000486190       0x20 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                0x0000000000486190                qcd_getRngType
+                0x0000000000486198                qcd_setRngStateArray
+                0x00000000004861a0                qcd_getRngStateArray
+                0x00000000004861a8                qcd_rand
+ .bss           0x00000000004861b0        0x8 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+ *fill*         0x00000000004861b8        0x8 
+ .bss           0x00000000004861c0      0x35c /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+ .bss           0x000000000048651c        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+ .bss           0x000000000048651c        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+ .bss           0x000000000048651c        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+ .bss           0x000000000048651c        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+ .bss           0x000000000048651c        0x0 /usr/lib/../lib64/crtn.o
+ *(COMMON)
+                0x0000000000486520                . = ALIGN ((. != 0x0)?0x8:0x1)
+ *fill*         0x000000000048651c        0x4 
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000486520                . = ALIGN (0x8)
+                0x0000000000486520                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000488520        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000488520                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000488520                . = ALIGN (0x8)
+                0x0000000000486520                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000488520                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x6e
+ *(.comment)
+ .comment       0x0000000000000000       0x6e /usr/lib/../lib64/crt1.o
+                                        0x105 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtbegin.o
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 test_n640.o
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 qcd_lanczos_trace.o
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_blas.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_init.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_utils.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_smearing.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_operators3d.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_communication.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_io.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_wilson.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_observables.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_random.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngDrand48.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_rngRanlux.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_3x3Ops.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_gamma.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /hppfs/work/pn29se/di24gus/Masterarbeit/qcd/lib/libqcd.a(qcd_COps.o)
+                                         0x19 (size before relaxing)
+ .comment       0x000000000000006e        0x0 /dss/lrzsys/sys/spack/release/sles15.7/24.6.0/opt/x86_64/gcc/14.3.0-gcc-umb73gu/lib/gcc/x86_64-pc-linux-gnu/14.3.0/crtend.o
+                                         0x19 (size before relaxing)
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x120
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0xa0 /usr/lib/../lib64/crt1.o
+ .debug_aranges
+                0x00000000000000a0       0x40 /usr/lib/../lib64/crti.o
+ .debug_aranges
+                0x00000000000000e0       0x40 /usr/lib/../lib64/crtn.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x2ed
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x2a9 /usr/lib/../lib64/crt1.o
+ .debug_info    0x00000000000002a9       0x22 /usr/lib/../lib64/crti.o
+ .debug_info    0x00000000000002cb       0x22 /usr/lib/../lib64/crtn.o
+
+.debug_abbrev   0x0000000000000000      0x176
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x152 /usr/lib/../lib64/crt1.o
+ .debug_abbrev  0x0000000000000152       0x12 /usr/lib/../lib64/crti.o
+ .debug_abbrev  0x0000000000000164       0x12 /usr/lib/../lib64/crtn.o
+
+.debug_line     0x0000000000000000      0x237
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x16f /usr/lib/../lib64/crt1.o
+ .debug_line    0x000000000000016f       0x66 /usr/lib/../lib64/crti.o
+ .debug_line    0x00000000000001d5       0x62 /usr/lib/../lib64/crtn.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x4e0
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x4e0 /usr/lib/../lib64/crt1.o
+                                        0x7be (size before relaxing)
+ .debug_str     0x00000000000004e0        0x0 /usr/lib/../lib64/crti.o
+                                         0x52 (size before relaxing)
+ .debug_str     0x00000000000004e0        0x0 /usr/lib/../lib64/crtn.o
+                                         0x52 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x80
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x40 /usr/lib/../lib64/crti.o
+ .debug_ranges  0x0000000000000040       0x40 /usr/lib/../lib64/crtn.o
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+ *(.gnu_object_only)
+OUTPUT(test_n640 elf64-x86-64)

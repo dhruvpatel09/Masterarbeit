@@ -1,0 +1,70 @@
+[
+  {
+    "configuration": 640,
+    "tau": 2,
+    "piter": 4,
+    "exit_code": 0,
+    "seconds": 90.30743385106325,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "146cd678fa38e49f94d238861a3861da26304a66b828e7fd3af7e39c88ecfdcb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 640,
+    "tau": 2,
+    "piter": 10,
+    "exit_code": 0,
+    "seconds": 129.66027311095968,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "7498e7b29e0bc9d1197f48801954ea7c7be29cbc6167395eb2256c46d33a06d1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 640,
+    "tau": 2,
+    "piter": 20,
+    "exit_code": 0,
+    "seconds": 198.47392376884818,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "d0ef1eb81750b247d33bad3304478234d518a61258340c572a0ee45fa68bb14d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 640,
+    "tau": 2,
+    "piter": 40,
+    "exit_code": 0,
+    "seconds": 333.574620032683,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "76620cad09aec24c28a7f0b3b1efc9b1121fa9a40ea767b69a68ffec23493c10",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

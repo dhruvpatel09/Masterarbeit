@@ -1,0 +1,120 @@
+{
+  "base_commit": "336b91edaab2c5312442c477324054478b7c957a",
+  "source_archive_sha256": "f82cec6dc1706113ee25d1f5275ede5b71dd9a9deed8a5e1d0a70e0872a020f6",
+  "repository_references": {
+    "env/supermuc.sh": "c21085274c5b207718bc547ff4500ec228e4284d618a0b9a791dc7ce141f3c10",
+    "mental/pilots/qx_evec_pilot/build.sh": "defc49bf2073fe245456e13b58b64b085cdff53f3822ac9652bcc729e879811b",
+    "mental/pilots/qx_evec_pilot/mental_funneled.c": "9baad80db6063d5ff5412d07d9e90bd57077a9448bb2fc947efd83d3a7fccfbf",
+    "qcd/include/qcd.h": "d84f771716b3703f48d3513cfafe0a108bc82936a13a51a40a7fd5f20c8f6cf0",
+    "qcd/include/qcd_2x2Ops.h": "e56a1bc676e9d0dc78876cb54e65e2c5f63e4bffc66546ef5ebced6e458f881c",
+    "qcd/include/qcd_3x3Ops.h": "40088caa55f20163f132504a9d8208394217c1669b8358fbefb82674a2d901d3",
+    "qcd/include/qcd_COps.h": "4af34f17768cc4c5443c4dbf2705c7487716f166b62b27c416949569056c9415",
+    "qcd/include/qcd_blas.h": "c91194ded22ad050f0e12143d8d26af99d3ed78ca26b89778187753d334ed7ed",
+    "qcd/include/qcd_communication.h": "1d0e5f2e9283e2791146050f4ed7464926794fe97323e78206730ee57492a6b5",
+    "qcd/include/qcd_config.h": "5a13b64592731d79b2bf57bce13834a31e369f8ea85e57638dea5a95a3f6db78",
+    "qcd/include/qcd_gamma.h": "80e939ca1b3ccf1c7ec31f2f873e1ca6adc3b82c870f9dcdab26dfa9603383e5",
+    "qcd/include/qcd_gaugeFixing.h": "a5744a1c61dcfb0cbd45b1f411f6be15681ae12cf3ef78b4a894d0df85b68359",
+    "qcd/include/qcd_io.h": "19d4a5b1e8bcf8861a4419c67208052c5d93eed066346a1d088779c6cf908ee9",
+    "qcd/include/qcd_lanczos.h": "96a17bbf6f249696ab793105a4204780873af476ef9882d8336518231a7b1d35",
+    "qcd/include/qcd_loopsOps.h": "b036df8240b1add16adebee51f0c24eb4bd1c96f89e9be5f1ced9e109a22c8a2",
+    "qcd/include/qcd_observables.h": "8bcc961a5b6495cebc14f3cedddcc4e0a4068bdf0849c51b760a803034580c48",
+    "qcd/include/qcd_operators3d.h": "65ce8b6681b5d513946a8e47a4b197a588af1a24cb616b3c88bd8a299cf94adb",
+    "qcd/include/qcd_random.h": "243701d10fa4ae798713557b1e3c26b65e20fcf360c64b39a0b956caf251cdf3",
+    "qcd/include/qcd_rngDrand48.h": "2ea8b2fd387dd5cb640323c3fc900d6cf6617aeacf0de029c00a0c854b1eddd3",
+    "qcd/include/qcd_rngRanlux.h": "6119523961a9d780a24c7671d210e1db6e01ed35c65f77492cd94872aeb3c396",
+    "qcd/include/qcd_smearing.h": "4b00910ce78fcac39e24200c18a2e060fab7ebdb580ad2916f83538c4b7bded8",
+    "qcd/include/qcd_utils.h": "6cd2e52b105118736d40d9edf9eec875f6f6a71b003763472f36015e792ebf19",
+    "qcd/include/qcd_wilson.h": "4156ecb42e1405479f16e8664d607049efcbbd4a50385b6692b27700a6257954",
+    "qcd/include/solver.h": "6a02bf01abff4df8cd191d9d10b13e7535d60769c8221cf8f8df6b88a2fe9fb6",
+    "qcd/src/qcd_lanczos.c": "214bdc111f71063b5f89eecd480ca76ca7e4b75e75e4c458e40cd20b59963e98",
+    "qcd/lib/libqcd.a": "aee0e1eb5b724e2d6866e60344c711b1be38b167ba26d7a8150543bd42f9eb22",
+    "mental/include_mkl_lapacke/cblas.h": "c50e53a5ef6d6f76c000fa01c7662fee734044bd8d5faa00b7c082cedebe35ab",
+    "mental/include_mkl_lapacke/lapacke.h": "703328e58b4046d4373105edfcca04ffa2d23c349463aa24b38896e35f7fb87f"
+  },
+  "preserved_inputs": {
+    "inputs/SOURCE_CAPTURE.json": "1be34c4277c04202c75dc76f10855c77d5eb28cc7318fb189407bac024d3807d",
+    "inputs/qcd_lanczos.c": "214bdc111f71063b5f89eecd480ca76ca7e4b75e75e4c458e40cd20b59963e98",
+    "inputs/qcd_include/qcd_utils.h": "6cd2e52b105118736d40d9edf9eec875f6f6a71b003763472f36015e792ebf19",
+    "inputs/qcd_include/qcd_lanczos.h": "96a17bbf6f249696ab793105a4204780873af476ef9882d8336518231a7b1d35",
+    "inputs/qcd_include/qcd_smearing.h": "4b00910ce78fcac39e24200c18a2e060fab7ebdb580ad2916f83538c4b7bded8",
+    "inputs/qcd_include/qcd_observables.h": "8bcc961a5b6495cebc14f3cedddcc4e0a4068bdf0849c51b760a803034580c48",
+    "inputs/qcd_include/qcd_blas.h": "c91194ded22ad050f0e12143d8d26af99d3ed78ca26b89778187753d334ed7ed",
+    "inputs/qcd_include/qcd_loopsOps.h": "b036df8240b1add16adebee51f0c24eb4bd1c96f89e9be5f1ced9e109a22c8a2",
+    "inputs/qcd_include/qcd_operators3d.h": "65ce8b6681b5d513946a8e47a4b197a588af1a24cb616b3c88bd8a299cf94adb",
+    "inputs/qcd_include/qcd_random.h": "243701d10fa4ae798713557b1e3c26b65e20fcf360c64b39a0b956caf251cdf3",
+    "inputs/qcd_include/qcd_2x2Ops.h": "e56a1bc676e9d0dc78876cb54e65e2c5f63e4bffc66546ef5ebced6e458f881c",
+    "inputs/qcd_include/qcd_rngRanlux.h": "6119523961a9d780a24c7671d210e1db6e01ed35c65f77492cd94872aeb3c396",
+    "inputs/qcd_include/qcd_communication.h": "1d0e5f2e9283e2791146050f4ed7464926794fe97323e78206730ee57492a6b5",
+    "inputs/qcd_include/qcd_wilson.h": "4156ecb42e1405479f16e8664d607049efcbbd4a50385b6692b27700a6257954",
+    "inputs/qcd_include/qcd.h": "d84f771716b3703f48d3513cfafe0a108bc82936a13a51a40a7fd5f20c8f6cf0",
+    "inputs/qcd_include/solver.h": "6a02bf01abff4df8cd191d9d10b13e7535d60769c8221cf8f8df6b88a2fe9fb6",
+    "inputs/qcd_include/qcd_3x3Ops.h": "40088caa55f20163f132504a9d8208394217c1669b8358fbefb82674a2d901d3",
+    "inputs/qcd_include/qcd_io.h": "19d4a5b1e8bcf8861a4419c67208052c5d93eed066346a1d088779c6cf908ee9",
+    "inputs/qcd_include/qcd_rngDrand48.h": "2ea8b2fd387dd5cb640323c3fc900d6cf6617aeacf0de029c00a0c854b1eddd3",
+    "inputs/qcd_include/qcd_gamma.h": "80e939ca1b3ccf1c7ec31f2f873e1ca6adc3b82c870f9dcdab26dfa9603383e5",
+    "inputs/qcd_include/qcd_gaugeFixing.h": "a5744a1c61dcfb0cbd45b1f411f6be15681ae12cf3ef78b4a894d0df85b68359",
+    "inputs/qcd_include/qcd_config.h": "5a13b64592731d79b2bf57bce13834a31e369f8ea85e57638dea5a95a3f6db78",
+    "inputs/qcd_include/qcd_COps.h": "4af34f17768cc4c5443c4dbf2705c7487716f166b62b27c416949569056c9415"
+  },
+  "source_scope": "Current qcd_lanczos.c snapshot. Archived driver, header, build, library and executable pins matched; the original jobs did not record a C-source checksum.",
+  "geometry": {
+    "L": [
+      192,
+      64,
+      64,
+      64
+    ],
+    "P": [
+      1,
+      4,
+      4,
+      4
+    ],
+    "ranks": 64,
+    "nodes": 8,
+    "ranks_per_node": 8
+  },
+  "parameters": {
+    "Nv": 100,
+    "laplace_nAPE": 20,
+    "laplace_alphaAPE": 0.5,
+    "res": 1e-09,
+    "redTol": 1e-12,
+    "deg": 10,
+    "upper": 0.15,
+    "tolReortho": 1e-10,
+    "maxRestarts": 30,
+    "nLanczosFactor": 7,
+    "redFreqFactor": 10
+  },
+  "cases": [
+    {
+      "configuration": 650,
+      "time": 1,
+      "role": "library_control",
+      "variant": "library"
+    },
+    {
+      "configuration": 650,
+      "time": 1,
+      "role": "trace_control",
+      "variant": "traced"
+    },
+    {
+      "configuration": 640,
+      "time": 1,
+      "role": "target",
+      "variant": "traced"
+    }
+  ],
+  "gauge_directory": "/hppfs/scratch/00/di98qes3/qX",
+  "gauge_prefix": "qX_p2n",
+  "partition": "micro",
+  "qos": "micro",
+  "account": "pn29se",
+  "time_limit": "01:00:00",
+  "scope": "Diagnostic on selected global time slice only. No production eigenvector or profile outputs; no configuration admission.",
+  "instrumentation": "Logging of reduced-solver return values, checked Ritz residuals and cycle history. Original algorithm, initial vector, restart budget and stopping rule retained.",
+  "residual_scope": "Intermediate original residual loops may stop after the first failing mode. Checked-count and index are recorded; a partial maximum is not a full-spectrum maximum.",
+  "control_eigenvalue_absolute_tolerance": 1e-10
+}

@@ -1,0 +1,10 @@
+build/
+campaigns/
+__pycache__/
+!inputs/**/
+!inputs/**/*.out
+!inputs/**/*.err
+!inputs/**/modules.txt
+!inputs/**/compiler.txt
+!inputs/**/linked_*.txt
+!inputs/**/link.map

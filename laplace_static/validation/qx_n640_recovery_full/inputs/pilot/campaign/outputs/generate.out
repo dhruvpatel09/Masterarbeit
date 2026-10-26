@@ -1,0 +1,84 @@
+MPI_INIT requested=FUNNELED provided_min=1 status=PASS
+input-file: /hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_recovery_pilot/campaigns/selected14/mental.in
+mental version <mental 1.0>
+
+ Global lattice: 192 x  64 x  64 x  64
+ Local  lattice: 192 x  16 x  16 x  16
+ Process grid:     1 x   4 x   4 x   4
+Dirs:
+   nbase   = qX_p2
+   output  = qX_p2_n640_selected_recovery
+Configurations 640:10:640
+Number of laplace eigenvectors: 100, to be computed and written
+Gauge fields in Laplace operator will be smeared with: n_APE=20, alpha_APE=0.500000
+Gauge fields in derivatives will be smeared with:      n_APE=0, alpha_APE=0.000000
+Lanczos Parameters
+   res =            1.000000e-09
+   redTol =         1.000000e-12
+   deg =            10
+   upper =          0.150000
+   tolReortho =     1.000000e-10
+   maxRestarts =    30
+   nLanczosFactor = 7
+   redFreqFactor =  10
+
+Will compute 1 sets of elementals
+Set 0:
+   p2max=0
+   nder =0
+
+Momenta table for set with largest pmax
+p1   p2   p3   p^2
+ +0  +0  +0    0
+eigenvectors initialized...
+
+memory allocated
+
+Processing gauge field /hppfs/scratch/00/di98qes3/qX/qX_p2n640
+gauge-field loaded in 4.207690sek
+plaquette (torus def) = 6.612527e-01
+initialized dat file: /hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/dat/qX_p2_n640_selected_recovery_der0_n640.h5
+APE smearing for cov. Laplace done in 1.183154e+02 sec
+RECOVERY_START cfg=640 ranks=64 P=1,4,4,4 selected=14 res=1.00000000000000006e-09
+RECOVERY_SOLVE cfg=640 t=0 code=0 restarts=1 nRed=2 maxRes=8.51793254560881548e-13 lambda_Nv=1.00804012388015771e-01
+Eigenvalues/vectors on x0=0 computed in 5.943248e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=0 Nv=100
+RECOVERY_SOLVE cfg=640 t=1 code=0 restarts=3 nRed=4 maxRes=7.28855153875623868e-10 lambda_Nv=5.37891344738521612e-02
+Eigenvalues/vectors on x0=1 computed in 1.359411e+02 sec (max)
+RECOVERY_WRITTEN cfg=640 t=1 Nv=100
+RECOVERY_SOLVE cfg=640 t=32 code=0 restarts=0 nRed=1 maxRes=6.11906095607683524e-12 lambda_Nv=4.49937539696578931e-02
+Eigenvalues/vectors on x0=32 computed in 1.785877e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=32 Nv=100
+RECOVERY_SOLVE cfg=640 t=64 code=0 restarts=0 nRed=1 maxRes=4.47026113322444258e-12 lambda_Nv=4.48364661074430806e-02
+Eigenvalues/vectors on x0=64 computed in 1.784140e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=64 Nv=100
+RECOVERY_SOLVE cfg=640 t=95 code=0 restarts=0 nRed=1 maxRes=7.73386879272967953e-12 lambda_Nv=4.49203623562545312e-02
+Eigenvalues/vectors on x0=95 computed in 1.787858e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=95 Nv=100
+RECOVERY_SOLVE cfg=640 t=96 code=0 restarts=0 nRed=1 maxRes=5.93460969225387778e-12 lambda_Nv=4.49286829386812830e-02
+Eigenvalues/vectors on x0=96 computed in 1.787291e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=96 Nv=100
+RECOVERY_SOLVE cfg=640 t=97 code=0 restarts=0 nRed=1 maxRes=7.44206663779977067e-12 lambda_Nv=4.50560923181619263e-02
+Eigenvalues/vectors on x0=97 computed in 1.782022e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=97 Nv=100
+RECOVERY_SOLVE cfg=640 t=98 code=0 restarts=0 nRed=1 maxRes=5.71752633749307850e-12 lambda_Nv=4.49069780226191567e-02
+Eigenvalues/vectors on x0=98 computed in 1.783149e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=98 Nv=100
+RECOVERY_SOLVE cfg=640 t=99 code=0 restarts=0 nRed=1 maxRes=5.03452703760263246e-12 lambda_Nv=4.50600122581492624e-02
+Eigenvalues/vectors on x0=99 computed in 1.789749e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=99 Nv=100
+RECOVERY_SOLVE cfg=640 t=100 code=0 restarts=0 nRed=1 maxRes=5.22497123604234621e-12 lambda_Nv=4.48419164855138608e-02
+Eigenvalues/vectors on x0=100 computed in 1.790457e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=100 Nv=100
+RECOVERY_SOLVE cfg=640 t=101 code=0 restarts=0 nRed=1 maxRes=6.33854228519991594e-12 lambda_Nv=4.47366212678259878e-02
+Eigenvalues/vectors on x0=101 computed in 1.785640e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=101 Nv=100
+RECOVERY_SOLVE cfg=640 t=128 code=0 restarts=0 nRed=1 maxRes=5.50633430934814267e-12 lambda_Nv=4.48917048814438391e-02
+Eigenvalues/vectors on x0=128 computed in 1.795896e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=128 Nv=100
+RECOVERY_SOLVE cfg=640 t=160 code=0 restarts=0 nRed=1 maxRes=4.48769037144925457e-12 lambda_Nv=4.49730058289548040e-02
+Eigenvalues/vectors on x0=160 computed in 1.787415e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=160 Nv=100
+RECOVERY_SOLVE cfg=640 t=191 code=0 restarts=1 nRed=2 maxRes=1.03952056195072432e-12 lambda_Nv=1.01227533146785939e-01
+Eigenvalues/vectors on x0=191 computed in 5.703381e+01 sec (max)
+RECOVERY_WRITTEN cfg=640 t=191 Nv=100

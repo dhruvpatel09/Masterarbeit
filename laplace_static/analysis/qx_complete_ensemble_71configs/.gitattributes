@@ -1,0 +1,7 @@
+*.py text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.out text eol=lf
+*.err text eol=lf
+*.svg text eol=lf
+inputs/** -text

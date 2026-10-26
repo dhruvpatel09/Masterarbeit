@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "purpose": "Current eigensolver source and archived n640 build comparison",
+  "repository_root": "/hppfs/work/pn29se/di24gus/Masterarbeit",
+  "git": {
+    "head": {
+      "exit_code": 0,
+      "stdout": "336b91edaab2c5312442c477324054478b7c957a\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "files": [
+    {
+      "path": "env/supermuc.sh",
+      "bytes": 475,
+      "sha256": "c21085274c5b207718bc547ff4500ec228e4284d618a0b9a791dc7ce141f3c10",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/env/supermuc.sh"
+    },
+    {
+      "path": "mental/mental.c",
+      "bytes": 54226,
+      "sha256": "5571907bc7104302d6ad563c0c4425f10dcbf99347ae43fff96ab7900de87799",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/mental.c"
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/build.sh",
+      "bytes": 1922,
+      "sha256": "defc49bf2073fe245456e13b58b64b085cdff53f3822ac9652bcc729e879811b",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build.sh"
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/build/linked_libraries.txt",
+      "bytes": 1606,
+      "sha256": "8123860fe4b80a7cfcd762c813e9c8dddc22a0523a6a643ecc868e8b022f9ee7",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/linked_libraries.txt"
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/build/manifest.sha256",
+      "bytes": 5648,
+      "sha256": "081c979379b6be413684962642ec714930bd9e2f62fec2d08efc325154d29e74",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/manifest.sha256"
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/build/modules.txt",
+      "bytes": 233,
+      "sha256": "096ea8846f60942cdd5630564af9121922e1172db8fa8ab7cf8a417b6ec40202",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/build/modules.txt"
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/mental_funneled.c",
+      "bytes": 55121,
+      "sha256": "9baad80db6063d5ff5412d07d9e90bd57077a9448bb2fc947efd83d3a7fccfbf",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/pilots/qx_evec_pilot/mental_funneled.c"
+    },
+    {
+      "path": "mental/production/qx_evec_batch_640_670/results_5924010/executable_manifest.sha256",
+      "bytes": 5648,
+      "sha256": "081c979379b6be413684962642ec714930bd9e2f62fec2d08efc325154d29e74",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/production/qx_evec_batch_640_670/results_5924010/executable_manifest.sha256"
+    },
+    {
+      "path": "mental/recovery/qx_n640_mr60/inputs.sha256",
+      "bytes": 11852,
+      "sha256": "ed74cddc50399334b9ac72a46a48683e1cb8e1c927cba73a6b63db77474c3b2c",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/recovery/qx_n640_mr60/inputs.sha256"
+    },
+    {
+      "path": "mental/recovery/qx_n640_mr60/results_5925063/executable_manifest.sha256",
+      "bytes": 5648,
+      "sha256": "081c979379b6be413684962642ec714930bd9e2f62fec2d08efc325154d29e74",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/mental/recovery/qx_n640_mr60/results_5925063/executable_manifest.sha256"
+    },
+    {
+      "path": "qcd/include/qcd.h",
+      "bytes": 41395,
+      "sha256": "d84f771716b3703f48d3513cfafe0a108bc82936a13a51a40a7fd5f20c8f6cf0",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd.h"
+    },
+    {
+      "path": "qcd/include/qcd_2x2Ops.h",
+      "bytes": 15693,
+      "sha256": "e56a1bc676e9d0dc78876cb54e65e2c5f63e4bffc66546ef5ebced6e458f881c",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_2x2Ops.h"
+    },
+    {
+      "path": "qcd/include/qcd_3x3Ops.h",
+      "bytes": 45245,
+      "sha256": "40088caa55f20163f132504a9d8208394217c1669b8358fbefb82674a2d901d3",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_3x3Ops.h"
+    },
+    {
+      "path": "qcd/include/qcd_COps.h",
+      "bytes": 15042,
+      "sha256": "4af34f17768cc4c5443c4dbf2705c7487716f166b62b27c416949569056c9415",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_COps.h"
+    },
+    {
+      "path": "qcd/include/qcd_blas.h",
+      "bytes": 51700,
+      "sha256": "c91194ded22ad050f0e12143d8d26af99d3ed78ca26b89778187753d334ed7ed",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_blas.h"
+    },
+    {
+      "path": "qcd/include/qcd_communication.h",
+      "bytes": 28886,
+      "sha256": "1d0e5f2e9283e2791146050f4ed7464926794fe97323e78206730ee57492a6b5",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_communication.h"
+    },
+    {
+      "path": "qcd/include/qcd_config.h",
+      "bytes": 2430,
+      "sha256": "5a13b64592731d79b2bf57bce13834a31e369f8ea85e57638dea5a95a3f6db78",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_config.h"
+    },
+    {
+      "path": "qcd/include/qcd_gamma.h",
+      "bytes": 8365,
+      "sha256": "80e939ca1b3ccf1c7ec31f2f873e1ca6adc3b82c870f9dcdab26dfa9603383e5",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_gamma.h"
+    },
+    {
+      "path": "qcd/include/qcd_gaugeFixing.h",
+      "bytes": 4144,
+      "sha256": "a5744a1c61dcfb0cbd45b1f411f6be15681ae12cf3ef78b4a894d0df85b68359",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_gaugeFixing.h"
+    },
+    {
+      "path": "qcd/include/qcd_io.h",
+      "bytes": 26472,
+      "sha256": "19d4a5b1e8bcf8861a4419c67208052c5d93eed066346a1d088779c6cf908ee9",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_io.h"
+    },
+    {
+      "path": "qcd/include/qcd_lanczos.h",
+      "bytes": 9604,
+      "sha256": "96a17bbf6f249696ab793105a4204780873af476ef9882d8336518231a7b1d35",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_lanczos.h"
+    },
+    {
+      "path": "qcd/include/qcd_loopsOps.h",
+      "bytes": 880,
+      "sha256": "b036df8240b1add16adebee51f0c24eb4bd1c96f89e9be5f1ced9e109a22c8a2",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_loopsOps.h"
+    },
+    {
+      "path": "qcd/include/qcd_observables.h",
+      "bytes": 6817,
+      "sha256": "8bcc961a5b6495cebc14f3cedddcc4e0a4068bdf0849c51b760a803034580c48",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_observables.h"
+    },
+    {
+      "path": "qcd/include/qcd_operators3d.h",
+      "bytes": 7332,
+      "sha256": "65ce8b6681b5d513946a8e47a4b197a588af1a24cb616b3c88bd8a299cf94adb",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_operators3d.h"
+    },
+    {
+      "path": "qcd/include/qcd_random.h",
+      "bytes": 10769,
+      "sha256": "243701d10fa4ae798713557b1e3c26b65e20fcf360c64b39a0b956caf251cdf3",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_random.h"
+    },
+    {
+      "path": "qcd/include/qcd_rngDrand48.h",
+      "bytes": 2659,
+      "sha256": "2ea8b2fd387dd5cb640323c3fc900d6cf6617aeacf0de029c00a0c854b1eddd3",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_rngDrand48.h"
+    },
+    {
+      "path": "qcd/include/qcd_rngRanlux.h",
+      "bytes": 1818,
+      "sha256": "6119523961a9d780a24c7671d210e1db6e01ed35c65f77492cd94872aeb3c396",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_rngRanlux.h"
+    },
+    {
+      "path": "qcd/include/qcd_smearing.h",
+      "bytes": 3130,
+      "sha256": "4b00910ce78fcac39e24200c18a2e060fab7ebdb580ad2916f83538c4b7bded8",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_smearing.h"
+    },
+    {
+      "path": "qcd/include/qcd_utils.h",
+      "bytes": 13378,
+      "sha256": "6cd2e52b105118736d40d9edf9eec875f6f6a71b003763472f36015e792ebf19",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_utils.h"
+    },
+    {
+      "path": "qcd/include/qcd_wilson.h",
+      "bytes": 39548,
+      "sha256": "4156ecb42e1405479f16e8664d607049efcbbd4a50385b6692b27700a6257954",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/qcd_wilson.h"
+    },
+    {
+      "path": "qcd/include/solver.h",
+      "bytes": 9514,
+      "sha256": "6a02bf01abff4df8cd191d9d10b13e7535d60769c8221cf8f8df6b88a2fe9fb6",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/include/solver.h"
+    },
+    {
+      "path": "qcd/src/qcd_2x2Ops.c",
+      "bytes": 14086,
+      "sha256": "dd275a1135427c7ee8b6453f3a4d216999cbac31e54399f1bcb8f956d776f7e2",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_2x2Ops.c"
+    },
+    {
+      "path": "qcd/src/qcd_3x3Ops.c",
+      "bytes": 26534,
+      "sha256": "6e2c10fb3ed35c427ea2fc978e32bb1065a76a4d32ec677f4c3208c7941e66e1",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_3x3Ops.c"
+    },
+    {
+      "path": "qcd/src/qcd_COps.c",
+      "bytes": 2990,
+      "sha256": "76fa85aa21c6bbec6fdd5a9cbc7f076267396e202b34a985976ffd1c5e202be1",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_COps.c"
+    },
+    {
+      "path": "qcd/src/qcd_blas.c",
+      "bytes": 98871,
+      "sha256": "8c70f498af40c7c81d88dc810804e70011250157a67c570dd8bc286eddc2a6b1",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_blas.c"
+    },
+    {
+      "path": "qcd/src/qcd_communication.c",
+      "bytes": 40938,
+      "sha256": "965ccfe122c8f5454a18e0a33b54787a2cd2b2710c209101ca673d296000d2b6",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_communication.c"
+    },
+    {
+      "path": "qcd/src/qcd_gamma.c",
+      "bytes": 34188,
+      "sha256": "4d1f49522316d80b8b37039f4e1da063942b4218af28b027cc8ea7ce3149c6c3",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_gamma.c"
+    },
+    {
+      "path": "qcd/src/qcd_gaugeFixing.c",
+      "bytes": 13844,
+      "sha256": "78e792e53b2c54022b18e8dde4d887a8720cdeeb0c1eb1fe705bfc79d65f1858",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_gaugeFixing.c"
+    },
+    {
+      "path": "qcd/src/qcd_init.c",
+      "bytes": 48021,
+      "sha256": "54ff3fdfc26408ee22044e327c07003bab7436bf2895bd0ada94c180d9a0b827",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_init.c"
+    },
+    {
+      "path": "qcd/src/qcd_io.c",
+      "bytes": 99544,
+      "sha256": "a85a8a52c9aba4b1617362589d2e86abc98eddf37c96cb7bbd5ae9d3da9c892c",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_io.c"
+    },
+    {
+      "path": "qcd/src/qcd_lanczos.c",
+      "bytes": 32532,
+      "sha256": "214bdc111f71063b5f89eecd480ca76ca7e4b75e75e4c458e40cd20b59963e98",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_lanczos.c"
+    },
+    {
+      "path": "qcd/src/qcd_loopsOps.c",
+      "bytes": 6487,
+      "sha256": "0503ff559ba871512fae48c596d4550aaa19b26229526a7e3f86e39be0d0533c",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_loopsOps.c"
+    },
+    {
+      "path": "qcd/src/qcd_observables.c",
+      "bytes": 15109,
+      "sha256": "75ea9ed173868504363f61dd641f92d8b0acdeba8dfc5209eb76628986a94338",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_observables.c"
+    },
+    {
+      "path": "qcd/src/qcd_operators3d.c",
+      "bytes": 18860,
+      "sha256": "1bc29e4c396a7bb193c391d4164ec10837b2e7d1f73a5261ccb9cc73f8114b00",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_operators3d.c"
+    },
+    {
+      "path": "qcd/src/qcd_random.c",
+      "bytes": 8624,
+      "sha256": "2a5ef4c553436f0718ac55afccceed34d177ec97e8c702a34e70d89f8384fe92",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_random.c"
+    },
+    {
+      "path": "qcd/src/qcd_rngDrand48.c",
+      "bytes": 1962,
+      "sha256": "fa61f7e1f77dfd879a4514252495057cea35e5c8d00e0bc581be1884dfafb34c",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_rngDrand48.c"
+    },
+    {
+      "path": "qcd/src/qcd_rngRanlux.c",
+      "bytes": 13700,
+      "sha256": "1500ce17d7c49825909320d4b2f5eb89fe51bd5bddd1da6cf0b140950547e529",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_rngRanlux.c"
+    },
+    {
+      "path": "qcd/src/qcd_smearing.c",
+      "bytes": 26326,
+      "sha256": "9c378408d0748429260b9f734fd3dfeb5ea855d2c212467e5b3a51de44a1a41a",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_smearing.c"
+    },
+    {
+      "path": "qcd/src/qcd_utils.c",
+      "bytes": 20631,
+      "sha256": "51ae437aca6bfd97b7d48db75b8968309e776f5bd8e16ec9c4063893cf8d171b",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_utils.c"
+    },
+    {
+      "path": "qcd/src/qcd_wilson.c",
+      "bytes": 61246,
+      "sha256": "bda82e537bd1403cabd09b3ddcdad6ea7685ac37a3ea7173031d965cec13cecc",
+      "resolved_path": "/hppfs/work/pn29se/di24gus/Masterarbeit/qcd/src/qcd_wilson.c"
+    }
+  ],
+  "archived_build_comparisons": [
+    {
+      "path": "env/supermuc.sh",
+      "archived_sha256": "c21085274c5b207718bc547ff4500ec228e4284d618a0b9a791dc7ce141f3c10",
+      "current_sha256": "c21085274c5b207718bc547ff4500ec228e4284d618a0b9a791dc7ce141f3c10",
+      "matches_archived": true
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/build.sh",
+      "archived_sha256": "defc49bf2073fe245456e13b58b64b085cdff53f3822ac9652bcc729e879811b",
+      "current_sha256": "defc49bf2073fe245456e13b58b64b085cdff53f3822ac9652bcc729e879811b",
+      "matches_archived": true
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/build/mental_funneled",
+      "archived_sha256": "90a7bf51afe46c7697c240d97381e254765caf1372528dfee4e6cd164e4ba005",
+      "current_sha256": "90a7bf51afe46c7697c240d97381e254765caf1372528dfee4e6cd164e4ba005",
+      "matches_archived": true
+    },
+    {
+      "path": "mental/pilots/qx_evec_pilot/mental_funneled.c",
+      "archived_sha256": "9baad80db6063d5ff5412d07d9e90bd57077a9448bb2fc947efd83d3a7fccfbf",
+      "current_sha256": "9baad80db6063d5ff5412d07d9e90bd57077a9448bb2fc947efd83d3a7fccfbf",
+      "matches_archived": true
+    },
+    {
+      "path": "qcd/include/qcd_config.h",
+      "archived_sha256": "5a13b64592731d79b2bf57bce13834a31e369f8ea85e57638dea5a95a3f6db78",
+      "current_sha256": "5a13b64592731d79b2bf57bce13834a31e369f8ea85e57638dea5a95a3f6db78",
+      "matches_archived": true
+    },
+    {
+      "path": "qcd/include/qcd_lanczos.h",
+      "archived_sha256": "96a17bbf6f249696ab793105a4204780873af476ef9882d8336518231a7b1d35",
+      "current_sha256": "96a17bbf6f249696ab793105a4204780873af476ef9882d8336518231a7b1d35",
+      "matches_archived": true
+    },
+    {
+      "path": "qcd/lib/libqcd.a",
+      "archived_sha256": "aee0e1eb5b724e2d6866e60344c711b1be38b167ba26d7a8150543bd42f9eb22",
+      "current_sha256": "aee0e1eb5b724e2d6866e60344c711b1be38b167ba26d7a8150543bd42f9eb22",
+      "matches_archived": true
+    }
+  ],
+  "archived_jobs": [
+    5924010,
+    5925063
+  ],
+  "missing_optional_files": [
+    "mental/Makefile",
+    "qcd/Makefile",
+    "qcd/qcdlib/Makefile",
+    "qcd/config",
+    "qcd/CMakeLists.txt"
+  ],
+  "binary_policy": "Executable and libqcd.a are hashed only; their bytes are not included.",
+  "scope": "Current source snapshot. Archived build pins cover the pilot driver, header, build script, library and executable. The original manifests did not pin qcd/src/qcd_lanczos.c; a matching binary does not prove the current C source produced it."
+}

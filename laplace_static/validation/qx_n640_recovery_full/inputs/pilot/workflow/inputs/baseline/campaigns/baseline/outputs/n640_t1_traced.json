@@ -1,0 +1,794 @@
+{
+  "diagnostic_completed": true,
+  "configuration": 640,
+  "time": 1,
+  "solver_code": 0,
+  "solver_result": "converged",
+  "selected_slice_valid": true,
+  "production_configuration_admitted": false,
+  "cycles": 4,
+  "cycle_history": [
+    {
+      "cycle": "1",
+      "checked": "1",
+      "max_checked_res": "5.78785331587594829e-09",
+      "lambda_Nv": "5.37891344738521543e-02",
+      "restarts": "0",
+      "nRed": "1",
+      "maxRed": "700",
+      "reorthogonalizations": "25",
+      "seconds": "17.891662050"
+    },
+    {
+      "cycle": "2",
+      "checked": "99",
+      "max_checked_res": "1.31792810281899206e-09",
+      "lambda_Nv": "5.37891344738521057e-02",
+      "restarts": "1",
+      "nRed": "2",
+      "maxRed": "700",
+      "reorthogonalizations": "25",
+      "seconds": "40.211710572"
+    },
+    {
+      "cycle": "3",
+      "checked": "99",
+      "max_checked_res": "1.31792801217782391e-09",
+      "lambda_Nv": "5.37891344738521265e-02",
+      "restarts": "2",
+      "nRed": "3",
+      "maxRed": "700",
+      "reorthogonalizations": "25",
+      "seconds": "40.138943067"
+    },
+    {
+      "cycle": "4",
+      "checked": "100",
+      "max_checked_res": "7.28855153875623868e-10",
+      "lambda_Nv": "5.37891344738521612e-02",
+      "restarts": "3",
+      "nRed": "4",
+      "maxRed": "700",
+      "reorthogonalizations": "25",
+      "seconds": "39.984282268"
+    }
+  ],
+  "variant": "traced",
+  "return_status": {
+    "code": "0",
+    "code_min": "0",
+    "code_max": "0",
+    "restarts": "3",
+    "nRed": "4",
+    "maxRed": "700",
+    "maxRes": "7.28855153875623868e-10",
+    "usedLapack": "1",
+    "seconds": "138.266510000"
+  },
+  "spatial_link_checks": [
+    {
+      "stage": "raw",
+      "count": "786432",
+      "nonfinite_links": "0",
+      "unitarity_max": "1.49674370261285312e-15",
+      "determinant_max": "1.33365039910444863e-15"
+    },
+    {
+      "stage": "ape",
+      "count": "786432",
+      "nonfinite_links": "0",
+      "unitarity_max": "1.08392683164754437e-09",
+      "determinant_max": "1.33247344265902579e-15"
+    }
+  ],
+  "independent_audit": {
+    "modes": "100",
+    "invalid": "0",
+    "max_relative_residual": "7.28855179896103362e-10",
+    "max_norm_defect": "9.99200722162640886e-16",
+    "max_gram_offdiag": "7.64079906037813247e-12",
+    "valid_selected_slice": "1"
+  },
+  "audited_modes": [
+    {
+      "index": "0",
+      "lambda": "3.18090280431396963e-02",
+      "norm": "1.00000000000000067e+00",
+      "relative_residual": "4.56268791806047180e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "1",
+      "lambda": "3.23106598017173577e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "7.28855179896103362e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "2",
+      "lambda": "3.28210132431815405e-02",
+      "norm": "1.00000000000000067e+00",
+      "relative_residual": "3.31008677472223409e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "3",
+      "lambda": "3.34154237886927219e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "5.64058599191651351e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "4",
+      "lambda": "3.38036086890362228e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "1.42674886477795445e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "5",
+      "lambda": "3.40544099610580672e-02",
+      "norm": "1.00000000000000089e+00",
+      "relative_residual": "2.21272609830629286e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "6",
+      "lambda": "3.42051129815960087e-02",
+      "norm": "9.99999999999999445e-01",
+      "relative_residual": "9.96779245069862762e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "7",
+      "lambda": "3.45285766779844586e-02",
+      "norm": "9.99999999999999334e-01",
+      "relative_residual": "2.71235501045490222e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "8",
+      "lambda": "3.48678948936960720e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "5.14839188750691705e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "9",
+      "lambda": "3.54390717023870955e-02",
+      "norm": "1.00000000000000089e+00",
+      "relative_residual": "1.46186022929362704e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "10",
+      "lambda": "3.57121393470231224e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "1.01625297828083992e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "11",
+      "lambda": "3.61937900159067308e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "1.00895671301860614e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "12",
+      "lambda": "3.63359408169342951e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "1.01493111968088267e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "13",
+      "lambda": "3.64842082825470176e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "1.65923899168842778e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "14",
+      "lambda": "3.68041942394044946e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "5.12636586174493731e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "15",
+      "lambda": "3.69459917678348349e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "4.97240857383223120e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "16",
+      "lambda": "3.70932185613912849e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.74153151603250055e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "17",
+      "lambda": "3.73616933863116646e-02",
+      "norm": "9.99999999999999334e-01",
+      "relative_residual": "2.76139848802946630e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "18",
+      "lambda": "3.75817207143388926e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "2.43148424359613750e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "19",
+      "lambda": "3.78825216807392173e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "1.30505294562893442e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "20",
+      "lambda": "3.79638047746899895e-02",
+      "norm": "1.00000000000000067e+00",
+      "relative_residual": "1.73965210092394435e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "21",
+      "lambda": "3.82881641745641058e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "6.02240866337546560e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "22",
+      "lambda": "3.84561315644031537e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "1.93717866540306957e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "23",
+      "lambda": "3.88641612243180098e-02",
+      "norm": "9.99999999999999001e-01",
+      "relative_residual": "7.94037691251733934e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "24",
+      "lambda": "3.89628058002356240e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "4.98397996571468000e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "25",
+      "lambda": "3.92673978979137389e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "2.49333884650350490e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "26",
+      "lambda": "3.94566346077093524e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "3.91735901976196038e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "27",
+      "lambda": "3.96303094438148693e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "1.46288155986920247e-10",
+      "finite_positive": "1"
+    },
+    {
+      "index": "28",
+      "lambda": "3.99576987530194244e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "2.86768701489596742e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "29",
+      "lambda": "4.02185659789423278e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "1.04353801715906923e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "30",
+      "lambda": "4.03728118665107813e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "5.93427428787136723e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "31",
+      "lambda": "4.06044219484869712e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "3.75383176549749584e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "32",
+      "lambda": "4.08618288619961578e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "4.84291471417093899e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "33",
+      "lambda": "4.10809619007462337e-02",
+      "norm": "9.99999999999999223e-01",
+      "relative_residual": "8.30131984496653110e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "34",
+      "lambda": "4.13605094469813167e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "3.72364013243285183e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "35",
+      "lambda": "4.15938229744291649e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "3.77868282570483695e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "36",
+      "lambda": "4.17695320771712397e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "4.02093007813658047e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "37",
+      "lambda": "4.19410106134950958e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "5.98135192591268966e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "38",
+      "lambda": "4.22507490854209244e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "9.67735861122888420e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "39",
+      "lambda": "4.23006440357802938e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.28917899846278091e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "40",
+      "lambda": "4.25614728281719090e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.33781152837209749e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "41",
+      "lambda": "4.26456010374104966e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.94289427321642458e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "42",
+      "lambda": "4.29183693943092914e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "3.22947290405968696e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "43",
+      "lambda": "4.31791259492323026e-02",
+      "norm": "9.99999999999999556e-01",
+      "relative_residual": "3.48183320778306604e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "44",
+      "lambda": "4.32778590921561873e-02",
+      "norm": "1.00000000000000067e+00",
+      "relative_residual": "3.95237726845360584e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "45",
+      "lambda": "4.35795962716353930e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "3.85960787707228447e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "46",
+      "lambda": "4.37127621442810199e-02",
+      "norm": "9.99999999999999223e-01",
+      "relative_residual": "3.62071944809044155e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "47",
+      "lambda": "4.39331977531127668e-02",
+      "norm": "9.99999999999999556e-01",
+      "relative_residual": "2.09930612626542847e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "48",
+      "lambda": "4.41054377303342349e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "1.31096872021514653e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "49",
+      "lambda": "4.44168402654672098e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "1.44100365782061305e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "50",
+      "lambda": "4.45900507604869226e-02",
+      "norm": "9.99999999999999556e-01",
+      "relative_residual": "6.35368943636528212e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "51",
+      "lambda": "4.46588404169721009e-02",
+      "norm": "9.99999999999999445e-01",
+      "relative_residual": "1.47321792507930945e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "52",
+      "lambda": "4.48343692793629345e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "3.25584182474655541e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "53",
+      "lambda": "4.50892467430777863e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "1.10609261589654924e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "54",
+      "lambda": "4.52362452745570520e-02",
+      "norm": "1.00000000000000067e+00",
+      "relative_residual": "5.61079806163084924e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "55",
+      "lambda": "4.54765312433196983e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "1.25380859558668961e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "56",
+      "lambda": "4.57823119489877625e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "1.04040297989857400e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "57",
+      "lambda": "4.59206064262299152e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "6.99213206865471327e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "58",
+      "lambda": "4.59866337285179394e-02",
+      "norm": "1.00000000000000067e+00",
+      "relative_residual": "1.08313993499091326e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "59",
+      "lambda": "4.63252941000248455e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "1.61921478965075770e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "60",
+      "lambda": "4.65281891685565066e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "1.31624054451489303e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "61",
+      "lambda": "4.66474222544076764e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "6.10374298360004345e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "62",
+      "lambda": "4.68033163711021535e-02",
+      "norm": "9.99999999999999445e-01",
+      "relative_residual": "7.52795105546283996e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "63",
+      "lambda": "4.71122524230095027e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "7.65123405992307251e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "64",
+      "lambda": "4.72211278531481232e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "1.05869071309280898e-11",
+      "finite_positive": "1"
+    },
+    {
+      "index": "65",
+      "lambda": "4.74603620257733269e-02",
+      "norm": "1.00000000000000067e+00",
+      "relative_residual": "3.81113714820933959e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "66",
+      "lambda": "4.77183156172323736e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "2.65387222441397157e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "67",
+      "lambda": "4.78949161404553791e-02",
+      "norm": "9.99999999999999445e-01",
+      "relative_residual": "5.06502011642275847e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "68",
+      "lambda": "4.79837430032858947e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "2.33246107597052010e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "69",
+      "lambda": "4.82109052198984520e-02",
+      "norm": "9.99999999999999223e-01",
+      "relative_residual": "1.02588386055653801e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "70",
+      "lambda": "4.84553564931843456e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "4.69248526156732965e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "71",
+      "lambda": "4.85646921205662024e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.13676080765155592e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "72",
+      "lambda": "4.88809365278911959e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "3.80604732128904441e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "73",
+      "lambda": "4.89780443376791885e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "2.22954294265441270e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "74",
+      "lambda": "4.90788764250790419e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "4.47104638151073047e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "75",
+      "lambda": "4.92892012558925618e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "3.19387446271143164e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "76",
+      "lambda": "4.94538544712838923e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "2.15290869359349910e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "77",
+      "lambda": "4.95637728373103242e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "3.28091830137494942e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "78",
+      "lambda": "4.98108905395580129e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "1.62456123944328900e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "79",
+      "lambda": "4.99660838800066662e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "4.14800512124917801e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "80",
+      "lambda": "5.01753092098858045e-02",
+      "norm": "9.99999999999999556e-01",
+      "relative_residual": "3.48611223469965885e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "81",
+      "lambda": "5.04514254221085645e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "4.90946920910150829e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "82",
+      "lambda": "5.06753446420032810e-02",
+      "norm": "1.00000000000000022e+00",
+      "relative_residual": "2.31296356412060465e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "83",
+      "lambda": "5.09407924153120403e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "1.61401113666779244e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "84",
+      "lambda": "5.10422483947437985e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "1.17820397709344392e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "85",
+      "lambda": "5.11877123957167057e-02",
+      "norm": "9.99999999999999778e-01",
+      "relative_residual": "1.32691064756667356e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "86",
+      "lambda": "5.12549363372052300e-02",
+      "norm": "9.99999999999999445e-01",
+      "relative_residual": "1.28468063515523952e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "87",
+      "lambda": "5.15521743777785230e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "1.28042042690146745e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "88",
+      "lambda": "5.16466443086285448e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "2.40122844592091973e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "89",
+      "lambda": "5.17938135193666410e-02",
+      "norm": "9.99999999999999445e-01",
+      "relative_residual": "1.67516317340713117e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "90",
+      "lambda": "5.20900422814172329e-02",
+      "norm": "9.99999999999999889e-01",
+      "relative_residual": "1.90486455338412496e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "91",
+      "lambda": "5.21626574432715595e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.60539600203360245e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "92",
+      "lambda": "5.24487235769680038e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "1.42670122940283589e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "93",
+      "lambda": "5.26211243315626229e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "1.38490719540628175e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "94",
+      "lambda": "5.27854709658550081e-02",
+      "norm": "9.99999999999999667e-01",
+      "relative_residual": "1.13379754708413369e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "95",
+      "lambda": "5.30269688805883183e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "1.25284566835962728e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "96",
+      "lambda": "5.32411277762236818e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.92694489014274135e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "97",
+      "lambda": "5.33303108418405614e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "1.21373525468073652e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "98",
+      "lambda": "5.34961227112819293e-02",
+      "norm": "1.00000000000000000e+00",
+      "relative_residual": "2.31201112243538932e-12",
+      "finite_positive": "1"
+    },
+    {
+      "index": "99",
+      "lambda": "5.37891344738521612e-02",
+      "norm": "1.00000000000000044e+00",
+      "relative_residual": "2.19906635708937179e-12",
+      "finite_positive": "1"
+    }
+  ]
+}

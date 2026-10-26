@@ -1,0 +1,38 @@
+[
+  {
+    "label": "generate",
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_recovery_pilot/build/mental_recovery",
+      "-i",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_recovery_pilot/campaigns/selected14/mental.in"
+    ],
+    "exit_code": 0,
+    "seconds": 610.5947432518005,
+    "stdout_sha256": "37e09fa420ccd3e1e18df754709c8b9c66e03ae5bc6e544eec7fada77de033e5",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "audit",
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_recovery_pilot/build/check_saved",
+      "640",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvalues/qX_p2_n640_selected_recovery_n640_eval.h5"
+    ],
+    "exit_code": 0,
+    "seconds": 135.6801950931549,
+    "stdout_sha256": "ee7d696f84ffd8a9c55c0b8cf0fee7c4de5734f1fd3e1f2cc2ef71e580e1c022",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

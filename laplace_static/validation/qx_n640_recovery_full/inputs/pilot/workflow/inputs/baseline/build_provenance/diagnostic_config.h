@@ -1,0 +1,11 @@
+#define QX_NV 100
+#define QX_RES 1e-09
+#define QX_RED_TOL 1e-12
+#define QX_DEG 10
+#define QX_UPPER 0.15
+#define QX_REORTHO 1e-10
+#define QX_MAX_RESTARTS 30
+#define QX_LANCZOS_FACTOR 7
+#define QX_RED_FREQ_FACTOR 10
+#define QX_NAPE 20
+#define QX_ALPHA_APE 0.5

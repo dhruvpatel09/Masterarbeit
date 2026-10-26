@@ -1,0 +1,12 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-2%3",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_profiles/submit_micro.sh",
+    "matched"
+  ],
+  "returncode": 0,
+  "stdout": "5946008\n",
+  "stderr": ""
+}

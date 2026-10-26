@@ -1,0 +1,32 @@
+{
+  "name": "selected14",
+  "selected_times": [
+    0,
+    1,
+    32,
+    64,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    128,
+    160,
+    191
+  ],
+  "configuration": 640,
+  "run_directory": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705",
+  "gauge": {
+    "path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+    "bytes": 28991029272,
+    "mtime_ns": 1788673292045688864,
+    "header_hex": "c0000000400000004000000040000000"
+  },
+  "build_manifest_sha256": "586f7a9d81321401d14fcb5caf3491b49e020d0a2b07c24f8b0ce10700e9eb32",
+  "input_sha256": "4ec7079dff38374d17a667bb593217a0be1179be3c2b464ec64528cf7140cdbf",
+  "eigenvalue_file": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvalues/qX_p2_n640_selected_recovery_n640_eval.h5",
+  "production_configuration_admitted": false,
+  "scope": "Selected saved-mode pilot only; full-configuration eigenpair inventory and ensemble remain unchanged. The eigenvalue container has the original 192-row layout; only selected_times rows are valid."
+}

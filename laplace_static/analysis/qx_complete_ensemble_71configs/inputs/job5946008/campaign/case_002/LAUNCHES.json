@@ -1,0 +1,70 @@
+[
+  {
+    "configuration": 640,
+    "tau": 6,
+    "piter": 4,
+    "exit_code": 0,
+    "seconds": 89.66073527600383,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "e8029ef2e458f04f73de1a300b22a00753435e353468d573279f6acdecd34d53",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 640,
+    "tau": 6,
+    "piter": 10,
+    "exit_code": 0,
+    "seconds": 130.06898094597273,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "981d841beabddc3941f0d33941d143a3a2af40ad298ec28868ed311441567485",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 640,
+    "tau": 6,
+    "piter": 20,
+    "exit_code": 0,
+    "seconds": 198.37356727704173,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "55aed955035af33f81ba353d3f00dd2d94c58ea74ad3e69e6d985a38cb9760eb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 640,
+    "tau": 6,
+    "piter": 40,
+    "exit_code": 0,
+    "seconds": 333.4343031620374,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_clover_trace/build/test_profiles_trace_qx"
+    ],
+    "stdout_sha256": "f9d7f9e41d61c625a2589f5d33cf2338a6fa79bc5aa1e79a85b23ebe5715ca9a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

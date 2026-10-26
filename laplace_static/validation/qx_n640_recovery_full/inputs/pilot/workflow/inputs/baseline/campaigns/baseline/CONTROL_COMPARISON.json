@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "configuration": 650,
+  "time": 1,
+  "maximum_absolute_eigenvalue_difference": 0.0,
+  "absolute_tolerance": 1e-10,
+  "scope": "One selected-slice control comparison; not a proof of source identity."
+}

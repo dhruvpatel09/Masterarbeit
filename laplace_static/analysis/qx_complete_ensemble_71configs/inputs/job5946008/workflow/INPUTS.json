@@ -1,0 +1,50 @@
+{
+  "configuration": 640,
+  "taus": [
+    2,
+    4,
+    6
+  ],
+  "piters": [
+    4,
+    10,
+    20,
+    40
+  ],
+  "published_traceless_piters": [
+    4,
+    40
+  ],
+  "recovery_name": "full192",
+  "recovery_review_sha256": "bfe189c15519bb84b0e0acea59adb2d5027feab163ff6dd1cc5ebf4a9d56856f",
+  "source_pins": {
+    "laplace_static/validation/qx_clover_trace/campaign.py": "9e33b0ac95c39ce8a2613a97557d40dfa11b9f8ec5f0e08bc65c24ca538e13b3",
+    "laplace_static/validation/qx_projection_spectrum/campaign.py": "ad634fcc7235d7bfd122f92718c432f7f91ae78f2973b9e45c2c4a0ce4018b81",
+    "laplace_static/validation/qx_n640_recovery_full/campaign.py": "070b4d451bb7cd78959648ab369b3ef32f6bd09ab1183b370e0e529f95593b08",
+    "laplace_static/validation/qx_n640_recovery_full/INPUTS.json": "7e01c53c80ff502a97f4e6d06124f8b479c7416991c2b1294f32fc5384bc9597"
+  },
+  "input_pins": {
+    "inputs/recovery_prepared.json": "515e36857d1631fff205396795ff257ffb2f007bbcb496699bf73233ec31abf8",
+    "inputs/recovery_saved_files.json": "f50fb7c2e515269e30c94c75fa183cfb1c8f1b49f68015779c127579325bcd6b",
+    "inputs/recovery_summary.json": "1c2ff4d08652160debf46a842609c393ed245670be3cb8c48c745e1b6446ac74"
+  },
+  "settings": {
+    "Nv": 100,
+    "midpoint": 98,
+    "hyp_steps": 1,
+    "alpha": [
+      1,
+      1,
+      0.5
+    ],
+    "grid": [
+      1,
+      4,
+      4,
+      4
+    ],
+    "ranks": 64,
+    "nodes": 8
+  },
+  "scope": "n640 extension only. Raw four-piter profiles and matched raw/traceless p4/p40 measurements complete the existing 70-configuration cohorts. Additional n640 traceless p10/p20 rows do not imply a matched 71-configuration traceless p10/p20 study."
+}

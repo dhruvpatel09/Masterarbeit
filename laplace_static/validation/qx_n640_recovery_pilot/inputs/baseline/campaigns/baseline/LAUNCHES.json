@@ -1,0 +1,77 @@
+[
+  {
+    "configuration": 650,
+    "time": 1,
+    "role": "library_control",
+    "variant": "library",
+    "gauge_path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+    "gauge_bytes": 28991029272,
+    "gauge_mtime_ns": 1788676048785889926,
+    "gauge_header_hex": "c0000000400000004000000040000000",
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_diagnostic/build/test_n640_reference",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+      "650",
+      "1"
+    ],
+    "exit_code": 0,
+    "seconds": 229.83028173446655,
+    "stdout_sha256": "d8847125a986addc22c613f12b81ebd2e5f390ab52c78922a0db141e0b1fc47e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 650,
+    "time": 1,
+    "role": "trace_control",
+    "variant": "traced",
+    "gauge_path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+    "gauge_bytes": 28991029272,
+    "gauge_mtime_ns": 1788676048785889926,
+    "gauge_header_hex": "c0000000400000004000000040000000",
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_diagnostic/build/test_n640",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+      "650",
+      "1"
+    ],
+    "exit_code": 0,
+    "seconds": 186.82510018348694,
+    "stdout_sha256": "eb1f0b179f8a368c99fb3eba2b4098fa07e5b8111d6da7745625c453e85fdff3",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "configuration": 640,
+    "time": 1,
+    "role": "target",
+    "variant": "traced",
+    "gauge_path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+    "gauge_bytes": 28991029272,
+    "gauge_mtime_ns": 1788673292045688864,
+    "gauge_header_hex": "c0000000400000004000000040000000",
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "-ppn",
+      "8",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_n640_diagnostic/build/test_n640",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+      "640",
+      "1"
+    ],
+    "exit_code": 0,
+    "seconds": 263.75078892707825,
+    "stdout_sha256": "e9f9ccf258f8579782e4106b1c07adc51f8fff9461227f29dd144aeac32ee2b6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]
