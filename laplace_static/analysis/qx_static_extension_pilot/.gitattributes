@@ -1,0 +1,3 @@
+inputs/** -text
+results/*.csv -text
+results/*.json -text

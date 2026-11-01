@@ -1,0 +1,51 @@
+{
+  "configuration": 640,
+  "quality": {
+    "configuration": 640,
+    "slices": 33,
+    "modes": 3300,
+    "maximum_relative_residual": 7.733833506830034e-12,
+    "saved_eigenvalue_order_checked": true
+  },
+  "scans": [
+    {
+      "configuration": 640,
+      "piter": 10,
+      "rows": 6372,
+      "regression_rows": 36,
+      "archived_reference_rows": 852,
+      "archived_reference_maximum_absolute_difference": 0.0,
+      "cutoffs": [
+        40,
+        60,
+        80,
+        100
+      ],
+      "direct_tests": 396,
+      "periodic_roundtrips": 3,
+      "spatial_block_rows": 4800,
+      "unit_max": "7.32045085377771220e-16",
+      "det_max": "6.75322301446425948e-16"
+    },
+    {
+      "configuration": 640,
+      "piter": 40,
+      "rows": 1620,
+      "regression_rows": 36,
+      "archived_reference_rows": 852,
+      "archived_reference_maximum_absolute_difference": 0.0,
+      "cutoffs": [
+        100
+      ],
+      "direct_tests": 108,
+      "periodic_roundtrips": 3,
+      "spatial_block_rows": 4800,
+      "unit_max": "7.12344293230055240e-16",
+      "det_max": "6.75901338858568021e-16"
+    }
+  ],
+  "p10_p40_maximum_absolute_difference": 6.617444900424222e-24,
+  "success": true,
+  "launches_sha256": "8c722c48ad3709e6cf36e2e96aefeffc5fcc9367fa0bf2272d67da009cea25e5",
+  "case_sha256": "4714d1fb97207507d2d0ee9a7a3b6bd356bb0536a08adb7e86cf486b38548488"
+}

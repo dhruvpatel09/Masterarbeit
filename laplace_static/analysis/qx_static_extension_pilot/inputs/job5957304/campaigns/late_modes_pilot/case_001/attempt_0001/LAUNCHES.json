@@ -1,0 +1,57 @@
+[
+  {
+    "kind": "audit",
+    "piter": 0,
+    "configuration": 640,
+    "stem": "audit",
+    "seconds": 238.48559375293553,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_extension/build/audit_selected",
+      "640",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvalues/qX_p2_n640_full192_recovery_eval.h5"
+    ],
+    "job_id": "5957316",
+    "out_sha256": "65b0cfa474417fe1ab07610883877e2d019f396a5dd5c8d05f75e314ed8d30ad",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "kind": "scan",
+    "piter": 10,
+    "configuration": 640,
+    "stem": "p10",
+    "seconds": 342.6855816077441,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_extension/build/scan"
+    ],
+    "job_id": "5957316",
+    "out_sha256": "e76e27881b6cacf17cc646e86a438528344027465e902f1e2e60a9eae87f4823",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "kind": "scan",
+    "piter": 40,
+    "configuration": 640,
+    "stem": "p40",
+    "seconds": 453.71126907877624,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_extension/build/scan"
+    ],
+    "job_id": "5957316",
+    "out_sha256": "e19220339285ebcdf8d71f55838d232cf96c99ba2f9d6f5e53185bd3ba9f4341",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

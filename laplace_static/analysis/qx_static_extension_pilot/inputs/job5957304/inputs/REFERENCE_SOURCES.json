@@ -1,0 +1,11 @@
+{
+  "base_commit": "aeb8b0c00dea761cd9b7c2a734e25e2ac70f35d2",
+  "rows": 63048,
+  "files": {
+    "laplace_static/analysis/qx_static_potential_71configs/inputs/job5955993/correlators.csv": "206aa96ea628642d7731735b674331bc5f291d029519e8165b428e24a43658d0",
+    "laplace_static/analysis/qx_static_potential_71configs/inputs/job5955349/case_000/attempt_0001/correlators.csv": "9b06192c3dea05778aa4de4adce93e54b7103fececc7efccf84d2662bd818d23",
+    "laplace_static/analysis/qx_static_potential_71configs/inputs/job5955349/case_001/attempt_0001/correlators.csv": "be18275034fab593c5b1a47be973089b8b88a65a79c799d16aab56e2da775ba7",
+    "laplace_static/analysis/qx_static_potential_71configs/inputs/job5955349/case_002/attempt_0001/correlators.csv": "5c96a8637070ea567690686f035d6de0c49ffd40db125f7ff9757a280cb34898"
+  },
+  "selection": "Nv=100; R=1,2,4,8,12,16,20,23,24,25,28,32; fixed tau 0..16 plus all original regression records; p10 all71 and p40 pilot controls."
+}

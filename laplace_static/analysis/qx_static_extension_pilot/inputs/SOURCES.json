@@ -1,0 +1,15 @@
+{
+  "measurement_commit": "cc91be6b6971d7caae21c33a790dc30d3856e4bf",
+  "job": 5957304,
+  "archive": "qx_static_extension_late_modes_pilot_review.zip",
+  "configuration_labels": [
+    170,
+    640,
+    650
+  ],
+  "scope": "Technical pilot; all three configurations retained; production target all 71.",
+  "uncertainty": "Illustrative independent-configuration standard errors and paired delta-method errors; N=3 selected controls, not a population study.",
+  "archived_build_note": "Generated headers and audit source are preserved; linked libraries and executables are represented by their original recorded hashes.",
+  "measurement_inputs_sha256": "ff7a1f843c239783b962f0aedbad9c9f07b17729cc5a8dbffcb7cbcb917e9c64",
+  "source_receipt_verification": "Captured INPUTS.json compared byte for byte with GitHub at the measurement commit."
+}

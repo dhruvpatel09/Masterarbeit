@@ -1,0 +1,5 @@
+build/
+campaigns/
+__pycache__/
+static_*.out
+static_*.err

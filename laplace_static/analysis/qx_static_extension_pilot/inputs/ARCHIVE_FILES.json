@@ -1,0 +1,468 @@
+{
+  "archive": "qx_static_extension_late_modes_pilot_review.zip",
+  "archive_sha256": "09bc58e65e42a2185034e0289a08ce4c4e5cfc73887d4b992ab8fed7e733189f",
+  "files": [
+    {
+      "original": "laplace_static/validation/qx_static_extension/.gitattributes",
+      "stored": "inputs/job5957304/source_gitattributes.txt",
+      "bytes": 16,
+      "sha256": "98669385a12ba954424e2e35e0a78619d5819a44ebdf83eb37f5144455e23aa3"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/.gitignore",
+      "stored": "inputs/job5957304/source_gitignore.txt",
+      "bytes": 57,
+      "sha256": "587e5e6fde535fd177f2b85acfe99c29ae52241b57996b8d6021df33fb4d7e2a"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/INPUTS.json",
+      "stored": "inputs/job5957304/INPUTS.json",
+      "bytes": 10621,
+      "sha256": "ff7a1f843c239783b962f0aedbad9c9f07b17729cc5a8dbffcb7cbcb917e9c64"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/README.md",
+      "stored": "inputs/job5957304/README.md",
+      "bytes": 7014,
+      "sha256": "259b4f8178765457de3ec5ed30236e953ee33dd17f817d9dff258a27c7f4e12f"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/MANIFEST.json",
+      "stored": "inputs/job5957304/build_provenance/MANIFEST.json",
+      "bytes": 4287,
+      "sha256": "8b0ac82aebfae0f0a1011d3dc4d8690174f5429dd11af66dc3a52082fc62c989"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/audit_selected.c",
+      "stored": "inputs/job5957304/build_provenance/audit_selected.c",
+      "bytes": 12186,
+      "sha256": "e72712b84df171e8301d3f505127723ee7691380fef28359021cbec2f55b9186"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/compiler.txt",
+      "stored": "inputs/job5957304/build_provenance/compiler.txt",
+      "bytes": 769,
+      "sha256": "6fe926313be54e09f75717e0936f274f664558569858adb6707a46611d76fe4d"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/io_helpers.h",
+      "stored": "inputs/job5957304/build_provenance/io_helpers.h",
+      "bytes": 5109,
+      "sha256": "c92fe7bc109e11c5d1385e79f4dec388bf4b651bc3f0d28b514fbf92bde7bffb"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/kernels.h",
+      "stored": "inputs/job5957304/build_provenance/kernels.h",
+      "bytes": 2662,
+      "sha256": "0436d5b2a64378e014c8cf7348ad65283ab4e79feeebbb186459bdfcb46be5ef"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/linked_audit_selected.txt",
+      "stored": "inputs/job5957304/build_provenance/linked_audit_selected.txt",
+      "bytes": 1294,
+      "sha256": "abea49095122627a229fea706eb9ac744333384a02e16270a07afa1625ec5893"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/linked_scan.txt",
+      "stored": "inputs/job5957304/build_provenance/linked_scan.txt",
+      "bytes": 1294,
+      "sha256": "134a2ab0dc781ec257cba9315814f0bb241110107ab44eb983e8f2e4ec3e11fa"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/measurement_plan.h",
+      "stored": "inputs/job5957304/build_provenance/measurement_plan.h",
+      "bytes": 293,
+      "sha256": "174b27c4335bb349b8d15dc4d332cf075bbb62a236f17b4858a6043b058a9fb0"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/metrics.h",
+      "stored": "inputs/job5957304/build_provenance/metrics.h",
+      "bytes": 1141,
+      "sha256": "63639cf83826e6b184dedea9ac91751b054383e63efa0d54b8b44d6cd5ceb0b9"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/modules.txt",
+      "stored": "inputs/job5957304/build_provenance/modules.txt",
+      "bytes": 233,
+      "sha256": "096ea8846f60942cdd5630564af9121922e1172db8fa8ab7cf8a417b6ec40202"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build/mpi_helpers.h",
+      "stored": "inputs/job5957304/build_provenance/mpi_helpers.h",
+      "bytes": 2578,
+      "sha256": "e710ce2766f13fd172ded12416dfdf2cbfe8cf554ef71ccf03e503f372d88a63"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/build.sh",
+      "stored": "inputs/job5957304/build.sh",
+      "bytes": 2018,
+      "sha256": "c64810669f5664f89af683c92fb0203437bd364d1906c6e1d58a6b70d8c7c354"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaign.py",
+      "stored": "inputs/job5957304/campaign.py",
+      "bytes": 18851,
+      "sha256": "e052c24593e9034465c42373dfab35cebf5f469664f9713900a2ebf6cc98ef08"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/PREPARED.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/PREPARED.json",
+      "bytes": 48003,
+      "sha256": "97ccfc85ddcc4c6343324e5bded3da373eec6f9d3829ec05004fa814ed52c5a2"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/SUBMISSION_001.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/SUBMISSION_001.json",
+      "bytes": 270,
+      "sha256": "6e7d64c9caf56291f9f38db231669cfee0b18928bb12faff821fbeaa2a60b5da"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/SUMMARY.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/SUMMARY.json",
+      "bytes": 11507,
+      "sha256": "98510870037c4ea20b341b302b388b2cab58b2afbbddbe2e6e7ec6a2e21f1a09"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/LATEST.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/LATEST.json",
+      "bytes": 120,
+      "sha256": "6e0b734afc01fa9f077acea41149a00d65b12c4b5b835d76caed475954f2c515"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/CASE.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/CASE.json",
+      "bytes": 15144,
+      "sha256": "e116ec88918b724b064274e66253fb907a61fa029843a3dfdb45f4bc6c560e29"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/LAUNCHES.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/LAUNCHES.json",
+      "bytes": 1933,
+      "sha256": "dac1bd71f95ab6bde6c3d9a2dddbce5531a057543c0b39c3e2cea1ba17da11fb"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/SUMMARY.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/SUMMARY.json",
+      "bytes": 1377,
+      "sha256": "b4cf1c897c7ff687349c41c59b4da00f4f034ddded7fb4350dcc92e00d28e136"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/audit.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/audit.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/audit.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/audit.out",
+      "bytes": 782953,
+      "sha256": "c1c3219e631899be20b7f1110ea793bd087429969f38b2a05c61f25666ffa735"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/correlators.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/correlators.csv",
+      "bytes": 660374,
+      "sha256": "b20a4bf7f37807f84787c9442054907c207b1341fa5a2d55f46d01383930ce1c"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/p10.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/p10.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/p10.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/p10.out",
+      "bytes": 1632092,
+      "sha256": "dd11c1f5f2c422a7e79be60bcb03385a951c9f5a67c035df82d821c8a09f9694"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/p40.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/p40.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/p40.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/p40.out",
+      "bytes": 955018,
+      "sha256": "45d089022e6440cac741ec42f4295abfa44ef233f71003b564480ced4b38c1d5"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_000/attempt_0001/spatial_blocks.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_000/attempt_0001/spatial_blocks.csv",
+      "bytes": 802872,
+      "sha256": "98d6ceb0f241a463cfdfb60d8024e869eb0e466707b38a171bbcd2c18fb85b79"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/LATEST.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/LATEST.json",
+      "bytes": 120,
+      "sha256": "058f2b48541084bc050867c50d7ee1b54d9966a6254eaaf265f4c39ab1f48da4"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/CASE.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/CASE.json",
+      "bytes": 13547,
+      "sha256": "4714d1fb97207507d2d0ee9a7a3b6bd356bb0536a08adb7e86cf486b38548488"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/LAUNCHES.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/LAUNCHES.json",
+      "bytes": 1881,
+      "sha256": "8c722c48ad3709e6cf36e2e96aefeffc5fcc9367fa0bf2272d67da009cea25e5"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/SUMMARY.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/SUMMARY.json",
+      "bytes": 1377,
+      "sha256": "122f11bcba6723ac6a7e5c9b85b6563043221562b8b7725aa75d4f62d28017b9"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/audit.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/audit.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/audit.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/audit.out",
+      "bytes": 783003,
+      "sha256": "65b0cfa474417fe1ab07610883877e2d019f396a5dd5c8d05f75e314ed8d30ad"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/correlators.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/correlators.csv",
+      "bytes": 660499,
+      "sha256": "64348b8601d0eeab6b4913a18b7c8d46765c583b392d31aadafac5321fff2dc8"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/p10.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/p10.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/p10.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/p10.out",
+      "bytes": 1632456,
+      "sha256": "e76e27881b6cacf17cc646e86a438528344027465e902f1e2e60a9eae87f4823"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/p40.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/p40.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/p40.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/p40.out",
+      "bytes": 954817,
+      "sha256": "e19220339285ebcdf8d71f55838d232cf96c99ba2f9d6f5e53185bd3ba9f4341"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_001/attempt_0001/spatial_blocks.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_001/attempt_0001/spatial_blocks.csv",
+      "bytes": 802910,
+      "sha256": "a511089c8d8ada92007d6d3a58df47ff40ac90c6485c80c87846a4fe945481b0"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/LATEST.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/LATEST.json",
+      "bytes": 120,
+      "sha256": "b47e87d69b2bc3f9f7da6f990516fc7e69f96049b601cf8d567fbbecdc523345"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/CASE.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/CASE.json",
+      "bytes": 15144,
+      "sha256": "aa822082d61973a1d55795cc13f02222a88f1cef26442bb9723b20c12dd2fe64"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/LAUNCHES.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/LAUNCHES.json",
+      "bytes": 1933,
+      "sha256": "e809a967b98f968772c2a25ef35ae0494007f3b505baab8f4eb71ee1bab24f89"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/SUMMARY.json",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/SUMMARY.json",
+      "bytes": 1377,
+      "sha256": "d9c2a3c3b875690233452af6d14f0bebc600bbed521571c61ecc2885a4fbcc28"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/audit.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/audit.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/audit.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/audit.out",
+      "bytes": 782949,
+      "sha256": "12666b47aa2c23199c2b1f28167b04e241c3e6068a36b009c45abf36a64dcc2c"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/correlators.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/correlators.csv",
+      "bytes": 659943,
+      "sha256": "bca0737659674b45f1cf0c8f05e097ceed753767b508df2ddb95f6a91fc656d2"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/p10.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/p10.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/p10.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/p10.out",
+      "bytes": 1631826,
+      "sha256": "a12a3432d71869904b79914e2167657acbb3ae0787e9cae5db16b0d1ff80755b"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/p40.err",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/p40.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/p40.out",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/p40.out",
+      "bytes": 954803,
+      "sha256": "ebf30ae04664216c72ae0b0adbc49cecd1739d73e6d074357a9c7d57c3cb00c8"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/case_002/attempt_0001/spatial_blocks.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/case_002/attempt_0001/spatial_blocks.csv",
+      "bytes": 802822,
+      "sha256": "f169dd7e06bd09eb01b07954c83543eecbe9a759362558451ba9f128f888bb57"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/correlators.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/correlators.csv",
+      "bytes": 1980718,
+      "sha256": "094355dcbbbce7a36c26c9d016614cd7b37e7d2d7d2f5cf4edfd7426ca8e3855"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/prepared.sha256",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/prepared.sha256",
+      "bytes": 65,
+      "sha256": "789a4f9ee074fd19ace3f54cb119339af36e8ef2448687e4d05269660f367816"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/campaigns/late_modes_pilot/spatial_blocks.csv",
+      "stored": "inputs/job5957304/campaigns/late_modes_pilot/spatial_blocks.csv",
+      "bytes": 2408492,
+      "sha256": "7de2fbf9e3fd9b1e777208f0590c8db4effb0fcbb26345c0a0d5a9abfdaed63a"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/check_extension.py",
+      "stored": "inputs/job5957304/check_extension.py",
+      "bytes": 9243,
+      "sha256": "25db6fb4ee02670e466410ae47a67ce2a62889a700018098ea250768c0a380ce"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/generate_sources.py",
+      "stored": "inputs/job5957304/generate_sources.py",
+      "bytes": 1985,
+      "sha256": "a13803da5f199237ed0d8fed9ad031e8e9ceaa15e6b586d28fde308a578cbb4a"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/inputs/REFERENCE_SOURCES.json",
+      "stored": "inputs/job5957304/inputs/REFERENCE_SOURCES.json",
+      "bytes": 965,
+      "sha256": "16c36e468bca176fae1b2d8d48550d53a525313f0ad31bb97b87f6fa4673dadb"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/inputs/RUNS.json",
+      "stored": "inputs/job5957304/inputs/RUNS.json",
+      "bytes": 18968,
+      "sha256": "e2f42355266089e5144300ba59916455c184c76c18506e744f479218335f69f7"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/inputs/reference_correlators.csv",
+      "stored": "inputs/job5957304/inputs/reference_correlators.csv",
+      "bytes": 10205863,
+      "sha256": "6d4bd80727381ed90a27551957fe1e055b9a54bd28ffa145e0fec43cf2d12b12"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/measurement_plan.py",
+      "stored": "inputs/job5957304/measurement_plan.py",
+      "bytes": 1000,
+      "sha256": "689cf89f845f8f58258d5e4f1a82b06c00f05f43f48ca783d82ebe07f9f896d7"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/scan.c",
+      "stored": "inputs/job5957304/scan.c",
+      "bytes": 9977,
+      "sha256": "5a2d786cd204e89a02a4ad7e584955e0ad825c8b4dc42c3b31d40d36449d8336"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/static_5957304_0.err",
+      "stored": "inputs/job5957304/static_5957304_0.err",
+      "bytes": 144,
+      "sha256": "c4daa93d5b18081c9e2755cca1dfeae8881f48da87bbeb9afece121fef7692d2"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/static_5957304_0.out",
+      "stored": "inputs/job5957304/static_5957304_0.out",
+      "bytes": 31,
+      "sha256": "b0b79a8f6479f81a6e3be61cfe1958ba7b561230e0f70a655041b57f0b35800c"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/static_5957304_1.err",
+      "stored": "inputs/job5957304/static_5957304_1.err",
+      "bytes": 144,
+      "sha256": "c4daa93d5b18081c9e2755cca1dfeae8881f48da87bbeb9afece121fef7692d2"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/static_5957304_1.out",
+      "stored": "inputs/job5957304/static_5957304_1.out",
+      "bytes": 31,
+      "sha256": "a855e4b26b8434b20303d67e6b84ae46d08c4ce4c0076d2d722083ff2010320a"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/static_5957304_2.err",
+      "stored": "inputs/job5957304/static_5957304_2.err",
+      "bytes": 144,
+      "sha256": "c4daa93d5b18081c9e2755cca1dfeae8881f48da87bbeb9afece121fef7692d2"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/static_5957304_2.out",
+      "stored": "inputs/job5957304/static_5957304_2.out",
+      "bytes": 31,
+      "sha256": "7e1e55e4f10d081c1303b139034f74cfbca3476d95e2936f3c7b77144a6675f5"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/submit_micro.sh",
+      "stored": "inputs/job5957304/submit_micro.sh",
+      "bytes": 705,
+      "sha256": "a6653a981a58880f6422200cb154c50768b7746288db7b5498346a37a0dec2b1"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/test_workflow.py",
+      "stored": "inputs/job5957304/test_workflow.py",
+      "bytes": 11544,
+      "sha256": "7629571977e7469379771fc450465f65472f0e517017d0ae31c54fe9cdd16591"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/tests/DistEigvecsHdf5Reader.h",
+      "stored": "inputs/job5957304/tests/DistEigvecsHdf5Reader.h",
+      "bytes": 925,
+      "sha256": "f12a5939120112d53cb99d957badb3afcc1d170b0c0e97fba85de96ed4680579"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/tests/kernels_and_shifts.c",
+      "stored": "inputs/job5957304/tests/kernels_and_shifts.c",
+      "bytes": 6207,
+      "sha256": "f21daa1c3fa2b555381e81c47facafef6d79da89948dad892a095311087e01a5"
+    },
+    {
+      "original": "laplace_static/validation/qx_static_extension/tests/mpi.h",
+      "stored": "inputs/job5957304/tests/mpi.h",
+      "bytes": 989,
+      "sha256": "f3a231986ab844ebbb5dc9e1bf3ae41e2e77b0d89cfbb2c59aa0720138c13fdf"
+    }
+  ]
+}
