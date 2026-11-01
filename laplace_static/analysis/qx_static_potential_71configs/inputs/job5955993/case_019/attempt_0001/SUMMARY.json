@@ -1,0 +1,26 @@
+{
+  "configuration": 300,
+  "quality": {
+    "configuration": 300,
+    "slices": 17,
+    "modes": 1700,
+    "maximum_relative_residual": 1.0144625953650304e-11
+  },
+  "scans": [
+    {
+      "configuration": 300,
+      "piter": 10,
+      "rows": 2212,
+      "regression_rows": 36,
+      "direct_tests": 120,
+      "periodic_roundtrips": 3,
+      "spatial_block_rows": 3840,
+      "unit_max": "7.17362168740636506e-16",
+      "det_max": "6.79055061784325405e-16"
+    }
+  ],
+  "p10_p40_maximum_absolute_difference": null,
+  "success": true,
+  "launches_sha256": "8d251c9fb150b8e255a037b5a59bc26212aea41546b404bc99b924838740dda1",
+  "case_sha256": "6269d563372d29b632760982f64cf427d88d38bfc60498db82109b9d7cb203c5"
+}

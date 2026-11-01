@@ -1,0 +1,358 @@
+[
+  {
+    "configuration": 100,
+    "run": "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_saved_modes_n100/results_n100/input_run",
+    "completion_marker_sha256": "5475e1e09ea5eaaf076ef8e7dd7be4474c3542b4b4a9b957d06b64096368fdc7"
+  },
+  {
+    "configuration": 110,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n110_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_scaling",
+    "completion_marker_sha256": "586de237a97bafde368ff900245bebf93aff1f022c4f61c109c05fe515de2ae4"
+  },
+  {
+    "configuration": 120,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n120_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "d7a5896f4fc52a2930ed61ae78aca0e89ac658727e113986720699278b631d16"
+  },
+  {
+    "configuration": 130,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n130_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "22d02e27f57a1972ad822a327b470ef6e7cdac834955fef72d0079999d8ad227"
+  },
+  {
+    "configuration": 140,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n140_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "a495d3f2b4e4c6065e32cc62a33c6785fd06d6a92bc0ab0340e30b98d7470c29"
+  },
+  {
+    "configuration": 150,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n150_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "49d42763be4c00a3c75d80a983ec1769e1b9e296be6692541246f6ad2ab6675c"
+  },
+  {
+    "configuration": 160,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n160_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "c15950e01970836ec235e7aa1ab40d0a1d6dbfb94633c4594eb41020eb846a83"
+  },
+  {
+    "configuration": 170,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "745a6e8e9bb695ca9b41798add9b2778626a96719ff56a20fbf269d40b3ced3b"
+  },
+  {
+    "configuration": 180,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n180_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "38f888eb95dbe9e2d1a62b7b3d43e9ba057cc01406e5f9f9b706fb7eec2d0397"
+  },
+  {
+    "configuration": 190,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n190_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "b9373ac0d1c3201ea87706210584e2904512ddafcd785cf7f686bfd541a74231"
+  },
+  {
+    "configuration": 200,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n200_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "17bd5448e8b2e7f995fd2a386cd7afedee6119e4fbbcbba1d3f5a39babe6a0ce"
+  },
+  {
+    "configuration": 210,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n210_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "9c692dd348c101428cb2a53930709788b5ec69b272b288a55f6044e3d8773ce8"
+  },
+  {
+    "configuration": 220,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n220_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "8d6e8ed301d6cc9dfa6376a2383a9fd0472d7a94fca47b39df21d7ef71318c35"
+  },
+  {
+    "configuration": 230,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n230_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "d805663ab622b35254ea6d1a79bba13432d9057f1ac37e80d7ec686f7ce757ac"
+  },
+  {
+    "configuration": 240,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n240_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "9b8b881c1e318ffcc2586890ce6948a98131b75e2472a642fbc67c4dd2d9f807"
+  },
+  {
+    "configuration": 250,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n250_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "41173b136aa499a070afbfc0716379c976fed66562a8a4a1fa18d96a27af98c0"
+  },
+  {
+    "configuration": 260,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n260_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "2ee1a69568e006ae9ef3dc093e542a9daedd468d0734a869ff848cefd3de34b1"
+  },
+  {
+    "configuration": 270,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n270_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "a8da0cc07c636b7ff3fbf9a725b78b2fde0fc1462cde536bf3d6df9a1324f42e"
+  },
+  {
+    "configuration": 280,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n280_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "f042c4412947edc216a01dfcbaeebd0af565030ab8df43bbfdd67a5ed32a09db"
+  },
+  {
+    "configuration": 290,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n290_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "9485f99fafa166c6e62235050a88c24a5f72c3b6a698e40cd715d0aa34ea62ef"
+  },
+  {
+    "configuration": 300,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n300_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "e7b94eaf5135db6b416e5f0a48a9cae6ad8db8fc03cc7aef697664ee910026a3"
+  },
+  {
+    "configuration": 310,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n310_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "d154569ea9457b2310f00b03b036e999ca5c565020fc35eebac26d115937b448"
+  },
+  {
+    "configuration": 320,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n320_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "39fe09f2ca9a3aaae32f3dfad5bb844fce7b290616f51ef8e797b5445db94d94"
+  },
+  {
+    "configuration": 330,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n330_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "bbbbb70b554aede4d9bc109d9702157ed255312ca49158b7f478cd80a3d3da06"
+  },
+  {
+    "configuration": 340,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n340_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "d145cb0424671ceb67b14baed7efd2346bc0c8bb757fb196f2c1ec2ef839c6ab"
+  },
+  {
+    "configuration": 350,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n350_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "2c4feadf60c3806744c2684e48c8787ef854c3ee69f409ee36032bc2a100b8fd"
+  },
+  {
+    "configuration": 360,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n360_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "4cb18dde4823d2349ac80c4a1c129c9aa409ba176b3a3e12b45d73908b395e0b"
+  },
+  {
+    "configuration": 370,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n370_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "64a4633ab74d7bcc186fe49fd950a8b181bfe10962116972e55ec25929f2ee42"
+  },
+  {
+    "configuration": 380,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n380_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "72c5ccfcacb8b3a3ad0d76ec30cecf58382009f6b619c7f2f2a018b5dc99016a"
+  },
+  {
+    "configuration": 390,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n390_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "e33f904a45b8525eb3fa6ffecae2c563d63b7612ca56f933e7bcd646d3ef47d3"
+  },
+  {
+    "configuration": 400,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n400_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "78ae55d32a531d4d4a7138f63d8e3c3015f8feee7788ee15cc8a7935d9cb33f1"
+  },
+  {
+    "configuration": 410,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n410_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "6015ea7982d67ee867830d38fd5a0da252477a51cfd44c5b5b8bafc908b1b3b3"
+  },
+  {
+    "configuration": 420,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n420_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "fe9fa5cfcfac44a40fc93e9684e7da4298ebb4718d06d2b5d61eec28aa42d059"
+  },
+  {
+    "configuration": 430,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n430_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "b98a8a6707990d9b1a08382b6bcf90ac855c4584dfbb1ad6da0cf00a615cd284"
+  },
+  {
+    "configuration": 440,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n440_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "4905c537ce782b19be65f30df6f85b075a3f8f1a2a1f947782db23de9be3d992"
+  },
+  {
+    "configuration": 450,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n450_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "96192f993cf23918f805e4fd0dddcb16e3073ab619e18b41a3f4b8994edba972"
+  },
+  {
+    "configuration": 460,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n460_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "0c8b513cfd0ea89078e7324de5a43e773deaac1961039bfdfed5c70a5e02c705"
+  },
+  {
+    "configuration": 470,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n470_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "0576356c8cc538a1989e4cb665d662d65909148c665d7bc8f93f6dd49722e0db"
+  },
+  {
+    "configuration": 480,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n480_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "d8f2cefa6a0284c467ac4f6746dfc432ec97e19c9bd56c609ea77c2284ed17e7"
+  },
+  {
+    "configuration": 490,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n490_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "1f2c83a428fca08f8d080727c17c74e4bf48a73edbf63df4bdaf32f20065365b"
+  },
+  {
+    "configuration": 500,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n500_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "38f05a71ab6106b6843f9d489d30fa6cd1bd06137267a4a52a6e408c03257ca4"
+  },
+  {
+    "configuration": 510,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n510_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "1b45339f42c2689bed7fd472301b450c3f2b2bb700bd4ff33c6dc0d075772875"
+  },
+  {
+    "configuration": 520,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n520_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "a08564f187d5b464dd07c84f48ab48d34700b357530bb9931a7c8c88b3dc3f68"
+  },
+  {
+    "configuration": 530,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n530_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "00a445908ca6d437e1e3c931a526ee8ba988341ac47d12e51b40f393eacbb9b8"
+  },
+  {
+    "configuration": 540,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n540_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "1d548d3213cdcb1048c5854c8e769ab542544627f5ee0e7cbaa43a6e94a3b1b2"
+  },
+  {
+    "configuration": 550,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n550_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "95c3ebfeb083d31e591c1710bb8274ad6638b3de199b910b969c97b972970d44"
+  },
+  {
+    "configuration": 560,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n560_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "7111248a309089cfb2abb250712d8c88b76639d4ec29e062f04106665d37176c"
+  },
+  {
+    "configuration": 570,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n570_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "cb570c08b9b5105f9dd2ca02798101dd8d493d6c21c2da77b0952516e104f2fe"
+  },
+  {
+    "configuration": 580,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n580_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "4bb9d0a0bd672303b35c5f3462212580ea0444490dded5bfc515ae8bd4eededf"
+  },
+  {
+    "configuration": 590,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n590_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "8a9a575c7e352c54f08bc1cfca84775de4514e2d479eff359b13210897ad0364"
+  },
+  {
+    "configuration": 600,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n600_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "b9fec5e91a1eb7fa9e2578394a24c7796346a959fbaa4f3087ffe8645b1b98bd"
+  },
+  {
+    "configuration": 610,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n610_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "47f0036ed5078c7c97860d31e7c3fcf99e15c75cf6987a9a2cbfcfb67300f10a"
+  },
+  {
+    "configuration": 620,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n620_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "e08491180a9e29345a74dc694edc7dd1d70d87c4e7426a4159723966fa4f4b1e"
+  },
+  {
+    "configuration": 630,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n630_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "818547725f2cd2421b94bf13f701a00702fccf1752cbb521e67c0654fe4333e4"
+  },
+  {
+    "configuration": 640,
+    "eigenvectors": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors",
+    "eigenvalues": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvalues/qX_p2_n640_full192_recovery_eval.h5",
+    "eigenvalue_sha256": "b3799a530d3c4664ce72601bc5e4e7964a3fcb79939ab10e0ff6858f2cd42291"
+  },
+  {
+    "configuration": 650,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "0583174c06bce9785ace785dee73ae7cd31c914d35b9d0c67a44c668bb586703"
+  },
+  {
+    "configuration": 660,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n660_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "b475e0fc1cc041a60557cc0792e73fb730803b86a1dd2a80f0a9fe7673d48d22"
+  },
+  {
+    "configuration": 670,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n670_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "7b5dbe5a1d32104adb968643eae647ecf28341058964a4a2ab6f00b248635e65"
+  },
+  {
+    "configuration": 680,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n680_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "ca0e38eba1c7d533afb5df4abbaf74e8f31df2da7f214adfe4ab6c06da6faf56"
+  },
+  {
+    "configuration": 690,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n690_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "ad94346029bcc2e7fbf697768a9d7931a2765b6113993f7346b33e75b5f85a45"
+  },
+  {
+    "configuration": 700,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n700_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "55cc8e9d0b8159f10dc1566ef9bb3a34991aae111d2ac02839055a4ee9302686"
+  },
+  {
+    "configuration": 710,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n710_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "ad5ed49897531001678535c45020ecb96ee8b06fa45a319f53cd424714dd8ee7"
+  },
+  {
+    "configuration": 720,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n720_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "89172aeb20951b5b24e11b633e1792902e17a3cfad5f79ff416f8681514e4a30"
+  },
+  {
+    "configuration": 730,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n730_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "1f8618047863670aa3aaf8458619aecc8aef83e78960f2143b877784698571bb"
+  },
+  {
+    "configuration": 740,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n740_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "9db9a79a5a6cc3cfe87d4da71c73ae291929f6981fdae76617e2aff532a76ae7"
+  },
+  {
+    "configuration": 750,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n750_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "6ab147b092d0a2fb3972825f73f13dad7ab2df1f1987933171c2147c06754885"
+  },
+  {
+    "configuration": 760,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n760_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "2b740d493d44224fb4c5552d10435c68cab15e46c3cc39352b909b119fabfd48"
+  },
+  {
+    "configuration": 770,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n770_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "cee721a748168d0352f3cd61e6289d276ed0160a5bc19a8596f03ed298b3c583"
+  },
+  {
+    "configuration": 780,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n780_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "683095065abfa036744a941f653ed5b1ebda545dfa4bd7798326f4cc1b1ceb8b"
+  },
+  {
+    "configuration": 790,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n790_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "f18ca84090380d963a369c429bcf1c5143a6e41ed841f068eeafcf9ce268d085"
+  },
+  {
+    "configuration": 800,
+    "run": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n800_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4",
+    "completion_marker_sha256": "cac5653e503125a432884a6dd716993f5016a19c8b1355802a5aac7741aebaf7"
+  }
+]

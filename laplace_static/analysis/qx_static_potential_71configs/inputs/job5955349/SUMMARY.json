@@ -1,0 +1,304 @@
+{
+  "success": true,
+  "stage": "pilot",
+  "target_configurations": [
+    170,
+    640,
+    650
+  ],
+  "validated_configurations": [
+    170,
+    640,
+    650
+  ],
+  "missing_configurations": [],
+  "correlator_rows": 13272,
+  "spatial_block_rows": 23040,
+  "cases": [
+    {
+      "configuration": 170,
+      "quality": {
+        "configuration": 170,
+        "slices": 17,
+        "modes": 1700,
+        "maximum_relative_residual": 7.125435681515985e-12
+      },
+      "scans": [
+        {
+          "configuration": 170,
+          "piter": 10,
+          "rows": 2212,
+          "regression_rows": 36,
+          "direct_tests": 120,
+          "periodic_roundtrips": 3,
+          "spatial_block_rows": 3840,
+          "unit_max": "7.02166693715340245e-16",
+          "det_max": "6.79055061784325405e-16"
+        },
+        {
+          "configuration": 170,
+          "piter": 40,
+          "rows": 2212,
+          "regression_rows": 36,
+          "direct_tests": 120,
+          "periodic_roundtrips": 3,
+          "spatial_block_rows": 3840,
+          "unit_max": "7.06575678773180801e-16",
+          "det_max": "6.82635178632513925e-16"
+        }
+      ],
+      "p10_p40_maximum_absolute_difference": 6.617444900424222e-24
+    },
+    {
+      "configuration": 640,
+      "quality": {
+        "configuration": 640,
+        "slices": 17,
+        "modes": 1700,
+        "maximum_relative_residual": 7.733833506830034e-12
+      },
+      "scans": [
+        {
+          "configuration": 640,
+          "piter": 10,
+          "rows": 2212,
+          "regression_rows": 36,
+          "direct_tests": 120,
+          "periodic_roundtrips": 3,
+          "spatial_block_rows": 3840,
+          "unit_max": "7.32045085377771220e-16",
+          "det_max": "6.75322301446425948e-16"
+        },
+        {
+          "configuration": 640,
+          "piter": 40,
+          "rows": 2212,
+          "regression_rows": 36,
+          "direct_tests": 120,
+          "periodic_roundtrips": 3,
+          "spatial_block_rows": 3840,
+          "unit_max": "7.12344293230055240e-16",
+          "det_max": "6.75901338858568021e-16"
+        }
+      ],
+      "p10_p40_maximum_absolute_difference": 6.617444900424222e-24
+    },
+    {
+      "configuration": 650,
+      "quality": {
+        "configuration": 650,
+        "slices": 17,
+        "modes": 1700,
+        "maximum_relative_residual": 6.4215002484136306e-12
+      },
+      "scans": [
+        {
+          "configuration": 650,
+          "piter": 10,
+          "rows": 2212,
+          "regression_rows": 36,
+          "direct_tests": 120,
+          "periodic_roundtrips": 3,
+          "spatial_block_rows": 3840,
+          "unit_max": "7.59695998249664606e-16",
+          "det_max": "6.73180002610235447e-16"
+        },
+        {
+          "configuration": 650,
+          "piter": 40,
+          "rows": 2212,
+          "regression_rows": 36,
+          "direct_tests": 120,
+          "periodic_roundtrips": 3,
+          "spatial_block_rows": 3840,
+          "unit_max": "7.09940748546059752e-16",
+          "det_max": "6.77742053982454106e-16"
+        }
+      ],
+      "p10_p40_maximum_absolute_difference": 1.3234889800848443e-23
+    }
+  ],
+  "timing": [
+    {
+      "configuration": 170,
+      "launches": [
+        {
+          "kind": "audit",
+          "piter": 0,
+          "configuration": 170,
+          "stem": "audit",
+          "seconds": 219.73584831226617,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/audit_selected",
+            "170",
+            "/hppfs/scratch/00/di98qes3/qX/qX_p2n170",
+            "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+            "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n170_Nv100_evec_packed4_n170_eval.h5"
+          ],
+          "job_id": "5955471",
+          "out_sha256": "a1614387438cd9693659c836b436160884ae7410b761fbf03944cb0d481abae7",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "kind": "scan",
+          "piter": 10,
+          "configuration": 170,
+          "stem": "p10",
+          "seconds": 229.5329577960074,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+          ],
+          "job_id": "5955471",
+          "out_sha256": "0e83254111ae592e41c5327dda8273d874f9acc500fda5f988498b13fe97a7e7",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "kind": "scan",
+          "piter": 40,
+          "configuration": 170,
+          "stem": "p40",
+          "seconds": 433.1975323641673,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+          ],
+          "job_id": "5955471",
+          "out_sha256": "8f2ebaf03c1d148449e2a7c311b3eed9549255e1c698664c635e290c60f1c2b3",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "configuration": 640,
+      "launches": [
+        {
+          "kind": "audit",
+          "piter": 0,
+          "configuration": 640,
+          "stem": "audit",
+          "seconds": 220.44460760243237,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/audit_selected",
+            "640",
+            "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+            "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors",
+            "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvalues/qX_p2_n640_full192_recovery_eval.h5"
+          ],
+          "job_id": "5955483",
+          "out_sha256": "172fa70c90f72c3da45011b41ff2d043328f99540165495f21c4939296ddf7c1",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "kind": "scan",
+          "piter": 10,
+          "configuration": 640,
+          "stem": "p10",
+          "seconds": 229.04768497496843,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+          ],
+          "job_id": "5955483",
+          "out_sha256": "803b39adac2ee00c7c67a9a17a2064ad2b1d6197c84f3ad4bce9b521dd3eccc0",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "kind": "scan",
+          "piter": 40,
+          "configuration": 640,
+          "stem": "p40",
+          "seconds": 431.9153656847775,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+          ],
+          "job_id": "5955483",
+          "out_sha256": "b23213d96f8b7846a64f07fcfe925a7295737fd9ce56a9cfe664c846bff644ef",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "configuration": 650,
+      "launches": [
+        {
+          "kind": "audit",
+          "piter": 0,
+          "configuration": 650,
+          "stem": "audit",
+          "seconds": 234.23257539235055,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/audit_selected",
+            "650",
+            "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+            "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+            "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n650_Nv100_evec_packed4_n650_eval.h5"
+          ],
+          "job_id": "5955349",
+          "out_sha256": "596fb4f6ccbd259d3961005cb4be07a7b74272d18ca8948b85d60635809b1f98",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "kind": "scan",
+          "piter": 10,
+          "configuration": 650,
+          "stem": "p10",
+          "seconds": 228.02780203148723,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+          ],
+          "job_id": "5955349",
+          "out_sha256": "e2a3a3fa48e73c72d38e6e41ffaf5dda8d7052e99ec1f967cde60bad0ad09a0c",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "kind": "scan",
+          "piter": 40,
+          "configuration": 650,
+          "stem": "p40",
+          "seconds": 433.7506414037198,
+          "exit_code": 0,
+          "command": [
+            "mpiexec",
+            "-n",
+            "64",
+            "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+          ],
+          "job_id": "5955349",
+          "out_sha256": "0b71a7cdb5e8944aa7a3a5a4efa9859b5a665f815b69b5f91dd52d226847d18d",
+          "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Correlators, not fitted potentials. Ensemble ratio/log estimates, positivity, signal quality and plateau tests follow collection."
+}

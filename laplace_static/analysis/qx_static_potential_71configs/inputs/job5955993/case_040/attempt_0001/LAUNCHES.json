@@ -1,0 +1,40 @@
+[
+  {
+    "kind": "audit",
+    "piter": 0,
+    "configuration": 510,
+    "stem": "audit",
+    "seconds": 229.4895344087854,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/audit_selected",
+      "510",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n510",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n510_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n510_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n510_Nv100_evec_packed4_n510_eval.h5"
+    ],
+    "job_id": "5956426",
+    "out_sha256": "1ec758f4bd225c4e8a8e1271aff44551308dfd338bbdc90dd22a712517a044dc",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "kind": "scan",
+    "piter": 10,
+    "configuration": 510,
+    "stem": "p10",
+    "seconds": 227.05560909118503,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+    ],
+    "job_id": "5956426",
+    "out_sha256": "741539c052f3c2f50f5fde6c9ae7c89a7ee2ed75ff234b435bc8244cff63fa9c",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

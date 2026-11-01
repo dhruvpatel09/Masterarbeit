@@ -1,0 +1,57 @@
+[
+  {
+    "kind": "audit",
+    "piter": 0,
+    "configuration": 650,
+    "stem": "audit",
+    "seconds": 234.23257539235055,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/audit_selected",
+      "650",
+      "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+      "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n650_Nv100_evec_packed4_n650_eval.h5"
+    ],
+    "job_id": "5955349",
+    "out_sha256": "596fb4f6ccbd259d3961005cb4be07a7b74272d18ca8948b85d60635809b1f98",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "kind": "scan",
+    "piter": 10,
+    "configuration": 650,
+    "stem": "p10",
+    "seconds": 228.02780203148723,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+    ],
+    "job_id": "5955349",
+    "out_sha256": "e2a3a3fa48e73c72d38e6e41ffaf5dda8d7052e99ec1f967cde60bad0ad09a0c",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "kind": "scan",
+    "piter": 40,
+    "configuration": 650,
+    "stem": "p40",
+    "seconds": 433.7506414037198,
+    "exit_code": 0,
+    "command": [
+      "mpiexec",
+      "-n",
+      "64",
+      "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/build/scan"
+    ],
+    "job_id": "5955349",
+    "out_sha256": "0b71a7cdb5e8944aa7a3a5a4efa9859b5a665f815b69b5f91dd52d226847d18d",
+    "err_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

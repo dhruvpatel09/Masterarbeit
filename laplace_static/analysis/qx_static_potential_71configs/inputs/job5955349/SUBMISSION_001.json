@@ -1,0 +1,12 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0,1,2%3",
+    "/hppfs/work/pn29se/di24gus/Masterarbeit/laplace_static/validation/qx_static_potential/submit_micro.sh",
+    "pilot"
+  ],
+  "returncode": 0,
+  "stdout": "5955349\n",
+  "stderr": ""
+}

@@ -1,0 +1,37 @@
+{
+  "configuration": 170,
+  "quality": {
+    "configuration": 170,
+    "slices": 17,
+    "modes": 1700,
+    "maximum_relative_residual": 7.125435681515985e-12
+  },
+  "scans": [
+    {
+      "configuration": 170,
+      "piter": 10,
+      "rows": 2212,
+      "regression_rows": 36,
+      "direct_tests": 120,
+      "periodic_roundtrips": 3,
+      "spatial_block_rows": 3840,
+      "unit_max": "7.02166693715340245e-16",
+      "det_max": "6.79055061784325405e-16"
+    },
+    {
+      "configuration": 170,
+      "piter": 40,
+      "rows": 2212,
+      "regression_rows": 36,
+      "direct_tests": 120,
+      "periodic_roundtrips": 3,
+      "spatial_block_rows": 3840,
+      "unit_max": "7.06575678773180801e-16",
+      "det_max": "6.82635178632513925e-16"
+    }
+  ],
+  "p10_p40_maximum_absolute_difference": 6.617444900424222e-24,
+  "success": true,
+  "launches_sha256": "efc1430d49166e80539893543bdc81a9b65795e3909827370eb76167eb34114d",
+  "case_sha256": "e057df2719ad6b0c9a40c3211a311d3431e86ca644ae05975958809b7c54b401"
+}
