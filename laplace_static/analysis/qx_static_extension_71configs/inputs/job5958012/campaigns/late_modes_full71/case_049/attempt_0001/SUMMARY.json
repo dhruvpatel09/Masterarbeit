@@ -1,0 +1,35 @@
+{
+  "configuration": 600,
+  "quality": {
+    "configuration": 600,
+    "slices": 33,
+    "modes": 3300,
+    "maximum_relative_residual": 9.341752027096447e-12,
+    "saved_eigenvalue_order_checked": true
+  },
+  "scans": [
+    {
+      "configuration": 600,
+      "piter": 10,
+      "rows": 6372,
+      "regression_rows": 36,
+      "archived_reference_rows": 852,
+      "archived_reference_maximum_absolute_difference": 0.0,
+      "cutoffs": [
+        40,
+        60,
+        80,
+        100
+      ],
+      "direct_tests": 396,
+      "periodic_roundtrips": 3,
+      "spatial_block_rows": 4800,
+      "unit_max": "7.60323580413059150e-16",
+      "det_max": "7.77261414450277224e-16"
+    }
+  ],
+  "p10_p40_maximum_absolute_difference": null,
+  "success": true,
+  "launches_sha256": "f1f7dd47c633009c82a2142b8433d506150a790926123c4de7a3bb10e5a8d361",
+  "case_sha256": "5b1bde43e7a8d99427825e3d6fe0974c557715662483286641d434696b5f9058"
+}

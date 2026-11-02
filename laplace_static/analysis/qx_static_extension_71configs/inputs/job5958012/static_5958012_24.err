@@ -1,0 +1,5 @@
+Unloading lrz_setup/1.0 <H:S>
+  ERROR: Unload of sticky module skipped
+
+Unloading tempdir/2.0 <aL:H:S>
+  ERROR: Unload of sticky module skipped

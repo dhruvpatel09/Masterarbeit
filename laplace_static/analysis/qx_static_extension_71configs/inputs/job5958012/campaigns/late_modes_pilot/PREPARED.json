@@ -1,0 +1,821 @@
+{
+  "stage": "pilot",
+  "target_configurations": [
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "new_configurations": [
+    170,
+    640,
+    650
+  ],
+  "reused_configurations": [],
+  "pilot": null,
+  "cases": [
+    {
+      "index": 0,
+      "configuration": 170,
+      "piters": [
+        10,
+        40
+      ],
+      "input": {
+        "configuration": 170,
+        "eigenvectors": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+        "eigenvalues": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n170_Nv100_evec_packed4_n170_eval.h5",
+        "eigenvalue_sha256": "f826bb2670a1a330497be19cc2849ad16837f59e46d5939f60f058ad5a76e0dc",
+        "gauge": {
+          "path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n170",
+          "resolved": "/hppfs/scratch/00/di98qes3/qX/qX_p2n170",
+          "size": 28991029272,
+          "mtime_ns": 1788557563586024429
+        },
+        "vectors": [
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t90.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t90.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574629104567812
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t91.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t91.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574655745105420
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t92.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t92.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574681645562037
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t93.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t93.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574708333042702
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t94.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t94.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574735081824822
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t95.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t95.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574802556670697
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t96.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t96.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791573857485624609
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t97.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t97.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791573926584775702
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t98.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t98.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791573993717128281
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t99.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t99.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574020686532287
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t100.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t100.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574046746937668
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t101.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t101.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574073814351665
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t102.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t102.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574099290758214
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t103.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t103.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574125802506958
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t104.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t104.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574151760082373
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t105.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t105.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574178076012408
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t106.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t106.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574204372912581
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t107.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t107.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574231084964061
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t108.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t108.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574258028465865
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t109.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t109.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574283587936527
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t110.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t110.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574310661414367
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t111.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t111.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574336842268024
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t112.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t112.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574363230343834
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t113.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t113.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574389377259034
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t114.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t114.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574415508073800
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t115.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t115.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574442207794805
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t116.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t116.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574468815183411
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t117.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t117.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574496163666909
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t118.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t118.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574521315477035
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t119.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t119.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574548324694894
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t120.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t120.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574574009576471
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t121.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t121.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574600569648137
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t122.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n170_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n170_evec_t122.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791574627199355267
+          }
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "configuration": 640,
+      "piters": [
+        10,
+        40
+      ],
+      "input": {
+        "configuration": 640,
+        "eigenvectors": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors",
+        "eigenvalues": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvalues/qX_p2_n640_full192_recovery_eval.h5",
+        "eigenvalue_sha256": "b3799a530d3c4664ce72601bc5e4e7964a3fcb79939ab10e0ff6858f2cd42291",
+        "gauge": {
+          "path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+          "resolved": "/hppfs/scratch/00/di98qes3/qX/qX_p2n640",
+          "size": 28991029272,
+          "mtime_ns": 1788673292045688864
+        },
+        "vectors": [
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t90.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_07/eigenvectors/qX_p2n640_evec_t90.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013664531808462
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t91.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_07/eigenvectors/qX_p2n640_evec_t91.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013684531911860
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t92.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_07/eigenvectors/qX_p2n640_evec_t92.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013704443047909
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t93.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_07/eigenvectors/qX_p2n640_evec_t93.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013724417462011
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t94.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_07/eigenvectors/qX_p2n640_evec_t94.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013744259010417
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t95.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors/qX_p2n640_evec_t95.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793009058069908515
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t96.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors/qX_p2n640_evec_t96.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793009078326060482
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t97.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors/qX_p2n640_evec_t97.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793009098771232097
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t98.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors/qX_p2n640_evec_t98.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793009119083235462
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t99.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors/qX_p2n640_evec_t99.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793009139653401842
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t100.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors/qX_p2n640_evec_t100.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793009160238298412
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t101.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_pilot/selected14_20261026_095705/eigenvectors/qX_p2n640_evec_t101.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793009180711270493
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t102.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_08/eigenvectors/qX_p2n640_evec_t102.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013545042928256
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t103.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_08/eigenvectors/qX_p2n640_evec_t103.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013564779223995
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t104.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_08/eigenvectors/qX_p2n640_evec_t104.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013584624667509
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t105.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_08/eigenvectors/qX_p2n640_evec_t105.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013604312031805
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t106.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_08/eigenvectors/qX_p2n640_evec_t106.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013624221607817
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t107.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_08/eigenvectors/qX_p2n640_evec_t107.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013643988951222
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t108.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t108.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013953903924095
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t109.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t109.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013973959182095
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t110.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t110.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793013994064235850
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t111.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t111.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014013972138368
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t112.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t112.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014033902628251
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t113.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t113.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014053849903630
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t114.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t114.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014073829240555
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t115.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t115.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014093983378276
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t116.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t116.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014113958314497
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t117.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t117.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014133854329227
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t118.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t118.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014153789085540
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t119.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_09/eigenvectors/qX_p2n640_evec_t119.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014173748676180
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t120.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_10/eigenvectors/qX_p2n640_evec_t120.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014055498577636
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t121.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_10/eigenvectors/qX_p2n640_evec_t121.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014075346831346
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/assembled/eigenvectors/qX_p2n640_evec_t122.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/n640_recovery_full/full192_20261026_105945/slot_10/eigenvectors/qX_p2n640_evec_t122.h5",
+            "size": 1258883416,
+            "mtime_ns": 1793014095205357853
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "configuration": 650,
+      "piters": [
+        10,
+        40
+      ],
+      "input": {
+        "configuration": 650,
+        "eigenvectors": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors",
+        "eigenvalues": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvalues/qX_p2_n650_Nv100_evec_packed4_n650_eval.h5",
+        "eigenvalue_sha256": "e79a955f1814cea803328d57eaeb1525c46b12e9bd5de885c69c2358c8951413",
+        "gauge": {
+          "path": "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+          "resolved": "/hppfs/scratch/00/di98qes3/qX/qX_p2n650",
+          "size": 28991029272,
+          "mtime_ns": 1788676048785889926
+        },
+        "vectors": [
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t90.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t90.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756242905632498
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t91.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t91.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756269877429844
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t92.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t92.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756297867798887
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t93.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t93.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756324308221199
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t94.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t94.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756350349423121
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t95.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t95.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756418884969335
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t96.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t96.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755466441118840
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t97.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t97.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755531203448017
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t98.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t98.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755598486067351
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t99.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t99.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755624616494002
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t100.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t100.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755650690104053
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t101.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t101.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755677042139776
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t102.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t102.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755703473024467
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t103.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t103.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755730238666502
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t104.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t104.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755755939522359
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t105.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t105.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755785528766947
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t106.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t106.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755809536639065
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t107.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t107.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755836295831084
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t108.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t108.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755862429818956
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t109.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t109.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755888749428643
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t110.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t110.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755914666793849
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t111.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t111.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755940946088598
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t112.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t112.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755971113447749
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t113.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t113.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791755995409396627
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t114.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t114.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756021661053099
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t115.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t115.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756056792383216
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t116.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t116.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756082908198733
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t117.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t117.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756109650031361
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t118.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t118.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756136307673174
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t119.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t119.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756162420689541
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t120.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t120.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756188562188634
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t121.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t121.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756214681073383
+          },
+          {
+            "path": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t122.h5",
+            "resolved": "/hppfs/scratch/0E/di24gus/Masterarbeit/qX/mental_runs/n650_evec_Nv100_deg10_nf7_mr30_up015_p6x4x4x4_funneled_packed4/eigenvectors/qX_p2n650_evec_t122.h5",
+            "size": 1258883416,
+            "mtime_ns": 1791756241142385953
+          }
+        ]
+      }
+    }
+  ],
+  "slots": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "cases_per_task": 1,
+  "build_manifest_sha256": "8b0ac82aebfae0f0a1011d3dc4d8690174f5429dd11af66dc3a52082fc62c989",
+  "geometry": {
+    "t0": 90,
+    "taus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "R": [
+      1,
+      2,
+      4,
+      8,
+      12,
+      16,
+      20,
+      23,
+      24,
+      25,
+      28,
+      32
+    ],
+    "saved_Nv": 100,
+    "cutoffs": [
+      40,
+      60,
+      80,
+      100
+    ],
+    "control_piter40_cutoffs": [
+      100
+    ]
+  },
+  "statistical_unit": "One configuration after source and spatial-axis averaging; block outputs are correlated regional diagnostics."
+}

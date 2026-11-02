@@ -1,0 +1,3 @@
+# Optional cross-check with modern Python; not required for core verification.
+pyerrors==2.17.0
+autograd==1.9.1

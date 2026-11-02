@@ -1,0 +1,5 @@
+Currently Loaded Modulefiles:
+ 1) stack/24.6.0{arch=auto}(default)   2) gcc/14.3.0(default)   3) intel-mpi/2021.17.0(default)   4) hdf5/1.14.5-gcc14-impi   5) intel-mkl/2025.3.0(default)  
+
+Key:
+{variant=value}  (symbolic-version)  

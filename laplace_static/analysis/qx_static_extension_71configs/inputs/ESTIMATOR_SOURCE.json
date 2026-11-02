@@ -1,0 +1,8 @@
+{
+  "repository": "dhruvpatel09/Masterarbeit",
+  "commit": "808e1b53a58f0fdac2a13f95c551ed56543927f9",
+  "path": "laplace_static/analysis/qx_static_potential_71configs/estimators.py",
+  "git_blob": "62c58dff234a780cd9547128b560d1193371abcf",
+  "sha256": "62817af3eaad5e9561f29c707f48685baf0bdffd38c02779a29657516b2ec1a8",
+  "reuse": "Exact published independent-configuration and fixed-weight GLS estimators."
+}
