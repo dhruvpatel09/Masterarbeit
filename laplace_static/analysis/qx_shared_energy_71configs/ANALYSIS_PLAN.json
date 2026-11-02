@@ -1,0 +1,160 @@
+{
+  "configuration_count": 71,
+  "configuration_labels": [
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "distances": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "starts": [
+    8,
+    12,
+    16
+  ],
+  "end": 32,
+  "designs": [
+    {
+      "name": "pair_dense",
+      "cutoffs": [
+        40,
+        100
+      ],
+      "time_stride": 2,
+      "role": "primary pair comparison"
+    },
+    {
+      "name": "pair_matched",
+      "cutoffs": [
+        40,
+        100
+      ],
+      "time_stride": 4,
+      "role": "time-grid control"
+    },
+    {
+      "name": "all_four",
+      "cutoffs": [
+        40,
+        60,
+        80,
+        100
+      ],
+      "time_stride": 4,
+      "role": "primary four-cutoff comparison"
+    }
+  ],
+  "models": [
+    "shared_one",
+    "independent_one",
+    "shared_two"
+  ],
+  "model_note": "shared_two has source-specific amplitudes and common E0 and excited-state gap; it is an explicit two-level approximation.",
+  "covariance": "Full covariance across sources and selected times; no eigenmode cut, shrinkage, or diagonal approximation; largest dimension 28, from 71 samples.",
+  "parameter_audit": {
+    "designs": [
+      "pair_dense",
+      "all_four"
+    ],
+    "start": 12,
+    "models": [
+      "shared_one",
+      "shared_two"
+    ],
+    "replicates": 71,
+    "covariance": "Fixed full-sample weights and normalization; local warm-start branch.",
+    "extension": "Every additional full-sample shared-two fit passing local checks is audited, regardless of its start. This targets parameter stability, not configuration selection."
+  },
+  "bootstrap": {
+    "designs": [
+      "pair_dense",
+      "pair_matched",
+      "all_four"
+    ],
+    "start": 12,
+    "draws": 399,
+    "seed": 20261103,
+    "null": "Recenter on shared_one model; resample whole configurations; re-estimate covariance and refit shared_one and independent_one.",
+    "statistics": [
+      "q2_shared_one",
+      "q2_shared_one_minus_q2_independent_one"
+    ],
+    "note": "Finite-draw intervals do not quantify finite-sample calibration bias.",
+    "scope_note": "The matched pair control is also calibrated to separate time-grid changes from the addition of source operators."
+  },
+  "interpretation": "Exploratory source compatibility and window diagnostics; no automatic plateau, model or final-potential selection."
+}

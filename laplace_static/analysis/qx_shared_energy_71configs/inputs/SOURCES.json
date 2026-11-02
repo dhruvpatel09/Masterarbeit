@@ -1,0 +1,12 @@
+{
+  "base_commit": "62011935cbe1612cb55e2ad9fe0b318fd46a19a5",
+  "files": {
+    "laplace_static/analysis/qx_static_extension_71configs/inputs/job5958012/campaigns/late_modes_full71/correlators.csv": "803a7367381a4b1b3bf715cf89f7413b1c478f9f47d07b6d8f5a29094ec754f3",
+    "laplace_static/analysis/qx_static_extension_71configs/results/constant_fits_71configs.csv": "de16b4d8e7f5ae487487105f48ff10579349dd678117d6b9eebd144ed6b8d4d3",
+    "laplace_static/analysis/qx_correlated_exponential_71configs/fit_models.py": "8a2215c8b97ea0882104ec374c78c563de3fbaf6c69ce3467020257c16fb2f82",
+    "laplace_static/analysis/qx_correlated_exponential_71configs/results/fits_71configs.csv": "cb139646d34032aaf4f4768350d23f5372154fea2bf10b641e655f5ffb72459e"
+  },
+  "statistical_unit": "One matched configuration; all 71 labels 100 through 800 in steps of 10, including n640.",
+  "measurement": "Published piter10 static correlators, fixed t0/a=90; signed configuration values retained.",
+  "provenance": "Hashes obtained from the published exponential analysis manifest at the base commit."
+}

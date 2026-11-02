@@ -1,0 +1,5 @@
+{
+  "optimizer": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html",
+  "bootstrap": "https://arxiv.org/abs/2409.11379",
+  "covariance": "https://arxiv.org/abs/2209.14188"
+}
