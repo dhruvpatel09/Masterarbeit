@@ -1,0 +1,7 @@
+{
+  "matplotlib": "3.10.8",
+  "numpy": "2.3.5",
+  "purpose": "Reference export environment; portable replay permits other compatible versions with explicit numerical tolerances.",
+  "python": "3.12.14",
+  "scipy": "1.17.0"
+}

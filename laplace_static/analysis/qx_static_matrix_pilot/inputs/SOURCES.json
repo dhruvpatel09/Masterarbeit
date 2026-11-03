@@ -1,0 +1,12 @@
+{
+  "diagonal_reference": "laplace_static/analysis/qx_static_extension_71configs/inputs/job5958012/campaigns/late_modes_full71/correlators.csv",
+  "interpretation": "No gauge files, eigenvector files or new MPI measurements are created by this analysis.",
+  "published_validation_commit": "646175fd325c07ec5aafcb8cbb0322be4c3ba9dc",
+  "review_archive": {
+    "bytes": 6715996,
+    "job_array": 5961383,
+    "path": "inputs/job5961383_review.zip",
+    "sha256": "1817bdecd979b112c25b02380550c5df463c17994bd02b60960aa2a5c437919d",
+    "source": "SuperMUC collection; original upload"
+  }
+}

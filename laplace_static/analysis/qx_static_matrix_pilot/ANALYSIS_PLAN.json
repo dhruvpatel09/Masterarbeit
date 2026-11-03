@@ -1,0 +1,94 @@
+{
+  "axis": -1,
+  "base_commit": "646175fd325c07ec5aafcb8cbb0322be4c3ba9dc",
+  "baseline_piter": 10,
+  "bases": {
+    "full4": [
+      40,
+      60,
+      80,
+      100
+    ],
+    "spread3": [
+      40,
+      60,
+      100
+    ],
+    "wide2": [
+      40,
+      100
+    ]
+  },
+  "configuration_labels": [
+    170,
+    640,
+    650
+  ],
+  "cutoffs": [
+    40,
+    60,
+    80,
+    100
+  ],
+  "display_phase_bound_radians": 0.05,
+  "fixed_vector_optimization_time": 4,
+  "mode_assignment": "Continue mean modes in time using maximal normalized right-vector overlap. Match leave-one-out modes to central modes in the central equal-time metric.",
+  "numerical_relative_residual_limit": 1e-10,
+  "orientation": "Rows=Nv_sink; columns=Nv_src; retain original complex ordered entries.",
+  "projection_control": {
+    "configuration": 650,
+    "piter": 40
+  },
+  "publication_scope": "Archive and analyze the completed pilot. Full71 production workflow and submissions are deferred.",
+  "purpose": "Technical replay, conditioning and exploratory source-matrix diagnostics; three configurations; no production submission.",
+  "radii": [
+    4,
+    12,
+    24,
+    32
+  ],
+  "reference_metric": "Equal-time diagonal scaling and equal-time positive-definite whitening. Finite-time generalized pencils solved as complex nonsymmetric problems.",
+  "reference_times": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "statistics": "Unweighted mean over three configurations. Leave-one-out curves diagnose sensitivity; no confidence intervals, covariance fits, final energies or string tension.",
+  "symmetrization": "Hermitian part is a separately labelled diagnostic only. Original matrices are never replaced or positivity-filtered.",
+  "taus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ]
+}

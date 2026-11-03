@@ -1,0 +1,12 @@
+[
+  {
+    "title": "On the generalized eigenvalue method for energies and matrix elements in lattice field theory",
+    "url": "https://arxiv.org/abs/0902.1265",
+    "role": "GEVP definitions and asymptotic interpretation; this small-pilot study is exploratory."
+  },
+  {
+    "title": "Constructing static quark-anti-quark creation operators from Laplacian eigenmodes",
+    "url": "https://arxiv.org/abs/2212.08485",
+    "role": "Laplacian trial operators and variational bases. The present pilot uses nested cutoffs rather than Gaussian eigenvalue weights."
+  }
+]
