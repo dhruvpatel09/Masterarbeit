@@ -1,0 +1,122 @@
+{
+  "base_commit": "2c879d63fcd0b2dd4aa413ecd5324aa75add126d",
+  "configuration_labels": [
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "raw_tables": {
+    "short": "laplace_static/analysis/qx_static_potential_71configs/inputs/job5955993/correlators.csv",
+    "long": "laplace_static/analysis/qx_static_extension_71configs/inputs/job5958012/campaigns/late_modes_full71/correlators.csv"
+  },
+  "files": {
+    "laplace_static/analysis/qx_static_potential_71configs/inputs/job5955993/correlators.csv": {
+      "bytes": 13023289,
+      "sha256": "206aa96ea628642d7731735b674331bc5f291d029519e8165b428e24a43658d0"
+    },
+    "laplace_static/analysis/qx_static_extension_71configs/inputs/job5958012/campaigns/late_modes_full71/correlators.csv": {
+      "bytes": 37300206,
+      "sha256": "803a7367381a4b1b3bf715cf89f7413b1c478f9f47d07b6d8f5a29094ec754f3"
+    },
+    "laplace_static/analysis/qx_static_potential_71configs/results/correlators_ensemble_71configs.csv": {
+      "bytes": 636296,
+      "sha256": "4fe5df9737aaae827ba11c28e59376f2dda62eb74385b2937529f3bad3021673"
+    },
+    "laplace_static/analysis/qx_static_potential_71configs/results/effective_energies_71configs.csv": {
+      "bytes": 847549,
+      "sha256": "b1ec99a1a63520d3a13fd0c2cf40276ea1ad1bdbfca32382440417f30f0ea69d"
+    },
+    "laplace_static/analysis/qx_static_potential_71configs/results/temporal_covariance_71configs.csv": {
+      "bytes": 3878667,
+      "sha256": "69c00bc9a96521a0cc8e8c5d7c70db4101147bb84f03742174d89cf310cc3867"
+    },
+    "laplace_static/analysis/qx_static_potential_71configs/results/plateau_fits_71configs.csv": {
+      "bytes": 350325,
+      "sha256": "c9833ae9434f6b2e828d3030b776f1b90d32fbdcacfb367f64f91673d8a72a97"
+    },
+    "laplace_static/analysis/qx_static_extension_71configs/results/correlator_means_71configs.csv": {
+      "bytes": 419863,
+      "sha256": "7a549c949ce9cf0e3fa52e1aae7b43ba0f8b892e4a486a8a6b6f5b35565a13bc"
+    },
+    "laplace_static/analysis/qx_static_extension_71configs/results/effective_energies_71configs.csv": {
+      "bytes": 374281,
+      "sha256": "4b6c796daeac003721a4fd15e90469c8d50b1576994e2832564d235be4cbaec0"
+    },
+    "laplace_static/analysis/qx_static_extension_71configs/results/effective_energy_covariance_71configs.csv": {
+      "bytes": 12512454,
+      "sha256": "52207436bfb093e255af69bc0dfa5ce29f3502b92d617dededa393c421a20fa8"
+    },
+    "laplace_static/analysis/qx_static_extension_71configs/results/constant_fits_71configs.csv": {
+      "bytes": 93728,
+      "sha256": "de16b4d8e7f5ae487487105f48ff10579349dd678117d6b9eebd144ed6b8d4d3"
+    }
+  }
+}

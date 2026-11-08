@@ -1,0 +1,4 @@
+# Tested versions are recorded in inputs/ENVIRONMENT.json.
+numpy>=1.19
+scipy>=1.5
+matplotlib>=3.3
