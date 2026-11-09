@@ -1,0 +1,5 @@
+__pycache__/
+campaigns/
+matrix_*.out
+matrix_*.err
+*.pending
