@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "configuration_labels": [
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "radii": [
+    4,
+    12,
+    24,
+    32
+  ],
+  "cutoffs": [
+    40,
+    60,
+    80,
+    100
+  ],
+  "piter": 10,
+  "source_time": 90,
+  "matrix_order": "configuration,R,tau,sink,source",
+  "component_test_times": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "component_family": "16 independent real anti-Hermitian components per R/time, excluding 10 analytically roundoff-only imaginary components at half-box R32; 324 tested components total. Full matrix imaginary components also exported descriptively.",
+  "bootstrap_null": "Recenter each configuration component at zero; resample whole configuration vectors together; studentize with the resampled SE; compare maximum absolute t over the full 324-component family. Empirical conditional calibration, not a proof of Hermiticity.",
+  "bootstrap_draws": 1999,
+  "bootstrap_seed": 711113,
+  "split_seeds": [
+    1701,
+    1702,
+    1703,
+    1704
+  ],
+  "split_names": [
+    "alternating",
+    "seed1701",
+    "seed1702",
+    "seed1703",
+    "seed1704"
+  ],
+  "split_sizes": [
+    36,
+    35
+  ],
+  "outer_jackknife": "71 complete delete-one repeats; original fold membership fixed for each split; training and metric recomputed in each deletion. Splits are sensitivity choices, not independent ensembles.",
+  "bases": {
+    "pair": [
+      40,
+      100
+    ],
+    "triple": [
+      40,
+      60,
+      100
+    ],
+    "full": [
+      40,
+      60,
+      80,
+      100
+    ]
+  },
+  "training_times": [
+    4,
+    6,
+    8
+  ],
+  "additional_control": "Published same-sample means and full retraining jackknife retained; alternating-fold outputs freshly reproduced against published cache.",
+  "correlator_fit_windows": [
+    [
+      6,
+      12
+    ],
+    [
+      10,
+      16
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      18,
+      24
+    ],
+    [
+      22,
+      28
+    ]
+  ],
+  "model": "A exp[-E (tau-tau_min)] for real part of projected ensemble means; A signed, E allowed negative. Diagnostic one-state ansatz, no spectral positivity assumption.",
+  "energy_search_interval": [
+    -0.5,
+    1.5
+  ],
+  "energy_grid_points": 161,
+  "refinement": "Bracket profile-gradient sign changes on complete energy grid and refine minima with Brent root solves; compare all minima and endpoints. Signed amplitude eliminated analytically.",
+  "fit_covariance": "Full-sample complete-retraining outer-jackknife mean covariance, correlation-scaled Cholesky, held fixed in every parameter refit. No regularization, pseudoinverse or diagonal fallback.",
+  "relative_covariance_rank_limit": 1e-12,
+  "fit_jackknife": "Refit all 71 deletion means with fixed full-sample covariance; retain boundary counts and failed/invalid cases.",
+  "goodness": "Gaussian chi-square tails with estimated covariance are approximate diagnostic values, not calibrated acceptance probabilities. No automatic potential selection.",
+  "comparison": "Pair each split/basis/training/window change on identical deleted configurations. Compare direct-correlator fits with corresponding six-point effective-energy constants.",
+  "interpretation": "Candidate energies and diagnostics only. Single fixed t0 cannot settle open-boundary systematics; no physical GEVP levels, Cornell fit, string tension or new clover profiles."
+}

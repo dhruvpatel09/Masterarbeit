@@ -1,0 +1,38 @@
+{
+  "base_commit": "2b9830b3e5de49b8234b2257c24a0175f247cc61",
+  "dependencies": {
+    "laplace_static/analysis/qx_static_matrix_71configs/FILE_MANIFEST.json": {
+      "bytes": 9811,
+      "sha256": "f6a6f78e4306dd873b2dfaf656bd1ddd0afbc5c898989b281bf5e960c958bb4e"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/inputs/primary_matrices.npz": {
+      "bytes": 2694067,
+      "sha256": "6dd357bf702aed84f5373aea634c81ddbf363cf0b8c3b0835ce106e7de0131aa"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/projections.py": {
+      "bytes": 4176,
+      "sha256": "28f8bbdb62180abe67231926518c90729d9a5b09f3f4704e0c5219fcc1681905"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/statistics_tools.py": {
+      "bytes": 2491,
+      "sha256": "80fe7d1ddb94e0e63f452653b727b57f1edc33e427b5212a4adfe77bd5dd3f43"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/results/projection_resamples.npz": {
+      "bytes": 2860717,
+      "sha256": "c7ec0cbfc06fb54108d0122150cf608ba36652169e960c3a3f4f40fbcf378919"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/results/projected_correlators.csv": {
+      "bytes": 497981,
+      "sha256": "bc972c346f6d02b46dc8dabd12f4aedcf3bded3cfd069d7eb74e7bdf66731c26"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/results/projected_effective_energies.csv": {
+      "bytes": 305845,
+      "sha256": "9d59c4548239bcf81da017efeb951cbafd55f63f00ce17715416a1893da3ddce"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/results/constant_window_diagnostics.csv": {
+      "bytes": 73202,
+      "sha256": "641157be6637ab65c82d10d4bfad8aa6a89ea8438a43f23d472e36c99dca2bc3"
+    }
+  },
+  "primary_origin": "Published native-replayed full71 matrix cache. No new MPI measurements; original 599808 matrix rows and 872448 block rows remain in the previous package source chunks."
+}

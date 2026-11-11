@@ -1,0 +1,42 @@
+{
+  "base_commit": "2b9830b3e5de49b8234b2257c24a0175f247cc61",
+  "configurations": 71,
+  "complex_component_tests": {
+    "tested_components": 324,
+    "bootstrap_draws": 1999,
+    "maximum_observed_absolute_t": 3.169642379295681,
+    "joint_null_tail": 0.3475,
+    "bootstrap_95percent_max_t": 3.904755463605459,
+    "family_adjusted_components_below_005": 0,
+    "interpretation": "Approximate recentered empirical global-null calibration across the fixed 324-component family; non-rejection does not prove Hermiticity or boundary independence.",
+    "global_exceedances": 694,
+    "finite_draw_tail_interval_95": [
+      0.32629077697939163,
+      0.36850561303969315
+    ],
+    "interval_scope": "Binomial finite-draw uncertainty conditional on the empirical centered distribution; excludes finite-ensemble calibration bias."
+  },
+  "holdout_splits": 5,
+  "additional_random_splits": 4,
+  "source_candidates": 36,
+  "total_curves": 216,
+  "outer_retraining_deletions": 71,
+  "correlator_fit_attempts": 1080,
+  "defined_correlator_fits": 1080,
+  "boundary_central_fits": 0,
+  "fits_with_incomplete_interior_jackknife": 0,
+  "tables": {
+    "antihermitian_components": 2112,
+    "matrix_imaginary_components": 2112,
+    "complex_family_summary": 24,
+    "split_membership": 355,
+    "projected_correlators": 7128,
+    "projected_effective_energies": 6912,
+    "correlator_fits": 1080,
+    "paired_fit_contrasts": 3204,
+    "holdout_split_summary": 180
+  },
+  "interpretation": "Resampling and fit stability diagnostics. No final ground-state potential, proof of Hermiticity, positive-spectrum GEVP, string tension or new MPI measurements.",
+  "goodness_scope": "Correlator-fit Gaussian tails use estimated full-sample fixed covariance; uncalibrated and exploratory. Component max-t bootstrap is a separate null test, not fit goodness calibration.",
+  "resampling_scope": "All variants share the same 71 configurations. Pair contrasts by identical deleted configuration; never treat folds or split choices as extra independent samples."
+}

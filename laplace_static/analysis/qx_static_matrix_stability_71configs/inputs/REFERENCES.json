@@ -1,0 +1,14 @@
+{
+  "correlated_fits": {
+    "authors": "M. Bruno and R. Sommer",
+    "title": "On fits to correlated and auto-correlated data",
+    "url": "https://arxiv.org/abs/2209.14188",
+    "use": "Interpretation of estimated covariance matrices and goodness-of-fit diagnostics."
+  },
+  "bootstrap_calibration": {
+    "authors": "N. H. Christ, B. Eranki and C. Kelly",
+    "title": "Bootstrap-determined p-values in Lattice QCD",
+    "url": "https://arxiv.org/abs/2409.11379",
+    "use": "Motivation for empirical null calibration. The component max-t bootstrap here is separate from a fit-statistic bootstrap; the reported fit Gaussian tails remain uncalibrated."
+  }
+}
