@@ -1,0 +1,6 @@
+/build/
+/campaigns/
+/source_time_*.out
+/source_time_*.err
+__pycache__/
+*.pyc
