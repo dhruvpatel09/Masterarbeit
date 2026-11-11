@@ -1,0 +1,7 @@
+/work/
+__pycache__/
+*.pyc
+!inputs/review_chunks/
+!inputs/review_chunks/part_*.bin
+!inputs/primary_matrices.npz
+!results/projection_resamples.npz

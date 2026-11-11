@@ -1,0 +1,7 @@
+{
+  "laplace_static/validation/qx_static_matrix/campaign.py": "b34c5a49d1cda12274c834e814196d447aa7473b7ceb170144b126b5a9958430",
+  "laplace_static/validation/qx_static_matrix/check_outputs.py": "f578f182c626841e72bfd8abe6e8b394aaa9026e7ed37a463e9fe4d69b351976",
+  "laplace_static/validation/qx_static_matrix/matrix_plan.py": "cd1a99c4a84f8c8c8db8ec58bb69d8004d977ef945a81bf39c6727a9cc5366b0",
+  "laplace_static/validation/qx_static_extension/check_extension.py": "25db6fb4ee02670e466410ae47a67ce2a62889a700018098ea250768c0a380ce",
+  "laplace_static/validation/qx_static_extension/measurement_plan.py": "689cf89f845f8f58258d5e4f1a82b06c00f05f43f48ca783d82ebe07f9f896d7"
+}

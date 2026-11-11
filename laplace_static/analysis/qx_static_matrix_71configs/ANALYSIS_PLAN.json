@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "base_commit": "6dd7374cf94f132d1322160219ce774edfdab9d1",
+  "configurations": [
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790,
+    800
+  ],
+  "statistical_unit": "configuration",
+  "axis": -1,
+  "orientation": "sink row, source column",
+  "piter": 10,
+  "t0": 90,
+  "radii": [
+    4,
+    12,
+    24,
+    32
+  ],
+  "correlator_taus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "bases": {
+    "pair": [
+      40,
+      100
+    ],
+    "triple": [
+      40,
+      60,
+      100
+    ],
+    "full": [
+      40,
+      60,
+      80,
+      100
+    ]
+  },
+  "source_training_times": [
+    4,
+    6,
+    8
+  ],
+  "source_objective": "Largest real Rayleigh quotient of H(t_train)=(C+C^dagger)/2 against equal-time C(0); single source held fixed at every evaluation time. All projections retain original complex C. No transfer-matrix variational bound assumed.",
+  "procedures": [
+    "same_sample",
+    "cross_fit"
+  ],
+  "crossfit_folds": "original label index parity: fold0=n100,n120,...,n800; fold1=n110,n130,...,n790. Each evaluated fold uses the other fold for training. Membership fixed during outer leave-one; both training steps recomputed.",
+  "error_propagation": "71 outer delete-one configuration resamples of the complete procedure, including metric, source training, both holdout folds, averaging and nonlinear log ratio; failed positivity is retained as invalid, never dropped. All contrasts paired on the same deletions.",
+  "correlator_normalization": "v^dagger C_training_mean(0) v=1",
+  "energy_definition": "log(Re mean Q(t)/Re mean Q(t+1)), only for positive real endpoint means. Complex mean and phase always retained.",
+  "phase_display_limit_radians": 0.05,
+  "minimum_signal_display_screen": 3,
+  "metric_relative_rank_limit": 1e-12,
+  "metric_eigenvalue_truncation": false,
+  "constant_windows": [
+    [
+      6,
+      11
+    ],
+    [
+      10,
+      15
+    ],
+    [
+      14,
+      19
+    ],
+    [
+      18,
+      23
+    ],
+    [
+      22,
+      27
+    ]
+  ],
+  "constant_fits": "GLS with outer-jackknife covariance of E, no covariance regularization; covariance weights fixed at full-sample values in conditional jackknife fit. Gaussian goodness values approximate; candidate catalogue only.",
+  "complex_pencils": {
+    "reference_times": [
+      0,
+      2,
+      4
+    ],
+    "interpretation": "Central unordered generalized spectra and backward residuals, no state labels or spectral positivity assumptions; full non-Hermitian matrices used."
+  },
+  "forbidden_interpretations": [
+    "71 x sites independent samples",
+    "time extent equals 64",
+    "crossfit vector is a single fixed operator",
+    "positive or Hermitian nonzero-time C imposed",
+    "large local p value proves plateau",
+    "final static potential or string tension extracted automatically"
+  ],
+  "selection": "All listed bases, anchors, folds and windows exported; no winner selected after viewing plots."
+}
