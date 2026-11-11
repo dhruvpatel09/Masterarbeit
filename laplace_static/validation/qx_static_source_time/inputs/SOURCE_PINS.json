@@ -1,0 +1,61 @@
+{
+  "base_commit": "8b8b69863cd802fde5ea0d2b044aea5c98f91aa8",
+  "dependencies": {
+    "laplace_static/analysis/qx_static_matrix_71configs/inputs/primary_matrices.npz": {
+      "bytes": 2694067,
+      "sha256": "6dd357bf702aed84f5373aea634c81ddbf363cf0b8c3b0835ce106e7de0131aa"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/FILE_MANIFEST.json": {
+      "bytes": 9811,
+      "sha256": "f6a6f78e4306dd873b2dfaf656bd1ddd0afbc5c898989b281bf5e960c958bb4e"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/projections.py": {
+      "bytes": 4176,
+      "sha256": "28f8bbdb62180abe67231926518c90729d9a5b09f3f4704e0c5219fcc1681905"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/statistics_tools.py": {
+      "bytes": 2491,
+      "sha256": "80fe7d1ddb94e0e63f452653b727b57f1edc33e427b5212a4adfe77bd5dd3f43"
+    },
+    "laplace_static/analysis/qx_static_matrix_71configs/results/VALIDATION.json": {
+      "bytes": 1767,
+      "sha256": "97b519815f652ca486d8eaa1a8cc3548fedd218338a578b7035a17d1cc2b0e58"
+    },
+    "laplace_static/analysis/qx_static_matrix_stability_71configs/results/SUMMARY.json": {
+      "bytes": 2040,
+      "sha256": "04fa2bb75361078112bc1134f8323ab1788ce6198c761125ee0ee8e6b727c2a2"
+    },
+    "laplace_static/analysis/qx_static_matrix_stability_71configs/results/correlator_fits.csv": {
+      "bytes": 382799,
+      "sha256": "5aa9b2801413f358ac171d1932b90b1b13e5e0d558db5ea77705aa2d996bf31c"
+    },
+    "laplace_static/analysis/qx_static_matrix_stability_71configs/results/paired_fit_contrasts.csv": {
+      "bytes": 359069,
+      "sha256": "d84b152965c19d5fb74853549bbb7c4a7b928410bce5fcba1bf6bfbd72a1a7ec"
+    },
+    "laplace_static/validation/qx_static_extension/inputs/RUNS.json": {
+      "bytes": 18968,
+      "sha256": "e2f42355266089e5144300ba59916455c184c76c18506e744f479218335f69f7"
+    },
+    "laplace_static/validation/qx_static_matrix/scan.c": {
+      "bytes": 10797,
+      "sha256": "c3aa5062676da54c27987de6726843545f31c555e186fcf62205390093d2cbc5"
+    },
+    "laplace_static/validation/qx_static_matrix/matrix_plan.py": {
+      "bytes": 772,
+      "sha256": "cd1a99c4a84f8c8c8db8ec58bb69d8004d977ef945a81bf39c6727a9cc5366b0"
+    },
+    "laplace_static/validation/qx_static_matrix/generate_sources.py": {
+      "bytes": 1428,
+      "sha256": "729abeca180ae328f456329d8962d099acf8ed8948e128d49ebefe7fb0bc08cf"
+    },
+    "laplace_static/validation/qx_static_matrix/build.sh": {
+      "bytes": 2016,
+      "sha256": "e70aa0d3758542b7d785f4aa96261aee0e02821228514b8d624300caecdab2a8"
+    },
+    "laplace_static/validation/qx_static_matrix/check_outputs.py": {
+      "bytes": 11460,
+      "sha256": "f578f182c626841e72bfd8abe6e8b394aaa9026e7ed37a463e9fe4d69b351976"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "base_commit": "8b8b69863cd802fde5ea0d2b044aea5c98f91aa8",
+  "source_setting": "full basis, training 4a, alternating held-out split; existing 71-configuration results",
+  "radii": [
+    {
+      "R": 4,
+      "early_energy": 0.11702871016743091,
+      "early_se": 0.0001335289283483958,
+      "middle_energy": 0.11657102506415885,
+      "middle_se": 0.00019433195025330403,
+      "late_energy": 0.11666474206986308,
+      "late_se": 0.0002565809287328992,
+      "late_minus_early": -0.000363968097567835,
+      "paired_window_se": 0.0002883855034582049,
+      "early_full_minus_pair": -4.9236293426652145e-06,
+      "paired_basis_se": 4.0852712637014756e-06,
+      "late_maximum_phase": 0.0017541436917696855,
+      "late_minimum_real_signal": 373.767744113154,
+      "late_gaussian_tail_approx": 0.18251196786327875
+    },
+    {
+      "R": 12,
+      "early_energy": 0.19674230545100788,
+      "early_se": 0.0006744906084091715,
+      "middle_energy": 0.19347869681684093,
+      "middle_se": 0.0011089172838500794,
+      "late_energy": 0.197949310391922,
+      "late_se": 0.002826050240703715,
+      "late_minus_early": 0.001207004940914136,
+      "paired_window_se": 0.002760518947240694,
+      "early_full_minus_pair": 4.127029393444226e-05,
+      "paired_basis_se": 4.327314593320762e-05,
+      "late_maximum_phase": 0.007046147518758896,
+      "late_minimum_real_signal": 51.69868593641177,
+      "late_gaussian_tail_approx": 0.2784844561429737
+    },
+    {
+      "R": 24,
+      "early_energy": 0.2713103552736633,
+      "early_se": 0.002208194486111355,
+      "middle_energy": 0.2670164504928651,
+      "middle_se": 0.004831251700694903,
+      "late_energy": 0.2922347210680819,
+      "late_se": 0.018712325048829713,
+      "late_minus_early": 0.020924365794418587,
+      "paired_window_se": 0.01889250393786656,
+      "early_full_minus_pair": 0.002511701827189461,
+      "paired_basis_se": 0.0002882366912173647,
+      "late_maximum_phase": 0.2806853847502215,
+      "late_minimum_real_signal": 3.9787819665912347,
+      "late_gaussian_tail_approx": 0.009955773651189045
+    },
+    {
+      "R": 32,
+      "early_energy": 0.29857177120613654,
+      "early_se": 0.003799714090115524,
+      "middle_energy": 0.3177324560156831,
+      "middle_se": 0.015581626326252495,
+      "late_energy": 0.16265879264866956,
+      "late_se": 0.03888244942607126,
+      "late_minus_early": -0.13591297855746698,
+      "paired_window_se": 0.039558154189034585,
+      "early_full_minus_pair": -0.009065981327672945,
+      "paired_basis_se": 0.002452884875374432,
+      "late_maximum_phase": 1.3072319023034741e-17,
+      "late_minimum_real_signal": 3.2030012294477013,
+      "late_gaussian_tail_approx": 0.5264755392892525
+    }
+  ],
+  "interpretation": "Pointwise paired contrasts; local Gaussian fit tails are uncalibrated. No source-time dependence has been measured by this design package."
+}
