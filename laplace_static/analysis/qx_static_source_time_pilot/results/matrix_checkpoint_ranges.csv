@@ -1,0 +1,25 @@
+R,tau,paired_changes,minimum_relative_change,maximum_relative_change,interpretation
+4,0,6,0.0007885164842361982,0.0026668874246585997,Range over three configurations and two shifts; not an uncertainty interval.
+4,4,6,0.0019327051246842682,0.008643037429889635,Range over three configurations and two shifts; not an uncertainty interval.
+4,8,6,0.0026868548598732033,0.013256159253076142,Range over three configurations and two shifts; not an uncertainty interval.
+4,16,6,0.005425588634112477,0.035119903073155004,Range over three configurations and two shifts; not an uncertainty interval.
+4,24,6,0.012211624242603115,0.021513415633809072,Range over three configurations and two shifts; not an uncertainty interval.
+4,32,6,0.019086887334528607,0.07112280470892644,Range over three configurations and two shifts; not an uncertainty interval.
+12,0,6,0.002644483549627412,0.006122632674617383,Range over three configurations and two shifts; not an uncertainty interval.
+12,4,6,0.005275720675701828,0.02757002295077635,Range over three configurations and two shifts; not an uncertainty interval.
+12,8,6,0.005798909053707549,0.06890016304124848,Range over three configurations and two shifts; not an uncertainty interval.
+12,16,6,0.025230777475604878,0.15149718897186526,Range over three configurations and two shifts; not an uncertainty interval.
+12,24,6,0.09781638349621553,0.4107755937495865,Range over three configurations and two shifts; not an uncertainty interval.
+12,32,6,0.21819974037803616,0.6724106362331767,Range over three configurations and two shifts; not an uncertainty interval.
+24,0,6,0.01960036975983187,0.041949872459532946,Range over three configurations and two shifts; not an uncertainty interval.
+24,4,6,0.06058016226994722,0.11059149077886134,Range over three configurations and two shifts; not an uncertainty interval.
+24,8,6,0.13798932656226556,0.23099562173497143,Range over three configurations and two shifts; not an uncertainty interval.
+24,16,6,0.5333869931743216,0.7550425208031084,Range over three configurations and two shifts; not an uncertainty interval.
+24,24,6,0.8196628763848949,1.6214609847002772,Range over three configurations and two shifts; not an uncertainty interval.
+24,32,6,1.1634002842900202,1.584789696800119,Range over three configurations and two shifts; not an uncertainty interval.
+32,0,6,0.03325603977865193,0.0735667368230876,Range over three configurations and two shifts; not an uncertainty interval.
+32,4,6,0.10621993436091377,0.2200272814858393,Range over three configurations and two shifts; not an uncertainty interval.
+32,8,6,0.16938612710132936,0.35782199682558996,Range over three configurations and two shifts; not an uncertainty interval.
+32,16,6,0.6391791259240797,1.2675274912368257,Range over three configurations and two shifts; not an uncertainty interval.
+32,24,6,0.8678191688489495,1.8421549834120685,Range over three configurations and two shifts; not an uncertainty interval.
+32,32,6,1.1847198046460783,1.8016571510030825,Range over three configurations and two shifts; not an uncertainty interval.

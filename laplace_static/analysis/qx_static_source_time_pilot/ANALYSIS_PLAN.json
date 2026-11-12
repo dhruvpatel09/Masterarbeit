@@ -1,0 +1,58 @@
+{
+  "configurations": [
+    170,
+    640,
+    650
+  ],
+  "positions": [
+    58,
+    90,
+    122
+  ],
+  "radii": [
+    4,
+    12,
+    24,
+    32
+  ],
+  "bases": {
+    "pair": [
+      40,
+      100
+    ],
+    "triple": [
+      40,
+      60,
+      100
+    ],
+    "full": [
+      40,
+      60,
+      80,
+      100
+    ]
+  },
+  "training_separations": [
+    4,
+    6,
+    8
+  ],
+  "main_display": {
+    "bases": [
+      "pair",
+      "full"
+    ],
+    "training_separation": 4
+  },
+  "checkpoints": [
+    0,
+    4,
+    8,
+    16,
+    24,
+    32
+  ],
+  "normalization": "Common fixed t0=90 equal-time real projection within each configuration/source; own-position normalization also exported.",
+  "statistics": "No pilot standard errors, p-values, correlated fits or logarithmic effective energies; all 36 source candidates exported.",
+  "pause": "Complete offline review and publication, then stop before another measurement campaign."
+}

@@ -1,0 +1,59 @@
+{
+  "configurations": [
+    170,
+    640,
+    650
+  ],
+  "source_positions": [
+    58,
+    90,
+    122
+  ],
+  "radii": [
+    4,
+    12,
+    24,
+    32
+  ],
+  "source_training_configurations": 68,
+  "frozen_sources": 36,
+  "statistical_pilot_configurations": 3,
+  "maximum_saved_mode_relative_residual": 1.0655635129243454e-11,
+  "audited_slices": 229,
+  "audited_modes": 22900,
+  "fresh_reference_matches": 2112,
+  "maximum_projection_control_component_difference": 3.308722450212111e-24,
+  "maximum_projection_control_relative_matrix_difference": 1.9819464747114497e-15,
+  "launch_totals": [
+    {
+      "configuration": 170,
+      "mpi_launches": 3,
+      "mpi_launch_seconds": 723.8732974529266,
+      "mpi_launch_minutes": 12.064554957548777
+    },
+    {
+      "configuration": 640,
+      "mpi_launches": 3,
+      "mpi_launch_seconds": 723.725950723514,
+      "mpi_launch_minutes": 12.062099178725232
+    },
+    {
+      "configuration": 650,
+      "mpi_launches": 5,
+      "mpi_launch_seconds": 1403.4132064804435,
+      "mpi_launch_minutes": 23.39022010800739
+    }
+  ],
+  "table_rows": {
+    "position_projections": 10692,
+    "full_anchor4_checkpoints": 216,
+    "matrix_position_diagnostics": 1188,
+    "projection_control": 132,
+    "matrix_checkpoint_ranges": 24,
+    "launch_timings": 11,
+    "launch_totals": 3,
+    "descriptive_flags": 108
+  },
+  "inference_scope": "Position-resolved technical/descriptive pilot, conditional on frozen training sources; no standard errors, significance tests, energy fits, GEVP or final potential.",
+  "next_measurement_campaign_submitted": false
+}

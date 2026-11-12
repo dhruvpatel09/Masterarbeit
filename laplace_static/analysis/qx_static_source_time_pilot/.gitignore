@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+work/
+!inputs/job6036903_review.zip
+!inputs/published/laplace_static/analysis/qx_static_matrix_71configs/inputs/primary_matrices.npz
