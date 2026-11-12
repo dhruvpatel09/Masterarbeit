@@ -37,5 +37,14 @@
     "latex",
     "bibtex",
     "markdown"
+  ],
+  "cSpell.words": [
+    "BDIO",
+    "correlator",
+    "eigenmode",
+    "GEVP",
+    "gluonic",
+    "Masterarbeit",
+    "Slurm"
   ]
 }
